@@ -500,5 +500,52 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
+<!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat" class="whatsapp-chat-widget">
+    <div class="whatsapp-chat-button" onclick="toggleWhatsAppChat()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="chat-tooltip">Chat with us!</span>
+    </div>
+    
+    <div class="whatsapp-chat-box" id="whatsapp-chat-box">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="assets/img/logo2.jpg" alt="CodeServe" class="chat-avatar">
+                <div class="chat-info">
+                    <h4>CodeServe Community</h4>
+                    <p class="online-status">
+                        <span class="status-dot"></span>
+                        Typically replies instantly
+                    </p>
+                </div>
+            </div>
+            <button class="close-chat" onclick="toggleWhatsAppChat()">×</button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>💼 Interested in our services?</p>
+                <p>Let's discuss your project requirements!</p>
+                <div class="quick-replies">
+                    <button onclick="sendWhatsAppMessage('I need web development services')">🌐 Web Development</button>
+                    <button onclick="sendWhatsAppMessage('Mobile app development quote')">📱 Mobile App</button>
+                    <button onclick="sendWhatsAppMessage('SEO services pricing')">🔍 SEO Services</button>
+                    <button onclick="sendWhatsAppMessage('Custom project quote')">💼 Custom Project</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="start-chat-btn" onclick="sendWhatsAppMessage('Hello! I am interested in your services')">
+                <i class="fab fa-whatsapp"></i>
+                Start Conversation
+            </button>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="assets/css/whatsapp-widget.css">
+<script src="assets/js/whatsapp-widget.js"></script>
+
 </body>
 </html>
