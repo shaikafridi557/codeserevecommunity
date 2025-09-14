@@ -1,0 +1,106 @@
+/*
+Custom Stylesheet for Code.Serve About Page
+*/
+
+/* --- Tech World Animations & Transitions --- */
+
+/* Animated Heading */
+.tech-heading {
+    position: relative;
+    display: inline-block;
+}
+
+.tech-heading::after {
+    content: '_';
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { color: transparent; }
+    50% { color: var(--theme-color); }
+}
+
+/* Scroll Animations for Sections */
+[data-dsn-animate="section"] {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+[data-dsn-animate="section"].dsn-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Our Story Section Styling */
+.our-story .box-img {
+    position: relative;
+}
+
+.our-story .img-box-parallax {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tech-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(56, 124, 249, 0.1), rgba(0, 0, 0, 0.2));
+    mix-blend-mode: screen;
+    opacity: 0.7;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.our-story .box-img:hover .tech-overlay {
+    opacity: 0.3;
+}
+
+.our-story .box-info {
+    padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+    .our-story .box-info {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+}
+
+
+/* Animated Cards for Expertise Section */
+.animated-card .service-item-inner {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    border-color: var(--border-color);
+}
+
+.animated-card:hover .service-item-inner {
+    transform: translateY(-10px);
+    border-color: #387cf9;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.animated-card .service_title {
+     color: #387cf9; /* Blue color for titles */
+     border-bottom: 1px solid var(--border-color);
+     padding-bottom: 15px;
+     margin-bottom: 15px;
+}
+
+/* Our Community Section */
+.our-community {
+    padding-top: var(--margin-padding);
+    padding-bottom: var(--margin-padding);
+}
+
+/* Override animation to display content by default */
+[data-dsn-animate="section"] {
+    opacity: 1 !important;
+    transform: none !important;
+}
