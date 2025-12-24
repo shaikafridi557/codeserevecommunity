@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://codeservecommunity.netlify.app/sitemap.xml
+
+# Disallow crawling of admin or private directories (if any)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.vscode/
+
+# Allow crawling of important pages
+Allow: /index.html
+Allow: /services.html
+Allow: /portfolio.html
+Allow: /about.html
+Allow: /contact.html
+Allow: /pricing.html
+Allow: /assets/
+
+# Crawl delay (optional - helps with server load)
+Crawl-delay: 1

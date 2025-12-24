@@ -1,0 +1,3635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code.Serve - Pricing & Services | Premium Web Development & Digital Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="assets/css/plugins.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        /* --- Menu Icon and Text White Color --- */
+        .navbar-toggle .toggle-line {
+            background-color: white !important;
+        }
+
+        .navbar-toggle .toggle-text {
+            color: white !important;
+        }
+
+        /* --- When Menu is Open - Turn Close Button and Logo Black --- */
+        .site-header.dsn-open .toggle-line {
+            background-color: black !important;
+        }
+
+        .site-header.dsn-open .toggle-text {
+            color: black !important;
+        }
+
+        .site-header.dsn-open .logo-text-code {
+            color: black !important;
+        }
+
+        /* --- General Styles --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            background-color: #f8fafc;
+        }
+
+        /* --- Keyboard Focus Styles --- */
+        button:focus,
+        input:focus,
+        textarea:focus,
+        a:focus {
+            outline: 3px solid #2563eb;
+            outline-offset: 2px;
+        }
+
+        button:focus:not(:focus-visible),
+        input:focus:not(:focus-visible),
+        textarea:focus:not(:focus-visible),
+        a:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #1d4ed8;
+        }
+
+        /* --- Animations --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            70% {
+                transform: scale(0.9);
+            }
+
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1.02);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero__title {
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero__subtitle {
+            font-size: clamp(1.1rem, 2vw, 1.25rem);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero__cta {
+            display: inline-block;
+            background-color: #f59e0b;
+            color: white;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            margin-bottom: 40px;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero__cta:hover {
+            background-color: #d97706;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* --- Navigation Tabs --- */
+        .pricing-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-nav__btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            font-weight: 500;
+        }
+
+        .pricing-nav__btn:hover,
+        .pricing-nav__btn.active {
+            background: white;
+            color: #2563eb;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
+        }
+
+        .pricing-nav__btn.active {
+            animation: bounceIn 0.5s ease-out;
+        }
+
+        /* --- Section Styles --- */
+        .pricing-section {
+            padding: 80px 0;
+            display: none;
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .pricing-section.active {
+            display: block;
+        }
+
+        .section__title {
+            text-align: center;
+            font-size: clamp(2rem, 3vw, 2.5rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1f2937;
+        }
+
+        .section__subtitle {
+            text-align: center;
+            font-size: 1.125rem;
+            color: #6b7280;
+            margin-bottom: 60px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- Locked Pricing State --- */
+        .pricing-locked .pricing-nav,
+        .pricing-locked .pricing-section:not(#demo-trial) {
+            display: none;
+            pointer-events: none;
+            user-select: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* --- Demo Trial Section --- */
+        #demo-trial {
+            background-color: #f8fafc;
+        }
+
+        .demo-form-container,
+        .demo-confirmation-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+        }
+
+        .form-step {
+            display: none;
+        }
+
+        .form-step.active {
+            display: block;
+            animation: fadeInUp 0.5s ease-out;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group input[type="file"] {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        .form-group input[type="file"] {
+            padding: 10px;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .btn--form {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn--form:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .btn--submit {
+            background-color: #10b981;
+            color: white;
+            width: 100%;
+            font-size: 1.1rem;
+        }
+
+        .btn--form:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 5px;
+            display: none;
+        }
+
+        .demo-confirmation-container {
+            text-align: center;
+        }
+
+        .demo-confirmation-container h3 {
+            font-size: 1.8rem;
+            color: #10b981;
+            margin-bottom: 15px;
+        }
+
+        .demo-confirmation-container p {
+            color: #374151;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .btn--unlock {
+            background: #10b981;
+            color: white;
+            font-size: 1.1rem;
+            padding: 15px 30px;
+            border-radius: 10px;
+        }
+
+        .btn--unlock:hover {
+            background: #059669;
+        }
+
+        .btn--unlock:disabled {
+            background-color: #9ca3af;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .btn--unlock:hover:disabled {
+            background: #9ca3af;
+        }
+
+        /* --- Pricing Card --- */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .pricing-card {
+            position: relative;
+            background: white;
+            border-radius: 16px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+        }
+
+        .pricing-card--featured {
+            border: 2px solid #2563eb;
+            transform: scale(1.02);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .pricing-card__badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #2563eb;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .pricing-card__header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pricing-card__title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .pricing-card__price .amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #2563eb;
+        }
+
+        .pricing-card__price .period {
+            color: #6b7280;
+        }
+
+        .pricing-card__description {
+            color: #6b7280;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card__features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pricing-card__features li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .pricing-card__features li i {
+            color: #10b981;
+        }
+
+        .pricing-card__cta {
+            width: 100%;
+            background: #2563eb;
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card__cta:hover {
+            background: #1d4ed8;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .pricing-card__cta--featured {
+            background: #10b981;
+        }
+
+        .pricing-card__cta--featured:hover {
+            background: #059669;
+        }
+
+        /* --- Billing Toggle --- */
+        .billing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 50px;
+        }
+
+        .billing-toggle__label .savings {
+            color: #10b981;
+            font-size: 14px;
+        }
+
+        .billing-toggle__switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .billing-toggle__switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 30px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #2563eb;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(30px);
+        }
+
+        /* --- Startup Kit --- */
+        .startup-kit {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .startup-kit__card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border-radius: 20px;
+            padding: 50px 40px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border: 2px solid #f59e0b;
+            text-align: center;
+        }
+
+        .startup-kit__badge {
+            display: inline-block;
+            margin-bottom: 25px;
+            background: #f59e0b;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 25px;
+            font-weight: 700;
+        }
+
+        .startup-kit__title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+        }
+
+        .original-price {
+            font-size: 1.5rem;
+            color: #9ca3af;
+            text-decoration: line-through;
+            margin-right: 10px;
+        }
+
+        .sale-price {
+            font-size: 3rem;
+            font-weight: 800;
+            color: #f59e0b;
+        }
+
+        .startup-kit__grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .startup-kit__item {
+            text-align: center;
+        }
+
+        .startup-kit__cta {
+            background: #f59e0b;
+            color: white;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .startup-kit__cta:hover {
+            background: #d97706;
+        }
+
+        /* --- Other Sections --- */
+        .company-intro,
+        .faq-section {
+            padding: 80px 0;
+            background: #fff;
+        }
+
+        .faq-section {
+            background: #f8fafc;
+        }
+
+        /* --- Footer --- */
+        .footer {
+            background: #111827;
+            color: #d1d5db;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .footer-col p,
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a {
+            color: #d1d5db;
+            transition: color 0.3s, padding-left 0.3s;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+            padding-left: 5px;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-socials a {
+            color: #d1d5db;
+            font-size: 1.5rem;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .footer-socials a:hover {
+            color: #2563eb;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        /* --- Professional Success Popup --- */
+        .success-popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            z-index: 10000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .success-popup {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+            transform: scale(0.8);
+            animation: popupSlideIn 0.4s ease-out forwards;
+            position: relative;
+        }
+
+        .success-popup__icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            animation: bounceIn 0.6s ease-out 0.2s both;
+        }
+
+        .success-popup__icon i {
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        .success-popup__title {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 15px;
+            animation: slideInUp 0.5s ease-out 0.3s both;
+        }
+
+        .success-popup__message {
+            font-size: 1.1rem;
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            animation: slideInUp 0.5s ease-out 0.4s both;
+        }
+
+        .success-popup__email {
+            background: #f8fafc;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 15px;
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 25px;
+            animation: slideInUp 0.5s ease-out 0.5s both;
+        }
+
+        .success-popup__close {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: slideInUp 0.5s ease-out 0.6s both;
+        }
+
+        .success-popup__close:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+        }
+
+        .success-popup__close-x {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #9ca3af;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .success-popup__close-x:hover {
+            color: #374151;
+        }
+
+        /* Popup Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes popupSlideIn {
+            from {
+                transform: scale(0.8) translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Loading Spinner for Form */
+        .form-loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #2563eb;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body class="pricing-locked">
+    <!-- LOGOUT BUTTON - Only shows when logged in -->
+    <button id="logout-btn"
+        style="position: fixed; top: 20px; right: 20px; background: #ef4444; color: white; border: none; padding: 12px 20px; border-radius: 25px; font-weight: 600; cursor: pointer; z-index: 1000; display: none; align-items: center; gap: 8px;"
+        onclick="handleLogout()"
+        aria-label="Logout from your account"
+        title="Logout (Alt+L)">
+        <i class="fas fa-sign-out-alt"></i> Logout
+    </button>
+
+    <!-- ========== Menu ========== -->
+    <header id="site_menu_header" class="site-header dsn-container d-none dsn-hamburger" style="position: fixed; top: 0; left: 0; right: 0; z-index: 999; background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px);">
+        <div class="main-logo">
+            <a href="index.html" data-dsn-text="Code.Serve" class="custom-logo-link main-brand effect-ajax"
+                rel="home" aria-current="page">
+                <span class="logo-text" style="font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 26px;">
+                    <span class="logo-text-code" style="color: white;">Code</span><span style="color: #387cf9;">.Serve</span>
+                </span>
+            </a>
+        </div>
+        <nav class="main-navigation">
+            <div class="menu-cover-title header-container dsn-container">MENU</div>
+            <ul id="dsn-primary-list" class="primary-nav h2">
+                <li class="nav-item"><a title="Home" href="index.html"><span class="overflow">Home</span></a></li>
+                <li class="nav-item"><a title="Services" href="services.html"><span class="overflow">Services</span></a></li>
+                <li class="nav-item"><a title="Our Work" href="portfolio.html"><span class="overflow">Our Work</span></a></li>
+                <li class="nav-item"><a title="About Us" href="about.html"><span class="overflow">About Us</span></a></li>
+                <li class="nav-item"><a title="Pricing" href="pricing.html"><span class="overflow">Pricing</span></a></li>
+                <li class="nav-item"><a title="Contact" href="contact.html"><span class="overflow">Contact</span></a></li>
+            </ul>
+            <div class="container-content d-flex flex-column justify-content-center section-margin">
+                <div class="nav__info">
+                    <div class="nav-content">
+                        <h5 class="sm-title-block mb-10">Studio</h5>
+                        Hyderabad, India
+                    </div>
+                    <div class="nav-content mt-30">
+                        <h5 class="sm-title-block mb-10">Contact</h5>
+                        <p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+919346142139"
+                                data-hover-text="+91 9346 142 139">+91 9346 142 139</a></p>
+                        <p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+918074403355"
+                                data-hover-text="+91 8074 403 355">+91 8074 403 355</a></p>
+                        <p class="links over-hidden"><a class="link-hover" href="mailto:codeserve.contact@gmail.com"
+                                data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="nav-social nav-content mt-30">
+                    <div class="nav-social-inner p-relative">
+                        <h5 class="sm-title-block mb-10">Follow us</h5>
+                        <ul>
+                            <li><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Dribbble.</a></li>
+                            <li><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Behance.</a></li>
+                            <li><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Linkedin.</a></li>
+                            <li><a href="#0" target="_blank" rel="nofollow noopener noreferrer">Twitter.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+            <div class="toggle-icon">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+            <div class="toggle-text">
+                <div class="text-menu">Menu</div>
+                <div class="text-open">Open</div>
+                <div class="text-close">Close</div>
+            </div>
+        </div>
+        <div class="bg-load background-main"></div>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none"
+            class="bg-load dsn-svg-transition">
+            <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z" />
+        </svg>
+    </header>
+    <!-- ========== End Menu ========== -->
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero__title">Premium Web Development & Digital Solutions</h1>
+            <p class="hero__subtitle">Start by requesting a free, no-obligation demo. If you love what we build, we'll
+                unlock our full pricing plans for you.</p>
+            <a href="#demo-trial" class="hero__cta">Request Your Free Demo Now</a>
+
+            <div class="pricing-nav">
+                <button class="pricing-nav__btn" data-target="website-packages">Website Development Packages</button>
+                <button class="pricing-nav__btn" data-target="web-mobile-apps">Web & Mobile Apps</button>
+                <button class="pricing-nav__btn" data-target="additional-services">Additional Services</button>
+                <button class="pricing-nav__btn" data-target="monthly">Monthly Plans</button>
+                <button class="pricing-nav__btn" data-target="startup">Startup Kit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Trial Section -->
+    <section class="pricing-section active" id="demo-trial">
+        <div class="container">
+            <h2 class="section__title" id="demo-trial-title" style="display: none;">Request a Free Demo</h2>
+            <p class="section__subtitle" id="demo-trial-subtitle" style="display: none;">Let us build a small-scale demo
+                (1-2 pages) for you. If you're satisfied, we'll
+                unlock the full pricing packages.</p>
+
+            <!-- Login Form for Returning Customers -->
+            <div class="demo-form-container" id="customer-login-form" style="display: none;">
+                <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600;">Welcome Back!</h3>
+                <p style="text-align: center; margin-bottom: 30px; color: #6b7280;">Login with your email to access
+                    pricing</p>
+
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" name="login_email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-navigation">
+                    <button type="button" class="btn--form btn--submit" onclick="attemptCustomerLogin();">Login & Access
+                        Pricing</button>
+                </div>
+
+                <p style="text-align: center; margin-top: 20px;">
+                    <a href="#" onclick="showDemoFormState(); return false;" style="color: #2563eb;">New customer?
+                        Register here</a>
+                </p>
+            </div>
+
+            <!-- Demo Request Form -->
+            <div class="demo-form-container" id="demo-request-container" style="display: none;"></div>
+            <form id="demo-request-form">
+                <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600;">Your Information & Demo
+                    Details</h3>
+
+                <!-- Contact Information -->
+                <div class="form-group">
+                    <label for="business-name">Business Name</label>
+                    <input type="text" id="business-name" name="business_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error-message" id="phone-error">Please enter a valid 10-digit phone number.</div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Full Address (Optional)</label>
+                    <input type="text" id="address" name="address">
+                </div>
+
+                <!-- Demo Requirements -->
+                <div class="form-group">
+                    <label for="demo-requirements">Demo Requirements</label>
+                    <textarea id="demo-requirements" name="demo_requirements" required
+                        placeholder="Please be clear and specific. For example: 'I need a Home page that shows my services and a Contact Us page with a form.' (1-2 pages only for the demo)"></textarea>
+                </div>
+
+                <!-- File Upload -->
+                <div class="form-group">
+                    <label for="file-upload">Attach Files (Optional, Max 50kb)</label>
+                    <input type="file" id="file-upload" name="file_upload">
+                    <small style="color: #6b7280; font-size: 0.875rem; margin-top: 5px; display: block;">You can
+                        attach mockups, documents, or reference images.</small>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-navigation">
+                    <button type="submit" class="btn--form btn--submit" id="submit-btn">Submit Request</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Confirmation Message -->
+        <div class="demo-confirmation-container" id="demo-confirmation" style="display: none;">
+            <h3><i class="fas fa-check-circle"></i> Request Received!</h3>
+            <p>Your personalized demo will be ready within <strong>2 business days</strong>. We will contact you via
+                email with a private link. Once you have reviewed the demo, please paste the link below to unlock
+                our pricing and let's collaborate!</p>
+            <div class="form-group" style="text-align: left; max-width: 400px; margin: 30px auto 20px;">
+                <label for="demo-link-input" style="text-align: center; margin-bottom: 10px;">Enter Demo Link to
+                    Proceed</label>
+                <input type="text" id="demo-link-input" name="demo_link" placeholder="https://demo.netlify.app"
+                    required>
+            </div>
+            <button class="btn--form btn--unlock" id="unlock-btn" onclick="unlockPricing()" disabled>I'm Satisfied,
+                Unlock Pricing!</button>
+        </div>
+        </div>
+    </section>
+
+    <!-- Website Development Packages Section -->
+    <section class="pricing-section" id="website-packages">
+        <div class="container">
+            <h2 class="section__title">Website Development Packages</h2>
+            <p class="section__subtitle">Professional website solutions tailored to your business needs.</p>
+            <div class="pricing-grid">
+                <!-- Starter Website -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Starter Website</h3>
+                        <div class="pricing-card__price"><span class="amount">₹2,499</span><span class="period">
+                                One-Time</span></div>
+                        <p class="pricing-card__description">Ideal for individuals and new businesses seeking a
+                            professional, foundational online presence.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 3 Pages (Home, About Us, Contact)</li>
+                            <li><i class="fas fa-check"></i> Mobile-Responsive Design</li>
+                            <li><i class="fas fa-check"></i> Contact Form</li>
+                            <li><i class="fas fa-check"></i> Social Media Integration</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                            <li><i class="fas fa-check"></i> One Round of Revisions</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+                <!-- Medium Website -->
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-card__badge">Popular Choice</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Medium Website</h3>
+                        <div class="pricing-card__price"><span class="amount">₹3,300</span><span class="period">
+                                One-Time</span></div>
+                        <p class="pricing-card__description">Perfect for growing businesses that need to showcase a
+                            wider range of services and content.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Starter package</li>
+                            <li><i class="fas fa-check"></i> Up to 5 Pages</li>
+                            <li><i class="fas fa-check"></i> Image Gallery/Portfolio</li>
+                            <li><i class="fas fa-check"></i> Content Management System (CMS)</li>
+                            <li><i class="fas fa-check"></i> Google Maps Integration</li>
+                            <li><i class="fas fa-check"></i> Two Rounds of Revisions</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta pricing-card__cta--featured">Get Started</button>
+                </div>
+                <!-- Premium Website -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Premium Website</h3>
+                        <div class="pricing-card__price"><span class="amount">₹5,999</span><span class="period">
+                                One-Time</span></div>
+                        <p class="pricing-card__description">A comprehensive solution for established businesses
+                            requiring advanced functionality and analytics.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Medium package</li>
+                            <li><i class="fas fa-check"></i> Up to 8 Pages</li>
+                            <li><i class="fas fa-check"></i> Blog Setup</li>
+                            <li><i class="fas fa-check"></i> Advanced Contact Forms</li>
+                            <li><i class="fas fa-check"></i> Google Analytics Integration</li>
+                            <li><i class="fas fa-check"></i> Enhanced On-Page SEO</li>
+                            <li><i class="fas fa-check"></i> Three Rounds of Revisions</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Web & Mobile Application Development Section -->
+    <section class="pricing-section" id="web-mobile-apps">
+        <div class="container">
+            <h2 class="section__title">Web & Mobile Application Development</h2>
+            <p class="section__subtitle">Custom applications built to engage your customers and grow your business.</p>
+            <div class="pricing-grid">
+                <!-- Web App Development -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Web App Development</h3>
+                        <div class="pricing-card__price"><span class="amount">₹14,999</span><span
+                                class="period">Starting at</span></div>
+                        <p class="pricing-card__description">For businesses needing interactive, data-driven
+                            applications that run in a web browser, like portals, dashboards, or custom business tools.
+                        </p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Custom Functionality: Development of specific features
+                                tailored to your business processes</li>
+                            <li><i class="fas fa-check"></i> User Accounts & Authentication: Secure login and
+                                registration systems</li>
+                            <li><i class="fas fa-check"></i> Database Integration: Storing and managing data efficiently
+                                and securely</li>
+                            <li><i class="fas fa-check"></i> Secure Backend Development: Building the server-side logic
+                                that powers your application</li>
+                            <li><i class="fas fa-check"></i> Admin Panel/Dashboard: A control panel for you to manage
+                                users, content, and application settings</li>
+                            <li><i class="fas fa-check"></i> Scalable Architecture: Built to handle growth in users and
+                                data</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+                <!-- Mobile App Development -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Mobile App Development</h3>
+                        <div class="pricing-card__price"><span class="amount">₹18,000</span><span
+                                class="period">Starting at (Price is Negotiable)</span></div>
+                        <p class="pricing-card__description">Custom mobile applications built to engage your customers
+                            and grow your business on iOS and Android.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Strategy & Planning: Defining the app's purpose, target
+                                audience, and core features</li>
+                            <li><i class="fas fa-check"></i> UI/UX Design: Creating an intuitive and visually appealing
+                                user interface</li>
+                            <li><i class="fas fa-check"></i> Custom Development: Building the app for iOS, Android, or
+                                both</li>
+                            <li><i class="fas fa-check"></i> Robust Security Measures: Implementing data encryption and
+                                secure user authentication</li>
+                            <li><i class="fas fa-check"></i> Comprehensive Testing: Rigorous quality assurance to ensure
+                                the app is bug-free</li>
+                            <li><i class="fas fa-check"></i> Post-Launch Support: Assistance with app store submission
+                                and initial maintenance</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="pricing-section" id="additional-services">
+        <div class="container">
+            <h2 class="section__title">Additional Services</h2>
+            <p class="section__subtitle">Specialized services to enhance your digital presence and operations.</p>
+            <div class="pricing-grid">
+                <!-- AI Chatbot Integration -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">AI Chatbot Integration</h3>
+                        <div class="pricing-card__price"><span class="amount">₹8,999</span><span
+                                class="period">One-Time</span></div>
+                        <p class="pricing-card__description">Automate customer support, generate leads, and provide 24/7
+                            assistance on your website.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Chatbot Setup: Integration of a smart AI chatbot on your
+                                website</li>
+                            <li><i class="fas fa-check"></i> Custom Conversation Flows: Designing the chatbot's dialogue
+                                to answer common questions</li>
+                            <li><i class="fas fa-check"></i> Lead Generation: Programming the bot to collect visitor
+                                information</li>
+                            <li><i class="fas fa-check"></i> System Integration: Connecting the chatbot to your existing
+                                tools, like a CRM</li>
+                            <li><i class="fas fa-check"></i> Training & Handoff: Basic training on how to manage the
+                                chatbot's performance</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+                <!-- Website Testing Services -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Website Testing Services</h3>
+                        <div class="pricing-card__price"><span class="amount">₹1,500</span><span
+                                class="period">One-Time</span></div>
+                        <p class="pricing-card__description">Ensure your website is fast, functional, and user-friendly
+                            across all devices.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cross-Browser & Device Compatibility Testing: Verifying
+                                your site works on various browsers and screen sizes</li>
+                            <li><i class="fas fa-check"></i> Functionality & Usability Audit: Testing all links, forms,
+                                and features</li>
+                            <li><i class="fas fa-check"></i> Performance & Speed Analysis: Identifying improvements for
+                                faster load times</li>
+                            <li><i class="fas fa-check"></i> Detailed Actionable Report: A summary of findings and
+                                recommendations</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+                <!-- Cloud Management System -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Cloud Management System</h3>
+                        <div class="pricing-card__price"><span class="amount">₹20,000</span><span
+                                class="period">Starting at</span></div>
+                        <p class="pricing-card__description">A scalable and secure cloud infrastructure to support your
+                            business operations and data.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Infrastructure Setup & Configuration: Deploying your cloud
+                                environment on platforms like AWS or Google Cloud</li>
+                            <li><i class="fas fa-check"></i> Data Migration & Backup: Securely moving data and
+                                establishing automated backup plans</li>
+                            <li><i class="fas fa-check"></i> Security & Compliance: Implementing robust security
+                                measures to protect your infrastructure</li>
+                            <li><i class="fas fa-check"></i> Performance Monitoring: Continuously monitoring for
+                                performance and cost-efficiency</li>
+                            <li><i class="fas fa-check"></i> Centralized Management: Providing a single point of control
+                                for your cloud resources</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Monthly Partnership Plans -->
+    <section class="pricing-section" id="monthly">
+        <div class="container">
+            <h2 class="section__title">Monthly Partnership Plans</h2>
+            <p class="section__subtitle">For ongoing support, growth, and peace of mind.</p>
+
+            <div class="billing-toggle">
+                <span class="billing-toggle__label">Monthly</span>
+                <label class="billing-toggle__switch">
+                    <input type="checkbox" id="annual-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="billing-toggle__label">Annual <span class="savings">(Save up to 15%)</span></span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Starter Monthly Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Starter Monthly</h3>
+                        <div class="pricing-card__price">
+                            <span class="amount monthly-price">₹2,499</span>
+                            <span class="amount annual-price" style="display: none;">₹25,490</span>
+                            <span class="period monthly-period">/month</span>
+                            <span class="period annual-period" style="display: none;">/year</span>
+                        </div>
+                        <p class="pricing-card__description">Perfect for individuals and new businesses with ongoing
+                            support needs.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Website Maintenance & Updates</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Monitoring</li>
+                            <li><i class="fas fa-check"></i> Monthly Performance Reports</li>
+                            <li><i class="fas fa-check"></i> Email Support</li>
+                            <li><i class="fas fa-check"></i> Content Updates (2 hours/month)</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Choose Starter</button>
+                </div>
+
+                <!-- Medium Monthly Plan - Most Popular -->
+                <div class="pricing-card pricing-card--featured">
+                    <div class="pricing-card__badge">Most Popular</div>
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Medium Monthly</h3>
+                        <div class="pricing-card__price">
+                            <span class="amount monthly-price">₹3,300</span>
+                            <span class="amount annual-price" style="display: none;">₹33,660</span>
+                            <span class="period monthly-period">/month</span>
+                            <span class="period annual-period" style="display: none;">/year</span>
+                        </div>
+                        <p class="pricing-card__description">Ideal for growing businesses that need comprehensive
+                            digital support.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Starter Monthly</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO Management</li>
+                            <li><i class="fas fa-check"></i> Social Media Management</li>
+                            <li><i class="fas fa-check"></i> Priority Support</li>
+                            <li><i class="fas fa-check"></i> Content Updates (4 hours/month)</li>
+                            <li><i class="fas fa-check"></i> Monthly Strategy Consultation</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta pricing-card__cta--featured">Choose Medium</button>
+                </div>
+
+                <!-- Premium Monthly Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-card__header">
+                        <h3 class="pricing-card__title">Premium Monthly</h3>
+                        <div class="pricing-card__price">
+                            <span class="amount monthly-price">₹5,999</span>
+                            <span class="amount annual-price" style="display: none;">₹61,190</span>
+                            <span class="period monthly-period">/month</span>
+                            <span class="period annual-period" style="display: none;">/year</span>
+                        </div>
+                        <p class="pricing-card__description">Complete digital partnership for established businesses
+                            seeking maximum growth.</p>
+                    </div>
+                    <div class="pricing-card__features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Everything in Medium Monthly</li>
+                            <li><i class="fas fa-check"></i> Advanced Analytics & Reporting</li>
+                            <li><i class="fas fa-check"></i> Digital Marketing Campaigns</li>
+                            <li><i class="fas fa-check"></i> Dedicated Account Manager</li>
+                            <li><i class="fas fa-check"></i> Content Updates (8 hours/month)</li>
+                            <li><i class="fas fa-check"></i> Weekly Strategy Sessions</li>
+                            <li><i class="fas fa-check"></i> Custom Feature Development</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-card__cta">Choose Premium</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="startup">
+        <div class="container">
+            <h2 class="section__title">The Startup Launch Kit</h2>
+            <p class="section__subtitle">Our best-value, all-in-one package to launch your business with a bang.</p>
+
+            <div class="startup-kit">
+                <div class="startup-kit__card">
+                    <div class="startup-kit__header">
+                        <div class="startup-kit__badge">Best Value - Save ₹17,000+</div>
+                        <h3 class="startup-kit__title">Complete Business Launch Package</h3>
+                        <div class="startup-kit__price">
+                            <span class="original-price">₹41,999</span>
+                            <span class="sale-price">₹24,999</span>
+                            <span class="period">One-Time Payment</span>
+                        </div>
+                        <p class="pricing-card__description">Everything you need to launch online + 1 month of free
+                            support.</p>
+                    </div>
+
+                    <div class="startup-kit__grid">
+                        <div class="startup-kit__item">
+                            <i class="fas fa-laptop-code"></i>
+                            <h5>Custom Website</h5>
+                            <span>(Value ₹19,999)</span>
+                        </div>
+                        <div class="startup-kit__item">
+                            <i class="fas fa-search"></i>
+                            <h5>Foundational SEO</h5>
+                            <span>(Value ₹9,999)</span>
+                        </div>
+                        <div class="startup-kit__item">
+                            <i class="fas fa-bullhorn"></i>
+                            <h5>Digital Marketing Setup</h5>
+                            <span>(Value ₹8,999)</span>
+                        </div>
+                        <div class="startup-kit__item">
+                            <i class="fas fa-headset"></i>
+                            <h5>1 Month Guardian Plan</h5>
+                            <span>(Value ₹3,999)</span>
+                        </div>
+                    </div>
+                    <button class="startup-kit__cta">Launch My Business</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="company-intro">
+        <div class="container">
+            <h2 class="section__title">About Code.Serve</h2>
+            <p class="section__subtitle">We are a passionate community of developers, designers, and digital strategists
+                dedicated to building robust and beautiful digital solutions. Our mission is to empower businesses by
+                crafting unique online experiences that drive growth, engagement, and success. We believe in
+                collaboration, innovation, and a client-first approach to every project we undertake.</p>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section__title">Frequently Asked Questions</h2>
+            <p class="section__subtitle">Have questions? We've got answers. If you can't find what you're looking for,
+                feel free to contact us.</p>
+            <!-- FAQ content can be added here, e.g., using an accordion component -->
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Code.Serve</h4>
+                    <p>A community of developers and designers building robust digital solutions to help businesses
+                        thrive in the digital landscape.</p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#website-packages">Website Development Packages</a></li>
+                        <li><a href="#monthly">Monthly Plans</a></li>
+                        <li><a href="#startup">Startup Kit</a></li>
+                        <li><a href="#demo-trial">Request a Demo</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">SEO & Marketing</a></li>
+                        <li><a href="#">Website Maintenance</a></li>
+                        <li><a href="#">Digital Strategy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope" style="margin-right: 8px;"></i> <a
+                                href="mailto:hello@codeserve.com">hello@codeserve.com</a></li>
+                        <li><i class="fas fa-phone" style="margin-right: 8px;"></i> <a href="tel:+911234567890">+91
+                                12345 67890</a></li>
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Bangalore, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Code.Serve Community. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Professional Success Popup -->
+    <div class="success-popup-overlay" id="success-popup-overlay">
+        <div class="success-popup">
+            <button class="success-popup__close-x" onclick="closeSuccessPopup()">&times;</button>
+            <div class="success-popup__icon">
+                <i class="fas fa-check"></i>
+            </div>
+            <h3 class="success-popup__title">Demo Request Submitted Successfully!</h3>
+            <p class="success-popup__message">
+                Your personalized demo will be ready within <strong>2 business days</strong>.
+                We will contact you with a private demo link.
+            </p>
+            <div class="success-popup__email" id="success-popup-email">
+                <!-- Email will be inserted here -->
+            </div>
+            <p style="font-size: 0.9rem; color: #6b7280; margin-bottom: 25px;">
+                <i class="fas fa-info-circle" style="margin-right: 5px;"></i>
+                Good news: We've saved your information, so you won't need to fill out this form again when you return!
+            </p>
+            <button class="success-popup__close" onclick="closeSuccessPopup()">
+                <i class="fas fa-thumbs-up" style="margin-right: 8px;"></i>
+                Got It, Thanks!
+            </button>
+        </div>
+    </div>
+
+    <!-- !!! IMPORTANT: EMAILJS SCRIPT - CREDENTIALS ARE FILLED IN !!! -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        // ===== BROWSER COMPATIBILITY CHECK =====
+        // Check if browser supports required features
+        if (!window.Promise || !window.fetch || !Object.values) {
+            document.body.innerHTML = '<div style="padding: 40px; text-align: center; font-family: Arial, sans-serif;"><h2>Browser Not Supported</h2><p>Please update your browser to use this application. We recommend Chrome, Firefox, Safari, or Edge (2015 or newer).</p></div>';
+            throw new Error('Browser does not support required features');
+        }
+
+        // ===== CUSTOMER TRACKING SYSTEM - ALL IN ONE =====
+
+        // Configuration
+        var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzz8gB5HLbGgxFqhW_WJnFaAWMxWo77rf_nCE65VAIToPx-4LdVQkZa-GH1ZHSQyhh0/exec';
+
+        // EmailJS Configuration - Replace with your actual credentials
+        var EMAILJS_SERVICE_ID = 'service_mtfvdrm'; // EmailJS Service ID
+        var EMAILJS_TEMPLATE_ID_REQUEST = 'template_29j8f3r'; // Demo Request Email Template ID
+        var EMAILJS_TEMPLATE_ID_READY = 'template_e42iagc'; // Demo Ready Email Template ID
+        var EMAILJS_PUBLIC_KEY = 'xGxk378EbZp0uea-b'; // EmailJS Public Key
+
+        // Initialize EmailJS
+        try {
+            emailjs.init(EMAILJS_PUBLIC_KEY);
+            console.log('EmailJS initialized successfully');
+        } catch (error) {
+            console.warn('EmailJS initialization failed:', error);
+        }
+
+        // LocalStorage keys
+        const STORAGE_KEYS = {
+            USER_EMAIL: 'customerEmail',
+            DEMO_STATUS: 'demoStatus',
+            LAST_CHECKED: 'lastChecked',
+            CUSTOMER_DATA: 'customerData'
+        };
+
+        // Cache duration (24 hours)
+        const CACHE_DURATION = 24 * 60 * 60 * 1000;
+
+        // LocalStorage Management
+        class CustomerStorage {
+            static isAvailable() {
+                try {
+                    const test = '__localStorage_test__';
+                    localStorage.setItem(test, test);
+                    localStorage.removeItem(test);
+                    return true;
+                } catch (e) {
+                    console.warn('localStorage is not available:', e);
+                    return false;
+                }
+            }
+
+            static saveCustomerEmail(email) {
+                if (!this.isAvailable()) return false;
+                try {
+                    const customerData = {
+                        email: email.toLowerCase().trim(),
+                        savedAt: new Date().toISOString()
+                    };
+                    localStorage.setItem(STORAGE_KEYS.USER_EMAIL, email.toLowerCase().trim());
+                    localStorage.setItem(STORAGE_KEYS.CUSTOMER_DATA, JSON.stringify(customerData));
+                    console.log('Customer email saved to localStorage:', email);
+                    return true;
+                } catch (e) {
+                    console.error('Error saving customer email:', e);
+                    return false;
+                }
+            }
+
+            static getCustomerEmail() {
+                if (!this.isAvailable()) return null;
+                try {
+                    return localStorage.getItem(STORAGE_KEYS.USER_EMAIL);
+                } catch (e) {
+                    console.error('Error getting customer email:', e);
+                    return null;
+                }
+            }
+
+            static saveDemoStatus(status, demoLink = '') {
+                if (!this.isAvailable()) return false;
+                try {
+                    localStorage.setItem(STORAGE_KEYS.DEMO_STATUS, status);
+                    localStorage.setItem(STORAGE_KEYS.LAST_CHECKED, new Date().toISOString());
+                    console.log('Demo status saved:', status);
+                    return true;
+                } catch (e) {
+                    console.error('Error saving demo status:', e);
+                    return false;
+                }
+            }
+
+            static getDemoStatus() {
+                if (!this.isAvailable()) return null;
+                try {
+                    return localStorage.getItem(STORAGE_KEYS.DEMO_STATUS);
+                } catch (e) {
+                    console.error('Error getting demo status:', e);
+                    return null;
+                }
+            }
+
+            static isCacheValid() {
+                if (!this.isAvailable()) return false;
+                try {
+                    const lastChecked = localStorage.getItem(STORAGE_KEYS.LAST_CHECKED);
+                    if (!lastChecked) return false;
+                    const lastCheckedTime = new Date(lastChecked).getTime();
+                    const now = new Date().getTime();
+                    return (now - lastCheckedTime) < CACHE_DURATION;
+                } catch (e) {
+                    console.error('Error checking cache validity:', e);
+                    return false;
+                }
+            }
+
+            static clearCustomerData() {
+                if (!this.isAvailable()) return false;
+                try {
+                    Object.values(STORAGE_KEYS).forEach(key => {
+                        localStorage.removeItem(key);
+                    });
+                    console.log('Customer data cleared from localStorage');
+                    return true;
+                } catch (e) {
+                    console.error('Error clearing customer data:', e);
+                    return false;
+                }
+            }
+
+            static getAllCustomerData() {
+                if (!this.isAvailable()) return null;
+                try {
+                    return {
+                        email: this.getCustomerEmail(),
+                        demoStatus: this.getDemoStatus(),
+                        lastChecked: localStorage.getItem(STORAGE_KEYS.LAST_CHECKED),
+                        customerData: localStorage.getItem(STORAGE_KEYS.CUSTOMER_DATA)
+                    };
+                } catch (e) {
+                    console.error('Error getting all customer data:', e);
+                    return null;
+                }
+            }
+
+            static updateLastChecked() {
+                if (!this.isAvailable()) return false;
+                try {
+                    localStorage.setItem(STORAGE_KEYS.LAST_CHECKED, new Date().toISOString());
+                    return true;
+                } catch (e) {
+                    console.error('Error updating last checked:', e);
+                    return false;
+                }
+            }
+        }
+
+        // Email Validator
+        class EmailValidator {
+            static isValid(email) {
+                if (!email || typeof email !== 'string') return false;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email.trim());
+            }
+
+            static sanitize(email) {
+                if (!email || typeof email !== 'string') return '';
+                return email.toLowerCase().trim();
+            }
+        }
+
+        // Customer Status Manager
+        class CustomerStatusManager {
+            static async checkCustomerStatus(email = null) {
+                try {
+                    const customerEmail = email || CustomerStorage.getCustomerEmail();
+                    if (!customerEmail) {
+                        return {
+                            exists: false,
+                            status: 'new',
+                            message: 'No customer record found'
+                        };
+                    }
+
+                    if (!EmailValidator.isValid(customerEmail)) {
+                        console.error('Invalid email format:', customerEmail);
+                        CustomerStorage.clearCustomerData();
+                        return {
+                            exists: false,
+                            status: 'new',
+                            message: 'Invalid email format in storage'
+                        };
+                    }
+
+                    if (CustomerStorage.isCacheValid()) {
+                        const cachedStatus = CustomerStorage.getDemoStatus();
+                        if (cachedStatus) {
+                            console.log('Using cached customer status:', cachedStatus);
+                            return {
+                                exists: true,
+                                status: cachedStatus,
+                                email: customerEmail,
+                                source: 'cache',
+                                message: 'Status retrieved from cache'
+                            };
+                        }
+                    }
+
+                    console.log('Fetching fresh customer status from API...');
+                    const apiResult = await this.fetchCustomerStatusFromAPI(customerEmail);
+
+                    if (apiResult.success && apiResult.data.exists) {
+                        CustomerStorage.saveDemoStatus(
+                            apiResult.data.customer.DemoStatus,
+                            apiResult.data.customer.DemoLink || ''
+                        );
+
+                        return {
+                            exists: true,
+                            status: apiResult.data.customer.DemoStatus,
+                            demoLink: apiResult.data.customer.DemoLink,
+                            email: customerEmail,
+                            source: 'api',
+                            message: 'Status retrieved from server',
+                            lastUpdated: apiResult.data.customer.Timestamp
+                        };
+                    } else {
+                        CustomerStorage.clearCustomerData();
+                        return {
+                            exists: false,
+                            status: 'new',
+                            message: 'Customer not found in server records'
+                        };
+                    }
+                } catch (error) {
+                    console.error('Error checking customer status:', error);
+                    const cachedStatus = CustomerStorage.getDemoStatus();
+                    if (cachedStatus) {
+                        return {
+                            exists: true,
+                            status: cachedStatus,
+                            email: CustomerStorage.getCustomerEmail(),
+                            source: 'cache_fallback',
+                            message: 'Using cached data due to API error',
+                            error: error.message
+                        };
+                    }
+                    return {
+                        exists: false,
+                        status: 'error',
+                        message: 'Error checking customer status: ' + error.message,
+                        error: error.message
+                    };
+                }
+            }
+
+            static async fetchCustomerStatusFromAPI(email) {
+                try {
+                    const url = `${GOOGLE_SCRIPT_URL}?action=checkCustomer&email=${encodeURIComponent(email)}`;
+                    const response = await fetch(url, {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    console.log('API Response:', result);
+                    return result;
+                } catch (error) {
+                    console.error('API fetch error:', error);
+                    throw new Error(`Failed to fetch customer status: ${error.message}`);
+                }
+            }
+
+            static async saveCustomerRecord(customerData) {
+                try {
+                    if (!customerData.email || !EmailValidator.isValid(customerData.email)) {
+                        throw new Error('Valid email is required');
+                    }
+                    if (!customerData.businessName || customerData.businessName.trim().length === 0) {
+                        throw new Error('Business name is required');
+                    }
+                    if (!customerData.phone || customerData.phone.trim().length === 0) {
+                        throw new Error('Phone number is required');
+                    }
+                    if (!customerData.demoRequirements || customerData.demoRequirements.trim().length < 10) {
+                        throw new Error('Demo requirements must be at least 10 characters');
+                    }
+
+                    CustomerStorage.saveCustomerEmail(customerData.email);
+                    CustomerStorage.saveDemoStatus('pending');
+
+                    const apiResult = await this.saveCustomerToAPI(customerData);
+
+                    if (apiResult.success) {
+                        console.log('Customer saved successfully:', apiResult);
+                        return {
+                            success: true,
+                            message: apiResult.message,
+                            data: apiResult.data
+                        };
+                    } else {
+                        console.error('API save failed:', apiResult.message);
+                        return {
+                            success: false,
+                            message: 'Failed to save to server: ' + apiResult.message,
+                            localSaved: true
+                        };
+                    }
+                } catch (error) {
+                    console.error('Error saving customer record:', error);
+                    return {
+                        success: false,
+                        message: error.message,
+                        error: error
+                    };
+                }
+            }
+
+            static async saveCustomerToAPI(customerData) {
+                try {
+                    const params = new URLSearchParams({
+                        action: 'saveCustomer',
+                        email: customerData.email,
+                        businessName: customerData.businessName,
+                        phone: customerData.phone,
+                        demoRequirements: customerData.demoRequirements,
+                        address: customerData.address || ''
+                    });
+
+                    const url = `${GOOGLE_SCRIPT_URL}?${params.toString()}`;
+                    console.log('Saving customer via GET request:', url);
+                    console.log('Customer data being sent:', {
+                        email: customerData.email,
+                        businessName: customerData.businessName,
+                        phone: customerData.phone,
+                        demoRequirements: customerData.demoRequirements,
+                        address: customerData.address
+                    });
+
+                    const response = await fetch(url, {
+                        method: 'GET'
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+
+                    const result = await response.json();
+                    console.log('Save API Response:', result);
+                    return result;
+                } catch (error) {
+                    console.error('API save error:', error);
+                    throw new Error(`Failed to save customer: ${error.message}`);
+                }
+            }
+
+            static async refreshCustomerStatus(email = null) {
+                try {
+                    const customerEmail = email || CustomerStorage.getCustomerEmail();
+                    if (!customerEmail) {
+                        return { success: false, message: 'No customer email found' };
+                    }
+
+                    CustomerStorage.updateLastChecked();
+                    localStorage.removeItem(STORAGE_KEYS.DEMO_STATUS);
+
+                    const status = await this.checkCustomerStatus(customerEmail);
+
+                    return {
+                        success: true,
+                        message: 'Status refreshed successfully',
+                        data: status
+                    };
+                } catch (error) {
+                    console.error('Error refreshing customer status:', error);
+                    return {
+                        success: false,
+                        message: 'Failed to refresh status: ' + error.message
+                    };
+                }
+            }
+
+            static getCustomerJourneyStage(status) {
+                switch (status) {
+                    case 'new':
+                        return {
+                            stage: 'new_visitor',
+                            action: 'show_demo_form',
+                            message: 'Welcome! Please book your free demo to get started.'
+                        };
+                    case 'pending':
+                        return {
+                            stage: 'demo_pending',
+                            action: 'show_pending_message',
+                            message: 'Your demo is being prepared. We\'ll contact you within 2 business days.'
+                        };
+                    case 'done':
+                        return {
+                            stage: 'demo_completed',
+                            action: 'unlock_pricing',
+                            message: 'Welcome back! Your pricing options are now available.'
+                        };
+                    case 'error':
+                        return {
+                            stage: 'error_state',
+                            action: 'show_error_fallback',
+                            message: 'We\'re having trouble loading your information. Please try again or contact us.'
+                        };
+                    default:
+                        return {
+                            stage: 'unknown',
+                            action: 'show_demo_form',
+                            message: 'Welcome! Please book your free demo to get started.'
+                        };
+                }
+            }
+        }
+
+        // Poll for status changes from the server
+        let statusPollingInterval = null;
+        
+        function startStatusPolling() {
+            const email = CustomerStorage.getCustomerEmail();
+            if (!email) return;
+            
+            // Check for status changes every 10 seconds
+            statusPollingInterval = setInterval(async () => {
+                try {
+                    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzz8gB5HLbGgxFqhW_WJnFaAWMxWo77rf_nCE65VAIToPx-4LdVQkZa-GH1ZHSQyhh0/exec';
+                    const response = await fetch(`${SCRIPT_URL}?action=checkCustomer&email=${encodeURIComponent(email)}`);
+                    const result = await response.json();
+                    
+                    if (result.success && result.data && result.data.customer) {
+                        const serverStatus = result.data.customer.DemoStatus;
+                        const localStatus = CustomerStorage.getDemoStatus();
+                        
+                        // If status changed on server, update locally and refresh UI
+                        if (serverStatus !== localStatus) {
+                            console.log('Status changed from', localStatus, 'to', serverStatus);
+                            CustomerStorage.saveDemoStatus(serverStatus, result.data.customer.DemoLink);
+                            
+                            // Update UI based on new status
+                            if (serverStatus === 'done') {
+                                console.log('Status changed to done, showing demo link form...');
+                                
+                                // Show the demo link input form
+                                const demoSection = document.getElementById('demo-trial');
+                                if (demoSection) {
+                                    demoSection.style.display = 'block';
+                                    demoSection.classList.add('active');
+                                }
+                                
+                                // Show demo confirmation form with clear message
+                                showDemoLinkForm();
+                                
+                                // Show notification
+                                showCustomPopup('Demo Ready!', 'Your demo is ready! Check your email for the demo link and paste it below to unlock pricing.');
+                                
+                                // Stop polling once done
+                                clearInterval(statusPollingInterval);
+                            }
+                        }
+                    }
+                } catch (error) {
+                    console.error('Error polling for status changes:', error);
+                }
+            }, 10000); // Poll every 10 seconds
+        }
+        
+        function stopStatusPolling() {
+            if (statusPollingInterval) {
+                clearInterval(statusPollingInterval);
+                statusPollingInterval = null;
+            }
+        }
+
+        // Initialize customer tracking system
+        async function initializeCustomerTracking() {
+            console.log('Initializing customer tracking system...');
+
+            const email = CustomerStorage.getCustomerEmail();
+            const demoStatus = CustomerStorage.getDemoStatus();
+            
+            console.log('Retrieved email:', email);
+            console.log('Retrieved demoStatus:', demoStatus);
+            
+            if (email && email.trim().length > 0) {
+                console.log('Customer found in storage:', email, 'Status:', demoStatus);
+                showLogoutButton();
+                
+                // If demo is done, unlock pricing
+                if (demoStatus === 'done') {
+                    console.log('Demo status is done, unlocking pricing...');
+                    document.body.classList.remove('pricing-locked');
+                    
+                    // Hide demo trial section
+                    const demoSection = document.getElementById('demo-trial');
+                    if (demoSection) {
+                        demoSection.style.display = 'none';
+                    }
+                    
+                    // Show last active tab or default to website packages
+                    const savedTab = localStorage.getItem('activeTab') || 'website-packages';
+                    const tabButton = document.querySelector(`.pricing-nav__btn[data-target="${savedTab}"]`);
+                    if (tabButton) {
+                        tabButton.click();
+                    }
+                } else if (demoStatus === 'pending') {
+                    // If demo is pending, show the pending status message
+                    console.log('Demo status is pending, showing pending status message...');
+                    document.body.classList.add('pricing-locked');
+                    
+                    // Make sure demo section is visible
+                    const demoSection = document.getElementById('demo-trial');
+                    if (demoSection) {
+                        demoSection.style.display = 'block';
+                        demoSection.classList.add('active');
+                    }
+                    
+                    showDemoPendingMessage(email);
+                    
+                    // Start polling for status changes
+                    startStatusPolling();
+                } else {
+                    console.log('No valid demo status, showing login/demo options');
+                    document.body.classList.add('pricing-locked');
+                    showLoginOrDemoOptions();
+                }
+                return;
+            }
+
+            console.log('No email found in storage, showing login/demo options');
+            document.body.classList.add('pricing-locked');
+            showLoginOrDemoOptions();
+        }
+
+        // Simple initialization - show login/register buttons
+        document.addEventListener('DOMContentLoaded', function () {
+            // Don't call showLoginOrDemoOptions here - let initializeCustomerTracking handle it
+            // This was causing the logout issue on page refresh
+        });
+
+
+        // Show demo form state (default)
+        function showDemoFormState() {
+            console.log('Showing demo form state');
+
+            // Ensure the demo trial section is visible and active
+            const demoSection = document.getElementById('demo-trial');
+            demoSection.style.display = 'block';
+            demoSection.classList.add('active');
+
+            // Ensure pricing is locked
+            document.body.classList.add('pricing-locked');
+
+            const container = demoSection.querySelector('.container');
+
+            // Show the demo request form
+            container.innerHTML = `
+                <h2 class="section__title">Request a Free Demo</h2>
+                <p class="section__subtitle">Let us build a small-scale demo (1-2 pages) for you. If you're satisfied, we'll unlock the full pricing packages.</p>
+
+                <div class="demo-form-container" style="max-width: 700px; margin: 0 auto;">
+                    <form id="demo-request-form">
+                        <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600;">Your Information & Demo Details</h3>
+
+                        <div class="form-group">
+                            <label for="business-name">Business Name</label>
+                            <input type="text" id="business-name" name="business_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message" id="phone-error">Please enter a valid 10-digit phone number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address (Optional)</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="demo-requirements">Demo Requirements</label>
+                            <textarea id="demo-requirements" name="demo_requirements" required placeholder="Please be clear and specific. For example: 'I need a Home page that shows my services and a Contact Us page with a form.' (1-2 pages only for the demo)"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file-upload">Attach Files (Optional, Max 50kb)</label>
+                            <input type="file" id="file-upload" name="file_upload">
+                            <small style="color: #6b7280; font-size: 0.875rem; margin-top: 5px; display: block;">You can attach mockups, documents, or reference images.</small>
+                        </div>
+
+                        <div class="form-navigation">
+                            <button type="submit" class="btn--form btn--submit" id="submit-btn" style="width: 100%;">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+
+                <p style="text-align: center; margin-top: 30px;">
+                    <a href="#" onclick="showLoginOrDemoOptions(); return false;" style="color: #2563eb;">Back to Options</a>
+                </p>
+            `;
+
+            // Attach form event listener
+            const form = document.getElementById('demo-request-form');
+            const submitBtn = document.getElementById('submit-btn');
+
+            if (form && submitBtn) {
+                form.addEventListener('submit', async function (event) {
+                    event.preventDefault();
+
+                    if (!validateForm()) {
+                        return;
+                    }
+
+                    const fileInput = document.getElementById('file-upload');
+                    const file = fileInput.files[0];
+
+                    if (file) {
+                        const maxSizeInBytes = 2 * 1024 * 1024;
+                        if (file.size > maxSizeInBytes) {
+                            alert('The selected file is too large. Please upload a file smaller than 2MB.');
+                            return;
+                        }
+                    }
+
+                    submitBtn.innerHTML = '<span class="form-loading"></span>Processing...';
+                    submitBtn.disabled = true;
+
+                    try {
+                        const customerData = {
+                            email: document.getElementById('email').value,
+                            businessName: document.getElementById('business-name').value,
+                            phone: document.getElementById('phone').value,
+                            address: document.getElementById('address').value || '',
+                            demoRequirements: document.getElementById('demo-requirements').value
+                        };
+
+                        console.log('Saving customer to tracking system...', customerData);
+                        const trackingResult = await CustomerStatusManager.saveCustomerRecord(customerData);
+
+                        console.log('Tracking result:', trackingResult);
+
+                        // Send confirmation email
+                        console.log('Sending confirmation email...');
+                        await sendDemoRequestEmail(customerData);
+
+                        // Show success popup
+                        showSuccessPopup(customerData.email, trackingResult.data?.placeholder || 'demo-pending');
+
+                    } catch (error) {
+                        console.error('Error submitting form:', error);
+                        alert('There was an error submitting your request. Please try again.');
+                    } finally {
+                        submitBtn.innerHTML = 'Submit Request';
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+        }
+
+        // Show demo pending state
+        function showDemoPendingState(email) {
+            const demoSection = document.getElementById('demo-trial');
+            const container = demoSection.querySelector('.container');
+
+            container.innerHTML = `
+                <h2 class="section__title">Demo In Progress</h2>
+                <p class="section__subtitle">Your personalized demo is being prepared!</p>
+                
+                <div style="max-width: 600px; margin: 0 auto; background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center;">
+                    <div style="background: #f0f9ff; border: 2px solid #0ea5e9; border-radius: 12px; padding: 30px; margin-bottom: 30px;">
+                        <i class="fas fa-clock" style="font-size: 3rem; color: #0ea5e9; margin-bottom: 20px;"></i>
+                        <h3 style="color: #0ea5e9; margin-bottom: 15px;">Demo Status: In Progress</h3>
+                        <p style="color: #374151; margin-bottom: 0;">We're building your personalized demo and will contact you at <strong>${email}</strong> within 2 business days.</p>
+                    </div>
+                    
+                    <div style="background: #f8fafc; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+                        <h4 style="color: #374151; margin-bottom: 10px;">What happens next?</h4>
+                        <ul style="text-align: left; color: #6b7280; list-style: none; padding: 0;">
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 8px;"></i> Our team creates your custom demo</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 8px;"></i> You receive an email with your demo link</li>
+                            <li style="margin-bottom: 8px;"><i class="fas fa-check" style="color: #10b981; margin-right: 8px;"></i> Review your demo and unlock full pricing</li>
+                        </ul>
+                    </div>
+                    
+                    <button onclick="refreshDemoStatus()" style="background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; margin-right: 10px;">
+                        <i class="fas fa-refresh"></i> Check Status
+                    </button>
+                    
+                    <button onclick="contactSupport()" style="background: #6b7280; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer;">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </button>
+                </div>
+            `;
+
+            // Keep pricing locked
+            document.body.classList.add('pricing-locked');
+        }
+
+        // Unlock pricing for returning customer
+        function unlockPricingForReturningCustomer(email, demoLink) {
+            console.log('Unlocking pricing for returning customer:', email);
+
+            // Show logout button
+            showLogoutButton();
+
+            // Remove pricing lock
+            document.body.classList.remove('pricing-locked');
+
+            // Hide demo trial section
+            document.getElementById('demo-trial').style.display = 'none';
+
+            // Show welcome message
+            const heroSection = document.querySelector('.hero');
+            const subtitle = heroSection.querySelector('.hero__subtitle');
+            if (subtitle) {
+                subtitle.innerHTML = `Welcome back! Your pricing options are now available. <br><small style="opacity: 0.8;">Demo completed for: ${email}</small>`;
+            }
+
+            // Auto-navigate to website packages
+            const websitePackagesButton = document.querySelector('.pricing-nav__btn[data-target="website-packages"]');
+            if (websitePackagesButton) {
+                websitePackagesButton.click();
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Refresh demo status function
+        async function refreshDemoStatus() {
+            try {
+                showLoadingState('Checking latest demo status...');
+
+                const email = CustomerStorage.getCustomerEmail();
+                if (!email) {
+                    alert('No customer email found. Please refresh the page and try again.');
+                    return;
+                }
+
+                // Use our force refresh function to get latest status
+                const result = await forceRefreshCustomerStatus(email);
+
+                if (result.status === 'done') {
+                    unlockPricingForReturningCustomer(email, result.demoLink);
+                } else {
+                    // Still pending, refresh the pending state
+                    showDemoPendingState(email);
+                }
+            } catch (error) {
+                console.error('Error refreshing demo status:', error);
+                alert('Unable to check demo status. Please try again later or contact support.');
+            }
+        }
+
+        // Contact support function
+        function contactSupport() {
+            window.location.href = 'mailto:hello@codeserve.com?subject=Demo Status Inquiry&body=Hi, I submitted a demo request and would like to check on the status.';
+        }
+
+        // Show demo pending message
+        function showDemoPendingMessage(email) {
+            const demoSection = document.getElementById('demo-trial');
+            const container = demoSection.querySelector('.container');
+
+            container.innerHTML = `
+                <h2 class="section__title">Demo Status: In Progress</h2>
+                <p class="section__subtitle">Your personalized demo is being prepared</p>
+
+                <div class="demo-confirmation-container" style="max-width: 700px; margin: 0 auto;">
+                    <div style="background: linear-gradient(135deg, #0ea5e9, #0ea5e9); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <i class="fas fa-clock" style="font-size: 2.5rem; color: white;"></i>
+                    </div>
+                    
+                    <h3 style="font-size: 1.8rem; font-weight: 700; color: #0ea5e9; margin-bottom: 15px;">Demo Status: In Progress</h3>
+                    
+                    <p style="font-size: 1.1rem; color: #6b7280; line-height: 1.6; margin-bottom: 30px;">
+                        We're building your personalized demo and will contact you at <strong>${email}</strong> within <strong>2 business days</strong>.
+                    </p>
+                    
+                    <div style="background: #f0f9ff; border: 2px solid #0ea5e9; border-radius: 12px; padding: 25px; margin-bottom: 30px; text-align: left;">
+                        <h4 style="color: #0ea5e9; margin-bottom: 15px; font-weight: 600;">What happens next?</h4>
+                        <ul style="list-style: none; padding: 0; color: #374151;">
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>Our team creates your custom demo</li>
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>You receive an email with your demo link</li>
+                            <li style="margin-bottom: 12px;"><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>Review the demo and paste the link here</li>
+                            <li><i class="fas fa-check" style="color: #10b981; margin-right: 10px;"></i>Unlock full pricing and start collaborating</li>
+                        </ul>
+                    </div>
+                    
+                    <p style="font-size: 0.95rem; color: #9ca3af; font-style: italic;">
+                        This page will automatically update when your demo is ready. You can close this tab and we'll send you an email notification.
+                    </p>
+                </div>
+            `;
+        }
+
+        // Show professional success popup - MOVED OUTSIDE DOMContentLoaded
+        function showSuccessPopup(email, demoPlaceholder) {
+            const overlay = document.getElementById('success-popup-overlay');
+            const emailElement = document.getElementById('success-popup-email');
+
+            // Set the email and demo placeholder in the popup
+            emailElement.innerHTML = `
+                <i class="fas fa-envelope" style="margin-right: 8px;"></i>Confirmation sent to: <strong>${email}</strong><br>
+                <span style="font-size: 0.9rem; margin-top: 10px; display: block;">Your Demo ID: <strong style="color: #2563eb;">${demoPlaceholder}</strong></span>
+            `;
+
+            // Show the popup
+            overlay.style.display = 'flex';
+
+            // Add body scroll lock
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close success popup - Global function
+        window.closeSuccessPopup = function () {
+            const overlay = document.getElementById('success-popup-overlay');
+            overlay.style.display = 'none';
+
+            // Remove body scroll lock
+            document.body.style.overflow = 'auto';
+
+            // Show logout button after registration
+            showLogoutButton();
+
+            // Show demo confirmation form with demo link input
+            showDemoConfirmationForm();
+        }
+
+        // Show demo link form when demo is ready
+        function showDemoLinkForm() {
+            const demoSection = document.getElementById('demo-trial');
+            const container = demoSection.querySelector('.container');
+            const email = CustomerStorage.getCustomerEmail();
+
+            container.innerHTML = `
+                <h2 class="section__title">Your Demo is Ready!</h2>
+                <p class="section__subtitle">Paste the demo link from your email to unlock pricing</p>
+
+                <div class="demo-confirmation-container" style="max-width: 700px; margin: 0 auto;">
+                    <div style="background: linear-gradient(135deg, #10b981, #10b981); border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                        <i class="fas fa-check-circle" style="font-size: 2.5rem; color: white;"></i>
+                    </div>
+                    
+                    <h3 style="font-size: 1.8rem; font-weight: 700; color: #10b981; margin-bottom: 15px;">Demo Ready for Review</h3>
+                    
+                    <p style="font-size: 1.1rem; color: #6b7280; line-height: 1.6; margin-bottom: 30px;">
+                        We've sent your personalized demo link to <strong>${email}</strong>. Check your email and paste the link below to unlock our full pricing.
+                    </p>
+                    
+                    <div style="background: #f0f9ff; border: 2px solid #0ea5e9; border-radius: 12px; padding: 20px; margin-bottom: 30px;">
+                        <p style="color: #0ea5e9; margin: 0;">
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+                            <strong>Check your email:</strong> Look for a message from us with your demo link
+                        </p>
+                    </div>
+                    
+                    <div class="form-group" style="text-align: left; max-width: 400px; margin: 30px auto 20px;">
+                        <label for="demo-link-input" style="text-align: center; margin-bottom: 10px; display: block; font-weight: 600;">Paste Your Demo Link Here</label>
+                        <input type="text" id="demo-link-input" name="demo_link" placeholder="https://demo.netlify.com" required style="width: 100%; padding: 14px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem;">
+                        <small style="color: #6b7280; font-size: 0.875rem; margin-top: 8px; display: block;">Example: https://demo.netlify.com or https://demo1.netlify.com</small>
+                    </div>
+                    <button class="btn--form btn--unlock" id="unlock-btn" onclick="unlockPricing()" disabled style="width: 100%; background: #10b981; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 1.1rem; font-weight: 600; cursor: not-allowed;">I'm Satisfied, Unlock Pricing!</button>
+                </div>
+            `;
+
+            // Add event listener to enable unlock button only when valid demo link is entered
+            const demoLinkInput = document.getElementById('demo-link-input');
+            const unlockBtn = document.getElementById('unlock-btn');
+
+            if (demoLinkInput && unlockBtn) {
+                demoLinkInput.addEventListener('input', function () {
+                    const enteredLink = this.value.trim();
+                    // Validate demo link format: https://demo.netlify.com, https://demo1.netlify.com, etc.
+                    const isValidDemoLink = /^https:\/\/demo\d*\.netlify\.com$/.test(enteredLink);
+
+                    if (isValidDemoLink) {
+                        unlockBtn.disabled = false;
+                        unlockBtn.style.cursor = 'pointer';
+                        unlockBtn.style.background = '#10b981';
+                    } else {
+                        unlockBtn.disabled = true;
+                        unlockBtn.style.cursor = 'not-allowed';
+                        unlockBtn.style.background = '#9ca3af';
+                    }
+                });
+            }
+        }
+
+        // Show demo confirmation form after popup closes
+        function showDemoConfirmationForm() {
+            const demoSection = document.getElementById('demo-trial');
+            const container = demoSection.querySelector('.container');
+
+            // Get email from localStorage
+            const email = CustomerStorage.getCustomerEmail();
+
+            container.innerHTML = `
+                <h2 class="section__title">Enter Your Demo Link</h2>
+                <p class="section__subtitle">Paste the demo link we sent to your email to unlock pricing</p>
+
+                <div class="demo-confirmation-container" style="max-width: 700px; margin: 0 auto;">
+                    <h3><i class="fas fa-check-circle"></i> Request Received!</h3>
+                    <p>Your personalized demo will be ready within <strong>2 business days</strong>. We will contact you via email with a private link. Once you have reviewed the demo, please paste the link below to unlock our pricing and let's collaborate!</p>
+                    
+                    <div style="background: #f0f9ff; border: 2px solid #0ea5e9; border-radius: 12px; padding: 20px; margin: 20px 0;">
+                        <p style="color: #0ea5e9; margin: 0;">
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i>
+                            Confirmation sent to: <strong>${email}</strong>
+                        </p>
+                    </div>
+                    
+                    <div class="form-group" style="text-align: left; max-width: 400px; margin: 30px auto 20px;">
+                        <label for="demo-link-input" style="text-align: center; margin-bottom: 10px; display: block; font-weight: 600;">Enter Demo Link to Proceed</label>
+                        <input type="text" id="demo-link-input" name="demo_link" placeholder="https://demo.netlify.app" required style="width: 100%; padding: 14px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem;">
+                    </div>
+                    <button class="btn--form btn--unlock" id="unlock-btn" onclick="unlockPricing()" disabled style="width: 100%; background: #10b981; color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 1.1rem; font-weight: 600; cursor: not-allowed;">I'm Satisfied, Unlock Pricing!</button>
+                </div>
+            `;
+
+            // Add event listener to enable unlock button only when valid demo link is entered
+            const demoLinkInput = document.getElementById('demo-link-input');
+            const unlockBtn = document.getElementById('unlock-btn');
+
+            if (demoLinkInput && unlockBtn) {
+                demoLinkInput.addEventListener('input', function () {
+                    const enteredLink = this.value.trim();
+                    // Validate demo link format: https://demo.netlify.com, https://demo1.netlify.com, etc.
+                    const isValidDemoLink = /^https:\/\/demo\d*\.netlify\.com$/.test(enteredLink);
+
+                    if (isValidDemoLink) {
+                        unlockBtn.disabled = false;
+                        unlockBtn.style.cursor = 'pointer';
+                        unlockBtn.style.background = '#10b981';
+                    } else {
+                        unlockBtn.disabled = true;
+                        unlockBtn.style.cursor = 'not-allowed';
+                        unlockBtn.style.background = '#9ca3af';
+                    }
+                });
+            }
+        }
+
+        // ===== KEYBOARD SHORTCUTS =====
+        document.addEventListener('keydown', function(event) {
+            // Escape key - close popups
+            if (event.key === 'Escape') {
+                var overlay = document.getElementById('success-popup-overlay');
+                if (overlay && overlay.style.display === 'flex') {
+                    window.closeSuccessPopup();
+                }
+            }
+            
+            // Alt+L - Logout
+            if (event.altKey && event.key === 'l') {
+                event.preventDefault();
+                var logoutBtn = document.getElementById('logout-btn');
+                if (logoutBtn && logoutBtn.style.display !== 'none') {
+                    handleLogout();
+                }
+            }
+            
+            // Alt+1 to Alt+5 - Tab navigation between pricing tabs
+            if (event.altKey && event.key >= '1' && event.key <= '5') {
+                event.preventDefault();
+                var navButtons = document.querySelectorAll('.pricing-nav__btn');
+                var tabIndex = parseInt(event.key) - 1;
+                if (navButtons[tabIndex]) {
+                    navButtons[tabIndex].click();
+                }
+            }
+            
+            // Alt+H - Go to hero section
+            if (event.altKey && event.key === 'h') {
+                event.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+            
+            // Enter key - submit forms
+            if (event.key === 'Enter') {
+                var activeElement = document.activeElement;
+                
+                // Submit demo form
+                if (activeElement && activeElement.id === 'demo-requirements') {
+                    var submitBtn = document.getElementById('submit-btn');
+                    if (submitBtn && !submitBtn.disabled) {
+                        submitBtn.click();
+                    }
+                }
+                
+                // Submit login form
+                if (activeElement && (activeElement.id === 'login-email' || activeElement.id === 'login-phone')) {
+                    var loginBtn = document.querySelector('button[onclick="attemptCustomerLogin();"]');
+                    if (loginBtn && !loginBtn.disabled) {
+                        loginBtn.click();
+                    }
+                }
+                
+                // Unlock pricing
+                if (activeElement && activeElement.id === 'demo-link-input') {
+                    var unlockBtn = document.getElementById('unlock-btn');
+                    if (unlockBtn && !unlockBtn.disabled) {
+                        unlockBtn.click();
+                    }
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', async function () {
+            console.log('DOMContentLoaded event fired');
+            
+            // Initialize customer tracking system (always show login/register buttons)
+            console.log('Calling initializeCustomerTracking...');
+            await initializeCustomerTracking();
+            console.log('initializeCustomerTracking completed');
+
+            const navButtons = document.querySelectorAll('.pricing-nav__btn');
+            const pricingSections = document.querySelectorAll('.pricing-section');
+            
+            console.log('Found', navButtons.length, 'nav buttons and', pricingSections.length, 'pricing sections');
+
+            // Navigation Logic
+            navButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const targetId = this.getAttribute('data-target');
+
+                    navButtons.forEach(btn => btn.classList.remove('active'));
+                    pricingSections.forEach(section => section.classList.remove('active'));
+
+                    this.classList.add('active');
+
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    }
+                    
+                    // Save active tab to localStorage
+                    localStorage.setItem('activeTab', targetId);
+                });
+            });
+            
+            // Restore active tab from localStorage
+            const savedTab = localStorage.getItem('activeTab');
+            if (savedTab) {
+                const savedButton = document.querySelector(`.pricing-nav__btn[data-target="${savedTab}"]`);
+                if (savedButton) {
+                    savedButton.click();
+                }
+            }
+
+            // Form event listeners are now attached dynamically in showDemoFormState() function
+
+            // Close popup when clicking outside
+            document.addEventListener('DOMContentLoaded', function () {
+                const overlay = document.getElementById('success-popup-overlay');
+                if (overlay) {
+                    overlay.addEventListener('click', function (e) {
+                        if (e.target === this) {
+                            window.closeSuccessPopup();
+                        }
+                    });
+                }
+            });
+
+            // Handle submission errors
+            function handleSubmissionError(error) {
+                console.error('Submission error:', error);
+
+                let errorMessage = 'An error occurred while submitting your request. ';
+
+                if (!navigator.onLine) {
+                    errorMessage += 'Please check your internet connection and try again.';
+                } else if (error.message.includes('EmailJS')) {
+                    errorMessage += 'Email service is temporarily unavailable. Your data has been saved and we will contact you soon.';
+                } else if (error.message.includes('Google')) {
+                    errorMessage += 'Database service is temporarily unavailable. Please try again in a few minutes.';
+                } else {
+                    errorMessage += 'Please try again or contact us directly if the problem persists.';
+                }
+
+                // Show error in a more professional way
+                showErrorPopup(errorMessage, error.message);
+
+                // Reset button state
+                submitBtn.textContent = 'Submit Request';
+                submitBtn.disabled = false;
+            }
+
+            // Show error popup (you can create this similar to success popup)
+            function showErrorPopup(message, details) {
+                // For now, use alert but you can create a professional error popup later
+                alert(message + '\n\nTechnical details: ' + details);
+            }
+
+            // Test Google Apps Script connection (for debugging)
+            async function testGoogleScript() {
+                try {
+                    console.log('Testing Google Apps Script connection...');
+
+                    // Test with a simple GET request
+                    const testUrl = 'https://script.google.com/macros/s/AKfycbzz8gB5HLbGgxFqhW_WJnFaAWMxWo77rf_nCE65VAIToPx-4LdVQkZa-GH1ZHSQyhh0/exec?action=healthCheck&test=true';
+                    console.log('Testing URL:', testUrl);
+
+                    const response = await fetch(testUrl, {
+                        method: 'GET',
+                        mode: 'cors'
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+
+                    const result = await response.json();
+                    console.log('Google Apps Script test result:', result);
+
+                    if (result.success) {
+                        return { success: true, message: 'Connection successful', data: result };
+                    } else {
+                        return { success: false, message: result.message || 'Unknown error' };
+                    }
+                } catch (error) {
+                    console.error('Google Apps Script test failed:', error);
+
+                    // If CORS error, provide helpful message
+                    if (error.message.includes('CORS') || error.message.includes('fetch')) {
+                        return {
+                            success: false,
+                            error: 'CORS or network error - check Google Apps Script deployment settings',
+                            details: error.message
+                        };
+                    }
+
+                    return { success: false, error: error.message };
+                }
+            }
+
+            // Run test on page load (for debugging)
+            window.addEventListener('load', function () {
+                // Test Google Apps Script connection automatically
+                console.log('Testing Google Apps Script connection...');
+                testGoogleScript().then(result => {
+                    if (result.success) {
+                        console.log('✅ Google Apps Script is working correctly');
+                    } else {
+                        console.error('❌ Google Apps Script connection failed:', result);
+                    }
+                });
+            });
+
+            // Monthly/Annual Toggle Logic
+            const toggle = document.getElementById('annual-toggle');
+            if (toggle) {
+                toggle.addEventListener('change', function () {
+                    const isAnnual = this.checked;
+                    const monthlyPrices = document.querySelectorAll('.monthly-price');
+                    const annualPrices = document.querySelectorAll('.annual-price');
+                    const monthlyPeriods = document.querySelectorAll('.monthly-period');
+                    const annualPeriods = document.querySelectorAll('.annual-period');
+
+                    if (isAnnual) {
+                        monthlyPrices.forEach(p => p.style.display = 'none');
+                        annualPrices.forEach(p => p.style.display = 'inline-block');
+                        monthlyPeriods.forEach(p => p.style.display = 'none');
+                        annualPeriods.forEach(p => p.style.display = 'inline-block');
+                    } else {
+                        monthlyPrices.forEach(p => p.style.display = 'inline-block');
+                        annualPrices.forEach(p => p.style.display = 'none');
+                        monthlyPeriods.forEach(p => p.style.display = 'inline-block');
+                        annualPeriods.forEach(p => p.style.display = 'none');
+                    }
+                });
+            }
+
+            // --- Logic for Demo Link Verification ---
+            const demoLinkInput = document.getElementById('demo-link-input');
+            const unlockButton = document.getElementById('unlock-btn');
+
+            if (demoLinkInput && unlockButton) {
+                demoLinkInput.addEventListener('input', function () {
+                    const enteredLink = this.value.trim();
+                    // Accept any demo link format: https://demo.netlify.com, https://demo1.netlify.com, etc.
+                    const isValidDemoLink = /^https:\/\/demo\d*\.netlify\.com$/.test(enteredLink);
+                    unlockButton.disabled = !isValidDemoLink;
+                });
+            }
+        });
+
+        // Force refresh customer status from API (bypass cache)
+        async function forceRefreshCustomerStatus(email) {
+            try {
+                console.log('Force refreshing customer status from API...');
+
+                // Clear cache first
+                localStorage.removeItem('lastChecked');
+                localStorage.removeItem('demoStatus');
+
+                // Fetch fresh data from API
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzz8gB5HLbGgxFqhW_WJnFaAWMxWo77rf_nCE65VAIToPx-4LdVQkZa-GH1ZHSQyhh0/exec';
+                const response = await fetch(`${SCRIPT_URL}?action=checkCustomer&email=${encodeURIComponent(email)}`);
+                const result = await response.json();
+
+                console.log('Fresh API result:', result);
+
+                if (result.success && result.data.exists) {
+                    // Update localStorage with fresh data
+                    CustomerStorage.saveDemoStatus(
+                        result.data.customer.DemoStatus,
+                        result.data.customer.DemoLink || ''
+                    );
+
+                    return {
+                        exists: true,
+                        status: result.data.customer.DemoStatus,
+                        demoLink: result.data.customer.DemoLink,
+                        source: 'fresh_api'
+                    };
+                }
+
+                return { exists: false, status: 'new' };
+            } catch (error) {
+                console.error('Error force refreshing status:', error);
+                return { exists: false, status: 'error' };
+            }
+        }
+
+        // Flag to prevent multiple login attempts
+        var isLoginInProgress = false;
+
+        // Customer Login Function - Email and Phone Based
+        async function attemptCustomerLogin() {
+            // Prevent multiple clicks
+            if (isLoginInProgress) {
+                console.log('Login already in progress, ignoring duplicate click');
+                return;
+            }
+
+            const email = document.getElementById('login-email').value.trim();
+            const phone = document.getElementById('login-phone').value.trim();
+
+            if (!email) {
+                showCustomPopup('Email Required', 'Please enter your email address to login.', 'error');
+                return;
+            }
+
+            if (!phone) {
+                showCustomPopup('Phone Required', 'Please enter your mobile number to login.', 'error');
+                return;
+            }
+
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showCustomPopup('Invalid Email', 'Please enter a valid email address.', 'error');
+                return;
+            }
+
+            // Validate phone format (10 digits)
+            const phoneRegex = /^\d{10}$/;
+            const phoneDigitsOnly = phone.replace(/\D/g, '');
+            if (!phoneRegex.test(phoneDigitsOnly)) {
+                showCustomPopup('Invalid Phone', 'Please enter a valid 10-digit mobile number.', 'error');
+                return;
+            }
+
+            // Set loading state
+            isLoginInProgress = true;
+            const loginBtn = document.querySelector('button[onclick="attemptCustomerLogin();"]');
+            const originalBtnText = loginBtn ? loginBtn.innerHTML : 'Login & Access Pricing';
+            if (loginBtn) {
+                loginBtn.innerHTML = '<span class="form-loading"></span>Logging in...';
+                loginBtn.disabled = true;
+            }
+
+            try {
+                console.log('Attempting customer login with email:', email, 'and phone:', phone);
+
+                // Call Google Apps Script to verify customer
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzz8gB5HLbGgxFqhW_WJnFaAWMxWo77rf_nCE65VAIToPx-4LdVQkZa-GH1ZHSQyhh0/exec';
+                const params = new URLSearchParams({
+                    action: 'checkCustomer',
+                    email: email,
+                    phone: phoneDigitsOnly
+                });
+
+                console.log('Fetching from:', `${SCRIPT_URL}?${params.toString()}`);
+
+                const response = await fetch(`${SCRIPT_URL}?${params.toString()}`);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+
+                console.log('Login result:', result);
+
+                if (result.success && result.exists && result.data && result.data.customer) {
+                    const customer = result.data.customer;
+                    console.log('Customer found:', customer);
+
+                    // Save customer data to localStorage
+                    CustomerStorage.saveCustomerEmail(customer.Email);
+                    CustomerStorage.saveDemoStatus(customer.DemoStatus, customer.DemoLink);
+
+                    // Show logout button
+                    showLogoutButton();
+
+                    // Check if customer has completed demo
+                    if (customer.DemoStatus === 'done') {
+                        showCustomPopup('Welcome Back!', 'Unlocking your pricing...');
+                        setTimeout(() => {
+                            unlockPricingForReturningCustomer(customer.Email, customer.DemoLink);
+                        }, 1500);
+                    } else {
+                        showCustomPopup('Welcome Back!', 'Your demo is still in progress.');
+                        setTimeout(() => {
+                            showDemoPendingState(customer.Email);
+                        }, 1500);
+                    }
+                } else {
+                    console.log('Customer not found or API error:', result);
+                    if (result.success && !result.exists) {
+                        showCustomPopup('Login Failed', result.message || 'Email or phone number not found. Please register for a demo first.', 'error');
+                    } else {
+                        showCustomPopup('Login Failed', 'Login failed. Please try again.', 'error');
+                    }
+                }
+
+            } catch (error) {
+                console.error('Login error:', error);
+                console.error('Error details:', error.message);
+                showCustomPopup('Login Error', 'Login failed: ' + error.message + '. Please try again or register for a demo.', 'error');
+            } finally {
+                // Reset loading state
+                isLoginInProgress = false;
+                const loginBtn = document.querySelector('button[onclick="attemptCustomerLogin();"]');
+                if (loginBtn) {
+                    loginBtn.innerHTML = originalBtnText;
+                    loginBtn.disabled = false;
+                }
+            }
+        }
+
+        // Show login form for returning customers
+        function showCustomerLoginForm() {
+            console.log('Showing customer login form...');
+
+            // Ensure demo section is visible
+            const demoSection = document.getElementById('demo-trial');
+            if (demoSection) {
+                demoSection.style.display = 'block';
+                demoSection.classList.add('active');
+            }
+
+            const container = demoSection.querySelector('.container');
+
+            // Show the login form
+            container.innerHTML = `
+                <h2 class="section__title">Welcome Back!</h2>
+                <p class="section__subtitle">Login with your email to access pricing</p>
+
+                <div class="demo-form-container" style="max-width: 500px; margin: 0 auto;">
+                    <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600;">Login to Your Account</h3>
+
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" name="login_email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-phone">Mobile Number</label>
+                        <input type="tel" id="login-phone" name="login_phone" placeholder="Enter your mobile number" required>
+                        <div class="error-message" id="phone-error">Please enter a valid 10-digit phone number.</div>
+                    </div>
+
+                    <div class="form-navigation">
+                        <button type="button" class="btn--form btn--submit" onclick="attemptCustomerLogin();" style="width: 100%;">Login & Access Pricing</button>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 20px;">
+                        <a href="#" onclick="showLoginOrDemoOptions(); return false;" style="color: #2563eb;">Back to Options</a>
+                    </p>
+                </div>
+            `;
+        }
+
+        // ===== EMAIL FUNCTIONS =====
+        
+        // Send demo request confirmation email
+        async function sendDemoRequestEmail(customerData) {
+            try {
+                console.log('=== SENDING DEMO REQUEST EMAIL ===');
+                console.log('Service ID:', EMAILJS_SERVICE_ID);
+                console.log('Template ID:', EMAILJS_TEMPLATE_ID);
+                console.log('Public Key:', EMAILJS_PUBLIC_KEY);
+                
+                if (!EMAILJS_SERVICE_ID || EMAILJS_SERVICE_ID.includes('xxxxxxx')) {
+                    console.warn('EmailJS not configured. Skipping email.');
+                    return { success: false, message: 'Email service not configured' };
+                }
+
+                const templateParams = {
+                    to_email: customerData.email,
+                    customer_name: customerData.businessName,
+                    customer_email: customerData.email,
+                    customer_phone: customerData.phone,
+                    demo_requirements: customerData.demoRequirements
+                };
+
+                console.log('Template params:', templateParams);
+                console.log('Calling emailjs.send...');
+                
+                const response = await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_REQUEST, templateParams);
+                console.log('✅ Demo request email sent successfully:', response);
+                return { success: true, message: 'Confirmation email sent' };
+            } catch (error) {
+                console.error('❌ Error sending demo request email:', error);
+                console.error('Error message:', error.message);
+                console.error('Error status:', error.status);
+                return { success: false, message: 'Failed to send email: ' + error.message };
+            }
+        }
+
+        // Send demo ready notification email
+        async function sendDemoReadyEmail(email, demoLink) {
+            try {
+                if (!EMAILJS_SERVICE_ID || EMAILJS_SERVICE_ID.includes('xxxxxxx')) {
+                    console.warn('EmailJS not configured. Skipping email.');
+                    return { success: false, message: 'Email service not configured' };
+                }
+
+                const templateParams = {
+                    to_email: email,
+                    demo_link: demoLink,
+                    subject: 'Your Demo is Ready - Code.Serve'
+                };
+
+                const response = await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID_READY, templateParams);
+                console.log('Demo ready email sent successfully:', response);
+                return { success: true, message: 'Demo ready email sent' };
+            } catch (error) {
+                console.error('Error sending demo ready email:', error);
+                return { success: false, message: 'Failed to send email: ' + error.message };
+            }
+        }
+
+        // Show login/demo options for first-time visitors
+        function showLoginOrDemoOptions() {
+            console.log('Showing login/demo options...');
+            const demoSection = document.getElementById('demo-trial');
+
+            if (!demoSection) {
+                console.error('demo-trial section not found');
+                return;
+            }
+
+            // Show demo section
+            demoSection.style.display = 'block';
+            demoSection.classList.add('active');
+
+            const container = demoSection.querySelector('.container');
+
+            if (!container) {
+                console.error('container not found in demo-trial');
+                return;
+            }
+
+            // Completely clear the container
+            container.innerHTML = '';
+
+            // Add the login/demo options
+            container.innerHTML = `
+                <h2 class="section__title">Welcome to Code.Serve</h2>
+                <p class="section__subtitle">Choose an option to continue</p>
+                
+                <div style="max-width: 600px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px;">
+                    <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #2563eb;">
+                        <i class="fas fa-sign-in-alt" style="font-size: 3rem; color: #2563eb; margin-bottom: 20px;"></i>
+                        <h3 style="color: #2563eb; margin-bottom: 15px;">Login</h3>
+                        <p style="color: #6b7280; margin-bottom: 25px;">Already have an account? Login with your email to access pricing.</p>
+                        <button onclick="showCustomerLoginForm();" style="background: #2563eb; color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: 600; width: 100%;">
+                            Login Here
+                        </button>
+                    </div>
+                    
+                    <div style="background: white; padding: 40px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); text-align: center; border: 2px solid #10b981;">
+                        <i class="fas fa-user-plus" style="font-size: 3rem; color: #10b981; margin-bottom: 20px;"></i>
+                        <h3 style="color: #10b981; margin-bottom: 15px;">Register</h3>
+                        <p style="color: #6b7280; margin-bottom: 25px;">New here? Register and request your free personalized demo.</p>
+                        <button onclick="showDemoFormState();" style="background: #10b981; color: white; border: none; padding: 15px 30px; border-radius: 8px; cursor: pointer; font-weight: 600; width: 100%;">
+                            Register Now
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            console.log('Login/demo options displayed successfully');
+        }
+
+        // Recreate original forms if they were replaced
+        function recreateOriginalForms() {
+            console.log('Recreating original forms...');
+
+            const demoSection = document.getElementById('demo-trial');
+            const container = demoSection.querySelector('.container');
+
+            container.innerHTML = `
+                <h2 class="section__title">Request a Free Demo</h2>
+                <p class="section__subtitle">Let us build a small-scale demo (1-2 pages) for you. If you're satisfied, we'll unlock the full pricing packages.</p>
+
+                <!-- Login Form for Returning Customers -->
+                <div class="demo-form-container" id="customer-login-form" style="display: none;">
+                    <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600;">Welcome Back!</h3>
+                    <p style="text-align: center; margin-bottom: 30px; color: #6b7280;">Login with your email and phone number to access pricing</p>
+                    
+                    <div class="form-group">
+                        <label for="login-email">Email Address</label>
+                        <input type="email" id="login-email" name="login_email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="login-phone">Mobile Number</label>
+                        <input type="tel" id="login-phone" name="login_phone" placeholder="Enter your mobile number" required>
+                    </div>
+                    
+                    <div class="form-navigation">
+                        <button type="button" class="btn--form btn--submit" onclick="attemptCustomerLogin();">Login & Access Pricing</button>
+                    </div>
+                    
+                    <p style="text-align: center; margin-top: 20px;">
+                        <a href="#" onclick="showDemoFormState(); return false;" style="color: #2563eb;">New customer? Register here</a>
+                    </p>
+                </div>
+
+                <!-- Demo Request Form -->
+                <div class="demo-form-container" id="demo-request-container">
+                    <form id="demo-request-form">
+                        <h3 style="text-align: center; margin-bottom: 25px; font-weight: 600;">Your Information & Demo Details</h3>
+
+                        <!-- Contact Information -->
+                        <div class="form-group">
+                            <label for="business-name">Business Name</label>
+                            <input type="text" id="business-name" name="business_name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message" id="email-error">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message" id="phone-error">Please enter a valid 10-digit phone number.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Full Address (Optional)</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+
+                        <!-- Demo Requirements -->
+                        <div class="form-group">
+                            <label for="demo-requirements">Demo Requirements</label>
+                            <textarea id="demo-requirements" name="demo_requirements" required placeholder="Please be clear and specific. For example: 'I need a Home page that shows my services and a Contact Us page with a form.' (1-2 pages only for the demo)"></textarea>
+                        </div>
+
+                        <!-- File Upload -->
+                        <div class="form-group">
+                            <label for="file-upload">Attach Files (Optional, Max 50kb)</label>
+                            <input type="file" id="file-upload" name="file_upload">
+                            <small style="color: #6b7280; font-size: 0.875rem; margin-top: 5px; display: block;">You can attach mockups, documents, or reference images.</small>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="form-navigation">
+                            <button type="submit" class="btn--form btn--submit" id="submit-btn">Submit Request</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Confirmation Message -->
+                <div class="demo-confirmation-container" id="demo-confirmation" style="display: none;">
+                    <h3><i class="fas fa-check-circle"></i> Request Received!</h3>
+                    <p>Your personalized demo will be ready within <strong>2 business days</strong>. We will contact you via email with a private link. Once you have reviewed the demo, please paste the link below to unlock our pricing and let's collaborate!</p>
+                    <div class="form-group" style="text-align: left; max-width: 400px; margin: 30px auto 20px;">
+                        <label for="demo-link-input" style="text-align: center; margin-bottom: 10px;">Enter Demo Link to Proceed</label>
+                        <input type="text" id="demo-link-input" name="demo_link" placeholder="https://demo.netlify.app" required>
+                    </div>
+                    <button class="btn--form btn--unlock" id="unlock-btn" onclick="unlockPricing()" disabled>I'm Satisfied, Unlock Pricing!</button>
+                </div>
+            `;
+
+            // Re-attach form event listener (using the same handler as the original)
+            const form = document.getElementById('demo-request-form');
+            const submitBtn = document.getElementById('submit-btn');
+
+            if (form && submitBtn) {
+                form.addEventListener('submit', async function (event) {
+                    event.preventDefault();
+
+                    if (!validateForm()) {
+                        return; // Stop if validation fails
+                    }
+
+                    const fileInput = document.getElementById('file-upload');
+                    const file = fileInput.files[0];
+
+                    // File Size Validation
+                    if (file) {
+                        const maxSizeInBytes = 2 * 1024 * 1024; // 2MB
+                        if (file.size > maxSizeInBytes) {
+                            alert('The selected file is too large. Please upload a file smaller than 2MB.');
+                            return;
+                        }
+                    }
+
+                    // Update UI to show processing with spinner
+                    submitBtn.innerHTML = '<span class="form-loading"></span>Processing...';
+                    submitBtn.disabled = true;
+
+                    try {
+                        // Collect form data
+                        const customerData = {
+                            email: document.getElementById('email').value,
+                            businessName: document.getElementById('business-name').value,
+                            phone: document.getElementById('phone').value,
+                            address: document.getElementById('address').value || '',
+                            demoRequirements: document.getElementById('demo-requirements').value
+                        };
+
+                        // Save to customer tracking system first
+                        console.log('Saving customer to tracking system...', customerData);
+                        const trackingResult = await CustomerStatusManager.saveCustomerRecord(customerData);
+
+                        console.log('Tracking result:', trackingResult);
+
+                        // Show success and confirmation form
+                        document.getElementById('demo-request-container').style.display = 'none';
+                        document.getElementById('demo-confirmation').style.display = 'block';
+
+                        // Show success popup
+                        showSuccessPopup(customerData.email);
+
+                    } catch (error) {
+                        console.error('Error submitting form:', error);
+                        alert('There was an error submitting your request. Please try again.');
+                    } finally {
+                        // Reset button
+                        submitBtn.innerHTML = 'Submit Request';
+                        submitBtn.disabled = false;
+                    }
+                });
+            }
+        }
+
+
+
+        // Show custom popup message
+        function showCustomPopup(title, message, type = 'success') {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                z-index: 10000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            `;
+
+            const popup = document.createElement('div');
+            popup.style.cssText = `
+                background: white;
+                border-radius: 20px;
+                padding: 40px;
+                max-width: 500px;
+                width: 90%;
+                text-align: center;
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+                animation: popupSlideIn 0.4s ease-out;
+            `;
+
+            const iconColor = type === 'success' ? '#10b981' : '#ef4444';
+            const iconClass = type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle';
+
+            popup.innerHTML = `
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, ${iconColor}, ${iconColor}); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                    <i class="fas ${iconClass}" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+                <h3 style="font-size: 1.8rem; font-weight: 700; color: #1f2937; margin-bottom: 15px;">${title}</h3>
+                <p style="font-size: 1.1rem; color: #6b7280; line-height: 1.6; margin-bottom: 30px;">${message}</p>
+                <button onclick="this.closest('div').parentElement.remove()" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 15px 30px; border-radius: 10px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-thumbs-up" style="margin-right: 8px;"></i>Got It!
+                </button>
+            `;
+
+            overlay.appendChild(popup);
+            document.body.appendChild(overlay);
+        }
+
+        // Show custom confirmation popup
+        function showConfirmPopup(title, message, onConfirm, onCancel) {
+            const overlay = document.createElement('div');
+            overlay.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
+                z-index: 10000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            `;
+
+            const popup = document.createElement('div');
+            popup.style.cssText = `
+                background: white;
+                border-radius: 20px;
+                padding: 40px;
+                max-width: 500px;
+                width: 90%;
+                text-align: center;
+                box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+                animation: popupSlideIn 0.4s ease-out;
+            `;
+
+            popup.innerHTML = `
+                <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #f59e0b, #f59e0b); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
+                    <i class="fas fa-question-circle" style="font-size: 2.5rem; color: white;"></i>
+                </div>
+                <h3 style="font-size: 1.8rem; font-weight: 700; color: #1f2937; margin-bottom: 15px;">${title}</h3>
+                <p style="font-size: 1.1rem; color: #6b7280; line-height: 1.6; margin-bottom: 30px;">${message}</p>
+                <div style="display: flex; gap: 15px; justify-content: center;">
+                    <button onclick="this.closest('div').parentElement.parentElement.remove(); (${onCancel})();" style="background: #e5e7eb; color: #374151; border: none; padding: 12px 25px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                        Cancel
+                    </button>
+                    <button onclick="this.closest('div').parentElement.parentElement.remove(); (${onConfirm})();" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 12px 25px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                        Confirm
+                    </button>
+                </div>
+            `;
+
+            overlay.appendChild(popup);
+            document.body.appendChild(overlay);
+        }
+
+        // --- Function to unlock pricing ---
+        async function unlockPricing() {
+            const demoLinkInput = document.getElementById('demo-link-input');
+            const demoLink = demoLinkInput.value.trim();
+
+            // Get customer email from localStorage
+            const customerEmail = CustomerStorage.getCustomerEmail();
+            if (!customerEmail) {
+                showCustomPopup('Error', 'Customer email not found. Please refresh and try again.', 'error');
+                return;
+            }
+
+            // Show loading state
+            const unlockBtn = document.getElementById('unlock-btn');
+            const originalText = unlockBtn.innerHTML;
+            unlockBtn.innerHTML = '<span class="form-loading"></span>Verifying Demo Link...';
+            unlockBtn.disabled = true;
+
+            try {
+                // First, verify that this demo link belongs to this customer
+                console.log('Verifying demo link for customer:', customerEmail, 'Link:', demoLink);
+
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzz8gB5HLbGgxFqhW_WJnFaAWMxWo77rf_nCE65VAIToPx-4LdVQkZa-GH1ZHSQyhh0/exec';
+
+                const verifyParams = new URLSearchParams({
+                    action: 'verifyDemoLink',
+                    email: customerEmail,
+                    demoLink: demoLink
+                });
+
+                const verifyUrl = `${SCRIPT_URL}?${verifyParams.toString()}`;
+
+                const verifyResponse = await fetch(verifyUrl);
+                const verifyResult = await verifyResponse.json();
+
+                console.log('Demo link verification result:', verifyResult);
+
+                if (!verifyResult.success || !verifyResult.isValid) {
+                    unlockBtn.innerHTML = originalText;
+                    unlockBtn.disabled = false;
+                    showCustomPopup('Invalid Demo Link', 'This demo link does not belong to your account. Please enter the correct demo link for your email.', 'error');
+                    return;
+                }
+
+                // Demo link is valid for this customer, now save it
+                console.log('Demo link verified! Saving for customer:', customerEmail);
+
+                const params = new URLSearchParams({
+                    action: 'updateCustomer',
+                    email: customerEmail,
+                    demoLink: demoLink,
+                    demoStatus: 'done'
+                });
+
+                const fullUrl = `${SCRIPT_URL}?${params.toString()}`;
+
+                console.log('Making request to:', fullUrl);
+                console.log('Request parameters:', Object.fromEntries(params));
+
+                const response = await fetch(fullUrl);
+
+                console.log('Response status:', response.status);
+                console.log('Response ok:', response.ok);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                console.log('Demo link save result:', result);
+
+                if (result.success) {
+                    // Update localStorage with fresh data
+                    CustomerStorage.saveDemoStatus('done', demoLink);
+
+                    // Force cache refresh by clearing the last checked timestamp
+                    localStorage.removeItem('lastChecked');
+
+                    // Set a flag to indicate pricing was just unlocked
+                    localStorage.setItem('pricingJustUnlocked', 'true');
+
+                    // Unlock pricing immediately - hide demo section and show pricing cards
+                    document.body.classList.remove('pricing-locked');
+
+                    // Hide demo trial section
+                    const demoSection = document.getElementById('demo-trial');
+                    if (demoSection) {
+                        demoSection.classList.remove('active');
+                        demoSection.style.display = 'none';
+                    }
+
+                    // Show website packages section by default
+                    const websitePackagesButton = document.querySelector('.pricing-nav__btn[data-target="website-packages"]');
+                    if (websitePackagesButton) {
+                        websitePackagesButton.click();
+                    }
+
+                    // Scroll to top to see pricing
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    throw new Error(result.message || 'Failed to save demo link');
+                }
+
+            } catch (error) {
+                console.error('Error saving demo link:', error);
+                console.error('Full error details:', error);
+
+                // Show error popup
+                showCustomPopup('Error', 'Failed to save demo link. Please try again.', 'error');
+
+                // Reset button
+                unlockBtn.innerHTML = originalText;
+                unlockBtn.disabled = false;
+
+                // Hide demo trial section
+                const demoSection = document.getElementById('demo-trial');
+                if (demoSection) {
+                    demoSection.classList.remove('active');
+                    demoSection.style.display = 'none';
+                }
+
+                // Show website packages section by default
+                const websitePackagesButton = document.querySelector('.pricing-nav__btn[data-target="website-packages"]');
+                if (websitePackagesButton) {
+                    websitePackagesButton.click();
+                }
+
+                // Scroll to top to see pricing
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            } finally {
+                // Reset button state
+                unlockBtn.innerHTML = originalText;
+                unlockBtn.disabled = false;
+            }
+        }
+
+        // --- UPDATED Form Validation for Single Step ---
+        function validateForm() {
+            let isValid = true;
+            const businessName = document.getElementById('business-name');
+            const email = document.getElementById('email');
+            const phone = document.getElementById('phone');
+            const demoRequirements = document.getElementById('demo-requirements');
+            const emailError = document.getElementById('email-error');
+            const phoneError = document.getElementById('phone-error');
+
+            emailError.style.display = 'none';
+            phoneError.style.display = 'none';
+
+            if (businessName.value.trim() === '') {
+                showCustomPopup('Business Name Required', 'Please enter your business name.', 'error');
+                isValid = false;
+                return isValid;
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email.value)) {
+                emailError.style.display = 'block';
+                isValid = false;
+            }
+
+            const phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(phone.value.replace(/\s/g, ''))) {
+                phoneError.style.display = 'block';
+                isValid = false;
+            }
+
+            if (demoRequirements.value.trim().length < 20) {
+                showCustomPopup('More Details Needed', 'Please provide a more detailed description for your demo (at least 20 characters).', 'error');
+                isValid = false;
+            }
+
+            return isValid;
+        }
+
+        // Logout Button Visibility Functions
+        function showLogoutButton() {
+            const logoutBtn = document.getElementById('logout-btn');
+            if (logoutBtn) {
+                logoutBtn.style.display = 'flex';
+            }
+        }
+
+        function hideLogoutButton() {
+            const logoutBtn = document.getElementById('logout-btn');
+            if (logoutBtn) {
+                logoutBtn.style.display = 'none';
+            }
+        }
+
+        // Logout Handler
+        function handleLogout() {
+            showConfirmPopup(
+                'Confirm Logout',
+                'Are you sure you want to logout? You will need to login again to access pricing.',
+                function() {
+                    // Stop polling for status changes
+                    stopStatusPolling();
+                    
+                    // Clear all customer data
+                    CustomerStorage.clearCustomerData();
+
+                    // Hide logout button
+                    hideLogoutButton();
+
+                    // Lock pricing
+                    document.body.classList.add('pricing-locked');
+
+                    // Show login/demo options
+                    showLoginOrDemoOptions();
+
+                    // Scroll to top
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+                    console.log('User logged out successfully');
+                    showCustomPopup('Logged Out', 'You have been successfully logged out.');
+                },
+                function() {
+                    // Cancel - do nothing
+                }
+            );
+        }
+
+        // Check login status on page load
+        function checkLoginStatus() {
+            const email = CustomerStorage.getCustomerEmail();
+            if (email) {
+                showLogoutButton();
+
+                // Restore state based on demo status
+                const demoStatus = CustomerStorage.getDemoStatus();
+
+                if (demoStatus === 'done') {
+                    // If they have completed the demo, unlock pricing
+                    // We need the demo link for this, try to get it from storage or use a placeholder if valid
+                    const customerData = CustomerStorage.getAllCustomerData();
+                    let demoLink = '';
+
+                    if (customerData && customerData.customerData) {
+                        try {
+                            const parsed = JSON.parse(customerData.customerData);
+                            demoLink = parsed.demoLink || '';
+                        } catch (e) {
+                            console.error('Error parsing customer data', e);
+                        }
+                    }
+
+                    unlockPricingForReturningCustomer(email, demoLink);
+                } else if (demoStatus === 'pending') {
+                    // If pending, show pending state
+                    showDemoPendingState(email);
+                }
+                // If 'new' or undefined, we just show the logout button (already done above)
+                // and let them see the default view (which might be the demo request form)
+            } else {
+                hideLogoutButton();
+            }
+        }
+
+        // Make functions globally accessible for onclick handlers
+        window.showCustomerLoginForm = showCustomerLoginForm;
+        window.showDemoFormState = showDemoFormState;
+        window.showLoginOrDemoOptions = showLoginOrDemoOptions;
+        window.attemptCustomerLogin = attemptCustomerLogin;
+        window.unlockPricing = unlockPricing;
+        window.handleLogout = handleLogout;
+        window.showLogoutButton = showLogoutButton;
+        window.hideLogoutButton = hideLogoutButton;
+
+        // Check login status on page load
+        checkLoginStatus();
+
+        // Debug: Log function availability
+        console.log('Functions made globally accessible:', {
+            showCustomerLoginForm: typeof window.showCustomerLoginForm,
+            showDemoFormState: typeof window.showDemoFormState,
+            showLoginOrDemoOptions: typeof window.showLoginOrDemoOptions,
+            attemptCustomerLogin: typeof window.attemptCustomerLogin,
+            unlockPricing: typeof window.unlockPricing,
+            handleLogout: typeof window.handleLogout
+        });
+    </script>
+
+    <!-- Navigation JS Files -->
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/plugins/dsn-grid.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
