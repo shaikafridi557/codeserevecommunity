@@ -3144,7 +3144,7 @@
         // Refresh demo status function
         async function refreshDemoStatus() {
             try {
-                showLoadingState('Checking latest demo status...');
+                console.log('Checking latest demo status...');
 
                 const email = CustomerStorage.getCustomerEmail();
                 if (!email) {
