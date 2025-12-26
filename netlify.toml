@@ -1,0 +1,79 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security Headers
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    
+    # Cache Control for HTML files
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Redirect HTTP to HTTPS
+[[redirects]]
+  from = "http://codeservecommunity.netlify.app/*"
+  to = "https://codeservecommunity.netlify.app/:splat"
+  status = 301
+  force = true
+
+# Redirect www to non-www (if applicable)
+[[redirects]]
+  from = "https://www.codeservecommunity.netlify.app/*"
+  to = "https://codeservecommunity.netlify.app/:splat"
+  status = 301
+  force = true
+
+# 404 redirect
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
+
+# Build settings
+[build]
+  publish = "."
+  command = "echo 'No build command needed for static site'"
+
+# Plugin for automatic sitemap generation
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+
+# Compression
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = true
+  minify = true
+
+[build.processing.js]
+  bundle = true
+  minify = true
+
+[build.processing.html]
+  pretty_urls = true
+
+[build.processing.images]
+  compress = true

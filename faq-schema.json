@@ -1,0 +1,86 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does CodeServe Community offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CodeServe Community offers comprehensive IT services including custom website development, mobile app development (iOS & Android), e-commerce solutions, SEO services, digital marketing, cloud services, UI/UX design, and custom software development. We specialize in React, Node.js, and modern web technologies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does web development cost at CodeServe?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Web development costs vary based on project complexity, features, and requirements. We offer flexible pricing packages starting from basic websites to enterprise solutions. Contact us for a free consultation and customized quote based on your specific needs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is CodeServe Community located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "CodeServe Community is based in Hyderabad, India. We serve clients locally in Hyderabad and globally across India and international markets. We offer both on-site and remote development services."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does it take to develop a website?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Website development timeline depends on project scope. A basic website typically takes 2-4 weeks, while complex web applications or e-commerce platforms may take 8-12 weeks or more. We provide detailed timelines during project planning and keep you updated throughout development."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide SEO services with web development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all our websites are built with SEO best practices including optimized meta tags, structured data, fast loading speeds, mobile responsiveness, and clean code. We also offer dedicated SEO services including keyword research, on-page optimization, technical SEO, and ongoing SEO maintenance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What technologies does CodeServe use for development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use modern, industry-standard technologies including React, Node.js, JavaScript, HTML5, CSS3, MongoDB, MySQL, Express.js, Next.js, React Native, Flutter, and various cloud platforms like AWS, Azure, and Google Cloud. We choose the best technology stack for each project's requirements."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CodeServe provide website maintenance and support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we offer comprehensive website maintenance and support services including regular updates, security patches, performance optimization, content updates, bug fixes, and technical support. We provide flexible maintenance packages to suit different needs and budgets."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can CodeServe help with mobile app development?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely! We specialize in mobile app development for both iOS and Android platforms. We build native apps, cross-platform apps using React Native or Flutter, and progressive web apps (PWAs). Our apps are user-friendly, performant, and designed to meet your business objectives."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with CodeServe Community?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Getting started is easy! Contact us through our website, email (codeserve.contact@gmail.com), or phone (+91 9346 142 139). We'll schedule a free consultation to discuss your project requirements, provide recommendations, and create a customized proposal with timeline and pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does CodeServe work with startups and small businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes! We work with businesses of all sizes from startups and small businesses to large enterprises. We offer flexible pricing and scalable solutions tailored to your budget and growth plans. We're committed to helping startups and SMBs establish a strong digital presence."
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "CodeServe Community",
+    "short_name": "CodeServe",
+    "description": "Premium web development and digital solutions in Hyderabad",
+    "icons": [
+        {
+            "src": "assets/img/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/img/logo2.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ],
+    "theme_color": "#387cf9",
+    "background_color": "#1a1a1a",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+}
