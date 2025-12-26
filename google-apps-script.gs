@@ -24,11 +24,20 @@ const SETTINGS_SHEET_NAME = 'Settings'; // Settings sheet to track demo counter
 // Get the spreadsheet
 function getSheet() {
   try {
-    const ss = SpreadsheetApp.openById(SHEET_ID);
+    // For container-bound scripts, use getActiveSpreadsheet
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
     return ss.getSheetByName(SHEET_NAME);
   } catch (error) {
-    Logger.log('Error getting sheet:', error);
-    return null;
+    Logger.log('Error getting sheet: ' + error.toString());
+    
+    // Fallback to openById for standalone scripts
+    try {
+      const ss = SpreadsheetApp.openById(SHEET_ID);
+      return ss.getSheetByName(SHEET_NAME);
+    } catch (fallbackError) {
+      Logger.log('Fallback also failed: ' + fallbackError.toString());
+      return null;
+    }
   }
 }
 

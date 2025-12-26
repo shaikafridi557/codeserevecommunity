@@ -2398,7 +2398,7 @@
         // ===== CUSTOMER TRACKING SYSTEM - ALL IN ONE =====
 
         // Configuration
-        var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7fSrbQtJmTOnD4i00JMdeLI_y6thZ8dOEEWc3f-7HoOk-yHfRG6SrnqQlTyA30Q9iDQ/exec';
+        var GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwnt9Dvn0tGbyJqye2sds4VE5h9D2XedvfaZjR7xzEeHXySKbi9Nr4G6PlmX13hAlPfvQ/exec';
 
         // EmailJS Configuration - Replace with your actual credentials
         var EMAILJS_SERVICE_ID = 'service_mtfvdrm'; // EmailJS Service ID
@@ -2828,7 +2828,7 @@
             // Check for status changes every 10 seconds
             statusPollingInterval = setInterval(async () => {
                 try {
-                    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7fSrbQtJmTOnD4i00JMdeLI_y6thZ8dOEEWc3f-7HoOk-yHfRG6SrnqQlTyA30Q9iDQ/exec';
+                    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwnt9Dvn0tGbyJqye2sds4VE5h9D2XedvfaZjR7xzEeHXySKbi9Nr4G6PlmX13hAlPfvQ/exec';
                     const response = await fetch(`${SCRIPT_URL}?action=checkCustomer&email=${encodeURIComponent(email)}`);
                     const result = await response.json();
                     
@@ -3513,7 +3513,7 @@
                     console.log('Testing Google Apps Script connection...');
 
                     // Test with a simple GET request
-                    const testUrl = 'https://script.google.com/macros/s/AKfycby7fSrbQtJmTOnD4i00JMdeLI_y6thZ8dOEEWc3f-7HoOk-yHfRG6SrnqQlTyA30Q9iDQ/exec?action=healthCheck&test=true';
+                    const testUrl = 'https://script.google.com/macros/s/AKfycbwnt9Dvn0tGbyJqye2sds4VE5h9D2XedvfaZjR7xzEeHXySKbi9Nr4G6PlmX13hAlPfvQ/exec?action=healthCheck&test=true';
                     console.log('Testing URL:', testUrl);
 
                     const response = await fetch(testUrl, {
@@ -3610,7 +3610,7 @@
                 localStorage.removeItem('demoStatus');
 
                 // Fetch fresh data from API
-                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7fSrbQtJmTOnD4i00JMdeLI_y6thZ8dOEEWc3f-7HoOk-yHfRG6SrnqQlTyA30Q9iDQ/exec';
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwnt9Dvn0tGbyJqye2sds4VE5h9D2XedvfaZjR7xzEeHXySKbi9Nr4G6PlmX13hAlPfvQ/exec';
                 const response = await fetch(`${SCRIPT_URL}?action=checkCustomer&email=${encodeURIComponent(email)}`);
                 const result = await response.json();
 
@@ -3698,7 +3698,7 @@
                 console.log('============================');
 
                 // Call Google Apps Script to verify customer
-                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7fSrbQtJmTOnD4i00JMdeLI_y6thZ8dOEEWc3f-7HoOk-yHfRG6SrnqQlTyA30Q9iDQ/exec';
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwnt9Dvn0tGbyJqye2sds4VE5h9D2XedvfaZjR7xzEeHXySKbi9Nr4G6PlmX13hAlPfvQ/exec';
                 const params = new URLSearchParams({
                     action: 'checkCustomer',
                     email: email,
@@ -4257,7 +4257,7 @@
                 // First, verify that this demo link belongs to this customer
                 console.log('Verifying demo link for customer:', customerEmail, 'Link:', demoLink);
 
-                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby7fSrbQtJmTOnD4i00JMdeLI_y6thZ8dOEEWc3f-7HoOk-yHfRG6SrnqQlTyA30Q9iDQ/exec';
+                const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwnt9Dvn0tGbyJqye2sds4VE5h9D2XedvfaZjR7xzEeHXySKbi9Nr4G6PlmX13hAlPfvQ/exec';
 
                 const verifyParams = new URLSearchParams({
                     action: 'verifyDemoLink',
