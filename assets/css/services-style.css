@@ -1,0 +1,255 @@
+/*
+Custom Stylesheet for Code.Serve Services Page
+*/
+
+/* --- Creative Preloader --- */
+#dsn_preloader .preloader-scramble-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.preloader-scramble {
+    font-family: 'Courier New', Courier, monospace;
+    color: #0F0;
+    font-size: 2vw;
+    min-height: 50px;
+}
+.preloader-logo-final {
+    opacity: 0;
+    transition: opacity 0.5s 0.2s;
+    font-size: 3vw;
+}
+#dsn_preloader.preloaded .preloader-scramble {
+    display: none;
+}
+#dsn_preloader.preloaded .preloader-logo-final {
+    opacity: 1;
+    text-shadow: 0 0 20px rgba(56, 124, 249, 0.8);
+}
+
+
+/* --- Creative Hero Section for Services --- */
+.services-hero .entry-header {
+    position: relative;
+    z-index: 2;
+}
+
+.animated-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: pan-grid 40s linear infinite;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+@keyframes pan-grid {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; }
+}
+
+.hero-tagline {
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--theme-color);
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.tech-heading-glitch {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 700;
+    position: relative;
+    color: var(--heading-color);
+    text-transform: uppercase;
+}
+
+.tech-heading-glitch::before,
+.tech-heading-glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    overflow: hidden;
+}
+
+.tech-heading-glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 #387cf9;
+    animation: glitch-anim-1 2s infinite linear alternate-reverse;
+}
+
+.tech-heading-glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 #E44D26, 2px 2px #387cf9;
+    animation: glitch-anim-2 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0%, 100% { clip-path: inset(45% 0 50% 0); } 20% { clip-path: inset(10% 0 85% 0); } 40% { clip-path: inset(60% 0 30% 0); } 60% { clip-path: inset(20% 0 70% 0); } 80% { clip-path: inset(80% 0 5% 0); }
+}
+
+@keyframes glitch-anim-2 {
+    0%, 100% { clip-path: inset(5% 0 90% 0); } 20% { clip-path: inset(95% 0 2% 0); } 40% { clip-path: inset(40% 0 55% 0); } 60% { clip-path: inset(15% 0 75% 0); } 80% { clip-path: inset(70% 0 20% 0); }
+}
+
+/* --- Services Category Styling --- */
+.services-category {
+    padding-top: var(--margin-padding);
+    padding-bottom: var(--margin-padding);
+}
+
+.services-category.background-section {
+    padding-top: var(--margin-padding);
+    padding-bottom: var(--margin-padding);
+}
+
+.services-category .section-title h2 {
+    border-bottom: 2px solid #387cf9;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+/* --- Interactive Service Card Styling --- */
+.service-card {
+    background-color: var(--assistant-color);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(from 0deg, transparent 0%, #387cf9 5%, transparent 20%);
+    z-index: -1;
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.service-card:hover::before {
+    opacity: 1;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.service-card-icon {
+    font-size: 36px;
+    color: #387cf9;
+    margin-bottom: 20px;
+}
+
+.service-card-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: var(--heading-color);
+    text-transform: uppercase;
+}
+
+.service-card p {
+    line-height: 1.7;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+/* Our Process Section */
+.our-process {
+    padding-top: var(--margin-padding);
+    padding-bottom: var(--margin-padding);
+}
+
+.process-steps {
+    grid-gap: 40px;
+}
+
+.process-step {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.process-step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.process-step::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -42px;
+    width: 40px;
+    height: 2px;
+    background: #387cf9;
+    opacity: 0.5;
+}
+
+.process-steps .process-step:last-child::after {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .process-step::after { display: none; }
+}
+
+.process-step .step-icon {
+    font-size: 40px;
+    color: #387cf9;
+    margin-bottom: 20px;
+}
+
+.process-step h3 {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    line-height: 1;
+    z-index: -1;
+}
+
+.process-step h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
