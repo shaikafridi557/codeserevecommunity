@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Speed 2026: Pass Core Web Vitals (LCP, INP, CLS)</title>
+    <meta name="description" content="What LCP, INP and CLS mean, Google's good thresholds, how to measure them for free, and practical fixes for slow WordPress and custom websites in 2026.">
+    <meta name="keywords" content="Core Web Vitals, website speed optimization, LCP INP CLS, PageSpeed Insights, improve website speed WordPress, page experience SEO">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://codeservecommunity.netlify.app/blog/website-speed-core-web-vitals.html">
+    <meta property="og:title" content="Website Speed 2026: Pass Core Web Vitals (LCP, INP, CLS)">
+    <meta property="og:description" content="What LCP, INP and CLS mean, Google's good thresholds, how to measure them for free, and practical fixes for slow WordPress and custom websites in 2026.">
+    <meta property="og:image" content="https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Website Speed in 2026: How to Pass Core Web Vitals (LCP, INP, CLS)">
+    <meta property="article:published_time" content="2026-11-02">
+    <meta property="article:section" content="Technical SEO">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Website Speed 2026: Pass Core Web Vitals (LCP, INP, CLS)">
+    <meta name="twitter:description" content="What LCP, INP and CLS mean, Google's good thresholds, how to measure them for free, and practical fixes for slow WordPress and custom websites in 2026.">
+    <meta name="twitter:image" content="https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals-og.png">
+    <link rel="canonical" href="https://codeservecommunity.netlify.app/blog/website-speed-core-web-vitals.html">
+    <link rel="icon" href="../favicon.ico">
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Website Speed in 2026: How to Pass Core Web Vitals (LCP, INP, CLS)",
+    "description": "What LCP, INP and CLS mean, Google's good thresholds, how to measure them for free, and practical fixes for slow WordPress and custom websites in 2026.",
+    "image": "https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals-og.png",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02",
+    "author": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.netlify.app/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.netlify.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://codeservecommunity.netlify.app/assets/img/logo2.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://codeservecommunity.netlify.app/blog/website-speed-core-web-vitals.html"
+    },
+    "keywords": "Core Web Vitals, website speed optimization, LCP INP CLS, PageSpeed Insights, improve website speed WordPress, page experience SEO",
+    "articleSection": "Technical SEO",
+    "inLanguage": "en-IN"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://codeservecommunity.netlify.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://codeservecommunity.netlify.app/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Website Speed in 2026: How to Pass Core Web Vitals (LCP, INP, CLS)",
+        "item": "https://codeservecommunity.netlify.app/blog/website-speed-core-web-vitals.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good PageSpeed Insights score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 0–100 Lighthouse score is a lab estimate. What matters for Google's assessment is whether real users pass LCP (2.5 seconds or less), INP (200 milliseconds or less) and CLS (0.1 or less). Aim to pass those first; a high lab score is a bonus."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my site pass on desktop but fail on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Phones have slower processors and networks, so heavy images and JavaScript hurt much more on mobile. Google mainly uses mobile data for most sites, so optimise for mobile first."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why hasn't Search Console updated after I fixed my site?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Field data is collected over a rolling 28-day window, so improvements appear gradually. You can use the Validate Fix button in the Core Web Vitals report to start monitoring."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will a caching plugin alone fix Core Web Vitals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Caching helps server response and LCP, but it won't fix oversized images, layout shifts or heavy JavaScript that hurts INP. Most sites need a combination of hosting, image, script and layout fixes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Core Web Vitals more important than content for SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Helpful, relevant content is more important. Core Web Vitals can act as a tie-breaker and strongly affect conversions, so they are worth fixing, but they will not replace good content."
+        }
+      }
+    ]
+  }
+]
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="../assets/css/plugins.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/services-style.css">
+    <link rel="stylesheet" href="../assets/css/theme-content.css">
+
+    <style>
+        .main-logo .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+        }
+    </style>
+    <style>
+        .cs-article-body pre {
+            background-color: var(--assistant-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 18px 20px;
+            overflow-x: auto;
+            margin: 20px 0 26px;
+        }
+
+        .cs-article-body pre code {
+            font-family: Menlo, Consolas, "Courier New", monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #e5e7eb;
+            white-space: pre;
+        }
+
+        .cs-article-body p code,
+        .cs-article-body li code,
+        .cs-article-body td code {
+            font-family: Menlo, Consolas, "Courier New", monospace;
+            font-size: 0.9em;
+            background-color: var(--assistant-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1px 6px;
+        }
+    </style>
+</head>
+
+<body class="v-dark dsn-ajax">
+
+<div id="dsn_preloader" class="preloader">
+    <div class="preloader-scramble-container">
+        <div class="preloader-scramble">
+            <div class="scramble-text" data-preloader-heading></div>
+        </div>
+        <div class="preloader-logo-final">
+            <div data-preloader-heading><span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span></div>
+        </div>
+    </div>
+    <div class="bg-load background-section d-flex align-items-end">
+        <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+        </svg>
+    </div>
+</div>
+
+<main id="main_root" class="main-root">
+
+    <!-- ========== Menu ========== -->
+    <header id="site_menu_header" class="site-header dsn-container d-none dsn-hamburger">
+        <div class="main-logo">
+            <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
+                <span class="logo-text">
+                    <span class="logo-text-code" style="color: white;">Code</span><span class="logo-text-serve" style="color: #387cf9;">Serve</span>
+                </span>
+            </a>
+        </div>
+        <nav class="main-navigation ">
+            <div class="menu-cover-title header-container dsn-container">MENU</div>
+            <ul id="dsn-primary-list" class="primary-nav h2">
+                <li class="nav-item"><a title="Home" href="../index.html"><span class="overflow">Home</span></a></li>
+                <li class="nav-item"><a title="Services" href="../services.html"><span class="overflow">Services</span></a></li>
+                <li class="nav-item"><a title="Our Work" href="../portfolio.html"><span class="overflow">Our Work</span></a></li>
+                <li class="nav-item"><a title="About Us" href="../about.html"><span class="overflow">About Us</span></a></li>
+                <li class="nav-item"><a title="Pricing" href="../pricing.html"><span class="overflow">Pricing</span></a></li>
+                <li class="nav-item"><a title="Blog" href="../blog/index.html"><span class="overflow">Blog</span></a></li>
+                <li class="nav-item"><a title="Contact" href="../contact.html"><span class="overflow">Contact</span></a></li>
+            </ul>
+             <div class="container-content d-flex flex-column justify-content-center section-margin">
+                <div class="nav__info">
+                    <div class="nav-content">
+                        <h5 class="sm-title-block mb-10">Studio</h5>
+                        Hyderabad, India
+                    </div>
+                    <div class="nav-content mt-30">
+                        <h5 class="sm-title-block mb-10">Contact</h5>
+                        <p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+919346142139" data-hover-text="+91 93461 42139">+91 93461 42139</a></p>
+<p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+918074403355" data-hover-text="+91 80744 03355">+91 80744 03355</a></p>
+                        <p class="links over-hidden"><a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="nav-social nav-content mt-30">
+                    <div class="nav-social-inner p-relative">
+                        <h5 class="sm-title-block mb-10">Follow us</h5>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/codeserve-comunity-83224b407/" target="_blank" rel="nofollow noopener noreferrer">LinkedIn.</a></li>
+                            <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow noopener noreferrer">Instagram.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+            <div class="toggle-icon">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+            <div class="toggle-text">
+                <div class="text-menu">Menu</div>
+                <div class="text-open">Open</div>
+                <div class="text-close">Close</div>
+            </div>
+        </div>
+        <div class="bg-load background-main"></div>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
+            <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+    </header>
+    <!-- ========== End Menu ========== -->
+
+    <!-- ========== Page Hero ========== -->
+    <header id="dsn_header" class="dsn-header-animation header-normal services-hero page-hero">
+        <div class="animated-grid"></div>
+        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
+        <div class="entry-header p-relative over-hidden">
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-center pb-section">
+                <div class="content p-relative text-center">
+                    <div class="intro-project w-100">
+                        <div class="intro-title">
+                            <p class="hero-tagline cs-breadcrumb" data-dsn-animate="up"><a href="../index.html">Home</a> / <a href="index.html">Blog</a> / Core Web Vitals Guide</p>
+                            <div id="hero_title" class="mt-20" data-dsn-animate="up">
+                                <h1 class="title-h2 text-upper">Website Speed in 2026: How to Pass Core Web Vitals (LCP, INP, CLS)</h1>
+                            </div>
+                            <p class="mt-20 max-w750 m-auto hero-subtitle" data-dsn-animate="up">A slow website loses visitors before they read a word. Here is a plain-English guide to Google's Core Web Vitals — what they measure, how to check your site in five minutes, and the fixes that actually move the numbers.</p>
+                            <p class="cs-hero-meta" data-dsn-animate="up">By CodeServe Team · 2 November 2026 · 9 min read · Technical SEO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== End Page Hero ========== -->
+
+    <div id="page_wrapper" class="wrapper">
+
+        <article class="cs-article">
+            <div class="cs-container cs-article-layout">
+                <aside class="cs-article-aside">
+                    <nav class="cs-toc" aria-label="Table of contents">
+                    <strong>In this guide</strong>
+                    <ol>
+                        <li><a href="#what-are-cwv">What are Core Web Vitals?</a></li>
+                        <li><a href="#thresholds">The three metrics and their 'good' thresholds</a></li>
+                        <li><a href="#measure">How to measure your site (free tools)</a></li>
+                        <li><a href="#lab-vs-field">Lab data vs real-user data</a></li>
+                        <li><a href="#fix-lcp">How to fix a slow LCP</a></li>
+                        <li><a href="#fix-inp">How to fix a poor INP</a></li>
+                        <li><a href="#fix-cls">How to fix layout shift (CLS)</a></li>
+                        <li><a href="#wordpress">WordPress-specific checklist</a></li>
+                        <li><a href="#hosting">Hosting and CDN for Indian visitors</a></li>
+                        <li><a href="#audit">A 30-minute speed audit you can do today</a></li>
+                        <li><a href="#seo-impact">Does speed really affect SEO?</a></li>
+                        <li><a href="#faq">Frequently asked questions</a></li>
+                    </ol>
+                    </nav>
+                </aside>
+                <div class="cs-article-body">
+                <figure class="cs-figure cs-featured"><img src="../assets/img/blog/website-speed-core-web-vitals.svg" alt="Website speed gauges for LCP, INP and CLS Core Web Vitals" width="1200" height="630"></figure>
+                <h2 id="what-are-cwv">What are Core Web Vitals?</h2>
+                <p>Core Web Vitals are three measurements Google uses to describe how a page <em>feels</em> to real visitors: how fast the main content appears, how quickly the page responds when someone taps or types, and whether things jump around while it loads. They are part of Google's page experience signals and are reported for your site in Google Search Console.</p>
+                <p>The important word is <strong>real</strong>. Google's assessment is based on data collected from actual Chrome users visiting your pages over the last 28 days — mostly on mid-range phones and mobile networks, not on your office Wi-Fi.</p>
+
+                <h2 id="thresholds">The three metrics and their "good" thresholds</h2>
+                <figure class="cs-figure"><img src="../assets/img/blog/website-speed-core-web-vitals-thresholds.svg" alt="Core Web Vitals thresholds: LCP good up to 2.5 seconds, INP good up to 200 milliseconds, CLS good up to 0.1" width="800" height="320" loading="lazy"><figcaption>Google's thresholds, assessed at the 75th percentile of real page visits.</figcaption></figure>
+                <table>
+                    <thead><tr><th>Metric</th><th>What it measures</th><th>Good</th><th>Needs improvement</th><th>Poor</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>LCP</strong> – Largest Contentful Paint</td><td>When the biggest visible element (usually a hero image or heading) finishes rendering.</td><td>≤ 2.5 s</td><td>2.5 – 4 s</td><td>&gt; 4 s</td></tr>
+                        <tr><td><strong>INP</strong> – Interaction to Next Paint</td><td>How quickly the page visually responds to taps, clicks and key presses throughout the visit.</td><td>≤ 200 ms</td><td>200 – 500 ms</td><td>&gt; 500 ms</td></tr>
+                        <tr><td><strong>CLS</strong> – Cumulative Layout Shift</td><td>How much content unexpectedly moves around while the page loads.</td><td>≤ 0.1</td><td>0.1 – 0.25</td><td>&gt; 0.25</td></tr>
+                    </tbody>
+                </table>
+                <p>A page "passes" when at least 75% of visits meet the good threshold for all three. INP replaced the older First Input Delay (FID) metric in March 2024, so guides that still talk about FID are out of date.</p>
+
+                <h2 id="measure">How to measure your site (free tools)</h2>
+                <ol>
+                    <li><strong>PageSpeed Insights</strong> (pagespeed.web.dev) — paste a URL. The top section shows real-user data (if your site has enough traffic); the bottom section is a Lighthouse lab test with specific suggestions.</li>
+                    <li><strong>Google Search Console → Core Web Vitals report</strong> — groups similar pages and tells you which ones are Good, Need improvement or Poor on mobile and desktop.</li>
+                    <li><strong>Chrome DevTools</strong> — the <em>Performance</em> panel shows live LCP, INP and CLS as you interact with the page, and the <em>Lighthouse</em> panel runs the same lab test locally.</li>
+                </ol>
+                <div class="cs-callout"><strong>Tip:</strong> Always test the mobile result first and test your most important pages — homepage, top service pages, product pages — not just the homepage. A fast homepage with slow product pages still loses sales.</div>
+
+                <h2 id="lab-vs-field">Lab data vs real-user data</h2>
+                <p>Lab data (Lighthouse) is a single simulated load under fixed conditions. It is great for debugging but can differ from what users experience. Field data (the Chrome User Experience Report) is what Google uses for its assessment. If your site is new or low-traffic there may be no field data yet; use lab scores as a guide until it appears. Also note that INP needs real interactions, so lab tools use <em>Total Blocking Time</em> as a stand-in.</p>
+
+                <h2 id="fix-lcp">How to fix a slow LCP</h2>
+                <p>LCP is usually slow for one of four reasons: a slow server, render-blocking CSS/JS, a heavy hero image, or the hero image being discovered late.</p>
+                <ul>
+                    <li><strong>Make the server respond faster.</strong> Cheap shared hosting is often the biggest bottleneck. Use good hosting, server-side caching and a CDN so the first byte arrives quickly.</li>
+                    <li><strong>Optimise the hero image.</strong> Serve WebP or AVIF, size it for the screen (don't send a 3000px image to a phone), and compress it.</li>
+                    <li><strong>Don't lazy-load the hero image.</strong> Lazy-load images below the fold, but load the LCP image immediately and hint its priority:</li>
+                </ul>
+<pre><code>&lt;link rel="preload" as="image" href="/images/hero.webp" fetchpriority="high"&gt;
+&lt;img src="/images/hero.webp" width="1200" height="630"
+     fetchpriority="high" alt="Your product or service"&gt;</code></pre>
+                <ul>
+                    <li><strong>Reduce render-blocking resources.</strong> Inline critical CSS, defer non-critical JavaScript and remove unused CSS from page builders and plugins.</li>
+                    <li><strong>Load fonts efficiently.</strong> Use fewer font weights, self-host where possible, preload the main font and use <code>font-display: swap</code>.</li>
+                </ul>
+
+                <h2 id="fix-inp">How to fix a poor INP</h2>
+                <p>INP gets worse when the browser's main thread is busy running JavaScript, so it can't respond to a tap. Common culprits are heavy page builders, sliders, chat widgets, multiple tracking scripts and large frameworks loaded on every page.</p>
+                <ul>
+                    <li>Remove scripts you don't need and load third-party widgets (chat, reviews, maps) only when the user scrolls near them or clicks.</li>
+                    <li>Break long JavaScript tasks into smaller pieces and avoid doing heavy work inside click handlers.</li>
+                    <li>Load analytics and marketing tags through a tag manager with care — each tag adds main-thread work.</li>
+                    <li>Avoid huge DOM sizes (thousands of nested elements), which make every update slower.</li>
+                </ul>
+
+                <h2 id="fix-cls">How to fix layout shift (CLS)</h2>
+                <ul>
+                    <li><strong>Always set width and height</strong> (or CSS <code>aspect-ratio</code>) on images, videos and iframes so the browser reserves space.</li>
+                    <li><strong>Reserve space for ads, banners and embeds</strong> instead of letting them push content down after loading.</li>
+                    <li><strong>Don't insert content above existing content</strong> — cookie bars and promo strips should overlay or have reserved space.</li>
+                    <li><strong>Match fallback fonts</strong> to your web font's size to reduce the jump when the font loads.</li>
+                </ul>
+
+                <h2 id="wordpress">WordPress-specific checklist</h2>
+                <table>
+                    <thead><tr><th>Area</th><th>What to do</th></tr></thead>
+                    <tbody>
+                        <tr><td>Hosting</td><td>Use hosting with recent PHP, server caching and enough resources; avoid overcrowded shared plans for business sites.</td></tr>
+                        <tr><td>Caching</td><td>Use one well-configured caching plugin (page cache, browser cache, minification) — not three overlapping ones.</td></tr>
+                        <tr><td>Images</td><td>Convert to WebP/AVIF on upload, generate correct sizes, lazy-load below-the-fold images.</td></tr>
+                        <tr><td>Theme &amp; builder</td><td>Lightweight themes and fewer builder add-ons; disable unused widgets and features.</td></tr>
+                        <tr><td>Plugins</td><td>Audit regularly — each plugin can add CSS/JS on every page. Remove what you don't use.</td></tr>
+                        <tr><td>CDN</td><td>Serve static files from a CDN with a location close to your Indian visitors.</td></tr>
+                        <tr><td>WooCommerce</td><td>Disable cart fragments on pages that don't need them; optimise product image sizes.</td></tr>
+                    </tbody>
+                </table>
+                <p>Custom-built sites (React, Next.js, Laravel and so on) have different levers: server-side rendering or static generation, code-splitting, image components that output modern formats, and careful use of client-side JavaScript.</p>
+
+                <h2 id="hosting">Hosting and CDN for Indian visitors</h2>
+                <p>Where your server sits matters. If most customers are in India but the site is hosted on a small server in another continent, every request travels further before the first byte arrives. That delay shows up directly in LCP.</p>
+                <ul>
+                    <li><strong>Choose a nearby data centre.</strong> Many hosts and cloud providers offer regions in India (for example Mumbai) or nearby Singapore. For an Indian audience, these usually respond faster than US or European regions.</li>
+                    <li><strong>Use a CDN.</strong> A content delivery network keeps copies of images, CSS and JavaScript on servers close to visitors. Some CDNs can also cache full HTML pages, which helps a lot for brochure sites and blogs.</li>
+                    <li><strong>Check Time to First Byte (TTFB).</strong> PageSpeed Insights and DevTools show it. If TTFB alone is close to a second, no amount of image optimisation will get LCP comfortably under 2.5 seconds — fix the server first.</li>
+                    <li><strong>Avoid overloaded shared plans.</strong> Very cheap plans often pack hundreds of sites onto one server. A modest upgrade to better hosting is often the single biggest speed improvement a small business can make.</li>
+                    <li><strong>Keep software current.</strong> Newer PHP versions, database versions and HTTP/2 or HTTP/3 support all help pages load faster at no extra cost.</li>
+                </ul>
+
+                <h2 id="audit">A 30-minute speed audit you can do today</h2>
+                <ol>
+                    <li><strong>List your five most important pages</strong> — homepage, top service or product pages, contact page and your highest-traffic blog post.</li>
+                    <li><strong>Run each through PageSpeed Insights on mobile.</strong> Note whether field data passes and write down LCP, INP and CLS.</li>
+                    <li><strong>Find the LCP element.</strong> The report names it. If it is an image, check its file size and format; if it is text, look at fonts and render-blocking CSS.</li>
+                    <li><strong>Look at the "Reduce unused JavaScript" and "Third-party code" sections.</strong> List every chat widget, tracker, slider and pop-up, and mark the ones you could remove or delay.</li>
+                    <li><strong>Scroll the page on a real mid-range phone</strong> on mobile data. Watch for content jumping (CLS) and taps that feel slow (INP).</li>
+                    <li><strong>Open Search Console's Core Web Vitals report</strong> to see whether the problem affects one template (for example all product pages) or the whole site.</li>
+                    <li><strong>Prioritise.</strong> Fix the issue that affects the most important pages first — often the hero image, hosting, or one heavy script — and re-test.</li>
+                </ol>
+                <p>Write the "before" numbers down. After each change, test again so you know which fixes actually helped and you can explain the improvement to your team.</p>
+
+                <h2 id="seo-impact">Does speed really affect SEO?</h2>
+                <p>Google has said page experience is one of many ranking signals, and relevant, helpful content matters more. A fast page with weak content won't outrank a great page that is a little slower. But speed affects what happens <em>after</em> the click: slow pages lose visitors, enquiries and sales. Treat Core Web Vitals as a business metric first and an SEO factor second — and fix them before spending more on ads that send people to a slow site.</p>
+
+
+                <h2 id="faq">Frequently asked questions</h2>
+                <div class="cs-faq">
+                    <details>
+                        <summary>What is a good PageSpeed Insights score?</summary>
+                        <p>The 0–100 Lighthouse score is a lab estimate. What matters for Google's assessment is whether real users pass LCP (2.5 seconds or less), INP (200 milliseconds or less) and CLS (0.1 or less). Aim to pass those first; a high lab score is a bonus.</p>
+                    </details>
+                    <details>
+                        <summary>Why does my site pass on desktop but fail on mobile?</summary>
+                        <p>Phones have slower processors and networks, so heavy images and JavaScript hurt much more on mobile. Google mainly uses mobile data for most sites, so optimise for mobile first.</p>
+                    </details>
+                    <details>
+                        <summary>Why hasn't Search Console updated after I fixed my site?</summary>
+                        <p>Field data is collected over a rolling 28-day window, so improvements appear gradually. You can use the Validate Fix button in the Core Web Vitals report to start monitoring.</p>
+                    </details>
+                    <details>
+                        <summary>Will a caching plugin alone fix Core Web Vitals?</summary>
+                        <p>Caching helps server response and LCP, but it won't fix oversized images, layout shifts or heavy JavaScript that hurts INP. Most sites need a combination of hosting, image, script and layout fixes.</p>
+                    </details>
+                    <details>
+                        <summary>Is Core Web Vitals more important than content for SEO?</summary>
+                        <p>No. Helpful, relevant content is more important. Core Web Vitals can act as a tie-breaker and strongly affect conversions, so they are worth fixing, but they will not replace good content.</p>
+                    </details>
+                </div>
+
+                <div class="cs-callout">
+                    Need a fast website that passes Core Web Vitals? See our <a href="../website-development-hyderabad.html">website development service</a> or book a <a href="../pricing.html#additional-services">Website Audit &amp; Testing</a> to find exactly what is slowing your site down.
+                </div>
+                </div>
+            </div>
+        </article>
+
+        <section data-dsn-animate="section" class="cs-section cs-section-soft">
+            <div class="cs-container">
+                <h2>Related reading</h2>
+                <div class="cs-related">
+                    <a href="wordpress-vs-custom-website.html">WordPress vs Custom Website →</a>
+                    <a href="website-maintenance-guide.html">Website Maintenance Guide →</a>
+                    <a href="local-seo-checklist-hyderabad.html">Local SEO Checklist for Hyderabad →</a>
+                    <a href="../website-development-hyderabad.html">Website Development in Hyderabad →</a>
+                </div>
+            </div>
+        </section>
+
+        <section data-dsn-animate="section" class="cs-cta">
+            <div class="cs-container">
+                <h2>Is your website fast enough?</h2>
+                <p>We audit speed, Core Web Vitals and SEO health, then fix what matters most — in plain language, with a clear quote.</p>
+                <div class="cs-btns">
+                    <a class="cs-btn cs-btn-whatsapp" href="https://wa.me/919346142139?text=Hi%20CodeServe%2C%20I%20read%20your%20Core%20Web%20Vitals%20guide%20and%20want%20my%20website%20speed%20checked." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a class="cs-btn cs-btn-ghost" href="../website-development-hyderabad.html">Website Development</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== Footer ========== -->
+        <footer id="dsn_footer" class="dsn-footer p-relative footer-animate svg-animate background-main">
+            <svg class="dsn-separator dsn-separator-up dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+            <div class="footer-content p-relative mt-section">
+                <div class="dsn-container pt-60">
+                     <div class="d-grid grid-lg-4 grid-md-2 ">
+                            <div class="grid-col-1">
+                                <div class="dsn-logo main-logo">
+                                    <div class="main-logo">
+                                        <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand" rel="home">
+                                            <span class="logo-text">
+                                                <span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="mt-20">Websites, apps, AI chatbots and business automation from Hyderabad, India.</p>
+                                <ul class="dsn-socials box-social mt-20 dsn-icon-heading-color">
+                                    <li><a href="https://www.linkedin.com/in/codeserve-comunity-83224b407/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-linkedin-in"></i></span><span>LN</span></a></li>
+                                    <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-instagram"></i></span><span>IN</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="grid-col-2">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">NAVIGATION</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul id="menu-footer-menu" class="menu">
+                                        <li class="menu-item"><a href="../index.html">Home</a></li>
+                                        <li class="menu-item"><a href="../services.html">Services</a></li>
+                                        <li class="menu-item"><a href="../pricing.html">Pricing</a></li>
+                                        <li class="menu-item"><a href="../portfolio.html">Our Work</a></li>
+                                        <li class="menu-item"><a href="../blog/index.html">Blog</a></li>
+                                        <li class="menu-item"><a href="../about.html">About Us</a></li>
+                                        <li class="menu-item"><a href="../contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-3">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">SERVICES</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="../website-development-hyderabad.html">Website Development</a></li>
+                                        <li class="menu-item"><a href="../mobile-app-development-hyderabad.html">Mobile Apps</a></li>
+                                        <li class="menu-item"><a href="../whatsapp-automation-hyderabad.html">WhatsApp Automation</a></li>
+                                        <li class="menu-item"><a href="../ai-automation-services.html">AI &amp; Automation</a></li>
+                                        <li class="menu-item"><a href="../digital-marketing-hyderabad.html">Digital Marketing</a></li>
+                                        <li class="menu-item"><a href="../billing-software-development.html">Billing Software</a></li>
+                                        <li class="menu-item"><a href="../white-label-web-development.html">White Label</a></li>
+                                        <li class="menu-item"><a href="../hire-freelance-developers-hyderabad.html">Hire Developers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-4">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">CONTACT</span></h4>
+                                <div class="col-contact">
+                                    <p><strong>T</strong> : <a href="tel:+919346142139">+91 93461 42139</a></p>
+                                    <p><strong>T</strong> : <a href="tel:+918074403355">+91 80744 03355</a></p>
+                                    <p class="over-hidden mt-10"><strong>E</strong> : <a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                                    <p class="mt-10">Hyderabad, Telangana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="footer-bottom mt-60 pt-30 border-top pb-30 text-center">
+                        <p class="over-hidden">© 2026 CodeServe - Forging the Future. · <a class="link-hover" href="../privacy.html">Privacy Policy</a> · <a class="link-hover" href="../terms.html">Terms</a> · <a class="link-hover" href="../faq.html">FAQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== End Footer ========== -->
+    </div>
+</main>
+
+<!-- ========== Cursor ========== -->
+<div id="dsn_cursor" class="ball"></div>
+<div id="dsn_cursor_inner" class="ball"></div>
+<!-- ========== End Cursor ========== -->
+
+<!-- ========== Line BG ========== -->
+<div id="line_head"><span class="container"></span></div>
+<!-- ========== End Line BG ========== -->
+
+<script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../assets/js/plugins.min.js"></script>
+<script src="../assets/js/plugins/dsn-grid.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- New script for the preloader -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const scrambleText = document.querySelector('.scramble-text');
+    if (scrambleText) {
+        class TextScramble {
+            constructor(el) {
+                this.el = el;
+                this.chars = '!<>-_\\/[]{}—=+*^?#________';
+                this.update = this.update.bind(this);
+            }
+            setText(newText) {
+                const oldText = this.el.innerText;
+                const length = Math.max(oldText.length, newText.length);
+                const promise = new Promise((resolve) => this.resolve = resolve);
+                this.queue = [];
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || '';
+                    const to = newText[i] || '';
+                    const start = Math.floor(Math.random() * 40);
+                    const end = start + Math.floor(Math.random() * 40);
+                    this.queue.push({ from, to, start, end });
+                }
+                cancelAnimationFrame(this.frameRequest);
+                this.frame = 0;
+                this.update();
+                return promise;
+            }
+            update() {
+                let output = '';
+                let complete = 0;
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i];
+                    if (this.frame >= end) {
+                        complete++;
+                        output += to;
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar();
+                            this.queue[i].char = char;
+                        }
+                        output += `<span class="dud">${char}</span>`;
+                    } else {
+                        output += from;
+                    }
+                }
+                this.el.innerHTML = output;
+                if (complete === this.queue.length) {
+                    this.resolve();
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    this.frame++;
+                }
+            }
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)];
+            }
+        }
+
+        const phrases = [
+            'Executing Scripts...',
+            'Compiling Modules...',
+            'Building DOM...',
+            'Finalizing...'
+        ];
+        
+        const fx = new TextScramble(scrambleText);
+        let counter = 0;
+
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+
+        setTimeout(() => {
+             next();
+        }, 500);
+       
+    }
+});
+</script>
+
+<!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat" class="whatsapp-chat-widget">
+    <div class="whatsapp-chat-button" onclick="toggleWhatsAppChat()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="chat-tooltip">Chat with us!</span>
+    </div>
+    
+    <div class="whatsapp-chat-box" id="whatsapp-chat-box">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="../assets/img/logo2.jpg" alt="CodeServe" class="chat-avatar">
+                <div class="chat-info">
+                    <h4>CodeServe Community</h4>
+                    <p class="online-status">
+                        <span class="status-dot"></span>
+                        Typically replies instantly
+                    </p>
+                </div>
+            </div>
+            <button class="close-chat" onclick="toggleWhatsAppChat()">×</button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>💼 Interested in our services?</p>
+                <p>Let's discuss your project requirements!</p>
+                <div class="quick-replies">
+                    <button onclick="sendWhatsAppMessage('I need web development services')">🌐 Web Development</button>
+                    <button onclick="sendWhatsAppMessage('Mobile app development quote')">📱 Mobile App</button>
+                    <button onclick="sendWhatsAppMessage('SEO services pricing')">🔍 SEO Services</button>
+                    <button onclick="sendWhatsAppMessage('Custom project quote')">💼 Custom Project</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="start-chat-btn" onclick="sendWhatsAppMessage('Hello! I am interested in your services')">
+                <i class="fab fa-whatsapp"></i>
+                Start Conversation
+            </button>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="../assets/css/whatsapp-widget.css">
+<script src="../assets/js/whatsapp-widget.js?v=2"></script>
+<script src="../assets/js/blog-toc.js"></script>
+
+</body>
+</html>

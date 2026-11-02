@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Business API Guide for Indian Businesses (2026)</title>
+    <meta name="description" content="A simple guide to the WhatsApp Business API for Indian businesses: how it differs from the free app, what it costs, what you need and how to get started.">
+    <meta name="keywords" content="WhatsApp Business API India, WhatsApp API pricing, WhatsApp Cloud API, WhatsApp Business app vs API, WhatsApp automation India, WhatsApp template messages">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://codeservecommunity.netlify.app/blog/whatsapp-business-api-guide.html">
+    <meta property="og:title" content="WhatsApp Business API Guide for Indian Businesses (2026)">
+    <meta property="og:description" content="A simple guide to the WhatsApp Business API for Indian businesses: how it differs from the free app, what it costs, what you need and how to get started.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:image" content="https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide-og.png">
+    <link rel="canonical" href="https://codeservecommunity.netlify.app/blog/whatsapp-business-api-guide.html">
+    <link rel="icon" href="../favicon.ico">
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "WhatsApp Business API: A Simple Guide for Indian Businesses (2026)",
+    "description": "A simple guide to the WhatsApp Business API for Indian businesses: how it differs from the free app, what it costs, what you need and how to get started.",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02",
+    "author": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.netlify.app/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.netlify.app/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://codeservecommunity.netlify.app/blog/whatsapp-business-api-guide.html"
+    },
+    "inLanguage": "en-IN",
+    "image": "https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide-og.png"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://codeservecommunity.netlify.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://codeservecommunity.netlify.app/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "WhatsApp Business API: A Simple Guide for Indian Businesses (2026)",
+        "item": "https://codeservecommunity.netlify.app/blog/whatsapp-business-api-guide.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is the WhatsApp Business API free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Access to Meta's Cloud API itself has no separate subscription fee, but Meta charges per template message (marketing, utility and authentication). Replies inside a 24-hour window opened by the customer are generally free. You may also pay for a platform tool or a one-time custom setup."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a registered company to use the WhatsApp Business API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You need to be a real, verifiable business. A private limited company is not required — sole proprietors can usually verify with documents such as GST or Udyam registration and a matching website."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I send bulk WhatsApp messages with the API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can send approved template messages to customers who have opted in. Sending to purchased lists or people who did not agree to receive messages breaks WhatsApp's policies and can get your number restricted."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does WhatsApp API setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your business documents and website are ready, setup usually takes a few days to a week. Business verification and template approval by Meta can sometimes take longer."
+        }
+      }
+    ]
+  }
+]
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="../assets/css/plugins.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/services-style.css">
+    <link rel="stylesheet" href="../assets/css/theme-content.css">
+
+    <style>
+        .main-logo .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body class="v-dark dsn-ajax">
+
+<div id="dsn_preloader" class="preloader">
+    <div class="preloader-scramble-container">
+        <div class="preloader-scramble">
+            <div class="scramble-text" data-preloader-heading></div>
+        </div>
+        <div class="preloader-logo-final">
+            <div data-preloader-heading><span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span></div>
+        </div>
+    </div>
+    <div class="bg-load background-section d-flex align-items-end">
+        <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+        </svg>
+    </div>
+</div>
+
+<main id="main_root" class="main-root">
+
+    <!-- ========== Menu ========== -->
+    <header id="site_menu_header" class="site-header dsn-container d-none dsn-hamburger">
+        <div class="main-logo">
+            <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
+                <span class="logo-text">
+                    <span class="logo-text-code" style="color: white;">Code</span><span class="logo-text-serve" style="color: #387cf9;">Serve</span>
+                </span>
+            </a>
+        </div>
+        <nav class="main-navigation ">
+            <div class="menu-cover-title header-container dsn-container">MENU</div>
+            <ul id="dsn-primary-list" class="primary-nav h2">
+                <li class="nav-item"><a title="Home" href="../index.html"><span class="overflow">Home</span></a></li>
+                <li class="nav-item"><a title="Services" href="../services.html"><span class="overflow">Services</span></a></li>
+                <li class="nav-item"><a title="Our Work" href="../portfolio.html"><span class="overflow">Our Work</span></a></li>
+                <li class="nav-item"><a title="About Us" href="../about.html"><span class="overflow">About Us</span></a></li>
+                <li class="nav-item"><a title="Pricing" href="../pricing.html"><span class="overflow">Pricing</span></a></li>
+                <li class="nav-item"><a title="Blog" href="../blog/index.html"><span class="overflow">Blog</span></a></li>
+                <li class="nav-item"><a title="Contact" href="../contact.html"><span class="overflow">Contact</span></a></li>
+            </ul>
+             <div class="container-content d-flex flex-column justify-content-center section-margin">
+                <div class="nav__info">
+                    <div class="nav-content">
+                        <h5 class="sm-title-block mb-10">Studio</h5>
+                        Hyderabad, India
+                    </div>
+                    <div class="nav-content mt-30">
+                        <h5 class="sm-title-block mb-10">Contact</h5>
+                        <p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+919346142139" data-hover-text="+91 93461 42139">+91 93461 42139</a></p>
+<p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+918074403355" data-hover-text="+91 80744 03355">+91 80744 03355</a></p>
+                        <p class="links over-hidden"><a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="nav-social nav-content mt-30">
+                    <div class="nav-social-inner p-relative">
+                        <h5 class="sm-title-block mb-10">Follow us</h5>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/codeserve-comunity-83224b407/" target="_blank" rel="nofollow noopener noreferrer">LinkedIn.</a></li>
+                            <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow noopener noreferrer">Instagram.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+            <div class="toggle-icon">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+            <div class="toggle-text">
+                <div class="text-menu">Menu</div>
+                <div class="text-open">Open</div>
+                <div class="text-close">Close</div>
+            </div>
+        </div>
+        <div class="bg-load background-main"></div>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
+            <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+    </header>
+    <!-- ========== End Menu ========== -->
+
+    <!-- ========== Page Hero ========== -->
+    <header id="dsn_header" class="dsn-header-animation header-normal services-hero page-hero">
+        <div class="animated-grid"></div>
+        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
+        <div class="entry-header p-relative over-hidden">
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-center pb-section">
+                <div class="content p-relative text-center">
+                    <div class="intro-project w-100">
+                        <div class="intro-title">
+                            <p class="hero-tagline cs-breadcrumb" data-dsn-animate="up"><a href="../index.html">Home</a> / <a href="index.html">Blog</a> / WhatsApp Business API: A Simple Guide for Indian Businesses (2026)</p>
+                            <div id="hero_title" class="mt-20" data-dsn-animate="up">
+                                <h1 class="title-h2 text-upper">WhatsApp Business API: A Simple Guide for Indian Businesses (2026)</h1>
+                            </div>
+                            <p class="mt-20 max-w750 m-auto hero-subtitle" data-dsn-animate="up">Your customers already message you on WhatsApp. The WhatsApp Business API lets you reply instantly, send order updates automatically and run an AI assistant — but it works differently from the app on your phone. Here is everything you need to know, in plain English.</p>
+                            <p class="cs-hero-meta" data-dsn-animate="up">By CodeServe Team · 2 November 2026 · 6 min read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== End Page Hero ========== -->
+
+    <div id="page_wrapper" class="wrapper">
+
+        
+
+        <article class="cs-article">
+            <div class="cs-container cs-article-layout">
+                <aside class="cs-article-aside">
+    <nav class="cs-toc" aria-label="Table of contents">
+                    <strong>In this guide</strong>
+                    <ol>
+                        <li><a href="#what-is-it">What is the WhatsApp Business API?</a></li>
+                        <li><a href="#app-vs-api">WhatsApp Business app vs WhatsApp Business API</a></li>
+                        <li><a href="#what-you-can-do">What you can do with it</a></li>
+                        <li><a href="#by-industry">Use cases by industry</a></li>
+                        <li><a href="#how-pricing-works">How WhatsApp API pricing works</a></li>
+                        <li><a href="#requirements">What you need to get started</a></li>
+                        <li><a href="#rules">Rules you must follow</a></li>
+                        <li><a href="#steps">Step-by-step: how to set it up</a></li>
+                        <li><a href="#mistakes">Common mistakes to avoid</a></li>
+                        <li><a href="#codeserve">How CodeServe can help</a></li>
+                        <li><a href="#faq">Frequently asked questions</a></li>
+                    </ol>
+                </nav>
+                </aside>
+                <div class="cs-article-body">
+                    <figure class="cs-figure cs-featured"><img src="../assets/img/blog/whatsapp-business-api-guide.svg" alt="Phone showing automated WhatsApp Business API chat messages" width="1200" height="630"></figure>
+                <h2 id="what-is-it">What is the WhatsApp Business API?</h2>
+                <p>The WhatsApp Business API — officially part of the <strong>WhatsApp Business Platform</strong> from Meta — is a way for software to send and receive WhatsApp messages on behalf of your business. Instead of someone typing every reply on a phone, your website, online store, CRM or chatbot can talk to customers automatically.</p>
+                <p>There is no separate "API app" to download. You connect a phone number to Meta's platform, and then use a dashboard or a custom integration to manage conversations. Today most businesses use Meta's <strong>Cloud API</strong>, which is hosted by Meta, so you do not need your own servers to run WhatsApp itself.</p>
+
+                    <figure class="cs-figure"><img src="../assets/img/blog/whatsapp-business-api-guide-message-flow.svg" alt="Diagram of a customer message flowing through the WhatsApp Cloud API to an automation and back" width="800" height="320" loading="lazy"><figcaption>A customer message reaches your automation through the WhatsApp Cloud API, and the reply goes back instantly.</figcaption></figure>
+
+                <h2 id="app-vs-api">WhatsApp Business app vs WhatsApp Business API</h2>
+                <table>
+                    <thead>
+                        <tr><th></th><th>WhatsApp Business app (free)</th><th>WhatsApp Business API</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Best for</td><td>Very small businesses, one person replying</td><td>Growing businesses, teams, online stores</td></tr>
+                        <tr><td>Users</td><td>A phone plus a few linked devices</td><td>Many team members through a shared inbox</td></tr>
+                        <tr><td>Automation</td><td>Greeting, away message, quick replies</td><td>Full chatbots, AI replies, flows, integrations</td></tr>
+                        <tr><td>Order / booking notifications</td><td>Manual</td><td>Automatic from your website, store or CRM</td></tr>
+                        <tr><td>Broadcasts</td><td>Limited, only to contacts who saved your number</td><td>Approved templates to opted-in customers at scale</td></tr>
+                        <tr><td>Cost</td><td>Free</td><td>Pay Meta per template message; setup and tool costs</td></tr>
+                    </tbody>
+                </table>
+                <p>If you get only a handful of messages a day, the free app is fine. If you are missing messages, copying order details by hand, or want replies at 11 pm on a Sunday, the API is the next step.</p>
+
+                <h2 id="what-you-can-do">What you can do with it</h2>
+                <ul class="cs-checklist">
+                    <li>Instant replies to common questions</li>
+                    <li>Order confirmations and shipping updates</li>
+                    <li>Appointment and booking reminders</li>
+                    <li>Payment links and payment reminders</li>
+                    <li>OTPs and login codes</li>
+                    <li>Festival offers to opted-in customers</li>
+                    <li>An AI assistant trained on your business</li>
+                    <li>Leads saved to Google Sheets or a CRM</li>
+                    <li>A shared inbox for your whole team</li>
+                    <li>Hand-over from bot to a human agent</li>
+                </ul>
+                <h3>Example: a clinic in Hyderabad</h3>
+                <p>A patient sends "Hi" at 10 pm. The bot replies with buttons: <em>Book appointment</em>, <em>Timings &amp; location</em>, <em>Talk to reception</em>. The patient picks a slot, the booking is saved to the clinic's calendar, and the next morning a reminder message goes out automatically. Reception only steps in for questions the bot cannot answer.</p>
+
+                <h2 id="by-industry">Use cases by industry</h2>
+                <table>
+                    <thead>
+                        <tr><th>Business</th><th>What to automate first</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Online store</td><td>Order confirmation, shipping and delivery updates, cash-on-delivery confirmation, abandoned-cart reminders to opted-in customers</td></tr>
+                        <tr><td>Clinic or hospital</td><td>Appointment booking, reminders the day before, report-ready alerts, timings and location</td></tr>
+                        <tr><td>Restaurant or cloud kitchen</td><td>Menu with buttons, table reservations, order status, feedback request after delivery</td></tr>
+                        <tr><td>Real estate</td><td>Project brochures on request, site-visit booking, lead capture to the sales team</td></tr>
+                        <tr><td>Coaching centre or school</td><td>Admission enquiries, fee reminders, class schedule changes, exam results alerts</td></tr>
+                        <tr><td>Salon, spa or gym</td><td>Slot booking, reminders, membership renewal alerts, birthday offers</td></tr>
+                        <tr><td>Service company</td><td>Quote requests, technician visit confirmation, invoice and payment links</td></tr>
+                    </tbody>
+                </table>
+                <p>A good rule: automate the three questions you answer most often and the one update customers ask for most. That alone usually saves hours of staff time every week.</p>
+
+                <h2 id="how-pricing-works">How WhatsApp API pricing works</h2>
+                <p>Meta charges for <strong>template messages</strong> — pre-approved messages that a business sends. Templates fall into three categories, each with its own rate per country:</p>
+                <ul>
+                    <li><strong>Marketing:</strong> offers, announcements, re-engagement. The most expensive category.</li>
+                    <li><strong>Utility:</strong> order updates, booking confirmations, payment reminders, account alerts.</li>
+                    <li><strong>Authentication:</strong> one-time passwords (OTPs).</li>
+                </ul>
+                <p>When a customer messages you first, a <strong>24-hour customer service window</strong> opens. Normal free-form replies inside that window are generally not charged, and Meta has made some utility messages inside the window free as well. Outside the window, you must use an approved template.</p>
+                <div class="cs-callout"><strong>Important:</strong> Meta changes WhatsApp pricing from time to time (for example, it moved from conversation-based to per-message pricing in 2025). Always check <strong>Meta's current rate card for India</strong> before planning a large campaign. Charges are billed by Meta to the business's own account.</div>
+                <p>On top of Meta's charges, you may pay for:</p>
+                <ul>
+                    <li><strong>A platform or inbox tool</strong> (many providers charge a monthly fee and some add a margin per message), or</li>
+                    <li><strong>A one-time custom setup</strong> that connects the Cloud API directly to your website or CRM, with no per-message markup from a middleman.</li>
+                </ul>
+
+                <h2 id="requirements">What you need to get started</h2>
+                <ol>
+                    <li><strong>A Meta Business account</strong> (business.facebook.com) for your company.</li>
+                    <li><strong>Business verification</strong> — Meta may ask for documents such as a GST certificate, Udyam registration, shop licence or utility bill in the business name, and checks that your website shows the same business details.</li>
+                    <li><strong>A phone number</strong> that can receive an SMS or call for verification. It can be a new number or an existing one.</li>
+                    <li><strong>A display name</strong> that matches your business, which Meta reviews.</li>
+                    <li><strong>A website with a privacy policy</strong> — this helps verification and builds trust.</li>
+                    <li><strong>A payment method</strong> added to your WhatsApp account for Meta's message charges.</li>
+                </ol>
+                <h3>Can I use my existing WhatsApp number?</h3>
+                <p>Often, yes. Traditionally a number used on the API could not be used in the phone app at the same time, so businesses either migrated their number or took a new one for automation. Meta has since introduced options that let some businesses use the WhatsApp Business app and the platform on the same number. Availability and features vary, so check your options before moving a number your customers already know.</p>
+
+                <h2 id="rules">Rules you must follow</h2>
+                <p>WhatsApp protects its users strongly. Numbers that spam get restricted or banned. Follow these rules from day one:</p>
+                <ul>
+                    <li><strong>Get opt-in.</strong> Only message customers who have agreed to receive WhatsApp messages from you — for example a checkbox at checkout or a "Message us" button they tapped.</li>
+                    <li><strong>Use templates correctly.</strong> Do not label marketing messages as utility to save money; Meta reviews and may re-categorise them.</li>
+                    <li><strong>Make it easy to stop.</strong> Include a way to opt out of promotional messages.</li>
+                    <li><strong>Watch your quality rating.</strong> If many people block or report you, Meta lowers your rating and limits how many people you can message.</li>
+                    <li><strong>Start slowly.</strong> New numbers have messaging limits that increase as you send good-quality messages over time.</li>
+                </ul>
+
+                <h2 id="steps">Step-by-step: how to set it up</h2>
+                <ol>
+                    <li><strong>List your use cases.</strong> Which questions do you answer 20 times a day? Which updates do customers ask for?</li>
+                    <li><strong>Prepare your business documents</strong> and make sure your website shows the same business name, address and contact details.</li>
+                    <li><strong>Create and verify</strong> your Meta Business account.</li>
+                    <li><strong>Connect your number</strong> to the WhatsApp Business Platform and set your display name and profile.</li>
+                    <li><strong>Create message templates</strong> (order confirmation, reminder, offer) and submit them for approval.</li>
+                    <li><strong>Build your flows:</strong> welcome menu, FAQs, booking, hand-over to a human.</li>
+                    <li><strong>Connect your systems</strong> — WooCommerce, Shopify, Google Sheets, CRM or an AI model.</li>
+                    <li><strong>Test everything</strong> with real phones before launch, then monitor replies for the first two weeks.</li>
+                </ol>
+
+                <h2 id="mistakes">Common mistakes to avoid</h2>
+                <ul>
+                    <li>Buying contact lists and broadcasting to people who never opted in.</li>
+                    <li>Building a bot with no way to reach a human.</li>
+                    <li>Long, robotic messages — keep replies short and use buttons.</li>
+                    <li>Forgetting to update answers when prices, timings or offers change.</li>
+                    <li>Moving your main business number to the API without understanding what changes in the phone app.</li>
+                </ul>
+
+                <h2 id="codeserve">How CodeServe can help</h2>
+                <p>We set up the official WhatsApp Business Platform for businesses in Hyderabad and across India and build the automation on top of it:</p>
+                <table>
+                    <thead>
+                        <tr><th>Plan</th><th>One-time setup</th><th>Best for</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>WhatsApp Starter</td><td>₹7,999</td><td>Auto-replies, welcome message, menu buttons</td></tr>
+                        <tr><td>WhatsApp Business</td><td>₹14,999</td><td>Order, booking and payment messages from your store or website</td></tr>
+                        <tr><td>AI WhatsApp Assistant</td><td>₹24,999</td><td>AI replies in English, Hindi and Telugu with human hand-over</td></tr>
+                    </tbody>
+                </table>
+                <p>Meta's message charges are billed by Meta directly to your account based on usage.</p>
+                <h2 id="faq">Frequently asked questions</h2>
+                <div class="cs-faq">
+                    <details>
+                        <summary>Is the WhatsApp Business API free?</summary>
+                        <p>Access to Meta's Cloud API itself has no separate subscription fee, but Meta charges per template message (marketing, utility and authentication). Replies inside a 24-hour window opened by the customer are generally free. You may also pay for a platform tool or a one-time custom setup.</p>
+                    </details>
+                    <details>
+                        <summary>Do I need a registered company to use the WhatsApp Business API?</summary>
+                        <p>You need to be a real, verifiable business. A private limited company is not required — sole proprietors can usually verify with documents such as GST or Udyam registration and a matching website.</p>
+                    </details>
+                    <details>
+                        <summary>Can I send bulk WhatsApp messages with the API?</summary>
+                        <p>You can send approved template messages to customers who have opted in. Sending to purchased lists or people who did not agree to receive messages breaks WhatsApp's policies and can get your number restricted.</p>
+                    </details>
+                    <details>
+                        <summary>How long does WhatsApp API setup take?</summary>
+                        <p>If your business documents and website are ready, setup usually takes a few days to a week. Business verification and template approval by Meta can sometimes take longer.</p>
+                    </details>
+                </div>
+
+                <div class="cs-callout">
+                    Want WhatsApp to answer customers and send updates automatically? See our <a href="../whatsapp-automation-hyderabad.html">WhatsApp automation services</a> or compare plans on our <a href="../pricing.html#whatsapp-automation">pricing page</a>.
+                </div>
+            
+                </div>
+            </div>
+        </article>
+
+        <section data-dsn-animate="section" class="cs-section cs-section-soft">
+            <div class="cs-container">
+                <h2>Related reading</h2>
+                <div class="cs-related">
+                    <a href="ai-automation-small-business-india.html">10 AI Automations for Small Businesses →</a>
+                    <a href="../whatsapp-automation-hyderabad.html">WhatsApp Automation Services →</a>
+                    <a href="../ai-automation-services.html">AI Automation & Chatbots →</a>
+                    <a href="website-cost-hyderabad-2026.html">Website Cost in Hyderabad (2026) →</a>
+                </div>
+            </div>
+        </section>
+
+        <section data-dsn-animate="section" class="cs-cta">
+            <div class="cs-container">
+                <h2>Let WhatsApp work for you 24/7</h2>
+                <p>We'll review your business and suggest the right WhatsApp setup — free consultation, clear quote in 24 hours.</p>
+                <div class="cs-btns">
+                    <a class="cs-btn cs-btn-whatsapp" href="https://wa.me/919346142139?text=Hi%20CodeServe%2C%20I%20read%20your%20WhatsApp%20Business%20API%20guide%20and%20want%20to%20automate%20my%20WhatsApp." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a class="cs-btn cs-btn-ghost" href="../pricing.html">See Pricing</a>
+                </div>
+            </div>
+        </section>
+    
+
+        <!-- ========== Footer ========== -->
+        <footer id="dsn_footer" class="dsn-footer p-relative footer-animate svg-animate background-main">
+            <svg class="dsn-separator dsn-separator-up dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+            <div class="footer-content p-relative mt-section">
+                <div class="dsn-container pt-60">
+                     <div class="d-grid grid-lg-4 grid-md-2 ">
+                            <div class="grid-col-1">
+                                <div class="dsn-logo main-logo">
+                                    <div class="main-logo">
+                                        <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand" rel="home">
+                                            <span class="logo-text">
+                                                <span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="mt-20">Websites, apps, AI chatbots and business automation from Hyderabad, India.</p>
+                                <ul class="dsn-socials box-social mt-20 dsn-icon-heading-color">
+                                    <li><a href="https://www.linkedin.com/in/codeserve-comunity-83224b407/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-linkedin-in"></i></span><span>LN</span></a></li>
+                                    <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-instagram"></i></span><span>IN</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="grid-col-2">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">NAVIGATION</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul id="menu-footer-menu" class="menu">
+                                        <li class="menu-item"><a href="../index.html">Home</a></li>
+                                        <li class="menu-item"><a href="../services.html">Services</a></li>
+                                        <li class="menu-item"><a href="../pricing.html">Pricing</a></li>
+                                        <li class="menu-item"><a href="../portfolio.html">Our Work</a></li>
+                                        <li class="menu-item"><a href="../blog/index.html">Blog</a></li>
+                                        <li class="menu-item"><a href="../about.html">About Us</a></li>
+                                        <li class="menu-item"><a href="../contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-3">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">SERVICES</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="../website-development-hyderabad.html">Website Development</a></li>
+                                        <li class="menu-item"><a href="../mobile-app-development-hyderabad.html">Mobile Apps</a></li>
+                                        <li class="menu-item"><a href="../whatsapp-automation-hyderabad.html">WhatsApp Automation</a></li>
+                                        <li class="menu-item"><a href="../ai-automation-services.html">AI &amp; Automation</a></li>
+                                        <li class="menu-item"><a href="../digital-marketing-hyderabad.html">Digital Marketing</a></li>
+                                        <li class="menu-item"><a href="../billing-software-development.html">Billing Software</a></li>
+                                        <li class="menu-item"><a href="../white-label-web-development.html">White Label</a></li>
+                                        <li class="menu-item"><a href="../hire-freelance-developers-hyderabad.html">Hire Developers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-4">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">CONTACT</span></h4>
+                                <div class="col-contact">
+                                    <p><strong>T</strong> : <a href="tel:+919346142139">+91 93461 42139</a></p>
+                                    <p><strong>T</strong> : <a href="tel:+918074403355">+91 80744 03355</a></p>
+                                    <p class="over-hidden mt-10"><strong>E</strong> : <a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                                    <p class="mt-10">Hyderabad, Telangana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="footer-bottom mt-60 pt-30 border-top pb-30 text-center">
+                        <p class="over-hidden">© 2026 CodeServe - Forging the Future. · <a class="link-hover" href="../privacy.html">Privacy Policy</a> · <a class="link-hover" href="../terms.html">Terms</a> · <a class="link-hover" href="../faq.html">FAQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== End Footer ========== -->
+    </div>
+</main>
+
+<!-- ========== Cursor ========== -->
+<div id="dsn_cursor" class="ball"></div>
+<div id="dsn_cursor_inner" class="ball"></div>
+<!-- ========== End Cursor ========== -->
+
+<!-- ========== Line BG ========== -->
+<div id="line_head"><span class="container"></span></div>
+<!-- ========== End Line BG ========== -->
+
+<script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../assets/js/plugins.min.js"></script>
+<script src="../assets/js/plugins/dsn-grid.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- New script for the preloader -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const scrambleText = document.querySelector('.scramble-text');
+    if (scrambleText) {
+        class TextScramble {
+            constructor(el) {
+                this.el = el;
+                this.chars = '!<>-_\\/[]{}—=+*^?#________';
+                this.update = this.update.bind(this);
+            }
+            setText(newText) {
+                const oldText = this.el.innerText;
+                const length = Math.max(oldText.length, newText.length);
+                const promise = new Promise((resolve) => this.resolve = resolve);
+                this.queue = [];
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || '';
+                    const to = newText[i] || '';
+                    const start = Math.floor(Math.random() * 40);
+                    const end = start + Math.floor(Math.random() * 40);
+                    this.queue.push({ from, to, start, end });
+                }
+                cancelAnimationFrame(this.frameRequest);
+                this.frame = 0;
+                this.update();
+                return promise;
+            }
+            update() {
+                let output = '';
+                let complete = 0;
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i];
+                    if (this.frame >= end) {
+                        complete++;
+                        output += to;
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar();
+                            this.queue[i].char = char;
+                        }
+                        output += `<span class="dud">${char}</span>`;
+                    } else {
+                        output += from;
+                    }
+                }
+                this.el.innerHTML = output;
+                if (complete === this.queue.length) {
+                    this.resolve();
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    this.frame++;
+                }
+            }
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)];
+            }
+        }
+
+        const phrases = [
+            'Executing Scripts...',
+            'Compiling Modules...',
+            'Building DOM...',
+            'Finalizing...'
+        ];
+        
+        const fx = new TextScramble(scrambleText);
+        let counter = 0;
+
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+
+        setTimeout(() => {
+             next();
+        }, 500);
+       
+    }
+});
+</script>
+
+<!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat" class="whatsapp-chat-widget">
+    <div class="whatsapp-chat-button" onclick="toggleWhatsAppChat()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="chat-tooltip">Chat with us!</span>
+    </div>
+    
+    <div class="whatsapp-chat-box" id="whatsapp-chat-box">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="../assets/img/logo2.jpg" alt="CodeServe" class="chat-avatar">
+                <div class="chat-info">
+                    <h4>CodeServe Community</h4>
+                    <p class="online-status">
+                        <span class="status-dot"></span>
+                        Typically replies instantly
+                    </p>
+                </div>
+            </div>
+            <button class="close-chat" onclick="toggleWhatsAppChat()">×</button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>💼 Interested in our services?</p>
+                <p>Let's discuss your project requirements!</p>
+                <div class="quick-replies">
+                    <button onclick="sendWhatsAppMessage('I need web development services')">🌐 Web Development</button>
+                    <button onclick="sendWhatsAppMessage('Mobile app development quote')">📱 Mobile App</button>
+                    <button onclick="sendWhatsAppMessage('SEO services pricing')">🔍 SEO Services</button>
+                    <button onclick="sendWhatsAppMessage('Custom project quote')">💼 Custom Project</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="start-chat-btn" onclick="sendWhatsAppMessage('Hello! I am interested in your services')">
+                <i class="fab fa-whatsapp"></i>
+                Start Conversation
+            </button>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="../assets/css/whatsapp-widget.css">
+<script src="../assets/js/whatsapp-widget.js?v=2"></script>
+<script src="../assets/js/blog-toc.js"></script>
+
+</body>
+</html>

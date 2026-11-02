@@ -33,7 +33,7 @@ Two main footer types identified:
 ```
 Contact Details:
 - Email: codeserve.contact@gmail.com
-- Phone: +91 9505 764 142 / +91 9505 764 142  
+- Phone: +91 93461 42139 / +91 80744 03355  
 - Location: Hyderabad, India
 ```
 
@@ -45,7 +45,7 @@ Contact Details:
         <span class="background-revere">CONTACT</span>
     </h4>
     <div class="col-contact">
-        <p><strong>T</strong> : <a href="tel:+919505764142">+91 9505 764 142</a></p>
+        <p><strong>T</strong> : <a href="tel:+919346142139">+91 93461 42139</a> / <a href="tel:+918074403355">+91 80744 03355</a></p>
         <p class="over-hidden mt-10">
             <strong>E</strong> : <a class="link-hover" href="mailto:codeserve.contact@gmail.com">codeserve.contact@gmail.com</a>
         </p>
@@ -61,7 +61,7 @@ Contact Details:
         <li><i class="fas fa-envelope" style="margin-right: 8px;"></i> 
             <a href="mailto:codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></li>
         <li><i class="fas fa-phone" style="margin-right: 8px;"></i> 
-            <a href="tel:+919505764142">+91 9505 764 142</a></li>
+            <a href="tel:+919346142139">+91 93461 42139</a> / <a href="tel:+918074403355">+91 80744 03355</a></li>
         <li><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i> Hyderabad, India</li>
     </ul>
 </div>

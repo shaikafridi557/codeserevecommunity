@@ -1,63 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-    <!-- Homepage -->
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://codeservecommunity.netlify.app/</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2026-11-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/codeserve1.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/codeserve2.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/codserve3.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/codeserve.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/codeserve5.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/project-pusher.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/project-generator.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/garishta-infra.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/sabari-studios.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/sireeshna-solutions.jpg</image:loc></image:image>
     </url>
-
-    <!-- Services Page -->
     <url>
         <loc>https://codeservecommunity.netlify.app/services.html</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2026-11-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
-    <!-- Portfolio Page -->
+    <url>
+        <loc>https://codeservecommunity.netlify.app/pricing.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
     <url>
         <loc>https://codeservecommunity.netlify.app/portfolio.html</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2026-11-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/garishta-infra.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/sabari-studios.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/sireeshna-solutions.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/project-pusher.jpg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/portfolio/project-generator.jpg</image:loc></image:image>
     </url>
-
-    <!-- About Page -->
     <url>
         <loc>https://codeservecommunity.netlify.app/about.html</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2026-11-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
-
-    <!-- Contact Page -->
     <url>
         <loc>https://codeservecommunity.netlify.app/contact.html</loc>
-        <lastmod>2025-01-14</lastmod>
+        <lastmod>2026-11-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-
-    <!-- Pricing Page -->
-    <url>
-        <loc>https://codeservecommunity.netlify.app/pricing.html</loc>
-        <lastmod>2025-01-14</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- FAQ Page -->
     <url>
         <loc>https://codeservecommunity.netlify.app/faq.html</loc>
-        <lastmod>2025-01-15</lastmod>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/website-development-hyderabad.html</loc>
+        <lastmod>2026-11-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
-
+    <url>
+        <loc>https://codeservecommunity.netlify.app/whatsapp-automation-hyderabad.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/ai-automation-services.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/digital-marketing-hyderabad.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/mobile-app-development-hyderabad.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/billing-software-development.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/white-label-web-development.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/hire-freelance-developers-hyderabad.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/n8n-vs-zapier-vs-make.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/ai-chatbot-business-data-rag.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/local-seo-checklist-hyderabad.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/mobile-app-cost-india-2026.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/digital-marketing-budget-small-business.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-maintenance-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-cost-hyderabad-2026.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/ai-automation-small-business-india.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/ai-automation-small-business-india.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/ai-automation-small-business-india-automation-map.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/ai-chatbot-business-data-rag.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/ai-chatbot-business-data-rag.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/ai-chatbot-business-data-rag-pipeline.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/digital-marketing-budget-small-business.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/digital-marketing-budget-small-business.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/digital-marketing-budget-small-business-split.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/freelancer-vs-agency-india.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/freelancer-vs-agency-india.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/freelancer-vs-agency-india-decision-tree.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/google-business-profile-guide.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/google-business-profile-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/google-business-profile-guide-ranking-factors.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/gst-billing-software-guide.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/gst-billing-software-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/gst-billing-software-guide-data-flow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/local-seo-checklist-hyderabad.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/local-seo-checklist-hyderabad.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/local-seo-checklist-hyderabad-pillars.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/mobile-app-cost-india-2026.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/mobile-app-cost-india-2026.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/mobile-app-cost-india-2026-breakdown.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/n8n-vs-zapier-vs-make.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/n8n-vs-zapier-vs-make.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/n8n-vs-zapier-vs-make-workflow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/website-cost-hyderabad-2026.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-cost-hyderabad-2026.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-cost-hyderabad-2026-price-ranges.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/website-maintenance-guide.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-maintenance-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-maintenance-guide-calendar.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/website-speed-core-web-vitals.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals-thresholds.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/whatsapp-business-api-guide.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide-message-flow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/white-label-web-development-guide.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/white-label-web-development-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/white-label-web-development-guide-workflow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/woocommerce-whatsapp-order-notifications.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications-flow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/wordpress-vs-custom-website.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/wordpress-vs-custom-website.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/wordpress-vs-custom-website-comparison.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/privacy.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/terms.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
 </urlset>

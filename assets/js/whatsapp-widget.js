@@ -5,7 +5,7 @@ function toggleWhatsAppChat() {
 }
 
 function sendWhatsAppMessage(message) {
-    const phoneNumber = '919505764142'; // CodeServe WhatsApp number with country code
+    const phoneNumber = '919346142139'; // CodeServe WhatsApp number with country code
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, '_blank');

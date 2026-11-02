@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WooCommerce Order Notifications on WhatsApp: Step-by-Step</title>
+    <meta name="description" content="Send WooCommerce order confirmations and shipping updates on WhatsApp with the official Cloud API: Meta setup, templates, PHP code, testing and common errors.">
+    <meta name="keywords" content="WooCommerce WhatsApp notifications, WooCommerce WhatsApp order message, WhatsApp Cloud API WooCommerce, WhatsApp order confirmation WordPress, WhatsApp utility template">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://codeservecommunity.netlify.app/blog/woocommerce-whatsapp-order-notifications.html">
+    <meta property="og:title" content="WooCommerce Order Notifications on WhatsApp: Step-by-Step">
+    <meta property="og:description" content="Send WooCommerce order confirmations and shipping updates on WhatsApp with the official Cloud API: Meta setup, templates, PHP code, testing and common errors.">
+    <meta property="og:image" content="https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="How to Send WooCommerce Order Notifications on WhatsApp (Step-by-Step)">
+    <meta property="article:published_time" content="2026-11-02">
+    <meta property="article:section" content="WhatsApp Automation">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WooCommerce Order Notifications on WhatsApp: Step-by-Step">
+    <meta name="twitter:description" content="Send WooCommerce order confirmations and shipping updates on WhatsApp with the official Cloud API: Meta setup, templates, PHP code, testing and common errors.">
+    <meta name="twitter:image" content="https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications-og.png">
+    <link rel="canonical" href="https://codeservecommunity.netlify.app/blog/woocommerce-whatsapp-order-notifications.html">
+    <link rel="icon" href="../favicon.ico">
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "How to Send WooCommerce Order Notifications on WhatsApp (Step-by-Step)",
+    "description": "Send WooCommerce order confirmations and shipping updates on WhatsApp with the official Cloud API: Meta setup, templates, PHP code, testing and common errors.",
+    "image": "https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications-og.png",
+    "datePublished": "2026-11-02",
+    "dateModified": "2026-11-02",
+    "author": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.netlify.app/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.netlify.app/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://codeservecommunity.netlify.app/assets/img/logo2.jpg"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://codeservecommunity.netlify.app/blog/woocommerce-whatsapp-order-notifications.html"
+    },
+    "keywords": "WooCommerce WhatsApp notifications, WooCommerce WhatsApp order message, WhatsApp Cloud API WooCommerce, WhatsApp order confirmation WordPress, WhatsApp utility template",
+    "articleSection": "WhatsApp Automation",
+    "inLanguage": "en-IN"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://codeservecommunity.netlify.app/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://codeservecommunity.netlify.app/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Send WooCommerce Order Notifications on WhatsApp (Step-by-Step)",
+        "item": "https://codeservecommunity.netlify.app/blog/woocommerce-whatsapp-order-notifications.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can I send WooCommerce order messages from my normal WhatsApp Business app?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not automatically in a reliable, allowed way. The WhatsApp Business app is designed for manual chats. Automated order notifications should use the official WhatsApp Business Platform (Cloud API), either directly or through an approved provider."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need a separate phone number for the WhatsApp API?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The number you connect to the API cannot be used on the regular WhatsApp app at the same time. Many stores use a new number for automation and keep their existing number for personal or manual chats."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which template category should order updates use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Order confirmations, shipping updates and delivery messages usually belong in the Utility category. Keep promotional wording out of these templates, or Meta may reject them or treat them as marketing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it safe to put the access token in functions.php?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is better to define the token in wp-config.php or a secrets manager and reference it from your code. Never commit the token to a public repository or share it in screenshots."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does the setup take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your Meta business details are ready, a basic setup with two or three templates often takes a few days, mostly waiting for verification and template approval. Custom statuses, tracking links and dashboards take longer."
+        }
+      }
+    ]
+  }
+]
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="../assets/css/plugins.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/services-style.css">
+    <link rel="stylesheet" href="../assets/css/theme-content.css">
+
+    <style>
+        .main-logo .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+        }
+    </style>
+    <style>
+        .cs-article-body pre {
+            background-color: var(--assistant-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 18px 20px;
+            overflow-x: auto;
+            margin: 20px 0 26px;
+        }
+
+        .cs-article-body pre code {
+            font-family: Menlo, Consolas, "Courier New", monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #e5e7eb;
+            white-space: pre;
+        }
+
+        .cs-article-body p code,
+        .cs-article-body li code,
+        .cs-article-body td code {
+            font-family: Menlo, Consolas, "Courier New", monospace;
+            font-size: 0.9em;
+            background-color: var(--assistant-color);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 1px 6px;
+        }
+    </style>
+</head>
+
+<body class="v-dark dsn-ajax">
+
+<div id="dsn_preloader" class="preloader">
+    <div class="preloader-scramble-container">
+        <div class="preloader-scramble">
+            <div class="scramble-text" data-preloader-heading></div>
+        </div>
+        <div class="preloader-logo-final">
+            <div data-preloader-heading><span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span></div>
+        </div>
+    </div>
+    <div class="bg-load background-section d-flex align-items-end">
+        <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+        </svg>
+    </div>
+</div>
+
+<main id="main_root" class="main-root">
+
+    <!-- ========== Menu ========== -->
+    <header id="site_menu_header" class="site-header dsn-container d-none dsn-hamburger">
+        <div class="main-logo">
+            <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
+                <span class="logo-text">
+                    <span class="logo-text-code" style="color: white;">Code</span><span class="logo-text-serve" style="color: #387cf9;">Serve</span>
+                </span>
+            </a>
+        </div>
+        <nav class="main-navigation ">
+            <div class="menu-cover-title header-container dsn-container">MENU</div>
+            <ul id="dsn-primary-list" class="primary-nav h2">
+                <li class="nav-item"><a title="Home" href="../index.html"><span class="overflow">Home</span></a></li>
+                <li class="nav-item"><a title="Services" href="../services.html"><span class="overflow">Services</span></a></li>
+                <li class="nav-item"><a title="Our Work" href="../portfolio.html"><span class="overflow">Our Work</span></a></li>
+                <li class="nav-item"><a title="About Us" href="../about.html"><span class="overflow">About Us</span></a></li>
+                <li class="nav-item"><a title="Pricing" href="../pricing.html"><span class="overflow">Pricing</span></a></li>
+                <li class="nav-item"><a title="Blog" href="../blog/index.html"><span class="overflow">Blog</span></a></li>
+                <li class="nav-item"><a title="Contact" href="../contact.html"><span class="overflow">Contact</span></a></li>
+            </ul>
+             <div class="container-content d-flex flex-column justify-content-center section-margin">
+                <div class="nav__info">
+                    <div class="nav-content">
+                        <h5 class="sm-title-block mb-10">Studio</h5>
+                        Hyderabad, India
+                    </div>
+                    <div class="nav-content mt-30">
+                        <h5 class="sm-title-block mb-10">Contact</h5>
+                        <p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+919346142139" data-hover-text="+91 93461 42139">+91 93461 42139</a></p>
+<p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+918074403355" data-hover-text="+91 80744 03355">+91 80744 03355</a></p>
+                        <p class="links over-hidden"><a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="nav-social nav-content mt-30">
+                    <div class="nav-social-inner p-relative">
+                        <h5 class="sm-title-block mb-10">Follow us</h5>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/codeserve-comunity-83224b407/" target="_blank" rel="nofollow noopener noreferrer">LinkedIn.</a></li>
+                            <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow noopener noreferrer">Instagram.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+            <div class="toggle-icon">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+            <div class="toggle-text">
+                <div class="text-menu">Menu</div>
+                <div class="text-open">Open</div>
+                <div class="text-close">Close</div>
+            </div>
+        </div>
+        <div class="bg-load background-main"></div>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
+            <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+    </header>
+    <!-- ========== End Menu ========== -->
+
+    <!-- ========== Page Hero ========== -->
+    <header id="dsn_header" class="dsn-header-animation header-normal services-hero page-hero">
+        <div class="animated-grid"></div>
+        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
+        <div class="entry-header p-relative over-hidden">
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-center pb-section">
+                <div class="content p-relative text-center">
+                    <div class="intro-project w-100">
+                        <div class="intro-title">
+                            <p class="hero-tagline cs-breadcrumb" data-dsn-animate="up"><a href="../index.html">Home</a> / <a href="index.html">Blog</a> / WooCommerce WhatsApp Order Notifications</p>
+                            <div id="hero_title" class="mt-20" data-dsn-animate="up">
+                                <h1 class="title-h2 text-upper">How to Send WooCommerce Order Notifications on WhatsApp (Step-by-Step)</h1>
+                            </div>
+                            <p class="mt-20 max-w750 m-auto hero-subtitle" data-dsn-animate="up">Your customers already live on WhatsApp. This guide shows how to send order confirmations, shipping updates and delivery messages from WooCommerce automatically — using the official WhatsApp Cloud API, not risky unofficial tools.</p>
+                            <p class="cs-hero-meta" data-dsn-animate="up">By CodeServe Team · 2 November 2026 · 9 min read · WhatsApp Automation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== End Page Hero ========== -->
+
+    <div id="page_wrapper" class="wrapper">
+
+        <article class="cs-article">
+            <div class="cs-container cs-article-layout">
+                <aside class="cs-article-aside">
+                    <nav class="cs-toc" aria-label="Table of contents">
+                    <strong>In this guide</strong>
+                    <ol>
+                        <li><a href="#why-whatsapp">Why send order updates on WhatsApp?</a></li>
+                        <li><a href="#options">Three ways to connect WooCommerce and WhatsApp</a></li>
+                        <li><a href="#meta-setup">Step 1: Set up Meta and the WhatsApp Cloud API</a></li>
+                        <li><a href="#templates">Step 2: Create and approve message templates</a></li>
+                        <li><a href="#status-mapping">Step 3: Map order statuses to templates</a></li>
+                        <li><a href="#code">Step 4: Send the message from WooCommerce (PHP)</a></li>
+                        <li><a href="#testing">Step 5: Test before going live</a></li>
+                        <li><a href="#errors">Common errors and how to fix them</a></li>
+                        <li><a href="#costs">What does it cost?</a></li>
+                        <li><a href="#faq">Frequently asked questions</a></li>
+                    </ol>
+                    </nav>
+                </aside>
+                <div class="cs-article-body">
+                <figure class="cs-figure cs-featured"><img src="../assets/img/blog/woocommerce-whatsapp-order-notifications.svg" alt="WooCommerce order notifications sent automatically to a customer's WhatsApp" width="1200" height="630"></figure>
+                <h2 id="why-whatsapp">Why send order updates on WhatsApp?</h2>
+                <p>WooCommerce sends order emails by default, but many Indian customers rarely open them — or they land in Promotions or spam. WhatsApp messages are seen quickly, and customers can reply in the same chat if they have a question about their order. That usually means fewer "where is my order?" calls and a more trustworthy buying experience.</p>
+                <p>Typical messages a store sends automatically:</p>
+                <ul>
+                    <li><strong>Order confirmation</strong> — "Thanks, Priya! Your order #1045 for ₹2,499 is confirmed."</li>
+                    <li><strong>Payment reminder</strong> for pending or cash-on-delivery orders.</li>
+                    <li><strong>Shipped</strong> — courier name and tracking link.</li>
+                    <li><strong>Delivered / completed</strong> — with a link to leave a review.</li>
+                    <li><strong>Cancelled or refunded</strong> — so the customer is never left guessing.</li>
+                </ul>
+
+                <h2 id="options">Three ways to connect WooCommerce and WhatsApp</h2>
+                <table>
+                    <thead><tr><th>Option</th><th>How it works</th><th>Good for</th><th>Watch out for</th></tr></thead>
+                    <tbody>
+                        <tr><td>WordPress plugin + a WhatsApp provider</td><td>A plugin connects WooCommerce to a provider (BSP) that sends messages for you.</td><td>Non-technical owners who want a quick setup.</td><td>Monthly fees on top of Meta charges; some plugins use unofficial WhatsApp Web methods that can get numbers banned.</td></tr>
+                        <tr><td>Official Cloud API + custom code</td><td>A small PHP snippet (in a child theme or WPCode) calls Meta's API when an order status changes.</td><td>Stores that want full control and no middleman fees.</td><td>Needs a developer for setup and template changes.</td></tr>
+                        <tr><td>Automation tool (n8n, Make, Zapier)</td><td>A WooCommerce webhook triggers a workflow that calls the WhatsApp API.</td><td>Businesses that also want to update Google Sheets, CRM or Slack.</td><td>One more tool to maintain; per-task pricing on some platforms.</td></tr>
+                    </tbody>
+                </table>
+                <p>Whichever route you choose, insist on the <strong>official WhatsApp Business Platform</strong>. Tools that automate WhatsApp Web or the normal app break Meta's terms and put your number at risk.</p>
+                <figure class="cs-figure"><img src="../assets/img/blog/woocommerce-whatsapp-order-notifications-flow.svg" alt="Flow from WooCommerce order status change to WhatsApp Cloud API to customer phone" width="800" height="300" loading="lazy"><figcaption>How an order update travels: WooCommerce → your code or workflow → WhatsApp Cloud API → customer.</figcaption></figure>
+
+                <h2 id="meta-setup">Step 1: Set up Meta and the WhatsApp Cloud API</h2>
+                <ol>
+                    <li><strong>Create a Meta Business portfolio</strong> (business.facebook.com) using your business name exactly as it appears on your documents.</li>
+                    <li><strong>Create an app</strong> at developers.facebook.com, choose the Business type and add the <em>WhatsApp</em> product. Meta gives you a test number to experiment with.</li>
+                    <li><strong>Add your real phone number</strong> to the WhatsApp Business Account. It must be able to receive an SMS or call for verification and should not be active on the normal WhatsApp app at the same time.</li>
+                    <li><strong>Note two IDs</strong>: the <em>Phone number ID</em> and the <em>WhatsApp Business Account ID</em>. Your code needs the phone number ID.</li>
+                    <li><strong>Create a permanent access token</strong>: in Business Settings create a <em>System user</em>, give it access to the app and WhatsApp account, and generate a token with the <code>whatsapp_business_messaging</code> and <code>whatsapp_business_management</code> permissions. The temporary token on the app dashboard expires within a day — don't use it in production.</li>
+                    <li><strong>Complete business verification</strong> when Meta asks. Verification raises your messaging limits and lets you set a proper display name.</li>
+                </ol>
+                <div class="cs-callout"><strong>Tip:</strong> Treat the access token like a bank password. Never paste it into a theme file that is shared publicly or committed to GitHub. Store it in <code>wp-config.php</code> as a constant or in a secrets manager, and rotate it if it ever leaks.</div>
+
+                <h2 id="templates">Step 2: Create and approve message templates</h2>
+                <p>Business-initiated messages — and an order update is one, because you are messaging the customer first — must use a <strong>pre-approved template</strong>. Create them in WhatsApp Manager under <em>Message templates</em>.</p>
+                <ul>
+                    <li>Choose the <strong>Utility</strong> category for order and shipping updates. Marketing language ("Get 20% off your next order!") inside a utility template can lead to rejection or re-categorisation.</li>
+                    <li>Use variables for the parts that change: <code>{{1}}</code> for name, <code>{{2}}</code> for order number, <code>{{3}}</code> for amount.</li>
+                    <li>Keep the language plain and transactional. Example: <em>"Hi {{1}}, your order #{{2}} of ₹{{3}} is confirmed. We'll message you when it ships. – Sar Store"</em></li>
+                    <li>Add a URL button for tracking links if you use them; the tracking number can be a variable in the URL.</li>
+                </ul>
+                <p>Approval is often quick but can take longer if the template is unclear. Create one template per status and note each template's exact <strong>name</strong> and <strong>language code</strong> (for example <code>en</code> or <code>en_US</code>) — the API call must match them exactly.</p>
+
+                <h2 id="status-mapping">Step 3: Map order statuses to templates</h2>
+                <table>
+                    <thead><tr><th>WooCommerce status</th><th>Template name (example)</th><th>Variables</th></tr></thead>
+                    <tbody>
+                        <tr><td><code>processing</code></td><td><code>order_confirmed</code></td><td>Name, order number, total</td></tr>
+                        <tr><td><code>on-hold</code> / <code>pending</code></td><td><code>payment_pending</code></td><td>Name, order number, payment link</td></tr>
+                        <tr><td><code>shipped</code> (custom status)</td><td><code>order_shipped</code></td><td>Name, order number, courier, tracking</td></tr>
+                        <tr><td><code>completed</code></td><td><code>order_delivered</code></td><td>Name, order number, review link</td></tr>
+                        <tr><td><code>cancelled</code> / <code>refunded</code></td><td><code>order_cancelled</code></td><td>Name, order number</td></tr>
+                    </tbody>
+                </table>
+                <p>WooCommerce has no "shipped" status out of the box. You can register a custom status with a small snippet or a plugin, or send the shipped message when your shipping plugin adds a tracking number.</p>
+
+                <h2 id="code">Step 4: Send the message from WooCommerce (PHP)</h2>
+                <p>Here is a simplified, illustrative snippet. It hooks into <code>woocommerce_order_status_changed</code>, formats the phone number with the country code and calls the Cloud API with <code>wp_remote_post</code>. Add it through a child theme's <code>functions.php</code> or a snippets plugin such as WPCode, and replace the placeholders.</p>
+<pre><code>// In wp-config.php (never in a public file):
+// define( 'CS_WA_TOKEN', 'YOUR_PERMANENT_ACCESS_TOKEN' );
+// define( 'CS_WA_PHONE_ID', 'YOUR_PHONE_NUMBER_ID' );
+
+add_action( 'woocommerce_order_status_changed', function ( $order_id, $from, $to, $order ) {
+    $templates = array(
+        'processing' =&gt; 'order_confirmed',
+        'completed'  =&gt; 'order_delivered',
+        'cancelled'  =&gt; 'order_cancelled',
+    );
+    if ( empty( $templates[ $to ] ) || ! defined( 'CS_WA_TOKEN' ) ) {
+        return;
+    }
+
+    // Indian numbers: keep digits only, add 91 if the customer typed 10 digits.
+    $phone = preg_replace( '/\D/', '', $order-&gt;get_billing_phone() );
+    if ( strlen( $phone ) === 10 ) {
+        $phone = '91' . $phone;
+    }
+
+    $body = array(
+        'messaging_product' =&gt; 'whatsapp',
+        'to'                =&gt; $phone,
+        'type'              =&gt; 'template',
+        'template'          =&gt; array(
+            'name'       =&gt; $templates[ $to ],
+            'language'   =&gt; array( 'code' =&gt; 'en' ),
+            'components' =&gt; array( array(
+                'type'       =&gt; 'body',
+                'parameters' =&gt; array(
+                    array( 'type' =&gt; 'text', 'text' =&gt; $order-&gt;get_billing_first_name() ),
+                    array( 'type' =&gt; 'text', 'text' =&gt; $order-&gt;get_order_number() ),
+                    array( 'type' =&gt; 'text', 'text' =&gt; $order-&gt;get_total() ),
+                ),
+            ) ),
+        ),
+    );
+
+    $response = wp_remote_post(
+        'https://graph.facebook.com/v21.0/' . CS_WA_PHONE_ID . '/messages',
+        array(
+            'headers' =&gt; array(
+                'Authorization' =&gt; 'Bearer ' . CS_WA_TOKEN,
+                'Content-Type'  =&gt; 'application/json',
+            ),
+            'body'    =&gt; wp_json_encode( $body ),
+            'timeout' =&gt; 15,
+        )
+    );
+
+    // Keep a record on the order so staff can see what was sent.
+    $code = is_wp_error( $response ) ? 'error' : wp_remote_retrieve_response_code( $response );
+    $order-&gt;add_order_note( 'WhatsApp "' . $templates[ $to ] . '" sent – HTTP ' . $code );
+}, 10, 4 );</code></pre>
+                <p>Notes on the snippet:</p>
+                <ul>
+                    <li>The Graph API version in the URL (<code>v21.0</code> above) changes over time — use a current version from Meta's documentation.</li>
+                    <li>The number of parameters must match the number of variables in the approved template, in the same order.</li>
+                    <li>For high-volume stores, send messages through a background queue (for example Action Scheduler, which ships with WooCommerce) so checkout never waits on Meta's API.</li>
+                </ul>
+
+                <h2 id="testing">Step 5: Test before going live</h2>
+                <ul>
+                    <li>Add your own number as a test recipient and place real test orders with cash on delivery.</li>
+                    <li>Change the order status manually in the admin and confirm each template arrives with the right name, number and amount.</li>
+                    <li>Check the <strong>order notes</strong> for the HTTP response. A <code>200</code> means Meta accepted the message; delivery and read status come later through webhooks if you set them up.</li>
+                    <li>Test numbers with spaces, <code>+91</code> and a leading <code>0</code>, because customers type phone numbers in every possible format.</li>
+                </ul>
+
+                <h2 id="errors">Common errors and how to fix them</h2>
+                <table>
+                    <thead><tr><th>Problem</th><th>Likely cause</th><th>Fix</th></tr></thead>
+                    <tbody>
+                        <tr><td>"Template does not exist"</td><td>Name or language code doesn't match, or template not approved yet.</td><td>Copy the exact name and language from WhatsApp Manager.</td></tr>
+                        <tr><td>Parameter count mismatch</td><td>Template has 3 variables but code sends 2 (or 4).</td><td>Match the parameters to the template body exactly.</td></tr>
+                        <tr><td>Message accepted but never delivered</td><td>Wrong number format, number not on WhatsApp, or quality/limit restrictions.</td><td>Use full international format (91XXXXXXXXXX) and check account quality in WhatsApp Manager.</td></tr>
+                        <tr><td>Free-text message rejected</td><td>Outside the 24-hour customer service window.</td><td>Use an approved template; free-form replies are only allowed after the customer messages you.</td></tr>
+                        <tr><td>Works for a day, then fails</td><td>Using the temporary token.</td><td>Generate a permanent system user token.</td></tr>
+                    </tbody>
+                </table>
+
+                <h2 id="costs">What does it cost?</h2>
+                <p>Using the Cloud API directly has no monthly platform fee from Meta, but Meta charges for template messages based on category (marketing, utility, authentication) and the recipient's country. Utility messages are generally cheaper than marketing messages, and replies within an open customer service window are generally free. Pricing changes from time to time, so <strong>check Meta's current rate card</strong> before estimating your monthly bill.</p>
+                <p>Your other costs are development time (or a plugin/provider subscription) and occasional maintenance when Meta updates its API versions. For most small and medium stores, the total is modest compared with the time saved answering order-status queries manually.</p>
+
+
+                <h2 id="faq">Frequently asked questions</h2>
+                <div class="cs-faq">
+                    <details>
+                        <summary>Can I send WooCommerce order messages from my normal WhatsApp Business app?</summary>
+                        <p>Not automatically in a reliable, allowed way. The WhatsApp Business app is designed for manual chats. Automated order notifications should use the official WhatsApp Business Platform (Cloud API), either directly or through an approved provider.</p>
+                    </details>
+                    <details>
+                        <summary>Do I need a separate phone number for the WhatsApp API?</summary>
+                        <p>The number you connect to the API cannot be used on the regular WhatsApp app at the same time. Many stores use a new number for automation and keep their existing number for personal or manual chats.</p>
+                    </details>
+                    <details>
+                        <summary>Which template category should order updates use?</summary>
+                        <p>Order confirmations, shipping updates and delivery messages usually belong in the Utility category. Keep promotional wording out of these templates, or Meta may reject them or treat them as marketing.</p>
+                    </details>
+                    <details>
+                        <summary>Is it safe to put the access token in functions.php?</summary>
+                        <p>It is better to define the token in wp-config.php or a secrets manager and reference it from your code. Never commit the token to a public repository or share it in screenshots.</p>
+                    </details>
+                    <details>
+                        <summary>How long does the setup take?</summary>
+                        <p>If your Meta business details are ready, a basic setup with two or three templates often takes a few days, mostly waiting for verification and template approval. Custom statuses, tracking links and dashboards take longer.</p>
+                    </details>
+                </div>
+
+                <div class="cs-callout">
+                    Want this set up for your store without touching code? Our <a href="../whatsapp-automation-hyderabad.html">WhatsApp automation service</a> includes Meta setup, template approval and WooCommerce integration — see plans on the <a href="../pricing.html#whatsapp-automation">pricing page</a>.
+                </div>
+                </div>
+            </div>
+        </article>
+
+        <section data-dsn-animate="section" class="cs-section cs-section-soft">
+            <div class="cs-container">
+                <h2>Related reading</h2>
+                <div class="cs-related">
+                    <a href="whatsapp-business-api-guide.html">WhatsApp Business API: A Simple Guide →</a>
+                    <a href="n8n-vs-zapier-vs-make.html">n8n vs Zapier vs Make →</a>
+                    <a href="ai-chatbot-business-data-rag.html">Build an AI Chatbot on Your Business Data →</a>
+                    <a href="../whatsapp-automation-hyderabad.html">WhatsApp Automation Services →</a>
+                </div>
+            </div>
+        </section>
+
+        <section data-dsn-animate="section" class="cs-cta">
+            <div class="cs-container">
+                <h2>Get WhatsApp order updates live on your store</h2>
+                <p>We handle Meta setup, templates and WooCommerce integration, then test every status with you before launch.</p>
+                <div class="cs-btns">
+                    <a class="cs-btn cs-btn-whatsapp" href="https://wa.me/919346142139?text=Hi%20CodeServe%2C%20I%20read%20your%20WooCommerce%20WhatsApp%20guide%20and%20want%20order%20notifications%20set%20up%20for%20my%20store." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a class="cs-btn cs-btn-ghost" href="../whatsapp-automation-hyderabad.html">WhatsApp Automation</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ========== Footer ========== -->
+        <footer id="dsn_footer" class="dsn-footer p-relative footer-animate svg-animate background-main">
+            <svg class="dsn-separator dsn-separator-up dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+            <div class="footer-content p-relative mt-section">
+                <div class="dsn-container pt-60">
+                     <div class="d-grid grid-lg-4 grid-md-2 ">
+                            <div class="grid-col-1">
+                                <div class="dsn-logo main-logo">
+                                    <div class="main-logo">
+                                        <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand" rel="home">
+                                            <span class="logo-text">
+                                                <span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="mt-20">Websites, apps, AI chatbots and business automation from Hyderabad, India.</p>
+                                <ul class="dsn-socials box-social mt-20 dsn-icon-heading-color">
+                                    <li><a href="https://www.linkedin.com/in/codeserve-comunity-83224b407/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-linkedin-in"></i></span><span>LN</span></a></li>
+                                    <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-instagram"></i></span><span>IN</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="grid-col-2">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">NAVIGATION</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul id="menu-footer-menu" class="menu">
+                                        <li class="menu-item"><a href="../index.html">Home</a></li>
+                                        <li class="menu-item"><a href="../services.html">Services</a></li>
+                                        <li class="menu-item"><a href="../pricing.html">Pricing</a></li>
+                                        <li class="menu-item"><a href="../portfolio.html">Our Work</a></li>
+                                        <li class="menu-item"><a href="../blog/index.html">Blog</a></li>
+                                        <li class="menu-item"><a href="../about.html">About Us</a></li>
+                                        <li class="menu-item"><a href="../contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-3">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">SERVICES</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="../website-development-hyderabad.html">Website Development</a></li>
+                                        <li class="menu-item"><a href="../mobile-app-development-hyderabad.html">Mobile Apps</a></li>
+                                        <li class="menu-item"><a href="../whatsapp-automation-hyderabad.html">WhatsApp Automation</a></li>
+                                        <li class="menu-item"><a href="../ai-automation-services.html">AI &amp; Automation</a></li>
+                                        <li class="menu-item"><a href="../digital-marketing-hyderabad.html">Digital Marketing</a></li>
+                                        <li class="menu-item"><a href="../billing-software-development.html">Billing Software</a></li>
+                                        <li class="menu-item"><a href="../white-label-web-development.html">White Label</a></li>
+                                        <li class="menu-item"><a href="../hire-freelance-developers-hyderabad.html">Hire Developers</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-4">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">CONTACT</span></h4>
+                                <div class="col-contact">
+                                    <p><strong>T</strong> : <a href="tel:+919346142139">+91 93461 42139</a></p>
+                                    <p><strong>T</strong> : <a href="tel:+918074403355">+91 80744 03355</a></p>
+                                    <p class="over-hidden mt-10"><strong>E</strong> : <a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                                    <p class="mt-10">Hyderabad, Telangana, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="footer-bottom mt-60 pt-30 border-top pb-30 text-center">
+                        <p class="over-hidden">© 2026 CodeServe - Forging the Future. · <a class="link-hover" href="../privacy.html">Privacy Policy</a> · <a class="link-hover" href="../terms.html">Terms</a> · <a class="link-hover" href="../faq.html">FAQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== End Footer ========== -->
+    </div>
+</main>
+
+<!-- ========== Cursor ========== -->
+<div id="dsn_cursor" class="ball"></div>
+<div id="dsn_cursor_inner" class="ball"></div>
+<!-- ========== End Cursor ========== -->
+
+<!-- ========== Line BG ========== -->
+<div id="line_head"><span class="container"></span></div>
+<!-- ========== End Line BG ========== -->
+
+<script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../assets/js/plugins.min.js"></script>
+<script src="../assets/js/plugins/dsn-grid.min.js"></script>
+<script src="../assets/js/custom.js"></script>
+<!-- New script for the preloader -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const scrambleText = document.querySelector('.scramble-text');
+    if (scrambleText) {
+        class TextScramble {
+            constructor(el) {
+                this.el = el;
+                this.chars = '!<>-_\\/[]{}—=+*^?#________';
+                this.update = this.update.bind(this);
+            }
+            setText(newText) {
+                const oldText = this.el.innerText;
+                const length = Math.max(oldText.length, newText.length);
+                const promise = new Promise((resolve) => this.resolve = resolve);
+                this.queue = [];
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || '';
+                    const to = newText[i] || '';
+                    const start = Math.floor(Math.random() * 40);
+                    const end = start + Math.floor(Math.random() * 40);
+                    this.queue.push({ from, to, start, end });
+                }
+                cancelAnimationFrame(this.frameRequest);
+                this.frame = 0;
+                this.update();
+                return promise;
+            }
+            update() {
+                let output = '';
+                let complete = 0;
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i];
+                    if (this.frame >= end) {
+                        complete++;
+                        output += to;
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar();
+                            this.queue[i].char = char;
+                        }
+                        output += `<span class="dud">${char}</span>`;
+                    } else {
+                        output += from;
+                    }
+                }
+                this.el.innerHTML = output;
+                if (complete === this.queue.length) {
+                    this.resolve();
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    this.frame++;
+                }
+            }
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)];
+            }
+        }
+
+        const phrases = [
+            'Executing Scripts...',
+            'Compiling Modules...',
+            'Building DOM...',
+            'Finalizing...'
+        ];
+        
+        const fx = new TextScramble(scrambleText);
+        let counter = 0;
+
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+
+        setTimeout(() => {
+             next();
+        }, 500);
+       
+    }
+});
+</script>
+
+<!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat" class="whatsapp-chat-widget">
+    <div class="whatsapp-chat-button" onclick="toggleWhatsAppChat()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="chat-tooltip">Chat with us!</span>
+    </div>
+    
+    <div class="whatsapp-chat-box" id="whatsapp-chat-box">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="../assets/img/logo2.jpg" alt="CodeServe" class="chat-avatar">
+                <div class="chat-info">
+                    <h4>CodeServe Community</h4>
+                    <p class="online-status">
+                        <span class="status-dot"></span>
+                        Typically replies instantly
+                    </p>
+                </div>
+            </div>
+            <button class="close-chat" onclick="toggleWhatsAppChat()">×</button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>💼 Interested in our services?</p>
+                <p>Let's discuss your project requirements!</p>
+                <div class="quick-replies">
+                    <button onclick="sendWhatsAppMessage('I need web development services')">🌐 Web Development</button>
+                    <button onclick="sendWhatsAppMessage('Mobile app development quote')">📱 Mobile App</button>
+                    <button onclick="sendWhatsAppMessage('SEO services pricing')">🔍 SEO Services</button>
+                    <button onclick="sendWhatsAppMessage('Custom project quote')">💼 Custom Project</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="start-chat-btn" onclick="sendWhatsAppMessage('Hello! I am interested in your services')">
+                <i class="fab fa-whatsapp"></i>
+                Start Conversation
+            </button>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="../assets/css/whatsapp-widget.css">
+<script src="../assets/js/whatsapp-widget.js?v=2"></script>
+<script src="../assets/js/blog-toc.js"></script>
+
+</body>
+</html>

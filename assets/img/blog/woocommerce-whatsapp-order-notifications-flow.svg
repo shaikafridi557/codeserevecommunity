@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" role="img" aria-label="Flow from WooCommerce to WhatsApp Cloud API to customer">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#e5e7eb"/></marker></defs>
+  <rect width="800" height="300" rx="12" fill="#191919"/>
+  <text x="400" y="44" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle">Order update → WhatsApp in seconds</text>
+  <rect x="24" y="100" width="160" height="100" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="104.0" y="146.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">WooCommerce</text>
+  <text x="104.0" y="172.0" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="15" text-anchor="middle">Order status changes</text>
+  <path d="M186 150 L222 150" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="226" y="100" width="160" height="100" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="306.0" y="146.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Your code</text>
+  <text x="306.0" y="172.0" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="15" text-anchor="middle">PHP hook / n8n</text>
+  <path d="M388 150 L424 150" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="428" y="100" width="160" height="100" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="508.0" y="146.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Cloud API</text>
+  <text x="508.0" y="172.0" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="15" text-anchor="middle">Approved template</text>
+  <path d="M590 150 L626 150" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="630" y="100" width="146" height="100" rx="12" fill="#232323" stroke="#25d366" stroke-width="2.5"/>
+  <text x="703.0" y="146.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Customer</text>
+  <text x="703.0" y="172.0" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="15" text-anchor="middle">WhatsApp message</text>
+  <text x="400" y="250" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="16" text-anchor="middle">processing → order_confirmed · shipped → order_shipped · completed → order_delivered</text>
+</svg>

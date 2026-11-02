@@ -2,7 +2,7 @@
 
 ## ✅ **WhatsApp Integration Complete!**
 
-### **📞 Phone Number:** +91 9505764142
+### **📞 Phone Number:** +91 9346142139
 
 ## 🚀 **Features Implemented**
 
@@ -57,7 +57,7 @@
 - ✅ `assets/js/whatsapp-widget.js` - Functionality
 
 ### **Integration Method:**
-- **WhatsApp Web API**: `https://wa.me/919505764142`
+- **WhatsApp Web API**: `https://wa.me/919346142139`
 - **Message Encoding**: URL-safe message encoding
 - **Cross-Platform**: Works on all devices
 
@@ -73,7 +73,7 @@
 
 ### **Message Flow:**
 ```
-User clicks → Pre-filled message → WhatsApp opens → Direct chat with +91 9505764142
+User clicks → Pre-filled message → WhatsApp opens → Direct chat with +91 9346142139
 ```
 
 ## 🎯 **Business Benefits**
@@ -111,7 +111,7 @@ gtag('event', 'whatsapp_click', {
 ### **Change Phone Number:**
 Edit in `assets/js/whatsapp-widget.js`:
 ```javascript
-const phoneNumber = '919505764142'; // Change this number
+const phoneNumber = '919346142139'; // Change this number
 ```
 
 ### **Modify Messages:**
@@ -187,7 +187,7 @@ Edit `assets/css/whatsapp-widget.css`:
 
 Your CodeServe Community website now has a professional WhatsApp integration that will significantly improve lead generation and customer communication! 
 
-**WhatsApp Number**: +91 9505764142  
+**WhatsApp Number**: +91 9346142139  
 **Status**: Active on all pages  
 **Features**: Full chat widget with quick replies  
 **Compatibility**: All devices and browsers  

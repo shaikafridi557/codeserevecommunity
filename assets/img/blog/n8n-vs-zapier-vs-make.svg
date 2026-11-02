@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="n8n vs Zapier vs Make">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#e5e7eb"/></marker>
+    <radialGradient id="glow" cx="78%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#387cf9" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#387cf9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#131313"/>
+  <g stroke="#ffffff0d" stroke-width="1"><path d="M40 0V630" /><path d="M80 0V630" /><path d="M120 0V630" /><path d="M160 0V630" /><path d="M200 0V630" /><path d="M240 0V630" /><path d="M280 0V630" /><path d="M320 0V630" /><path d="M360 0V630" /><path d="M400 0V630" /><path d="M440 0V630" /><path d="M480 0V630" /><path d="M520 0V630" /><path d="M560 0V630" /><path d="M600 0V630" /><path d="M640 0V630" /><path d="M680 0V630" /><path d="M720 0V630" /><path d="M760 0V630" /><path d="M800 0V630" /><path d="M840 0V630" /><path d="M880 0V630" /><path d="M920 0V630" /><path d="M960 0V630" /><path d="M1000 0V630" /><path d="M1040 0V630" /><path d="M1080 0V630" /><path d="M1120 0V630" /><path d="M1160 0V630" /><path d="M0 40H1200" /><path d="M0 80H1200" /><path d="M0 120H1200" /><path d="M0 160H1200" /><path d="M0 200H1200" /><path d="M0 240H1200" /><path d="M0 280H1200" /><path d="M0 320H1200" /><path d="M0 360H1200" /><path d="M0 400H1200" /><path d="M0 440H1200" /><path d="M0 480H1200" /><path d="M0 520H1200" /><path d="M0 560H1200" /><path d="M0 600H1200" /></g>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="70" y="60" width="265" height="44" rx="22" fill="none" stroke="#387cf9" stroke-width="2"/>
+  <text x="202" y="89" fill="#387cf9" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600" text-anchor="middle" letter-spacing="1">AI &amp; AUTOMATION</text>
+  <text fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="58" font-weight="700"><tspan x="70" y="265">n8n vs Zapier</tspan><tspan x="70" y="334">vs Make</tspan></text>
+  <text x="70" y="545" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700"><tspan fill="#ffffff">Code</tspan><tspan fill="#387cf9">Serve</tspan></text>
+  <text x="70" y="578" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="18">codeservecommunity.netlify.app</text>
+  <g transform="translate(700 95)">
+  
+  <rect x="20" y="40" width="150" height="70" rx="14" fill="#2a2a2a" stroke="#387cf9" stroke-width="3"/>
+  <text x="95.0" y="81.0" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Trigger</text>
+  
+  <rect x="270" y="40" width="150" height="70" rx="14" fill="#2a2a2a" stroke="#387cf9" stroke-width="3"/>
+  <text x="345.0" y="81.0" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Filter</text>
+  
+  <rect x="20" y="200" width="150" height="70" rx="14" fill="#2a2a2a" stroke="#387cf9" stroke-width="3"/>
+  <text x="95.0" y="241.0" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">CRM</text>
+  
+  <rect x="270" y="200" width="150" height="70" rx="14" fill="#2a2a2a" stroke="#387cf9" stroke-width="3"/>
+  <text x="345.0" y="241.0" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Message</text>
+  
+  <rect x="145" y="350" width="150" height="70" rx="14" fill="#2a2a2a" stroke="#387cf9" stroke-width="3"/>
+  <text x="220.0" y="391.0" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="600" text-anchor="middle">Sheets</text>
+  <path d="M170 75 H262" stroke="#e5e7eb" stroke-width="4" marker-end="url(#arr)"/>
+  <path d="M345 110 V192" stroke="#e5e7eb" stroke-width="4"/>
+  <path d="M95 110 V192" stroke="#e5e7eb" stroke-width="4"/>
+  <path d="M95 270 C 95 320, 160 330, 200 344" fill="none" stroke="#e5e7eb" stroke-width="4"/>
+  <path d="M345 270 C 345 320, 280 330, 240 344" fill="none" stroke="#e5e7eb" stroke-width="4"/>
+  <path d="M270 75 H200" stroke="none"/>
+  <circle cx="95" cy="75" r="0"/>
+  <circle cx="216" cy="75" r="8" fill="#387cf9"/><circle cx="345" cy="150" r="8" fill="#387cf9"/><circle cx="95" cy="150" r="8" fill="#387cf9"/></g>
+</svg>

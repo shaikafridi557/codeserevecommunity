@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 285" width="800" height="285">
+  <rect width="800" height="285" rx="12" fill="#191919"/>
+  <text x="40" y="52" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">How a white label project moves</text>
+  <rect x="40" y="100" width="120" height="80" rx="10" fill="#1f2937" stroke="#3a3a3a" stroke-width="2"/><text x="100.0" y="146.65" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">Client</text>
+  <path d="M160 140 L188 140" stroke="#e5e7eb" stroke-width="3"/><path d="M179.2 144.8 L188 140 L179.2 135.2" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="190" y="100" width="120" height="80" rx="10" fill="#1f2937" stroke="#3a3a3a" stroke-width="2"/><text x="250.0" y="134.15" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">Your</text><text x="250.0" y="159.15" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">agency</text>
+  <path d="M310 140 L338 140" stroke="#e5e7eb" stroke-width="3"/><path d="M329.2 144.8 L338 140 L329.2 135.2" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="340" y="100" width="120" height="80" rx="10" fill="#387cf9" stroke="#387cf9" stroke-width="2"/><text x="400.0" y="134.15" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">CodeServe</text><text x="400.0" y="159.15" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">builds</text>
+  <path d="M460 140 L488 140" stroke="#e5e7eb" stroke-width="3"/><path d="M479.2 144.8 L488 140 L479.2 135.2" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="490" y="100" width="120" height="80" rx="10" fill="#1f2937" stroke="#3a3a3a" stroke-width="2"/><text x="550.0" y="134.15" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">Your</text><text x="550.0" y="159.15" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">agency</text>
+  <path d="M610 140 L638 140" stroke="#e5e7eb" stroke-width="3"/><path d="M629.2 144.8 L638 140 L629.2 135.2" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="640" y="100" width="120" height="80" rx="10" fill="#1f2937" stroke="#3a3a3a" stroke-width="2"/><text x="700.0" y="146.65" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="600" fill="#ffffff">Client</text>
+  <text x="100" y="215" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Brief &amp; budget</text>
+  <text x="250" y="215" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Specs + brand</text>
+  <text x="400" y="215" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Design &amp; build</text>
+  <text x="550" y="215" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Review &amp; brand</text>
+  <text x="700" y="215" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Launch as yours</text>
+  <text x="400" y="255" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" fill="#e5e7eb">The client only ever deals with your agency.</text>
+
+</svg>

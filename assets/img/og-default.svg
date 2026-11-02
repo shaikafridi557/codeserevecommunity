@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff0d" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="40%" r="55%">
+      <stop offset="0" stop-color="#387cf9" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#387cf9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#131313"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="80" y="200" font-family="Poppins, Arial, sans-serif" font-size="96" font-weight="700" fill="#ffffff">Code<tspan fill="#387cf9">Serve</tspan></text>
+  <text x="80" y="285" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="600" fill="#e5e7eb">Websites · Mobile Apps</text>
+  <text x="80" y="340" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="600" fill="#e5e7eb">WhatsApp Automation · AI</text>
+  <text x="80" y="395" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="600" fill="#e5e7eb">Digital Marketing</text>
+  <rect x="80" y="440" width="360" height="64" rx="32" fill="none" stroke="#387cf9" stroke-width="2"/>
+  <text x="260" y="482" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" fill="#ffffff">Hyderabad, India</text>
+  <text x="80" y="560" font-family="Poppins, Arial, sans-serif" font-size="26" fill="#9ca3af">codeservecommunity.netlify.app · +91 93461 42139</text>
+  <g transform="translate(820 150)">
+    <rect width="300" height="220" rx="16" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+    <rect width="300" height="36" rx="16" fill="#2a2a2a"/>
+    <circle cx="24" cy="18" r="6" fill="#387cf9"/><circle cx="44" cy="18" r="6" fill="#e5e7eb"/><circle cx="64" cy="18" r="6" fill="#e5e7eb"/>
+    <rect x="24" y="64" width="160" height="16" rx="8" fill="#387cf9"/>
+    <rect x="24" y="96" width="250" height="12" rx="6" fill="#e5e7eb" opacity="0.6"/>
+    <rect x="24" y="120" width="210" height="12" rx="6" fill="#e5e7eb" opacity="0.6"/>
+    <rect x="24" y="160" width="110" height="34" rx="17" fill="#387cf9"/>
+    <rect x="200" y="170" width="150" height="190" rx="22" fill="#2a2a2a" stroke="#e5e7eb" stroke-width="2"/>
+    <rect x="216" y="200" width="100" height="28" rx="14" fill="#25d366"/>
+    <rect x="236" y="240" width="96" height="28" rx="14" fill="#387cf9"/>
+    <rect x="216" y="280" width="84" height="28" rx="14" fill="#25d366"/>
+  </g>
+</svg>

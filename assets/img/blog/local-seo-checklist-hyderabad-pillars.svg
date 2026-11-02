@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420">
+  <rect width="800" height="420" rx="12" fill="#191919"/>
+  <text x="400" y="48" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">The 6 pillars of local SEO</text>
+  <g font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb" text-anchor="middle">
+    <rect x="40" y="80" width="230" height="130" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="155" y="130" font-size="20" font-weight="700" fill="#387cf9">1. Google Profile</text>
+    <text x="155" y="160">Complete, verified,</text><text x="155" y="184">updated weekly</text>
+    <rect x="285" y="80" width="230" height="130" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="400" y="130" font-size="20" font-weight="700" fill="#387cf9">2. NAP consistency</text>
+    <text x="400" y="160">Same name, address,</text><text x="400" y="184">phone everywhere</text>
+    <rect x="530" y="80" width="230" height="130" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="645" y="130" font-size="20" font-weight="700" fill="#387cf9">3. Reviews</text>
+    <text x="645" y="160">Steady new reviews,</text><text x="645" y="184">every one replied to</text>
+    <rect x="40" y="235" width="230" height="130" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="155" y="285" font-size="20" font-weight="700" fill="#387cf9">4. Citations</text>
+    <text x="155" y="315">Justdial, Sulekha,</text><text x="155" y="339">IndiaMART and more</text>
+    <rect x="285" y="235" width="230" height="130" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="400" y="285" font-size="20" font-weight="700" fill="#387cf9">5. Local pages</text>
+    <text x="400" y="315">Area and service</text><text x="400" y="339">pages on your site</text>
+    <rect x="530" y="235" width="230" height="130" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="645" y="285" font-size="20" font-weight="700" fill="#387cf9">6. Fast mobile site</text>
+    <text x="645" y="315">Loads quickly, with</text><text x="645" y="339">schema and tracking</text>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="#9ca3af">Work on all six — Google looks at relevance, distance and prominence together.</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff0d" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#387cf9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#387cf9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#131313"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="70" y="60" width="160" height="44" rx="22" fill="none" stroke="#387cf9" stroke-width="2"/>
+  <text x="150.0" y="89" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600" fill="#387cf9" letter-spacing="2">WEBSITES</text>
+  <text y="200" font-family="Poppins, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff"><tspan x="70" dy="0">Website</tspan><tspan x="70" dy="70">Maintenance:</tspan><tspan x="70" dy="70">What It Includes</tspan><tspan x="70" dy="70">&amp; Why It Matters</tspan></text>
+  <text x="70" y="545" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700"><tspan fill="#ffffff">Code</tspan><tspan fill="#387cf9">Serve</tspan></text>
+  <text x="70" y="578" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#9ca3af">codeservecommunity.netlify.app</text>
+  <g>
+  <rect x="700" y="130" width="420" height="300" rx="16" fill="#1f2937" stroke="#2a2a2a" stroke-width="3"/>
+  <rect x="700" y="130" width="420" height="44" rx="16" fill="#2a2a2a"/>
+  <circle cx="730" cy="152" r="7" fill="#e5e7eb" fill-opacity="0.5"/><circle cx="755" cy="152" r="7" fill="#e5e7eb" fill-opacity="0.5"/><circle cx="780" cy="152" r="7" fill="#e5e7eb" fill-opacity="0.5"/>
+  <rect x="730" y="200" width="200" height="18" rx="9" fill="#e5e7eb" fill-opacity="0.5"/>
+  <rect x="730" y="232" width="150" height="14" rx="7" fill="#e5e7eb" fill-opacity="0.3"/>
+  <rect x="730" y="280" width="170" height="110" rx="10" fill="#131313"/>
+  <path d="M745 365 L780 330 L810 350 L850 300 L885 320" stroke="#387cf9" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M1000 210 L1060 235 L1060 290 C1060 330 1032 355 1000 368 C968 355 940 330 940 290 L940 235 Z" fill="#387cf9"/>
+  <path d="M975 290 L995 310 L1030 270" stroke="#ffffff" stroke-width="9" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="1090" cy="470" r="62" fill="#2a2a2a"/>
+  <circle cx="1090" cy="470" r="24" fill="#131313"/>
+  <g fill="#2a2a2a"><rect x="1080" y="392" width="20" height="30" rx="4"/><rect x="1080" y="518" width="20" height="30" rx="4"/><rect x="1012" y="460" width="30" height="20" rx="4"/><rect x="1138" y="460" width="30" height="20" rx="4"/></g>
+</g>
+</svg>

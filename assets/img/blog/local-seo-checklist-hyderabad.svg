@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff0d" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#387cf9" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#387cf9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#131313"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="70" y="60" width="175" height="44" rx="22" fill="none" stroke="#387cf9" stroke-width="2"/>
+  <text x="157.5" y="89" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600" fill="#387cf9" letter-spacing="2">LOCAL SEO</text>
+  <text y="200" font-family="Poppins, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff"><tspan x="70" dy="0">Local SEO</tspan><tspan x="70" dy="70">Checklist for</tspan><tspan x="70" dy="70">Hyderabad</tspan><tspan x="70" dy="70">Businesses</tspan></text>
+  <text x="70" y="545" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700"><tspan fill="#ffffff">Code</tspan><tspan fill="#387cf9">Serve</tspan></text>
+  <text x="70" y="578" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#9ca3af">codeservecommunity.netlify.app</text>
+  <g>
+  <rect x="700" y="120" width="420" height="380" rx="20" fill="#1f2937"/>
+  <rect x="700" y="120" width="420" height="380" rx="20" fill="none" stroke="#2a2a2a" stroke-width="2"/>
+  <path d="M700 260 L1120 210 M700 380 L1120 330 M820 120 L870 500 M980 120 L1010 500" stroke="#2a2a2a" stroke-width="10"/>
+  <path d="M700 300 C820 280 900 360 1120 300" stroke="#e5e7eb" stroke-opacity="0.25" stroke-width="6" fill="none"/>
+  <path d="M910 170 C860 170 825 207 825 252 C825 315 910 385 910 385 C910 385 995 315 995 252 C995 207 960 170 910 170 Z" fill="#387cf9"/>
+  <circle cx="910" cy="250" r="30" fill="#131313"/>
+  <rect x="760" y="415" width="300" height="56" rx="12" fill="#131313"/>
+  <text x="785" y="451" font-family="Poppins, Arial, sans-serif" font-size="22" fill="#e5e7eb">★★★★★</text>
+  <rect x="935" y="430" width="100" height="10" rx="5" fill="#387cf9"/>
+  <rect x="935" y="448" width="70" height="10" rx="5" fill="#e5e7eb" fill-opacity="0.4"/>
+</g>
+</svg>

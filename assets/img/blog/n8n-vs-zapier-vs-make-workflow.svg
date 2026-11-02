@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300" role="img" aria-label="Automation workflow from one trigger to several actions">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#e5e7eb"/></marker></defs>
+  <rect width="800" height="300" rx="12" fill="#191919"/>
+  <text x="400" y="44" fill="#e5e7eb" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="600" text-anchor="middle">One trigger, many actions</text>
+  <rect x="30" y="115" width="170" height="90" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="115.0" y="156.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Trigger</text>
+  <text x="115.0" y="182.0" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="15" text-anchor="middle">New website enquiry</text>
+  <path d="M202 160 L268 90" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M202 160 L268 160" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M202 160 L268 230" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="272" y="62" width="210" height="56" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="377.0" y="97.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Add lead to CRM</text>
+  <rect x="272" y="132" width="210" height="56" rx="12" fill="#232323" stroke="#25d366" stroke-width="2.5"/>
+  <text x="377.0" y="167.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">WhatsApp welcome</text>
+  <rect x="272" y="202" width="210" height="56" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="377.0" y="237.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Row in Google Sheets</text>
+  <path d="M484 160 L548 160" stroke="#e5e7eb" stroke-width="3" marker-end="url(#arr)"/>
+  <rect x="552" y="115" width="220" height="90" rx="12" fill="#232323" stroke="#387cf9" stroke-width="2.5"/>
+  <text x="662.0" y="156.0" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="600" text-anchor="middle">Team alert</text>
+  <text x="662.0" y="182.0" fill="#9ca3af" font-family="Poppins, Arial, sans-serif" font-size="15" text-anchor="middle">Assign + reminder</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430">
+  <rect width="800" height="430" rx="12" fill="#191919"/>
+  <text x="400" y="46" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Example ₹20,000 splits for three businesses</text>
+  <g font-family="Poppins, Arial, sans-serif" font-size="17" fill="#e5e7eb">
+    <text x="40" y="104" font-weight="700" font-size="19">Local clinic / salon</text>
+    <rect x="40" y="116" width="720" height="34" rx="6" fill="#2a2a2a"/>
+    <rect x="40" y="116" width="360" height="34" rx="6" fill="#387cf9"/><text x="54" y="139" fill="#ffffff">Google Ads ₹10,000</text>
+    <rect x="400" y="116" width="216" height="34" fill="#387cf9" fill-opacity="0.55"/><text x="412" y="139" fill="#ffffff">Meta ₹6,000</text>
+    <text x="628" y="139" fill="#e5e7eb">Content ₹4,000</text>
+    <text x="40" y="204" font-weight="700" font-size="19">Online store</text>
+    <rect x="40" y="216" width="720" height="34" rx="6" fill="#2a2a2a"/>
+    <rect x="40" y="216" width="432" height="34" rx="6" fill="#387cf9" fill-opacity="0.55"/><text x="54" y="239" fill="#ffffff">Meta / Instagram ads ₹12,000</text>
+    <rect x="472" y="216" width="180" height="34" fill="#387cf9"/><text x="484" y="239" fill="#ffffff">Google ₹5,000</text>
+    <text x="664" y="239" fill="#e5e7eb">Tools ₹3,000</text>
+    <text x="40" y="304" font-weight="700" font-size="19">B2B service company</text>
+    <rect x="40" y="316" width="720" height="34" rx="6" fill="#2a2a2a"/>
+    <rect x="40" y="316" width="432" height="34" rx="6" fill="#387cf9"/><text x="54" y="339" fill="#ffffff">Google Search ads ₹12,000</text>
+    <rect x="472" y="316" width="180" height="34" fill="#387cf9" fill-opacity="0.55"/><text x="484" y="339" fill="#ffffff">LinkedIn ₹5,000</text>
+    <text x="664" y="339" fill="#e5e7eb">SEO ₹3,000</text>
+  </g>
+  <text x="400" y="400" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="#9ca3af">Illustrative examples only — adjust after 2–4 weeks based on real results.</text>
+</svg>

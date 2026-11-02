@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <rect width="800" height="480" rx="12" fill="#191919"/>
+  <text x="40" y="52" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">10 automations a small business can start with</text>
+  <line x1="400" y1="270" x2="400" y2="105" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="576" y2="137" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="685" y2="219" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="685" y2="321" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="576" y2="403" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="400" y2="435" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="224" y2="403" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="115" y2="321" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="115" y2="219" stroke="#3a3a3a" stroke-width="2"/>
+  <line x1="400" y1="270" x2="224" y2="137" stroke="#3a3a3a" stroke-width="2"/>
+  <rect x="314" y="85" width="172" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="400" y="111" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">WhatsApp replies</text>
+  <rect x="500" y="117" width="152" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="576" y="143" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Lead follow-up</text>
+  <rect x="595" y="199" width="181" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="685" y="225" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Booking reminders</text>
+  <rect x="614" y="301" width="143" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="685" y="327" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Order updates</text>
+  <rect x="481" y="383" width="191" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="576" y="409" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Website AI chatbot</text>
+  <rect x="319" y="415" width="162" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="400" y="441" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Invoice reading</text>
+  <rect x="152" y="383" width="143" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="224" y="409" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Daily reports</text>
+  <rect x="38" y="301" width="152" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="115" y="327" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Content drafts</text>
+  <rect x="34" y="199" width="162" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="115" y="225" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Review requests</text>
+  <rect x="147" y="117" width="152" height="40" rx="20" fill="#1f2937" stroke="#387cf9" stroke-width="2"/><text x="224" y="143" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Team assistant</text>
+  <circle cx="400" cy="270" r="62" fill="#387cf9"/><text x="400" y="266" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff">Your</text><text x="400" y="290" text-anchor="middle" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="700" fill="#fff">business</text>
+
+</svg>

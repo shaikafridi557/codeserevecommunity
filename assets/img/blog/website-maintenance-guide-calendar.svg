@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" rx="12" fill="#191919"/>
+  <text x="400" y="46" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">A simple website maintenance calendar</text>
+  <g font-family="Poppins, Arial, sans-serif" fill="#e5e7eb" font-size="17">
+    <rect x="30" y="80" width="175" height="280" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="117" y="116" text-anchor="middle" font-size="20" font-weight="700" fill="#387cf9">Weekly</text>
+    <text x="48" y="156">• Backups checked</text><text x="48" y="186">• Updates applied</text><text x="48" y="216">• Uptime alerts</text><text x="48" y="246">• Forms tested</text>
+    <rect x="220" y="80" width="175" height="280" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="307" y="116" text-anchor="middle" font-size="20" font-weight="700" fill="#387cf9">Monthly</text>
+    <text x="238" y="156">• Speed check</text><text x="238" y="186">• Security scan</text><text x="238" y="216">• Broken links</text><text x="238" y="246">• SEO report</text>
+    <rect x="410" y="80" width="175" height="280" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="497" y="116" text-anchor="middle" font-size="20" font-weight="700" fill="#387cf9">Quarterly</text>
+    <text x="428" y="156">• Content refresh</text><text x="428" y="186">• Offers &amp; prices</text><text x="428" y="216">• Restore test</text><text x="428" y="246">• Plugin review</text>
+    <rect x="600" y="80" width="170" height="280" rx="10" fill="#1f2937" stroke="#387cf9"/>
+    <text x="685" y="116" text-anchor="middle" font-size="20" font-weight="700" fill="#387cf9">Yearly</text>
+    <text x="618" y="156">• Domain renewal</text><text x="618" y="186">• Hosting renewal</text><text x="618" y="216">• Licences</text><text x="618" y="246">• Design review</text>
+  </g>
+  <text x="400" y="385" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="16" fill="#9ca3af">Set reminders, or let a care plan handle it for you.</text>
+</svg>
