@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff0d" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="78%" cy="45%" r="55%"><stop offset="0" stop-color="#387cf9" stop-opacity="0.2"/><stop offset="1" stop-color="#387cf9" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#131313"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="60" width="330" height="44" rx="22" fill="none" stroke="#387cf9" stroke-width="2"/>
+  <text x="245.0" y="90" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600" fill="#387cf9" letter-spacing="1.5">WHATSAPP AUTOMATION</text>
+  <text x="80" y="210" font-family="Poppins, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff"><tspan x="80" dy="0">WhatsApp</tspan><tspan x="80" dy="70">Business API</tspan><tspan x="80" dy="70">for UAE</tspan><tspan x="80" dy="70">Businesses</tspan></text>
+  <text x="80" y="540" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Code<tspan fill="#387cf9">Serve</tspan></text>
+  <text x="80" y="572" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#9ca3af">codeservecommunity.netlify.app</text>
+  <g transform="translate(790 95)">
+    <rect width="230" height="440" rx="34" fill="#2a2a2a" stroke="#e5e7eb" stroke-width="3"/>
+    <rect x="16" y="40" width="198" height="370" rx="16" fill="#1f2937"/>
+    <rect x="16" y="40" width="198" height="50" rx="16" fill="#25d366"/>
+    <text x="115" y="72" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" font-weight="700" fill="#ffffff">Business</text>
+    <rect x="30" y="110" width="140" height="44" rx="14" fill="#e5e7eb"/><text x="44" y="138" font-family="Arial, sans-serif" font-size="17" fill="#1f2937">Hi! Viewing?</text>
+    <rect x="70" y="168" width="130" height="44" rx="14" fill="#25d366"/><text x="186" y="196" text-anchor="end" font-family="Arial, sans-serif" font-size="19" fill="#ffffff">مرحبا</text>
+    <rect x="30" y="226" width="160" height="44" rx="14" fill="#e5e7eb"/><text x="44" y="254" font-family="Arial, sans-serif" font-size="17" fill="#1f2937">Booked: 4 PM</text>
+    <rect x="70" y="284" width="130" height="44" rx="14" fill="#25d366"/><text x="86" y="312" font-family="Arial, sans-serif" font-size="17" fill="#ffffff">Thank you!</text>
+  </g>
+  <g transform="translate(1060 150)">
+    <rect width="96" height="150" fill="#387cf9" opacity="0.85"/><rect x="18" y="20" width="18" height="18" fill="#1f2937"/><rect x="58" y="20" width="18" height="18" fill="#1f2937"/>
+    <rect x="18" y="60" width="18" height="18" fill="#1f2937"/><rect x="58" y="60" width="18" height="18" fill="#1f2937"/><rect x="18" y="100" width="18" height="18" fill="#1f2937"/><rect x="58" y="100" width="18" height="18" fill="#1f2937"/>
+    <polygon points="20,0 48,-90 76,0" fill="#e5e7eb"/>
+  </g>
+</svg>

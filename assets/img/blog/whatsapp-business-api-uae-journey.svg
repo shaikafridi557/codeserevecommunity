@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <rect width="800" height="300" rx="12" fill="#191919"/>
+  <text x="30" y="40" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Automated WhatsApp journey for a UAE business</text>
+  <rect x="30" y="80" width="128" height="150" rx="12" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+  <circle cx="94" cy="80" r="22" fill="#387cf9"/><text x="94" y="88" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">1</text>
+  <text x="94" y="150" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Ad / website</text>
+  <text x="94" y="178" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb">click to chat</text>
+  <path d="M162 155 H177" stroke="#e5e7eb" stroke-width="3"/><path d="M169 147 L179 155 L169 163" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="183" y="80" width="128" height="150" rx="12" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+  <circle cx="247" cy="80" r="22" fill="#387cf9"/><text x="247" y="88" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">2</text>
+  <text x="247" y="150" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Instant reply</text>
+  <text x="247" y="178" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb">AR + EN</text>
+  <path d="M315 155 H330" stroke="#e5e7eb" stroke-width="3"/><path d="M322 147 L332 155 L322 163" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="336" y="80" width="128" height="150" rx="12" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+  <circle cx="400" cy="80" r="22" fill="#387cf9"/><text x="400" y="88" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">3</text>
+  <text x="400" y="150" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Qualify</text>
+  <text x="400" y="178" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb">budget · area</text>
+  <path d="M468 155 H483" stroke="#e5e7eb" stroke-width="3"/><path d="M475 147 L485 155 L475 163" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="489" y="80" width="128" height="150" rx="12" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+  <circle cx="553" cy="80" r="22" fill="#387cf9"/><text x="553" y="88" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">4</text>
+  <text x="553" y="150" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Book / order</text>
+  <text x="553" y="178" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb">confirmed</text>
+  <path d="M621 155 H636" stroke="#e5e7eb" stroke-width="3"/><path d="M628 147 L638 155 L628 163" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+  <rect x="642" y="80" width="128" height="150" rx="12" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <circle cx="706" cy="80" r="22" fill="#25d366"/><text x="706" y="88" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="20" font-weight="700" fill="#ffffff">5</text>
+  <text x="706" y="150" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="19" font-weight="700" fill="#ffffff">Follow-up</text>
+  <text x="706" y="178" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#e5e7eb">reminders</text>
+  <text x="400" y="275" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#9ca3af">A human agent can take over at any step</text>
+</svg>

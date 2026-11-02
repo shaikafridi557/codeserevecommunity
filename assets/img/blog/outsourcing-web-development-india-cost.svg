@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff0d" stroke-width="1"/></pattern>
+    <radialGradient id="glow" cx="78%" cy="45%" r="55%"><stop offset="0" stop-color="#387cf9" stop-opacity="0.2"/><stop offset="1" stop-color="#387cf9" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#131313"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="60" width="220" height="44" rx="22" fill="none" stroke="#387cf9" stroke-width="2"/>
+  <text x="190.0" y="90" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600" fill="#387cf9" letter-spacing="1.5">OUTSOURCING</text>
+  <text x="80" y="210" font-family="Poppins, Arial, sans-serif" font-size="56" font-weight="700" fill="#ffffff"><tspan x="80" dy="0">Outsourcing</tspan><tspan x="80" dy="70">Web Development</tspan><tspan x="80" dy="70">to India: Costs</tspan><tspan x="80" dy="70">&amp; Risks</tspan></text>
+  <text x="80" y="540" font-family="Poppins, Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Code<tspan fill="#387cf9">Serve</tspan></text>
+  <text x="80" y="572" font-family="Poppins, Arial, sans-serif" font-size="18" fill="#9ca3af">codeservecommunity.netlify.app</text>
+  <g transform="translate(900 300)">
+    <rect x="-8" y="-120" width="16" height="300" rx="8" fill="#e5e7eb"/>
+    <rect x="-90" y="170" width="180" height="24" rx="12" fill="#2a2a2a" stroke="#e5e7eb" stroke-width="2"/>
+    <g transform="rotate(-8)">
+      <rect x="-230" y="-128" width="460" height="14" rx="7" fill="#387cf9"/>
+      <line x1="-200" y1="-114" x2="-250" y2="0" stroke="#e5e7eb" stroke-width="3"/><line x1="-200" y1="-114" x2="-150" y2="0" stroke="#e5e7eb" stroke-width="3"/>
+      <path d="M-270 0 H-130 Q -200 60 -270 0Z" fill="#1f2937" stroke="#387cf9" stroke-width="3"/>
+      <text x="-200" y="-20" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">COST</text>
+      <line x1="200" y1="-114" x2="150" y2="0" stroke="#e5e7eb" stroke-width="3"/><line x1="200" y1="-114" x2="250" y2="0" stroke="#e5e7eb" stroke-width="3"/>
+      <path d="M130 0 H270 Q 200 60 130 0Z" fill="#1f2937" stroke="#387cf9" stroke-width="3"/>
+      <text x="200" y="-20" text-anchor="middle" font-family="Poppins, Arial, sans-serif" font-size="26" font-weight="700" fill="#ffffff">QUALITY</text>
+    </g>
+    <circle r="22" cy="-120" fill="#387cf9"/>
+  </g>
+</svg>

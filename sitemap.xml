@@ -107,10 +107,43 @@
         <priority>0.9</priority>
     </url>
     <url>
+        <loc>https://codeservecommunity.netlify.app/offshore-web-development-company-india.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/web-development-services-usa.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/web-development-services-uk.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/web-development-services-uae.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/web-development-services-australia.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
         <loc>https://codeservecommunity.netlify.app/blog/</loc>
         <lastmod>2026-11-02</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/hire-offshore-developers-india-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/outsourcing-web-development-india-cost.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-uae.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/woocommerce-whatsapp-order-notifications.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-speed-core-web-vitals.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/n8n-vs-zapier-vs-make.svg</image:loc></image:image>
@@ -118,9 +151,6 @@
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/local-seo-checklist-hyderabad.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/mobile-app-cost-india-2026.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/digital-marketing-budget-small-business.svg</image:loc></image:image>
-        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-maintenance-guide.svg</image:loc></image:image>
-        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/website-cost-hyderabad-2026.svg</image:loc></image:image>
-        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide.svg</image:loc></image:image>
     </url>
     <url>
         <loc>https://codeservecommunity.netlify.app/blog/ai-automation-small-business-india.html</loc>
@@ -171,6 +201,14 @@
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/gst-billing-software-guide-data-flow.svg</image:loc></image:image>
     </url>
     <url>
+        <loc>https://codeservecommunity.netlify.app/blog/hire-offshore-developers-india-guide.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/hire-offshore-developers-india-guide.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/hire-offshore-developers-india-guide-process.svg</image:loc></image:image>
+    </url>
+    <url>
         <loc>https://codeservecommunity.netlify.app/blog/local-seo-checklist-hyderabad.html</loc>
         <lastmod>2026-11-02</lastmod>
         <changefreq>monthly</changefreq>
@@ -193,6 +231,14 @@
         <priority>0.7</priority>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/n8n-vs-zapier-vs-make.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/n8n-vs-zapier-vs-make-workflow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/outsourcing-web-development-india-cost.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/outsourcing-web-development-india-cost.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/outsourcing-web-development-india-cost-drivers.svg</image:loc></image:image>
     </url>
     <url>
         <loc>https://codeservecommunity.netlify.app/blog/website-cost-hyderabad-2026.html</loc>
@@ -225,6 +271,14 @@
         <priority>0.7</priority>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide.svg</image:loc></image:image>
         <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-guide-message-flow.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.netlify.app/blog/whatsapp-business-api-uae.html</loc>
+        <lastmod>2026-11-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-uae.svg</image:loc></image:image>
+        <image:image><image:loc>https://codeservecommunity.netlify.app/assets/img/blog/whatsapp-business-api-uae-journey.svg</image:loc></image:image>
     </url>
     <url>
         <loc>https://codeservecommunity.netlify.app/blog/white-label-web-development-guide.html</loc>
