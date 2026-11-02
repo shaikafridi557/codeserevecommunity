@@ -1,0 +1,53 @@
+# CodeServe Community
+
+> CodeServe Community (CodeServe) is a web development, AI and automation company based in Hyderabad, Telangana, India. The team builds websites, e-commerce stores, mobile apps, AI chatbots, WhatsApp Business API automation, workflow automation, billing software and digital marketing for small and medium businesses in India and for clients worldwide (USA, UK, UAE, Australia and other countries).
+
+Key facts:
+- Name: CodeServe Community (also written CodeServe)
+- Location: Hyderabad, Telangana, India; works with clients remotely worldwide
+- Phone / WhatsApp: +91 93461 42139, +91 80744 03355
+- Email: codeserve.contact@gmail.com
+- Website: https://codeservecommunity.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/code-serve-83224b407/
+- Instagram: https://www.instagram.com/codeserve_connect/
+- Languages: English, Hindi, Telugu
+- Starting prices (INR): websites from ₹9,999; e-commerce stores from ₹34,999; WhatsApp automation from ₹7,999 one-time setup; AI website chatbot ₹15,000; web apps from ₹49,999; mobile apps from ₹74,999; monthly care plans from ₹1,999/month
+- International clients receive fixed quotes in USD, GBP, EUR, AED or AUD
+- Payment terms: 50% advance, 50% before go-live
+
+## Services
+
+- [Website Development](https://codeservecommunity.netlify.app/website-development-hyderabad.html): WordPress and custom business websites and online stores
+- [Mobile App Development](https://codeservecommunity.netlify.app/mobile-app-development-hyderabad.html): Android and iOS apps with Flutter and React Native
+- [WhatsApp Automation](https://codeservecommunity.netlify.app/whatsapp-automation-hyderabad.html): WhatsApp Business API setup, auto-replies, order and booking notifications, AI WhatsApp assistants
+- [AI Automation & Chatbots](https://codeservecommunity.netlify.app/ai-automation-services.html): AI chatbots, AI agents, knowledge bases (RAG), document processing, n8n / Make / Zapier workflow automation
+- [Digital Marketing](https://codeservecommunity.netlify.app/digital-marketing-hyderabad.html): SEO, Google Business Profile, social media and ads
+- [Billing Software](https://codeservecommunity.netlify.app/billing-software-development.html): custom GST billing, POS, invoicing and inventory apps
+- [White Label Development](https://codeservecommunity.netlify.app/white-label-web-development.html): websites, stores, apps and automations built under an agency's brand
+- [Hire Developers](https://codeservecommunity.netlify.app/hire-freelance-developers-hyderabad.html): dedicated web, app and AI developers by project, hourly or monthly
+- [Offshore Development from India](https://codeservecommunity.netlify.app/offshore-web-development-company-india.html): remote development team for international clients
+
+## International
+
+- [USA](https://codeservecommunity.netlify.app/web-development-services-usa.html)
+- [United Kingdom](https://codeservecommunity.netlify.app/web-development-services-uk.html)
+- [United Arab Emirates](https://codeservecommunity.netlify.app/web-development-services-uae.html)
+- [Australia](https://codeservecommunity.netlify.app/web-development-services-australia.html)
+
+## Company
+
+- [About](https://codeservecommunity.netlify.app/about.html)
+- [Pricing](https://codeservecommunity.netlify.app/pricing.html)
+- [Portfolio](https://codeservecommunity.netlify.app/portfolio.html): real projects including Garishtha Infra Developers, Sabari Studios, Sireeshna Solutions, Project Pusher and Project Structure Generator
+- [FAQ](https://codeservecommunity.netlify.app/faq.html)
+- [Contact](https://codeservecommunity.netlify.app/contact.html)
+
+## Guides
+
+- [How much does a website cost in Hyderabad in 2026?](https://codeservecommunity.netlify.app/blog/website-cost-hyderabad-2026.html)
+- [WhatsApp Business API guide for Indian businesses](https://codeservecommunity.netlify.app/blog/whatsapp-business-api-guide.html)
+- [WooCommerce order notifications on WhatsApp](https://codeservecommunity.netlify.app/blog/woocommerce-whatsapp-order-notifications.html)
+- [How to build an AI chatbot trained on your business data (RAG)](https://codeservecommunity.netlify.app/blog/ai-chatbot-business-data-rag.html)
+- [n8n vs Zapier vs Make](https://codeservecommunity.netlify.app/blog/n8n-vs-zapier-vs-make.html)
+- [How to hire an offshore development team in India](https://codeservecommunity.netlify.app/blog/hire-offshore-developers-india-guide.html)
+- [All articles](https://codeservecommunity.netlify.app/blog/)

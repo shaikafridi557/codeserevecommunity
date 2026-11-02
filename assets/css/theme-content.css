@@ -953,3 +953,31 @@
     letter-spacing: 2px;
     margin: 0;
 }
+
+/* --- Quick answer block at the top of service pages --- */
+.cs-quick-answer {
+    padding: 60px 0 0;
+}
+
+.cs-quick-answer .cs-callout {
+    margin: 0;
+}
+
+.cs-quick-answer h2 {
+    font-size: 1.25rem;
+    text-transform: none;
+    letter-spacing: 0.3px;
+    margin-bottom: 10px;
+}
+
+.cs-quick-answer h2::after {
+    display: none;
+}
+
+.cs-quick-answer p {
+    margin: 0;
+}
+
+.cs-article td {
+    overflow-wrap: anywhere;
+}
