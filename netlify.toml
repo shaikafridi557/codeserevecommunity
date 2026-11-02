@@ -46,20 +46,16 @@
   status = 301
   force = true
 
-# 404 redirect
+# Custom 404 page
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/404.html"
   status = 404
 
 # Build settings
 [build]
   publish = "."
   command = "echo 'No build command needed for static site'"
-
-# Plugin for automatic sitemap generation
-[[plugins]]
-  package = "@netlify/plugin-sitemap"
 
 # Compression
 [build.processing]
