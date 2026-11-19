@@ -1,10 +1,12 @@
 # CodeServe Community
 
-> CodeServe Community (CodeServe) is a web development, AI and automation company based in Hyderabad, Telangana, India. The team builds websites, e-commerce stores, mobile apps, AI chatbots, WhatsApp Business API automation, workflow automation, billing software and digital marketing for small and medium businesses in India and for clients worldwide (USA, UK, UAE, Australia and other countries).
+> CodeServe Community (CodeServe) is a web development, AI and automation company based in KPHB Phase 9, Kukatpally, Hyderabad, Telangana, India. The team builds websites, e-commerce stores, mobile apps, AI chatbots, WhatsApp Business API automation, workflow automation, billing software and digital marketing for small and medium businesses in India and for clients worldwide (USA, UK, UAE, Australia and other countries).
 
 Key facts:
 - Name: CodeServe Community (also written CodeServe)
-- Location: Hyderabad, Telangana, India; works with clients remotely worldwide
+- Address: KPHB Phase 9, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500085, India
+- Hours: Monday to Saturday open 24 hours; Sunday 9:00 AM to 6:30 PM
+- Clients can meet the team in person in Kukatpally / KPHB, or work remotely from anywhere in the world
 - Phone / WhatsApp: +91 81868 41086
 - Email: codeserve.contact@gmail.com
 - Website: https://codeservecommunity.netlify.app/
@@ -18,6 +20,7 @@ Key facts:
 ## Services
 
 - [Website Development](https://codeservecommunity.netlify.app/website-development-hyderabad.html): WordPress and custom business websites and online stores
+- [Web Design Company in Kukatpally & KPHB](https://codeservecommunity.netlify.app/web-design-company-kukatpally.html): local website design, Google Business Profile and SEO for businesses in Kukatpally, KPHB, JNTU, Nizampet and Miyapur
 - [Mobile App Development](https://codeservecommunity.netlify.app/mobile-app-development-hyderabad.html): Android and iOS apps with Flutter and React Native
 - [WhatsApp Automation](https://codeservecommunity.netlify.app/whatsapp-automation-hyderabad.html): WhatsApp Business API setup, auto-replies, order and booking notifications, AI WhatsApp assistants
 - [AI Automation & Chatbots](https://codeservecommunity.netlify.app/ai-automation-services.html): AI chatbots, AI agents, knowledge bases (RAG), document processing, n8n / Make / Zapier workflow automation
