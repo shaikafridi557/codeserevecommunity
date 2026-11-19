@@ -630,7 +630,7 @@ In the meantime, if you have any questions or need to make changes to your reque
 
 Best regards,
 Code.Serve Team
-Visit our website: https://codeservecommunity.netlify.app`;
+Visit our website: https://codeservecommunity.in`;
     
     GmailApp.sendEmail(email, subject, plainText, {
       htmlBody: htmlBody,
@@ -698,14 +698,14 @@ function sendDemoReadyEmailBackend(email, demoLink) {
             <p style="color: #6b7280; font-size: 0.9em;">
               Best regards,<br>
               <strong>Code.Serve Team</strong><br>
-              <a href="https://codeservecommunity.netlify.app" style="color: #2563eb;">Visit our website</a>
+              <a href="https://codeservecommunity.in" style="color: #2563eb;">Visit our website</a>
             </p>
           </div>
         </body>
       </html>
     `;
     
-    const plainText = 'Your Demo is Ready!\n\nGreat news! Your personalized demo has been prepared and is ready for review.\n\nAccess your demo here: ' + demoLink + '\n\nNext Steps:\n1. Review the demo and explore all the features\n2. If you are satisfied, return to our pricing page and paste the demo link to unlock our full pricing plans\n3. Choose the package that best fits your needs\n\nIf you have any questions, feedback, or need modifications to the demo, please do not hesitate to reach out. We are here to help!\n\nBest regards,\nCode.Serve Team\nVisit our website: https://codeservecommunity.netlify.app';
+    const plainText = 'Your Demo is Ready!\n\nGreat news! Your personalized demo has been prepared and is ready for review.\n\nAccess your demo here: ' + demoLink + '\n\nNext Steps:\n1. Review the demo and explore all the features\n2. If you are satisfied, return to our pricing page and paste the demo link to unlock our full pricing plans\n3. Choose the package that best fits your needs\n\nIf you have any questions, feedback, or need modifications to the demo, please do not hesitate to reach out. We are here to help!\n\nBest regards,\nCode.Serve Team\nVisit our website: https://codeservecommunity.in';
     
     console.log('Calling MailApp.sendEmail...');
     console.log('Subject: ' + subject);

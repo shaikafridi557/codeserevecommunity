@@ -382,7 +382,7 @@ function loadCSS(pageName) {
     window.addEventListener('DOMContentLoaded', function () {
       clearInterval(timer);
       const tl = gsap.timeline();
-      tl.to(present, 1, {
+      tl.to(present, 0.3, {
         value: 100,
 
         onUpdate() {
@@ -398,20 +398,20 @@ function loadCSS(pageName) {
       }).to(preloader.find('.bg-load'), {
         yPercent: -100,
         ease: Expo.easeInOut,
-        duration: 1.5
+        duration: 0.7
       }).to(preloader.find('.bg-load .separator__path'), {
         attr: {
           d: dsnGrid.getData(preloader.find('.bg-load .separator__path').get(0), 'to')
         },
         ease: "Power4.easeInOut",
-        duration: 1.5
-      }, '-=1.5').fromTo("#main_root", 1, {
+        duration: 0.7
+      }, '-=0.7').fromTo("#main_root", 0.6, {
         y: 400
       }, {
         y: 0,
         clearProps: true,
         ease: Expo.easeInOut
-      }, "-=1.2").call(function () {
+      }, "-=0.6").call(function () {
         preloader.remove();
         ScrollTrigger.update();
         $body.css('overflow', '');

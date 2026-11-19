@@ -3,6 +3,7 @@ Allow: /
 Disallow: /.git/
 Disallow: /.vscode/
 Disallow: /.kiro/
+Disallow: /assets/fonts/*.html
 
 # AI search and assistant crawlers are welcome
 User-agent: GPTBot
@@ -32,4 +33,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://codeservecommunity.netlify.app/sitemap.xml
+Sitemap: https://codeservecommunity.in/sitemap.xml

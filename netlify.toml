@@ -7,7 +7,7 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://script.google.com https://script.googleusercontent.com https://api.emailjs.com;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://*.googletagmanager.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' data: https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://script.google.com https://script.googleusercontent.com https://api.emailjs.com; frame-src https://www.google.com https://maps.google.com;"
     
     # Cache Control for HTML files
     Cache-Control = "public, max-age=0, must-revalidate"
@@ -32,17 +32,23 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Redirect HTTP to HTTPS
+# Move old Netlify address to the custom domain (keeps SEO rankings)
 [[redirects]]
-  from = "http://codeservecommunity.netlify.app/*"
-  to = "https://codeservecommunity.netlify.app/:splat"
+  from = "https://codeservecommunity.netlify.app/*"
+  to = "https://codeservecommunity.in/:splat"
   status = 301
   force = true
 
-# Redirect www to non-www (if applicable)
 [[redirects]]
-  from = "https://www.codeservecommunity.netlify.app/*"
-  to = "https://codeservecommunity.netlify.app/:splat"
+  from = "http://codeservecommunity.netlify.app/*"
+  to = "https://codeservecommunity.in/:splat"
+  status = 301
+  force = true
+
+# www to non-www
+[[redirects]]
+  from = "https://www.codeservecommunity.in/*"
+  to = "https://codeservecommunity.in/:splat"
   status = 301
   force = true
 

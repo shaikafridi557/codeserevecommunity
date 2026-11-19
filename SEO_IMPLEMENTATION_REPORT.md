@@ -102,7 +102,7 @@
 ```
 
 ### 2. **Submit Sitemap**
-- URL: `https://codeservecommunity.netlify.app/sitemap.xml`
+- URL: `https://codeservecommunity.in/sitemap.xml`
 - Submit in Google Search Console → Sitemaps
 
 ### 3. **Monitor Performance**
