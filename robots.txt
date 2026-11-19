@@ -3,6 +3,8 @@ Allow: /
 Disallow: /.git/
 Disallow: /.vscode/
 Disallow: /.kiro/
+Disallow: /tools/
+Disallow: /content/
 Disallow: /assets/fonts/*.html
 
 # AI search and assistant crawlers are welcome

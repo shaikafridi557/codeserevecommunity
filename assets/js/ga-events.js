@@ -9,6 +9,10 @@
         if (!link) return;
         var href = link.getAttribute('href') || '';
         var label = (link.textContent || '').trim().slice(0, 80);
+        if (link.hasAttribute('data-share')) {
+            track('share', { method: link.getAttribute('data-share'), content_type: 'article', item_id: location.pathname });
+            return;
+        }
         if (href.indexOf('wa.me/') !== -1 || href.indexOf('api.whatsapp.com') !== -1) {
             track('whatsapp_click', { link_url: href, link_text: label, page_path: location.pathname });
         } else if (href.indexOf('tel:') === 0) {

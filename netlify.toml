@@ -52,6 +52,19 @@
   status = 301
   force = true
 
+# Build tooling and content source are not public pages
+[[redirects]]
+  from = "/tools/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/content/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 # Custom 404 page
 [[redirects]]
   from = "/*"

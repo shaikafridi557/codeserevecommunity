@@ -23,6 +23,8 @@ Key facts:
 - [Web Design Company in Kukatpally & KPHB](https://codeservecommunity.in/web-design-company-kukatpally.html): local website design, Google Business Profile and SEO for businesses in Kukatpally, KPHB, JNTU, Nizampet and Miyapur
 - [E-commerce Website Development](https://codeservecommunity.in/ecommerce-website-development-hyderabad.html): WooCommerce and Shopify stores with UPI/Razorpay payments, shipping, GST invoices and WhatsApp order alerts, from ₹34,999
 - [SEO Services in Hyderabad](https://codeservecommunity.in/seo-services-hyderabad.html): technical SEO, local SEO, Google Business Profile, content and AI search visibility, from ₹4,999/month
+- [Custom Software Development](https://codeservecommunity.in/custom-software-development-hyderabad.html): web applications, portals, dashboards, CRMs and integrations, from ₹49,999
+- [AI Chatbot Development](https://codeservecommunity.in/ai-chatbot-development-company-india.html): website and WhatsApp AI chatbots trained on business documents, from ₹15,000
 - [Mobile App Development](https://codeservecommunity.in/mobile-app-development-hyderabad.html): Android and iOS apps with Flutter and React Native
 - [WhatsApp Automation](https://codeservecommunity.in/whatsapp-automation-hyderabad.html): WhatsApp Business API setup, auto-replies, order and booking notifications, AI WhatsApp assistants
 - [AI Automation & Chatbots](https://codeservecommunity.in/ai-automation-services.html): AI chatbots, AI agents, knowledge bases (RAG), document processing, n8n / Make / Zapier workflow automation
@@ -66,4 +68,25 @@ Key facts:
 - [How to Start an Online Business in India in 2026 (Step-by-Step Guide)](https://codeservecommunity.in/blog/start-online-business-india-2026.html)
 - [How to Get Your Business Recommended in AI Search (Google AI Mode, ChatGPT, Gemini)](https://codeservecommunity.in/blog/rank-in-ai-search-google-ai-mode-chatgpt.html)
 - [Google Ads vs Meta Ads for Small Businesses in India: Which Should You Choose in 2026?](https://codeservecommunity.in/blog/google-ads-vs-meta-ads-small-business-india.html)
+- [Website vs Instagram Business Page: What Should a Small Business Choose in 2026?](https://codeservecommunity.in/blog/website-vs-instagram-for-business.html)
+- [How to Rank a Small Business Website on Google: A Step-by-Step Guide](https://codeservecommunity.in/blog/rank-small-business-website-google.html)
+- [How AI Chatbots Help Small Businesses (With Practical Examples)](https://codeservecommunity.in/blog/how-ai-chatbots-help-small-businesses.html)
+- [Google Ads vs SEO for Small Businesses: Which Should You Invest In?](https://codeservecommunity.in/blog/google-ads-vs-seo-small-business.html)
+- [10 Must-Have Features for a Business Website in 2026](https://codeservecommunity.in/blog/business-website-must-have-features.html)
+- [How to Automate Lead Generation and Follow-Up for a Small Business](https://codeservecommunity.in/blog/automate-lead-generation-small-business.html)
+- [AI Chatbot Development Cost in India (2026): What You Actually Pay For](https://codeservecommunity.in/blog/ai-chatbot-development-cost-india.html)
+- [WordPress vs Custom Website: Which Is Right for Your Business?](https://codeservecommunity.in/blog/wordpress-vs-custom-website.html)
+- [White Label Web Development: How Agencies Grow Without Hiring](https://codeservecommunity.in/blog/white-label-web-development-guide.html)
+- [WhatsApp Business API for UAE Businesses: Setup, Uses and Costs](https://codeservecommunity.in/blog/whatsapp-business-api-uae.html)
+- [Website Speed in 2026: How to Pass Core Web Vitals (LCP, INP, CLS)](https://codeservecommunity.in/blog/website-speed-core-web-vitals.html)
+- [Website Maintenance: What It Includes and Why Your Business Needs It](https://codeservecommunity.in/blog/website-maintenance-guide.html)
+- [Outsourcing Web Development to India: Costs, Risks and How to Choose](https://codeservecommunity.in/blog/outsourcing-web-development-india-cost.html)
+- [How Much Does a Mobile App Cost in India in 2026?](https://codeservecommunity.in/blog/mobile-app-cost-india-2026.html)
+- [Local SEO Checklist for Hyderabad Businesses (2026)](https://codeservecommunity.in/blog/local-seo-checklist-hyderabad.html)
+- [GST Billing Software: Ready-Made vs Custom — What Should You Choose?](https://codeservecommunity.in/blog/gst-billing-software-guide.html)
+- [How to Get Your Business on Top of Google Maps: Google Business Profile Guide](https://codeservecommunity.in/blog/google-business-profile-guide.html)
+- [Freelancer vs Agency: Who Should Build Your Website or App?](https://codeservecommunity.in/blog/freelancer-vs-agency-india.html)
+- [Digital Marketing for Small Businesses: Where to Spend Your First ₹20,000](https://codeservecommunity.in/blog/digital-marketing-budget-small-business.html)
+- [10 AI Automations Every Small Business in India Can Use in 2026](https://codeservecommunity.in/blog/ai-automation-small-business-india.html)
+- [Generative AI vs Agentic AI: What's the Difference and Which Does Your Business Need?](https://codeservecommunity.in/blog/generative-ai-vs-agentic-ai.html)
 - [All articles](https://codeservecommunity.in/blog/)

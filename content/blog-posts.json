@@ -1,0 +1,1032 @@
+{
+  "categories": [
+    {
+      "slug": "website-development",
+      "name": "Website Development",
+      "description": "Guides on website costs, platforms, features, speed and maintenance for business websites in India.",
+      "service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "ai-chatbots",
+      "name": "AI Chatbots",
+      "description": "How AI chatbots work, what they cost and how small businesses use them on websites and WhatsApp.",
+      "service": "../ai-chatbot-development-company-india.html"
+    },
+    {
+      "slug": "ai-agents",
+      "name": "AI Agents",
+      "description": "Practical guides to AI agents that take actions across business tools.",
+      "service": "../ai-automation-services.html"
+    },
+    {
+      "slug": "business-automation",
+      "name": "Business Automation",
+      "description": "Automating leads, follow-ups, reports and everyday business workflows with AI and tools like n8n, Make and Zapier.",
+      "service": "../ai-automation-services.html"
+    },
+    {
+      "slug": "whatsapp-automation",
+      "name": "WhatsApp Automation",
+      "description": "WhatsApp Business API setup, notifications and automation for Indian and Gulf businesses.",
+      "service": "../whatsapp-automation-hyderabad.html"
+    },
+    {
+      "slug": "seo-digital-marketing",
+      "name": "SEO and Digital Marketing",
+      "description": "SEO, local SEO, Google Business Profile, AI search and advertising guides for small businesses.",
+      "service": "../seo-services-hyderabad.html"
+    },
+    {
+      "slug": "custom-software",
+      "name": "Custom Software",
+      "description": "Planning, costing and building custom software and mobile apps for your business.",
+      "service": "../custom-software-development-hyderabad.html"
+    },
+    {
+      "slug": "billing-software",
+      "name": "Billing Software",
+      "description": "Choosing and building GST billing, invoicing and inventory software.",
+      "service": "../billing-software-development.html"
+    },
+    {
+      "slug": "ecommerce",
+      "name": "E-commerce",
+      "description": "Starting and growing an online store in India: platforms, payments, shipping and marketing.",
+      "service": "../ecommerce-website-development-hyderabad.html"
+    },
+    {
+      "slug": "business-technology",
+      "name": "Business Technology",
+      "description": "Hiring developers, outsourcing, agencies and making smart technology decisions.",
+      "service": "../hire-freelance-developers-hyderabad.html"
+    }
+  ],
+  "posts": [
+    {
+      "slug": "generative-ai-vs-agentic-ai",
+      "url": "/blog/generative-ai-vs-agentic-ai.html",
+      "canonical": "https://codeservecommunity.in/blog/generative-ai-vs-agentic-ai.html",
+      "content_file": "blog/generative-ai-vs-agentic-ai.html",
+      "seo_title": "Generative AI vs Agentic AI: Key Differences Explained",
+      "meta_description": "Generative AI creates content; agentic AI plans and takes actions across your tools. Learn the difference, real business examples, risks and how to choose in 2026.",
+      "h1": "Generative AI vs Agentic AI: What's the Difference and Which Does Your Business Need?",
+      "primary_keyword": "generative AI vs agentic AI",
+      "secondary_keywords": [
+        "what is agentic AI",
+        "AI agents for business",
+        "generative AI examples",
+        "agentic AI examples",
+        "AI agents vs chatbots",
+        "AI automation India"
+      ],
+      "category": "ai-agents",
+      "short_description": "Generative AI creates content; agentic AI plans and takes actions across your tools. The difference, business examples, risks and how to choose.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 10,
+      "featured_image": "/assets/img/blog/generative-ai-vs-agentic-ai.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/generative-ai-vs-agentic-ai-og.png",
+      "image_alt": "Generative AI creating content compared with agentic AI planning steps and taking actions across business tools",
+      "related_articles": [
+        "ai-automation-small-business-india",
+        "how-ai-chatbots-help-small-businesses",
+        "automate-lead-generation-small-business"
+      ],
+      "related_service": "../ai-automation-services.html"
+    },
+    {
+      "slug": "website-vs-instagram-for-business",
+      "url": "/blog/website-vs-instagram-for-business.html",
+      "canonical": "https://codeservecommunity.in/blog/website-vs-instagram-for-business.html",
+      "content_file": "blog/website-vs-instagram-for-business.html",
+      "seo_title": "Website vs Instagram for Business: Which Is Better in 2026?",
+      "meta_description": "Should your small business rely on Instagram or build a website? Compare costs, visibility, customer trust and lead generation to choose the right option.",
+      "h1": "Website vs Instagram Business Page: What Should a Small Business Choose in 2026?",
+      "primary_keyword": "website vs Instagram business page",
+      "secondary_keywords": [
+        "do small businesses need a website",
+        "website for small business",
+        "Instagram vs website for business",
+        "benefits of a business website",
+        "online presence for small businesses",
+        "website vs social media marketing",
+        "small business website India"
+      ],
+      "category": "website-development",
+      "short_description": "Instagram or your own website? Compare costs, Google visibility, customer trust and enquiries to choose the right online presence for your…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 10,
+      "featured_image": "/assets/img/blog/website-vs-instagram-for-business.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/website-vs-instagram-for-business-og.png",
+      "image_alt": "A business website and an Instagram business profile side by side, compared for a small business",
+      "related_articles": [
+        "website-cost-hyderabad-2026",
+        "wordpress-vs-custom-website",
+        "google-ads-vs-meta-ads-small-business-india"
+      ],
+      "related_service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "start-online-business-india-2026",
+      "url": "/blog/start-online-business-india-2026.html",
+      "canonical": "https://codeservecommunity.in/blog/start-online-business-india-2026.html",
+      "content_file": "blog/start-online-business-india-2026.html",
+      "seo_title": "How to Start an Online Business in India (2026 Guide)",
+      "meta_description": "Step-by-step guide to starting an online business in India in 2026: choosing a model, registration, GST, website, payment gateway, shipping, SEO and real costs.",
+      "h1": "How to Start an Online Business in India in 2026 (Step-by-Step Guide)",
+      "primary_keyword": "how to start an online business in India",
+      "secondary_keywords": [
+        "start online business 2026",
+        "online business ideas India",
+        "ecommerce business India",
+        "GST for online business",
+        "payment gateway for website India",
+        "online store setup cost India"
+      ],
+      "category": "ecommerce",
+      "short_description": "Step-by-step guide to starting an online business in India in 2026: choosing a model, registration, GST, website, payment gateway,…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 12,
+      "featured_image": "/assets/img/blog/start-online-business-india-2026.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/start-online-business-india-2026-og.png",
+      "image_alt": "Step-by-step plan for starting an online business in India: idea, registration, website, payments and marketing",
+      "related_articles": [
+        "google-ads-vs-meta-ads-small-business-india",
+        "website-cost-hyderabad-2026",
+        "gst-billing-software-guide"
+      ],
+      "related_service": "../ecommerce-website-development-hyderabad.html"
+    },
+    {
+      "slug": "rank-small-business-website-google",
+      "url": "/blog/rank-small-business-website-google.html",
+      "canonical": "https://codeservecommunity.in/blog/rank-small-business-website-google.html",
+      "content_file": "blog/rank-small-business-website-google.html",
+      "seo_title": "How to Rank a Small Business Website on Google (Guide)",
+      "meta_description": "Step-by-step SEO for small business websites: keyword research, page structure, on-page SEO, technical fixes, content, Google Business Profile, links and tracking progress.",
+      "h1": "How to Rank a Small Business Website on Google: A Step-by-Step Guide",
+      "primary_keyword": "how to rank a small business website on Google",
+      "secondary_keywords": [
+        "how to rank a small business website",
+        "SEO for small business",
+        "rank website on Google",
+        "small business SEO guide India",
+        "on-page SEO checklist"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "Step-by-step SEO for small business websites: keyword research, page structure, on-page SEO, technical fixes, content, Google Business Profile, links and tracking progress.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 11,
+      "featured_image": "/assets/img/blog/rank-small-business-website-google.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/rank-small-business-website-google-og.png",
+      "image_alt": "Steps to rank a small business website on Google: keywords, pages, technical SEO, content and links",
+      "related_articles": [
+        "local-seo-checklist-hyderabad",
+        "google-ads-vs-seo-small-business",
+        "business-website-must-have-features"
+      ],
+      "related_service": "../seo-services-hyderabad.html"
+    },
+    {
+      "slug": "rank-in-ai-search-google-ai-mode-chatgpt",
+      "url": "/blog/rank-in-ai-search-google-ai-mode-chatgpt.html",
+      "canonical": "https://codeservecommunity.in/blog/rank-in-ai-search-google-ai-mode-chatgpt.html",
+      "content_file": "blog/rank-in-ai-search-google-ai-mode-chatgpt.html",
+      "seo_title": "How to Rank in AI Search: Google AI Mode & ChatGPT (2026)",
+      "meta_description": "How Google AI Mode, AI Overviews, ChatGPT and Perplexity choose which businesses to mention, and a practical checklist to get your business recommended in 2026.",
+      "h1": "How to Get Your Business Recommended in AI Search (Google AI Mode, ChatGPT, Gemini)",
+      "primary_keyword": "AI search optimization",
+      "secondary_keywords": [
+        "generative engine optimization",
+        "GEO",
+        "rank in Google AI Mode",
+        "AI Overviews SEO",
+        "get business mentioned in ChatGPT",
+        "LLM SEO",
+        "AI search visibility for local business",
+        "llms.txt"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "How Google AI Mode, AI Overviews, ChatGPT and Perplexity choose which businesses to mention, and a practical checklist to get your…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 11,
+      "featured_image": "/assets/img/blog/rank-in-ai-search-google-ai-mode-chatgpt.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/rank-in-ai-search-google-ai-mode-chatgpt-og.png",
+      "image_alt": "A business listing being recommended inside an AI search answer from Google AI Mode and ChatGPT",
+      "related_articles": [
+        "google-business-profile-guide",
+        "local-seo-checklist-hyderabad",
+        "ai-chatbot-business-data-rag"
+      ],
+      "related_service": "../digital-marketing-hyderabad.html"
+    },
+    {
+      "slug": "how-ai-chatbots-help-small-businesses",
+      "url": "/blog/how-ai-chatbots-help-small-businesses.html",
+      "canonical": "https://codeservecommunity.in/blog/how-ai-chatbots-help-small-businesses.html",
+      "content_file": "blog/how-ai-chatbots-help-small-businesses.html",
+      "seo_title": "How AI Chatbots Help Small Businesses: Practical Uses",
+      "meta_description": "How AI chatbots help small businesses answer customers 24/7, capture leads and reduce repetitive work — with practical examples, limitations and how to get started.",
+      "h1": "How AI Chatbots Help Small Businesses (With Practical Examples)",
+      "primary_keyword": "AI chatbot for small business",
+      "secondary_keywords": [
+        "benefits of AI chatbots",
+        "AI chatbot use cases",
+        "WhatsApp AI chatbot",
+        "chatbot for customer support India"
+      ],
+      "category": "ai-chatbots",
+      "short_description": "How AI chatbots help small businesses answer customers 24/7, capture leads and reduce repetitive work — with practical examples, limitations and how to get started.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/how-ai-chatbots-help-small-businesses.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/how-ai-chatbots-help-small-businesses-og.png",
+      "image_alt": "An AI chatbot answering a customer question on a small business website",
+      "related_articles": [
+        "ai-chatbot-development-cost-india",
+        "ai-chatbot-business-data-rag",
+        "automate-lead-generation-small-business"
+      ],
+      "related_service": "../ai-chatbot-development-company-india.html"
+    },
+    {
+      "slug": "google-ads-vs-seo-small-business",
+      "url": "/blog/google-ads-vs-seo-small-business.html",
+      "canonical": "https://codeservecommunity.in/blog/google-ads-vs-seo-small-business.html",
+      "content_file": "blog/google-ads-vs-seo-small-business.html",
+      "seo_title": "Google Ads vs SEO for Small Businesses: Which Is Better?",
+      "meta_description": "Google Ads vs SEO for small businesses in India: speed, cost, lead quality and long-term value compared, with guidance on when to use each and how to combine them.",
+      "h1": "Google Ads vs SEO for Small Businesses: Which Should You Invest In?",
+      "primary_keyword": "Google Ads vs SEO",
+      "secondary_keywords": [
+        "SEO or Google Ads for small business",
+        "paid vs organic search",
+        "PPC vs SEO India",
+        "which is better SEO or ads"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "Google Ads vs SEO for small businesses in India: speed, cost, lead quality and long-term value compared, with guidance on when to use each and how to combine them.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/google-ads-vs-seo-small-business.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/google-ads-vs-seo-small-business-og.png",
+      "image_alt": "Comparison of Google Ads paid search results and SEO organic search results for small businesses",
+      "related_articles": [
+        "google-ads-vs-meta-ads-small-business-india",
+        "rank-small-business-website-google",
+        "digital-marketing-budget-small-business"
+      ],
+      "related_service": "../digital-marketing-hyderabad.html"
+    },
+    {
+      "slug": "google-ads-vs-meta-ads-small-business-india",
+      "url": "/blog/google-ads-vs-meta-ads-small-business-india.html",
+      "canonical": "https://codeservecommunity.in/blog/google-ads-vs-meta-ads-small-business-india.html",
+      "content_file": "blog/google-ads-vs-meta-ads-small-business-india.html",
+      "seo_title": "Google Ads vs Meta Ads for Small Business in India (2026)",
+      "meta_description": "Google Ads vs Facebook & Instagram (Meta) ads for Indian small businesses: costs, which works for your industry, budgets, tracking setup and a 30-day test plan.",
+      "h1": "Google Ads vs Meta Ads for Small Businesses in India: Which Should You Choose in 2026?",
+      "primary_keyword": "Google Ads vs Meta Ads",
+      "secondary_keywords": [
+        "Google Ads vs Facebook Ads India",
+        "Instagram ads for small business",
+        "Google Ads cost India",
+        "Meta ads cost India",
+        "best ads for small business India",
+        "click to WhatsApp ads",
+        "digital marketing for small business"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "Google Ads vs Facebook & Instagram (Meta) ads for Indian small businesses: costs, which works for your industry, budgets, tracking setup…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 10,
+      "featured_image": "/assets/img/blog/google-ads-vs-meta-ads-small-business-india.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/google-ads-vs-meta-ads-small-business-india-og.png",
+      "image_alt": "Comparison of Google Ads search campaigns and Meta Facebook and Instagram ads for small businesses in India",
+      "related_articles": [
+        "digital-marketing-budget-small-business",
+        "rank-in-ai-search-google-ai-mode-chatgpt",
+        "start-online-business-india-2026"
+      ],
+      "related_service": "../digital-marketing-hyderabad.html"
+    },
+    {
+      "slug": "business-website-must-have-features",
+      "url": "/blog/business-website-must-have-features.html",
+      "canonical": "https://codeservecommunity.in/blog/business-website-must-have-features.html",
+      "content_file": "blog/business-website-must-have-features.html",
+      "seo_title": "10 Must-Have Business Website Features (2026 Checklist)",
+      "meta_description": "The 10 features every business website needs in 2026: mobile design, speed, clear service pages, WhatsApp and enquiry forms, trust signals, SEO basics, analytics and security.",
+      "h1": "10 Must-Have Features for a Business Website in 2026",
+      "primary_keyword": "business website features",
+      "secondary_keywords": [
+        "must-have website features",
+        "small business website checklist",
+        "website features for lead generation",
+        "business website requirements India"
+      ],
+      "category": "website-development",
+      "short_description": "The 10 features every business website needs in 2026: mobile design, speed, clear service pages, WhatsApp and enquiry forms, trust signals, SEO basics, analytics and security.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/business-website-must-have-features.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/business-website-must-have-features-og.png",
+      "image_alt": "Checklist of must-have features for a small business website",
+      "related_articles": [
+        "website-cost-hyderabad-2026",
+        "website-vs-instagram-for-business",
+        "rank-small-business-website-google"
+      ],
+      "related_service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "automate-lead-generation-small-business",
+      "url": "/blog/automate-lead-generation-small-business.html",
+      "canonical": "https://codeservecommunity.in/blog/automate-lead-generation-small-business.html",
+      "content_file": "blog/automate-lead-generation-small-business.html",
+      "seo_title": "How to Automate Lead Generation for a Small Business",
+      "meta_description": "A practical guide to automating lead capture, instant replies, follow-ups and reporting with forms, WhatsApp, Google Sheets, CRMs and tools like n8n, Make and Zapier.",
+      "h1": "How to Automate Lead Generation and Follow-Up for a Small Business",
+      "primary_keyword": "automate lead generation",
+      "secondary_keywords": [
+        "lead follow-up automation",
+        "WhatsApp lead automation",
+        "CRM automation small business",
+        "n8n lead workflow",
+        "lead management India"
+      ],
+      "category": "business-automation",
+      "short_description": "A practical guide to automating lead capture, instant replies, follow-ups and reporting with forms, WhatsApp, Google Sheets, CRMs and tools like n8n, Make and Zapier.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 10,
+      "featured_image": "/assets/img/blog/automate-lead-generation-small-business.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/automate-lead-generation-small-business-og.png",
+      "image_alt": "Automated lead flow from website form and ads to WhatsApp alerts, CRM and follow-up reminders",
+      "related_articles": [
+        "n8n-vs-zapier-vs-make",
+        "how-ai-chatbots-help-small-businesses",
+        "google-ads-vs-seo-small-business"
+      ],
+      "related_service": "../ai-automation-services.html"
+    },
+    {
+      "slug": "ai-chatbot-development-cost-india",
+      "url": "/blog/ai-chatbot-development-cost-india.html",
+      "canonical": "https://codeservecommunity.in/blog/ai-chatbot-development-cost-india.html",
+      "content_file": "blog/ai-chatbot-development-cost-india.html",
+      "seo_title": "AI Chatbot Development Cost in India (2026 Guide)",
+      "meta_description": "What an AI chatbot costs in India in 2026: one-time development, AI model usage, WhatsApp messaging and maintenance — what affects the price and how to budget.",
+      "h1": "AI Chatbot Development Cost in India (2026): What You Actually Pay For",
+      "primary_keyword": "AI chatbot development cost India",
+      "secondary_keywords": [
+        "chatbot price India",
+        "WhatsApp chatbot cost",
+        "AI chatbot cost for small business",
+        "custom chatbot development pricing"
+      ],
+      "category": "ai-chatbots",
+      "short_description": "What an AI chatbot costs in India in 2026: one-time development, AI model usage, WhatsApp messaging and maintenance — what affects the price and how to budget.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-19",
+      "date_modified": "2026-11-19",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/ai-chatbot-development-cost-india.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/ai-chatbot-development-cost-india-og.png",
+      "image_alt": "Breakdown of AI chatbot development costs in India: build, AI usage, messaging and maintenance",
+      "related_articles": [
+        "how-ai-chatbots-help-small-businesses",
+        "ai-chatbot-business-data-rag",
+        "whatsapp-business-api-guide"
+      ],
+      "related_service": "../ai-chatbot-development-company-india.html"
+    },
+    {
+      "slug": "wordpress-vs-custom-website",
+      "url": "/blog/wordpress-vs-custom-website.html",
+      "canonical": "https://codeservecommunity.in/blog/wordpress-vs-custom-website.html",
+      "content_file": "blog/wordpress-vs-custom-website.html",
+      "seo_title": "WordPress vs Custom Website: Which Is Right for You? | CodeServe",
+      "meta_description": "WordPress or a custom-coded website? Compare cost, speed, security, SEO and flexibility to choose the right option for your business website in 2026.",
+      "h1": "WordPress vs Custom Website: Which Is Right for Your Business?",
+      "primary_keyword": "WordPress vs custom website",
+      "secondary_keywords": [
+        "WordPress or custom website",
+        "custom website development",
+        "WordPress website cost India"
+      ],
+      "category": "website-development",
+      "short_description": "An honest comparison of cost, speed, security and flexibility to help you choose the right way to build your website.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 6,
+      "featured_image": "/assets/img/blog/wordpress-vs-custom-website.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/wordpress-vs-custom-website-og.png",
+      "image_alt": "WordPress website compared with a custom coded website",
+      "related_articles": [
+        "start-online-business-india-2026",
+        "website-cost-hyderabad-2026",
+        "freelancer-vs-agency-india",
+        "google-business-profile-guide"
+      ],
+      "related_service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "woocommerce-whatsapp-order-notifications",
+      "url": "/blog/woocommerce-whatsapp-order-notifications.html",
+      "canonical": "https://codeservecommunity.in/blog/woocommerce-whatsapp-order-notifications.html",
+      "content_file": "blog/woocommerce-whatsapp-order-notifications.html",
+      "seo_title": "WooCommerce Order Notifications on WhatsApp: Step-by-Step",
+      "meta_description": "Send WooCommerce order confirmations and shipping updates on WhatsApp with the official Cloud API: Meta setup, templates, PHP code, testing and common errors.",
+      "h1": "How to Send WooCommerce Order Notifications on WhatsApp (Step-by-Step)",
+      "primary_keyword": "WooCommerce WhatsApp notifications",
+      "secondary_keywords": [
+        "WooCommerce WhatsApp order message",
+        "WhatsApp Cloud API WooCommerce",
+        "WhatsApp order confirmation WordPress",
+        "WhatsApp utility template"
+      ],
+      "category": "whatsapp-automation",
+      "short_description": "Send WooCommerce order confirmations and shipping updates on WhatsApp with the official Cloud API: Meta setup, templates, PHP code, testing…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/woocommerce-whatsapp-order-notifications.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/woocommerce-whatsapp-order-notifications-og.png",
+      "image_alt": "WooCommerce order notifications sent automatically to a customer's WhatsApp",
+      "related_articles": [
+        "whatsapp-business-api-guide",
+        "n8n-vs-zapier-vs-make",
+        "ai-chatbot-business-data-rag"
+      ],
+      "related_service": "../whatsapp-automation-hyderabad.html"
+    },
+    {
+      "slug": "white-label-web-development-guide",
+      "url": "/blog/white-label-web-development-guide.html",
+      "canonical": "https://codeservecommunity.in/blog/white-label-web-development-guide.html",
+      "content_file": "blog/white-label-web-development-guide.html",
+      "seo_title": "White Label Web Development: How Agencies Grow Without Hiring",
+      "meta_description": "A practical guide for marketing and design agencies on white label web development: how it works, pricing models, risks, and how to pick the right partner.",
+      "h1": "White Label Web Development: How Agencies Grow Without Hiring",
+      "primary_keyword": "white label web development",
+      "secondary_keywords": [
+        "white label website development India",
+        "outsource web development agency",
+        "white label WordPress development",
+        "agency development partner"
+      ],
+      "category": "business-technology",
+      "short_description": "How marketing and design agencies deliver websites and apps under their own brand by partnering with a development team.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 7,
+      "featured_image": "/assets/img/blog/white-label-web-development-guide.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/white-label-web-development-guide-og.png",
+      "image_alt": "Agency and development partner exchanging work delivered under the agency's brand",
+      "related_articles": [
+        "freelancer-vs-agency-india",
+        "website-cost-hyderabad-2026",
+        "wordpress-vs-custom-website"
+      ],
+      "related_service": "../white-label-web-development.html"
+    },
+    {
+      "slug": "whatsapp-business-api-uae",
+      "url": "/blog/whatsapp-business-api-uae.html",
+      "canonical": "https://codeservecommunity.in/blog/whatsapp-business-api-uae.html",
+      "content_file": "blog/whatsapp-business-api-uae.html",
+      "seo_title": "WhatsApp Business API for UAE Businesses: Setup and Costs",
+      "meta_description": "How UAE businesses in Dubai, Abu Dhabi and Sharjah use the WhatsApp Business API for leads, bookings and orders — setup steps, Arabic templates and costs.",
+      "h1": "WhatsApp Business API for UAE Businesses: Setup, Uses and Costs",
+      "primary_keyword": "WhatsApp Business API UAE",
+      "secondary_keywords": [
+        "WhatsApp API Dubai",
+        "WhatsApp automation UAE",
+        "WhatsApp chatbot Dubai",
+        "WhatsApp Business API cost UAE",
+        "WhatsApp marketing Abu Dhabi"
+      ],
+      "category": "whatsapp-automation",
+      "short_description": "How UAE businesses in Dubai, Abu Dhabi and Sharjah use the WhatsApp Business API for leads, bookings and orders — setup steps, Arabic…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 8,
+      "featured_image": "/assets/img/blog/whatsapp-business-api-uae.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/whatsapp-business-api-uae-og.png",
+      "image_alt": "Phone with WhatsApp chat bubbles in Arabic and English for a UAE business",
+      "related_articles": [
+        "whatsapp-business-api-guide",
+        "woocommerce-whatsapp-order-notifications",
+        "ai-chatbot-business-data-rag"
+      ],
+      "related_service": "../web-development-services-uae.html"
+    },
+    {
+      "slug": "whatsapp-business-api-guide",
+      "url": "/blog/whatsapp-business-api-guide.html",
+      "canonical": "https://codeservecommunity.in/blog/whatsapp-business-api-guide.html",
+      "content_file": "blog/whatsapp-business-api-guide.html",
+      "seo_title": "WhatsApp Business API Guide for Indian Businesses (2026)",
+      "meta_description": "A simple guide to the WhatsApp Business API for Indian businesses: how it differs from the free app, what it costs, what you need and how to get started.",
+      "h1": "WhatsApp Business API: A Simple Guide for Indian Businesses (2026)",
+      "primary_keyword": "WhatsApp Business API",
+      "secondary_keywords": [
+        "WhatsApp Business API India",
+        "WhatsApp automation",
+        "WhatsApp API cost"
+      ],
+      "category": "whatsapp-automation",
+      "short_description": "What the WhatsApp Business API is, how it differs from the free app, what it costs and how to get started step by step.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 6,
+      "featured_image": "/assets/img/blog/whatsapp-business-api-guide.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/whatsapp-business-api-guide-og.png",
+      "image_alt": "Phone showing automated WhatsApp Business API chat messages",
+      "related_articles": [
+        "ai-automation-small-business-india",
+        "website-cost-hyderabad-2026"
+      ],
+      "related_service": "../whatsapp-automation-hyderabad.html"
+    },
+    {
+      "slug": "website-speed-core-web-vitals",
+      "url": "/blog/website-speed-core-web-vitals.html",
+      "canonical": "https://codeservecommunity.in/blog/website-speed-core-web-vitals.html",
+      "content_file": "blog/website-speed-core-web-vitals.html",
+      "seo_title": "Website Speed 2026: Pass Core Web Vitals (LCP, INP, CLS)",
+      "meta_description": "What LCP, INP and CLS mean, Google's good thresholds, how to measure them for free, and practical fixes for slow WordPress and custom websites in 2026.",
+      "h1": "Website Speed in 2026: How to Pass Core Web Vitals (LCP, INP, CLS)",
+      "primary_keyword": "Core Web Vitals",
+      "secondary_keywords": [
+        "website speed optimization",
+        "LCP INP CLS",
+        "PageSpeed Insights",
+        "improve website speed WordPress",
+        "page experience SEO"
+      ],
+      "category": "website-development",
+      "short_description": "What LCP, INP and CLS mean, Google's good thresholds, how to measure them for free, and practical fixes for slow WordPress and custom…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/website-speed-core-web-vitals.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/website-speed-core-web-vitals-og.png",
+      "image_alt": "Website speed gauges for LCP, INP and CLS Core Web Vitals",
+      "related_articles": [
+        "wordpress-vs-custom-website",
+        "website-maintenance-guide",
+        "local-seo-checklist-hyderabad"
+      ],
+      "related_service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "website-maintenance-guide",
+      "url": "/blog/website-maintenance-guide.html",
+      "canonical": "https://codeservecommunity.in/blog/website-maintenance-guide.html",
+      "content_file": "blog/website-maintenance-guide.html",
+      "seo_title": "Website Maintenance: What It Includes and Why You Need It",
+      "meta_description": "What website maintenance includes — updates, security, backups, uptime, speed, SEO and renewals — what happens if you skip it, and how to choose DIY or a plan.",
+      "h1": "Website Maintenance: What It Includes and Why Your Business Needs It",
+      "primary_keyword": "website maintenance",
+      "secondary_keywords": [
+        "website maintenance India",
+        "website maintenance cost",
+        "WordPress maintenance Hyderabad",
+        "website care plan",
+        "website security updates",
+        "website backup"
+      ],
+      "category": "website-development",
+      "short_description": "What website maintenance includes — updates, security, backups, uptime, speed, SEO and renewals — what happens if you skip it, and how to…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 7,
+      "featured_image": "/assets/img/blog/website-maintenance-guide.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/website-maintenance-guide-og.png",
+      "image_alt": "Website maintenance guide — browser window with security shield and performance chart illustration",
+      "related_articles": [
+        "website-speed-core-web-vitals",
+        "wordpress-vs-custom-website",
+        "website-cost-hyderabad-2026"
+      ],
+      "related_service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "website-cost-hyderabad-2026",
+      "url": "/blog/website-cost-hyderabad-2026.html",
+      "canonical": "https://codeservecommunity.in/blog/website-cost-hyderabad-2026.html",
+      "content_file": "blog/website-cost-hyderabad-2026.html",
+      "seo_title": "Website Cost in Hyderabad 2026: Complete Price Guide | CodeServe",
+      "meta_description": "How much does a website cost in Hyderabad in 2026? Real price ranges for business sites, e-commerce stores and web apps, plus yearly costs most people forget.",
+      "h1": "How Much Does a Website Cost in Hyderabad in 2026? (Complete Price Guide)",
+      "primary_keyword": "website cost in Hyderabad",
+      "secondary_keywords": [
+        "website development cost Hyderabad",
+        "website price India",
+        "business website cost",
+        "ecommerce website cost Hyderabad"
+      ],
+      "category": "website-development",
+      "short_description": "Real price ranges for business websites, e-commerce stores and web apps in Hyderabad — plus the hidden yearly costs most people forget.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 7,
+      "featured_image": "/assets/img/blog/website-cost-hyderabad-2026.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/website-cost-hyderabad-2026-og.png",
+      "image_alt": "Illustration of a business website with price tags showing website costs in Hyderabad",
+      "related_articles": [
+        "website-vs-instagram-for-business",
+        "start-online-business-india-2026",
+        "wordpress-vs-custom-website",
+        "google-business-profile-guide",
+        "freelancer-vs-agency-india"
+      ],
+      "related_service": "../website-development-hyderabad.html"
+    },
+    {
+      "slug": "outsourcing-web-development-india-cost",
+      "url": "/blog/outsourcing-web-development-india-cost.html",
+      "canonical": "https://codeservecommunity.in/blog/outsourcing-web-development-india-cost.html",
+      "content_file": "blog/outsourcing-web-development-india-cost.html",
+      "seo_title": "Outsourcing Web Development to India: Costs and Risks",
+      "meta_description": "What outsourcing web development to India really costs, the hidden costs and risks to plan for, and how to compare quotes from Indian agencies and freelancers.",
+      "h1": "Outsourcing Web Development to India: Costs, Risks and How to Choose",
+      "primary_keyword": "outsourcing web development to India",
+      "secondary_keywords": [
+        "outsourcing web development India",
+        "web development cost India",
+        "outsource website development",
+        "offshore web development cost",
+        "Indian web development company",
+        "hire web developers India cost"
+      ],
+      "category": "business-technology",
+      "short_description": "What outsourcing web development to India really costs, the hidden costs and risks to plan for, and how to compare quotes from Indian…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 8,
+      "featured_image": "/assets/img/blog/outsourcing-web-development-india-cost.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/outsourcing-web-development-india-cost-og.png",
+      "image_alt": "Balance scale weighing cost against quality, representing outsourcing web development to India",
+      "related_articles": [
+        "hire-offshore-developers-india-guide",
+        "website-cost-hyderabad-2026",
+        "white-label-web-development-guide"
+      ],
+      "related_service": "../offshore-web-development-company-india.html"
+    },
+    {
+      "slug": "n8n-vs-zapier-vs-make",
+      "url": "/blog/n8n-vs-zapier-vs-make.html",
+      "canonical": "https://codeservecommunity.in/blog/n8n-vs-zapier-vs-make.html",
+      "content_file": "blog/n8n-vs-zapier-vs-make.html",
+      "seo_title": "n8n vs Zapier vs Make: Best Automation Tool in India",
+      "meta_description": "Honest n8n vs Zapier vs Make comparison for Indian businesses: pricing models, self-hosting, ease of use, data control, example workflows and when to use code.",
+      "h1": "n8n vs Zapier vs Make: Best Automation Tool for Indian Businesses",
+      "primary_keyword": "n8n vs Zapier vs Make",
+      "secondary_keywords": [
+        "n8n vs Zapier",
+        "Zapier vs Make",
+        "n8n vs Make",
+        "best automation tool India",
+        "workflow automation tools",
+        "business process automation",
+        "no-code automation"
+      ],
+      "category": "business-automation",
+      "short_description": "Honest n8n vs Zapier vs Make comparison for Indian businesses: pricing models, self-hosting, ease of use, data control, example workflows…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 8,
+      "featured_image": "/assets/img/blog/n8n-vs-zapier-vs-make.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/n8n-vs-zapier-vs-make-og.png",
+      "image_alt": "Comparison of n8n, Zapier and Make workflow automation tools",
+      "related_articles": [
+        "ai-automation-small-business-india",
+        "ai-chatbot-business-data-rag",
+        "woocommerce-whatsapp-order-notifications"
+      ],
+      "related_service": "../ai-automation-services.html"
+    },
+    {
+      "slug": "mobile-app-cost-india-2026",
+      "url": "/blog/mobile-app-cost-india-2026.html",
+      "canonical": "https://codeservecommunity.in/blog/mobile-app-cost-india-2026.html",
+      "content_file": "blog/mobile-app-cost-india-2026.html",
+      "seo_title": "How Much Does a Mobile App Cost in India in 2026? | CodeServe",
+      "meta_description": "Mobile app development cost in India for 2026: typical price ranges by app type, what drives cost, Flutter vs native, store fees and running costs explained.",
+      "h1": "How Much Does a Mobile App Cost in India in 2026?",
+      "primary_keyword": "mobile app cost India",
+      "secondary_keywords": [
+        "mobile app development cost India",
+        "app development cost 2026",
+        "how much does an app cost India",
+        "Flutter app cost",
+        "app development Hyderabad price"
+      ],
+      "category": "custom-software",
+      "short_description": "Mobile app development cost in India for 2026: typical price ranges by app type, what drives cost, Flutter vs native, store fees and…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 8,
+      "featured_image": "/assets/img/blog/mobile-app-cost-india-2026.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/mobile-app-cost-india-2026-og.png",
+      "image_alt": "Mobile app cost in India 2026 — smartphone with a rupee estimate illustration",
+      "related_articles": [
+        "website-cost-hyderabad-2026",
+        "freelancer-vs-agency-india",
+        "ai-chatbot-business-data-rag"
+      ],
+      "related_service": "../mobile-app-development-hyderabad.html"
+    },
+    {
+      "slug": "local-seo-checklist-hyderabad",
+      "url": "/blog/local-seo-checklist-hyderabad.html",
+      "canonical": "https://codeservecommunity.in/blog/local-seo-checklist-hyderabad.html",
+      "content_file": "blog/local-seo-checklist-hyderabad.html",
+      "seo_title": "Local SEO Checklist for Hyderabad Businesses (2026) | CodeServe",
+      "meta_description": "A step-by-step local SEO checklist for Hyderabad businesses: Google Business Profile, NAP, citations, reviews, area pages, local keywords, schema and tracking.",
+      "h1": "Local SEO Checklist for Hyderabad Businesses (2026)",
+      "primary_keyword": "local SEO checklist Hyderabad",
+      "secondary_keywords": [
+        "local SEO Hyderabad",
+        "local SEO checklist",
+        "Google Maps ranking Hyderabad",
+        "Google Business Profile optimisation",
+        "local citations India",
+        "near me SEO"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "A step-by-step local SEO checklist for Hyderabad businesses: Google Business Profile, NAP, citations, reviews, area pages, local keywords,…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 8,
+      "featured_image": "/assets/img/blog/local-seo-checklist-hyderabad.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/local-seo-checklist-hyderabad-og.png",
+      "image_alt": "Local SEO checklist for Hyderabad businesses — map pin and five-star review illustration",
+      "related_articles": [
+        "rank-in-ai-search-google-ai-mode-chatgpt",
+        "google-business-profile-guide",
+        "website-speed-core-web-vitals",
+        "digital-marketing-budget-small-business"
+      ],
+      "related_service": "../seo-services-hyderabad.html"
+    },
+    {
+      "slug": "hire-offshore-developers-india-guide",
+      "url": "/blog/hire-offshore-developers-india-guide.html",
+      "canonical": "https://codeservecommunity.in/blog/hire-offshore-developers-india-guide.html",
+      "content_file": "blog/hire-offshore-developers-india-guide.html",
+      "seo_title": "How to Hire an Offshore Development Team in India (2026)",
+      "meta_description": "A practical guide for US, UK, UAE and Australian businesses: how to choose, vet and contract an offshore development team in India, plus red flags to avoid.",
+      "h1": "How to Hire an Offshore Development Team in India (2026 Guide)",
+      "primary_keyword": "hire offshore developers India",
+      "secondary_keywords": [
+        "offshore development team India",
+        "hire Indian developers",
+        "outsource software development India",
+        "dedicated development team India",
+        "hire remote developers"
+      ],
+      "category": "business-technology",
+      "short_description": "A practical guide for US, UK, UAE and Australian businesses: how to choose, vet and contract an offshore development team in India, plus…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/hire-offshore-developers-india-guide.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/hire-offshore-developers-india-guide-og.png",
+      "image_alt": "Globe with connection lines between India and international clients, representing an offshore development team",
+      "related_articles": [
+        "outsourcing-web-development-india-cost",
+        "freelancer-vs-agency-india",
+        "white-label-web-development-guide"
+      ],
+      "related_service": "../offshore-web-development-company-india.html"
+    },
+    {
+      "slug": "gst-billing-software-guide",
+      "url": "/blog/gst-billing-software-guide.html",
+      "canonical": "https://codeservecommunity.in/blog/gst-billing-software-guide.html",
+      "content_file": "blog/gst-billing-software-guide.html",
+      "seo_title": "GST Billing Software: Ready-Made vs Custom — Which to Choose?",
+      "meta_description": "Ready-made GST billing apps or custom billing software? Compare features, costs and trade-offs to choose the right billing system for your Indian business.",
+      "h1": "GST Billing Software: Ready-Made vs Custom — What Should You Choose?",
+      "primary_keyword": "GST billing software",
+      "secondary_keywords": [
+        "custom billing software India",
+        "billing app development",
+        "POS software Hyderabad",
+        "invoice software for small business",
+        "inventory and billing software"
+      ],
+      "category": "billing-software",
+      "short_description": "Compare off-the-shelf GST billing tools with custom billing software, and learn which one fits your business.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 7,
+      "featured_image": "/assets/img/blog/gst-billing-software-guide.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/gst-billing-software-guide-og.png",
+      "image_alt": "GST invoice illustration for billing software comparison",
+      "related_articles": [
+        "ai-automation-small-business-india",
+        "whatsapp-business-api-guide",
+        "freelancer-vs-agency-india"
+      ],
+      "related_service": "../billing-software-development.html"
+    },
+    {
+      "slug": "google-business-profile-guide",
+      "url": "/blog/google-business-profile-guide.html",
+      "canonical": "https://codeservecommunity.in/blog/google-business-profile-guide.html",
+      "content_file": "blog/google-business-profile-guide.html",
+      "seo_title": "Google Business Profile Guide: Rank Higher on Google Maps",
+      "meta_description": "Step-by-step Google Business Profile guide for Indian businesses: set up, verify and optimise your listing so local customers find you on Google Maps first.",
+      "h1": "How to Get Your Business on Top of Google Maps: Google Business Profile Guide",
+      "primary_keyword": "Google Business Profile",
+      "secondary_keywords": [
+        "rank on Google Maps",
+        "Google Business Profile optimization",
+        "Google Maps listing"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "A practical checklist to set up, verify and optimise your Google Business Profile so local customers find you first.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 6,
+      "featured_image": "/assets/img/blog/google-business-profile-guide.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/google-business-profile-guide-og.png",
+      "image_alt": "Google Maps style location pin with five review stars",
+      "related_articles": [
+        "rank-in-ai-search-google-ai-mode-chatgpt",
+        "website-cost-hyderabad-2026",
+        "wordpress-vs-custom-website",
+        "ai-automation-small-business-india"
+      ],
+      "related_service": "../digital-marketing-hyderabad.html"
+    },
+    {
+      "slug": "freelancer-vs-agency-india",
+      "url": "/blog/freelancer-vs-agency-india.html",
+      "canonical": "https://codeservecommunity.in/blog/freelancer-vs-agency-india.html",
+      "content_file": "blog/freelancer-vs-agency-india.html",
+      "seo_title": "Freelancer vs Agency: Who Should Build Your Website or App?",
+      "meta_description": "Should you hire a freelancer or an agency for your website or app in India? Compare cost, quality, speed and risk, plus questions to ask before you hire.",
+      "h1": "Freelancer vs Agency: Who Should Build Your Website or App?",
+      "primary_keyword": "freelancer vs agency",
+      "secondary_keywords": [
+        "hire freelance web developer India",
+        "web development agency Hyderabad",
+        "hire app developer",
+        "website developer near me"
+      ],
+      "category": "business-technology",
+      "short_description": "The real pros and cons of hiring a freelancer, an agency or a small team — and how to avoid the most common mistakes.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 6,
+      "featured_image": "/assets/img/blog/freelancer-vs-agency-india.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/freelancer-vs-agency-india-og.png",
+      "image_alt": "Single freelancer compared with an agency team",
+      "related_articles": [
+        "website-cost-hyderabad-2026",
+        "wordpress-vs-custom-website",
+        "white-label-web-development-guide"
+      ],
+      "related_service": "../hire-freelance-developers-hyderabad.html"
+    },
+    {
+      "slug": "digital-marketing-budget-small-business",
+      "url": "/blog/digital-marketing-budget-small-business.html",
+      "canonical": "https://codeservecommunity.in/blog/digital-marketing-budget-small-business.html",
+      "content_file": "blog/digital-marketing-budget-small-business.html",
+      "seo_title": "Digital Marketing Budget: Spending Your First ₹20,000 | CodeServe",
+      "meta_description": "Where should a small business spend its first ₹20,000 on digital marketing? Free foundations, Google vs Meta ads, example budget splits and how to measure.",
+      "h1": "Digital Marketing for Small Businesses: Where to Spend Your First ₹20,000",
+      "primary_keyword": "digital marketing budget small business",
+      "secondary_keywords": [
+        "digital marketing budget small business India",
+        "Google Ads vs Facebook ads India",
+        "digital marketing for small business Hyderabad",
+        "marketing budget ₹20000",
+        "small business ads India"
+      ],
+      "category": "seo-digital-marketing",
+      "short_description": "Where should a small business spend its first ₹20,000 on digital marketing? Free foundations, Google vs Meta ads, example budget splits and…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 8,
+      "featured_image": "/assets/img/blog/digital-marketing-budget-small-business.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/digital-marketing-budget-small-business-og.png",
+      "image_alt": "Digital marketing budget for small businesses — ₹20,000 budget split pie chart illustration",
+      "related_articles": [
+        "google-ads-vs-meta-ads-small-business-india",
+        "local-seo-checklist-hyderabad",
+        "google-business-profile-guide",
+        "ai-automation-small-business-india"
+      ],
+      "related_service": "../digital-marketing-hyderabad.html"
+    },
+    {
+      "slug": "ai-chatbot-business-data-rag",
+      "url": "/blog/ai-chatbot-business-data-rag.html",
+      "canonical": "https://codeservecommunity.in/blog/ai-chatbot-business-data-rag.html",
+      "content_file": "blog/ai-chatbot-business-data-rag.html",
+      "seo_title": "Build an AI Chatbot Trained on Your Business Data (RAG)",
+      "meta_description": "RAG explained simply: how AI chatbots answer from your own documents, what data to prepare, how to stop wrong answers, privacy, costs and build vs buy.",
+      "h1": "How to Build an AI Chatbot Trained on Your Business Data (RAG Explained)",
+      "primary_keyword": "AI chatbot trained on business data",
+      "secondary_keywords": [
+        "AI chatbot for business",
+        "RAG chatbot",
+        "retrieval augmented generation",
+        "train chatbot on your data",
+        "AI knowledge base chatbot",
+        "WhatsApp AI chatbot India"
+      ],
+      "category": "ai-chatbots",
+      "short_description": "RAG explained simply: how AI chatbots answer from your own documents, what data to prepare, how to stop wrong answers, privacy, costs and…",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 9,
+      "featured_image": "/assets/img/blog/ai-chatbot-business-data-rag.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/ai-chatbot-business-data-rag-og.png",
+      "image_alt": "AI chatbot answering customer questions from business documents using RAG",
+      "related_articles": [
+        "ai-automation-small-business-india",
+        "n8n-vs-zapier-vs-make",
+        "whatsapp-business-api-guide"
+      ],
+      "related_service": "../ai-automation-services.html"
+    },
+    {
+      "slug": "ai-automation-small-business-india",
+      "url": "/blog/ai-automation-small-business-india.html",
+      "canonical": "https://codeservecommunity.in/blog/ai-automation-small-business-india.html",
+      "content_file": "blog/ai-automation-small-business-india.html",
+      "seo_title": "10 AI Automations Every Small Business in India Can Use",
+      "meta_description": "Ten practical AI and automation ideas for Indian small businesses — WhatsApp replies, lead follow-ups, invoices, reports and more — with examples and costs.",
+      "h1": "10 AI Automations Every Small Business in India Can Use in 2026",
+      "primary_keyword": "AI automation for small business",
+      "secondary_keywords": [
+        "AI automation for small business India",
+        "business automation ideas",
+        "WhatsApp automation",
+        "AI chatbot for business",
+        "workflow automation India",
+        "n8n automation"
+      ],
+      "category": "business-automation",
+      "short_description": "Simple, practical AI and automation ideas that save hours every week — from WhatsApp replies to invoice processing.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-02",
+      "date_modified": "2026-11-02",
+      "reading_time_min": 6,
+      "featured_image": "/assets/img/blog/ai-automation-small-business-india.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/ai-automation-small-business-india-og.png",
+      "image_alt": "AI hub connected to chat, email, documents, reports, scheduling and orders",
+      "related_articles": [
+        "whatsapp-business-api-guide",
+        "google-business-profile-guide"
+      ],
+      "related_service": "../ai-automation-services.html"
+    }
+  ]
+}

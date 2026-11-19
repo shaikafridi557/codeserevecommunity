@@ -8,7 +8,7 @@ const newProjects = [
     category: "IT Services Platform",
     challenge: "An IT services company needed a comprehensive platform to showcase their training programs, job placement services, and visa processing capabilities in Vijayawada.",
     solution: "We developed a professional website highlighting their IT services, training programs in Vijayawada, and global career opportunities, establishing their digital presence in the competitive IT services market.",
-    imageUrl: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "assets/img/stock/pexels-3184465.jpg",
     projectUrl: "https://sireeshnasolutions.com/",
     altText: "Sireeshna Solutions IT Services Platform",
     overlay: "4" // Consistent with existing projects
@@ -19,7 +19,7 @@ const newProjects = [
     category: "Healthcare Website",
     challenge: "A renowned medical specialist needed a professional online presence to showcase expertise in kidney treatments, robotic surgery, and IVF services.",
     solution: "We created a comprehensive medical website featuring the doctor's credentials, specializations, and appointment services, enhancing patient accessibility and trust in healthcare services.",
-    imageUrl: "https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    imageUrl: "assets/img/stock/pexels-236380.jpg",
     projectUrl: "https://drkammelasreedharvundavallisridevikidneyandrogyivf.com/",
     altText: "Dr. Kammela Medical Center Website",
     overlay: "4" // Consistent with existing projects
