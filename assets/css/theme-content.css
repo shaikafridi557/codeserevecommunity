@@ -124,7 +124,7 @@
 }
 
 .cs-btn-primary {
-    background: var(--cs-accent);
+    background: var(--cs-accent-dark);
     color: #fff !important;
 }
 
