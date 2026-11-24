@@ -1,4 +1,11 @@
-// Sends lead-related clicks to Google Analytics 4 as events
+// Sends lead-related clicks to Google Analytics 4 as events.
+// Event names (GA4 style, snake_case):
+//   whatsapp_click, phone_click, email_click   contact attempts
+//   cta_click                                  main buttons (Start a project, Get a quote, plan buttons)
+//   portfolio_click                            links to live client projects
+//   share                                      article share buttons
+//   form_submit_attempt                        a form was submitted
+//   generate_lead                              the contact form was actually delivered (sent from contact.html)
 (function () {
     function track(name, params) {
         if (typeof window.gtag === 'function') window.gtag('event', name, params || {});
@@ -19,6 +26,11 @@
             track('phone_click', { phone_number: href.slice(4), page_path: location.pathname });
         } else if (href.indexOf('mailto:') === 0) {
             track('email_click', { page_path: location.pathname });
+        } else if (/^https?:/.test(href) && link.hostname !== location.hostname &&
+                   link.closest('[class*="portfolio"], [class*="project"], [class*="work"], #work')) {
+            track('portfolio_click', { link_url: href, link_text: label, page_path: location.pathname });
+        } else if (link.matches('.cs-btn, .pricing-card__cta, .startup-kit__cta, .btn.primary, .creative-button')) {
+            track('cta_click', { link_url: href, link_text: label, page_path: location.pathname });
         }
     }, true);
 
@@ -35,6 +47,6 @@
     document.addEventListener('submit', function (e) {
         var form = e.target;
         if (!form || form.tagName !== 'FORM') return;
-        track('generate_lead', { form_id: form.id || 'form', page_path: location.pathname });
+        track('form_submit_attempt', { form_id: form.id || 'form', page_path: location.pathname });
     }, true);
 })();

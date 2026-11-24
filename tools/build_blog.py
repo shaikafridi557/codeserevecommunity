@@ -73,7 +73,7 @@ TOOLS_CSS = '''<style>
         .cs-blog-search{width:100%;max-width:520px;padding:12px 16px;border-radius:8px;border:1px solid var(--border-color);background:var(--assistant-color);color:var(--heading-color,#fff);font-size:15px;margin-bottom:18px}
         .cs-cat-nav{display:flex;flex-wrap:wrap;gap:10px}
         .cs-cat-chip{display:inline-block;padding:7px 14px;border:1px solid var(--border-color);border-radius:999px;font-size:13px;color:var(--font-color);text-decoration:none}
-        .cs-cat-chip span{opacity:.7}
+        .cs-cat-chip span{opacity:1}
         .cs-cat-chip:hover,.cs-cat-chip.is-active{border-color:var(--cs-accent);color:var(--cs-accent)}
         .cs-blog-empty{display:none;margin-top:20px}
         .cs-share{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:34px 0 10px}
@@ -218,6 +218,38 @@ for p in POSTS:
     s = rewrite_jsonld(s, fix)
     s = re.sub(r'\n[ \t]*<meta name="keywords" content="[^"]*">', '', s)
     wr(f, s)
+
+# ---------------------------------------------------------------- homepage: latest guides
+# The three newest articles, shown on the homepage just above the local "Based in Kukatpally" section.
+home = rd('index.html')
+latest_cards = '\n'.join(f'''                            <a class="cs-post-card" href="blog/{p['slug']}.html">
+                                <img class="cs-post-thumb" src="assets/img/blog/{p['slug']}.svg" alt="{e(p['image_alt'])}" width="1200" height="630" loading="lazy">
+                                <span class="cs-tag">{e(CATS[p['category']]['name'])}</span>
+                                <h3>{e(p['h1'])}</h3>
+                                <p>{e(p['short_description'])}</p>
+                                <span class="cs-read">Read more →</span>
+                            </a>''' for p in POSTS[:3])
+latest = f'''
+                <section class="cs-section">
+                    <div class="cs-container">
+                        <h2>Latest guides for business owners</h2>
+                        <p class="cs-section-intro">Practical, no-jargon articles on websites, AI, WhatsApp automation and getting found on Google.</p>
+                        <div class="cs-grid">
+{latest_cards}
+                        </div>
+                        <p style="margin-top:24px;"><a class="cs-btn cs-btn-ghost" href="blog/">Read all articles</a></p>
+                    </div>
+                </section>
+'''
+if '<!--cs:home-latest-->' in home:
+    home = put_block(home, 'home-latest', latest)
+else:
+    anchor = '                <section class="cs-section">\n                    <div class="cs-container cs-narrow">\n                        <h2>Based in Kukatpally'
+    nl = '\r\n' if '\r\n' in home else '\n'
+    a = anchor.replace('\n', nl)
+    if a in home:
+        home = home.replace(a, '<!--cs:home-latest-->' + latest.replace('\n', nl) + '<!--/cs:home-latest-->' + nl + a, 1)
+wr('index.html', home)
 
 # ---------------------------------------------------------------- sitemap
 sm = rd('sitemap.xml')

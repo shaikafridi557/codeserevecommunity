@@ -120,7 +120,7 @@
 
 .cs-btn-whatsapp {
     background: var(--cs-whatsapp);
-    color: #fff !important;
+    color: #06311a !important;
 }
 
 .cs-btn-primary {
@@ -521,7 +521,7 @@
     top: -13px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--cs-accent);
+    background: var(--cs-accent-dark);
     color: #fff;
     font-size: 12px;
     font-weight: 600;
@@ -592,7 +592,7 @@
 .pricing-card__cta:hover,
 .pricing-card__cta--featured,
 .startup-kit__cta {
-    background-color: var(--cs-accent);
+    background-color: var(--cs-accent-dark);
     color: #fff !important;
 }
 
@@ -678,7 +678,7 @@
 
 .startup-kit__badge {
     display: inline-block;
-    background: var(--cs-accent);
+    background: var(--cs-accent-dark);
     color: #fff;
     font-size: 13px;
     font-weight: 600;

@@ -315,3 +315,12 @@ body {
 .creative-button:hover .shimmer {
     left: 150%;
 }
+/* Optional fields: keep the label inside the field until something is typed */
+.form-group-floating input:not(:focus):placeholder-shown + label { top: 10px; font-size: inherit; color: var(--font-color); }
+/* Service dropdown: label always above, field styled like the inputs */
+.form-group-floating.has-select select { width: 100%; background-color: transparent; border: none; border-bottom: 1px solid var(--border-color); padding: 10px 0; font-size: 16px; color: var(--heading-color); }
+.form-group-floating.has-select select:focus { outline: none; border-bottom-color: var(--theme-color); }
+.form-group-floating.has-select select option { color: #111; }
+.form-group-floating.has-select label { top: -15px; font-size: 12px; color: var(--theme-color); }
+/* Spam trap field is off-screen for people */
+.hp-field { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

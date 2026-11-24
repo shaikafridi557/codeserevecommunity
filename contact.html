@@ -11,7 +11,7 @@
 
       gtag('config', 'G-TCZM6MC8ZL');
     </script>
-    <script src="assets/js/ga-events.js?v=2" defer></script>
+    <script src="assets/js/ga-events.js?v=3" defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -94,7 +94,7 @@
     <link href="assets/css/plugins.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Page Specific CSS -->
-    <link rel="stylesheet" id="page-specific-css" href="assets/css/contact-style.css">
+    <link rel="stylesheet" id="page-specific-css" href="assets/css/contact-style.css?v=2">
 
     <style>
         .main-logo .logo-text {
@@ -348,7 +348,7 @@
                             <h3 class="title-h3">Send Us a Message</h3>
                             <div class="dsn-form mt-20">
                                 <form id="contact-form" class="form w-100" method="post" data-toggle="validator">
-                                    <div class="messages"></div>
+                                    <div class="messages" aria-live="polite"></div>
                                     <div class="input__wrap controls">
                                         <div class="form-group-floating">
                                             <input id="form_name" type="text" name="name" required="required"
@@ -359,6 +359,32 @@
                                             <input id="form_email" type="email" name="email" required="required"
                                                 data-error="Valid email is required.">
                                             <label for="form_email">Your Email</label>
+                                        </div>
+                                        <div class="form-group-floating">
+                                            <input id="form_phone" type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder=" "
+                                                pattern="[0-9 +\-]{7,20}" title="Phone or WhatsApp number with country code, digits only">
+                                            <label for="form_phone">Phone / WhatsApp (optional)</label>
+                                        </div>
+                                        <div class="form-group-floating has-select">
+                                            <select id="form_service" name="service">
+                                                <option value="">Not sure yet</option>
+                                                <option>Website development</option>
+                                                <option>E-commerce website</option>
+                                                <option>Custom software / web app</option>
+                                                <option>Mobile app</option>
+                                                <option>AI chatbot</option>
+                                                <option>AI automation</option>
+                                                <option>WhatsApp automation</option>
+                                                <option>SEO / digital marketing</option>
+                                                <option>Billing software</option>
+                                                <option>Website maintenance / fixes</option>
+                                            </select>
+                                            <label for="form_service">What do you need?</label>
+                                        </div>
+                                        <!-- Spam trap: hidden from people, bots fill it in -->
+                                        <div class="hp-field" aria-hidden="true">
+                                            <label for="form_website">Leave this field empty</label>
+                                            <input id="form_website" type="text" name="website" tabindex="-1" autocomplete="off">
                                         </div>
                                         <div class="form-group-floating">
                                             <textarea id="form_message" name="message" rows="4" required="required"
@@ -530,10 +556,27 @@
             buttonText.textContent = 'Sending...';
             submitButton.disabled = true;
 
+            const form = document.getElementById('contact-form');
+            // Bots fill the hidden field: pretend it worked and send nothing.
+            if (form.website && form.website.value) { form.reset(); buttonText.textContent = originalText; submitButton.disabled = false; return; }
+
+            // Phone and service are added to the message so they arrive with the existing EmailJS template.
+            const extra = [
+                form.phone && form.phone.value.trim() ? `Phone / WhatsApp: ${form.phone.value.trim()}` : '',
+                form.service && form.service.value ? `Service: ${form.service.value}` : '',
+            ].filter(Boolean).join('\n');
+            const params = {
+                name: form.name.value.trim(),
+                email: form.email.value.trim(),
+                phone: form.phone ? form.phone.value.trim() : '',
+                service: form.service ? form.service.value : '',
+                message: (extra ? extra + '\n\n' : '') + form.message.value.trim(),
+            };
+
             // Send email using EmailJS
-            emailjs.sendForm('service_daccl37', 'template_b7oyehn', '#contact-form')
+            emailjs.send('service_daccl37', 'template_b7oyehn', params)
                 .then(function (response) {
-                    console.log('SUCCESS!', response.status, response.text);
+                    if (typeof gtag === 'function') gtag('event', 'generate_lead', { form_id: 'contact-form', service: params.service || 'not specified', page_path: location.pathname });
 
                     // Show success message
                     const messagesDiv = document.querySelector('.messages');

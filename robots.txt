@@ -5,6 +5,7 @@ Disallow: /.vscode/
 Disallow: /.kiro/
 Disallow: /tools/
 Disallow: /content/
+Disallow: /docs/
 Disallow: /assets/fonts/*.html
 
 # AI search and assistant crawlers are welcome
