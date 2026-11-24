@@ -425,8 +425,15 @@
         <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/generative-ai-vs-agentic-ai.svg</image:loc></image:image>
     </url>
     <url>
+        <loc>https://codeservecommunity.in/blog/website-security-checklist-small-business.html</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/website-security-checklist-small-business.svg</image:loc></image:image>
+    </url>
+    <url>
         <loc>https://codeservecommunity.in/blog/category-website-development.html</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-24</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>

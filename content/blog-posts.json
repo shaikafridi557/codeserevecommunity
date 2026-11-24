@@ -63,6 +63,39 @@
   ],
   "posts": [
     {
+      "slug": "website-security-checklist-small-business",
+      "url": "/blog/website-security-checklist-small-business.html",
+      "canonical": "https://codeservecommunity.in/blog/website-security-checklist-small-business.html",
+      "content_file": "blog/website-security-checklist-small-business.html",
+      "seo_title": "Website Security Checklist for Small Businesses (2026)",
+      "meta_description": "A practical website security checklist for small businesses in India: HTTPS, updates, passwords and 2FA, backups, spam and malware protection, and what to do if you're hacked.",
+      "h1": "Website Security Checklist for Small Businesses (2026)",
+      "primary_keyword": "website security checklist",
+      "secondary_keywords": [
+        "website security for small business",
+        "how to secure a website",
+        "WordPress security",
+        "website hacked what to do",
+        "website backup",
+        "SSL HTTPS website India"
+      ],
+      "category": "website-development",
+      "short_description": "A practical security checklist for small business websites: HTTPS, updates, 2FA, backups, spam and malware protection, and what to do if you're hacked.",
+      "author": "CodeServe Team",
+      "date_published": "2026-11-24",
+      "date_modified": "2026-11-24",
+      "reading_time_min": 10,
+      "featured_image": "/assets/img/blog/website-security-checklist-small-business.svg",
+      "og_image": "https://codeservecommunity.in/assets/img/blog/website-security-checklist-small-business-og.png",
+      "image_alt": "Shield protecting a small business website from hackers, malware and spam",
+      "related_articles": [
+        "website-maintenance-guide",
+        "business-website-must-have-features",
+        "wordpress-vs-custom-website"
+      ],
+      "related_service": "../website-development.html"
+    },
+    {
       "slug": "generative-ai-vs-agentic-ai",
       "url": "/blog/generative-ai-vs-agentic-ai.html",
       "canonical": "https://codeservecommunity.in/blog/generative-ai-vs-agentic-ai.html",
