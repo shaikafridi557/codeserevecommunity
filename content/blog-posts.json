@@ -4,13 +4,13 @@
       "slug": "website-development",
       "name": "Website Development",
       "description": "Guides on website costs, platforms, features, speed and maintenance for business websites in India.",
-      "service": "../website-development-hyderabad.html"
+      "service": "../website-development.html"
     },
     {
       "slug": "ai-chatbots",
       "name": "AI Chatbots",
       "description": "How AI chatbots work, what they cost and how small businesses use them on websites and WhatsApp.",
-      "service": "../ai-chatbot-development-company-india.html"
+      "service": "../ai-chatbot-development.html"
     },
     {
       "slug": "ai-agents",
@@ -28,19 +28,19 @@
       "slug": "whatsapp-automation",
       "name": "WhatsApp Automation",
       "description": "WhatsApp Business API setup, notifications and automation for Indian and Gulf businesses.",
-      "service": "../whatsapp-automation-hyderabad.html"
+      "service": "../whatsapp-automation.html"
     },
     {
       "slug": "seo-digital-marketing",
       "name": "SEO and Digital Marketing",
       "description": "SEO, local SEO, Google Business Profile, AI search and advertising guides for small businesses.",
-      "service": "../seo-services-hyderabad.html"
+      "service": "../seo-services.html"
     },
     {
       "slug": "custom-software",
       "name": "Custom Software",
       "description": "Planning, costing and building custom software and mobile apps for your business.",
-      "service": "../custom-software-development-hyderabad.html"
+      "service": "../custom-software-development.html"
     },
     {
       "slug": "billing-software",
@@ -52,13 +52,13 @@
       "slug": "ecommerce",
       "name": "E-commerce",
       "description": "Starting and growing an online store in India: platforms, payments, shipping and marketing.",
-      "service": "../ecommerce-website-development-hyderabad.html"
+      "service": "../ecommerce-website-development.html"
     },
     {
       "slug": "business-technology",
       "name": "Business Technology",
       "description": "Hiring developers, outsourcing, agencies and making smart technology decisions.",
-      "service": "../hire-freelance-developers-hyderabad.html"
+      "service": "../hire-developers.html"
     }
   ],
   "posts": [
@@ -127,7 +127,7 @@
         "wordpress-vs-custom-website",
         "google-ads-vs-meta-ads-small-business-india"
       ],
-      "related_service": "../website-development-hyderabad.html"
+      "related_service": "../website-development.html"
     },
     {
       "slug": "start-online-business-india-2026",
@@ -160,7 +160,7 @@
         "website-cost-hyderabad-2026",
         "gst-billing-software-guide"
       ],
-      "related_service": "../ecommerce-website-development-hyderabad.html"
+      "related_service": "../ecommerce-website-development.html"
     },
     {
       "slug": "rank-small-business-website-google",
@@ -192,7 +192,7 @@
         "google-ads-vs-seo-small-business",
         "business-website-must-have-features"
       ],
-      "related_service": "../seo-services-hyderabad.html"
+      "related_service": "../seo-services.html"
     },
     {
       "slug": "rank-in-ai-search-google-ai-mode-chatgpt",
@@ -227,7 +227,7 @@
         "local-seo-checklist-hyderabad",
         "ai-chatbot-business-data-rag"
       ],
-      "related_service": "../digital-marketing-hyderabad.html"
+      "related_service": "../digital-marketing.html"
     },
     {
       "slug": "how-ai-chatbots-help-small-businesses",
@@ -258,7 +258,7 @@
         "ai-chatbot-business-data-rag",
         "automate-lead-generation-small-business"
       ],
-      "related_service": "../ai-chatbot-development-company-india.html"
+      "related_service": "../ai-chatbot-development.html"
     },
     {
       "slug": "google-ads-vs-seo-small-business",
@@ -289,7 +289,7 @@
         "rank-small-business-website-google",
         "digital-marketing-budget-small-business"
       ],
-      "related_service": "../digital-marketing-hyderabad.html"
+      "related_service": "../digital-marketing.html"
     },
     {
       "slug": "google-ads-vs-meta-ads-small-business-india",
@@ -323,7 +323,7 @@
         "rank-in-ai-search-google-ai-mode-chatgpt",
         "start-online-business-india-2026"
       ],
-      "related_service": "../digital-marketing-hyderabad.html"
+      "related_service": "../digital-marketing.html"
     },
     {
       "slug": "business-website-must-have-features",
@@ -354,7 +354,7 @@
         "website-vs-instagram-for-business",
         "rank-small-business-website-google"
       ],
-      "related_service": "../website-development-hyderabad.html"
+      "related_service": "../website-development.html"
     },
     {
       "slug": "automate-lead-generation-small-business",
@@ -417,7 +417,7 @@
         "ai-chatbot-business-data-rag",
         "whatsapp-business-api-guide"
       ],
-      "related_service": "../ai-chatbot-development-company-india.html"
+      "related_service": "../ai-chatbot-development.html"
     },
     {
       "slug": "wordpress-vs-custom-website",
@@ -448,7 +448,7 @@
         "freelancer-vs-agency-india",
         "google-business-profile-guide"
       ],
-      "related_service": "../website-development-hyderabad.html"
+      "related_service": "../website-development.html"
     },
     {
       "slug": "woocommerce-whatsapp-order-notifications",
@@ -479,7 +479,7 @@
         "n8n-vs-zapier-vs-make",
         "ai-chatbot-business-data-rag"
       ],
-      "related_service": "../whatsapp-automation-hyderabad.html"
+      "related_service": "../whatsapp-automation.html"
     },
     {
       "slug": "white-label-web-development-guide",
@@ -571,7 +571,7 @@
         "ai-automation-small-business-india",
         "website-cost-hyderabad-2026"
       ],
-      "related_service": "../whatsapp-automation-hyderabad.html"
+      "related_service": "../whatsapp-automation.html"
     },
     {
       "slug": "website-speed-core-web-vitals",
@@ -603,7 +603,7 @@
         "website-maintenance-guide",
         "local-seo-checklist-hyderabad"
       ],
-      "related_service": "../website-development-hyderabad.html"
+      "related_service": "../website-development.html"
     },
     {
       "slug": "website-maintenance-guide",
@@ -636,7 +636,7 @@
         "wordpress-vs-custom-website",
         "website-cost-hyderabad-2026"
       ],
-      "related_service": "../website-development-hyderabad.html"
+      "related_service": "../website-development.html"
     },
     {
       "slug": "website-cost-hyderabad-2026",
@@ -669,7 +669,7 @@
         "google-business-profile-guide",
         "freelancer-vs-agency-india"
       ],
-      "related_service": "../website-development-hyderabad.html"
+      "related_service": "../website-development.html"
     },
     {
       "slug": "outsourcing-web-development-india-cost",
@@ -702,7 +702,7 @@
         "website-cost-hyderabad-2026",
         "white-label-web-development-guide"
       ],
-      "related_service": "../offshore-web-development-company-india.html"
+      "related_service": "../offshore-web-development.html"
     },
     {
       "slug": "n8n-vs-zapier-vs-make",
@@ -768,7 +768,7 @@
         "freelancer-vs-agency-india",
         "ai-chatbot-business-data-rag"
       ],
-      "related_service": "../mobile-app-development-hyderabad.html"
+      "related_service": "../mobile-app-development.html"
     },
     {
       "slug": "local-seo-checklist-hyderabad",
@@ -802,7 +802,7 @@
         "website-speed-core-web-vitals",
         "digital-marketing-budget-small-business"
       ],
-      "related_service": "../seo-services-hyderabad.html"
+      "related_service": "../seo-services.html"
     },
     {
       "slug": "hire-offshore-developers-india-guide",
@@ -834,7 +834,7 @@
         "freelancer-vs-agency-india",
         "white-label-web-development-guide"
       ],
-      "related_service": "../offshore-web-development-company-india.html"
+      "related_service": "../offshore-web-development.html"
     },
     {
       "slug": "gst-billing-software-guide",
@@ -897,7 +897,7 @@
         "wordpress-vs-custom-website",
         "ai-automation-small-business-india"
       ],
-      "related_service": "../digital-marketing-hyderabad.html"
+      "related_service": "../digital-marketing.html"
     },
     {
       "slug": "freelancer-vs-agency-india",
@@ -928,7 +928,7 @@
         "wordpress-vs-custom-website",
         "white-label-web-development-guide"
       ],
-      "related_service": "../hire-freelance-developers-hyderabad.html"
+      "related_service": "../hire-developers.html"
     },
     {
       "slug": "digital-marketing-budget-small-business",
@@ -961,7 +961,7 @@
         "google-business-profile-guide",
         "ai-automation-small-business-india"
       ],
-      "related_service": "../digital-marketing-hyderabad.html"
+      "related_service": "../digital-marketing.html"
     },
     {
       "slug": "ai-chatbot-business-data-rag",

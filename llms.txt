@@ -19,20 +19,20 @@ Key facts:
 
 ## Services
 
-- [Website Development](https://codeservecommunity.in/website-development-hyderabad.html): WordPress and custom business websites and online stores
-- [Web Design Company in Kukatpally & KPHB](https://codeservecommunity.in/web-design-company-kukatpally.html): local website design, Google Business Profile and SEO for businesses in Kukatpally, KPHB, JNTU, Nizampet and Miyapur
-- [E-commerce Website Development](https://codeservecommunity.in/ecommerce-website-development-hyderabad.html): WooCommerce and Shopify stores with UPI/Razorpay payments, shipping, GST invoices and WhatsApp order alerts, from ₹34,999
-- [SEO Services in Hyderabad](https://codeservecommunity.in/seo-services-hyderabad.html): technical SEO, local SEO, Google Business Profile, content and AI search visibility, from ₹4,999/month
-- [Custom Software Development](https://codeservecommunity.in/custom-software-development-hyderabad.html): web applications, portals, dashboards, CRMs and integrations, from ₹49,999
-- [AI Chatbot Development](https://codeservecommunity.in/ai-chatbot-development-company-india.html): website and WhatsApp AI chatbots trained on business documents, from ₹15,000
-- [Mobile App Development](https://codeservecommunity.in/mobile-app-development-hyderabad.html): Android and iOS apps with Flutter and React Native
-- [WhatsApp Automation](https://codeservecommunity.in/whatsapp-automation-hyderabad.html): WhatsApp Business API setup, auto-replies, order and booking notifications, AI WhatsApp assistants
+- [Website Development](https://codeservecommunity.in/website-development.html): WordPress and custom business websites and online stores
+- [Web Design Company in Kukatpally & KPHB](https://codeservecommunity.in/web-design.html): local website design, Google Business Profile and SEO for businesses in Kukatpally, KPHB, JNTU, Nizampet and Miyapur
+- [E-commerce Website Development](https://codeservecommunity.in/ecommerce-website-development.html): WooCommerce and Shopify stores with UPI/Razorpay payments, shipping, GST invoices and WhatsApp order alerts, from ₹34,999
+- [SEO Services in Hyderabad](https://codeservecommunity.in/seo-services.html): technical SEO, local SEO, Google Business Profile, content and AI search visibility, from ₹4,999/month
+- [Custom Software Development](https://codeservecommunity.in/custom-software-development.html): web applications, portals, dashboards, CRMs and integrations, from ₹49,999
+- [AI Chatbot Development](https://codeservecommunity.in/ai-chatbot-development.html): website and WhatsApp AI chatbots trained on business documents, from ₹15,000
+- [Mobile App Development](https://codeservecommunity.in/mobile-app-development.html): Android and iOS apps with Flutter and React Native
+- [WhatsApp Automation](https://codeservecommunity.in/whatsapp-automation.html): WhatsApp Business API setup, auto-replies, order and booking notifications, AI WhatsApp assistants
 - [AI Automation & Chatbots](https://codeservecommunity.in/ai-automation-services.html): AI chatbots, AI agents, knowledge bases (RAG), document processing, n8n / Make / Zapier workflow automation
-- [SEO & Digital Marketing](https://codeservecommunity.in/digital-marketing-hyderabad.html): SEO, local SEO, AI search visibility, Google Business Profile, Google Ads, Meta ads and social media
+- [SEO & Digital Marketing](https://codeservecommunity.in/digital-marketing.html): SEO, local SEO, AI search visibility, Google Business Profile, Google Ads, Meta ads and social media
 - [Billing Software](https://codeservecommunity.in/billing-software-development.html): custom GST billing, POS, invoicing and inventory apps
 - [White Label Development](https://codeservecommunity.in/white-label-web-development.html): websites, stores, apps and automations built under an agency's brand
-- [Hire Freelancers in Hyderabad](https://codeservecommunity.in/hire-freelance-developers-hyderabad.html): freelance web, app and AI developers by project, hourly or monthly, backed by a team
-- [Offshore Development from India](https://codeservecommunity.in/offshore-web-development-company-india.html): remote development team for international clients
+- [Hire Freelancers in Hyderabad](https://codeservecommunity.in/hire-developers.html): freelance web, app and AI developers by project, hourly or monthly, backed by a team
+- [Offshore Development from India](https://codeservecommunity.in/offshore-web-development.html): remote development team for international clients
 
 ## Quick answers
 

@@ -32,6 +32,139 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Renamed service pages: old Netlify addresses go straight to the new page in one step
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/website-development-hyderabad.html"
+  to = "https://codeservecommunity.in/website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/website-development-hyderabad"
+  to = "https://codeservecommunity.in/website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/web-design-company-kukatpally.html"
+  to = "https://codeservecommunity.in/web-design.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/web-design-company-kukatpally"
+  to = "https://codeservecommunity.in/web-design.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/seo-services-hyderabad.html"
+  to = "https://codeservecommunity.in/seo-services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/seo-services-hyderabad"
+  to = "https://codeservecommunity.in/seo-services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/ecommerce-website-development-hyderabad.html"
+  to = "https://codeservecommunity.in/ecommerce-website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/ecommerce-website-development-hyderabad"
+  to = "https://codeservecommunity.in/ecommerce-website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/mobile-app-development-hyderabad.html"
+  to = "https://codeservecommunity.in/mobile-app-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/mobile-app-development-hyderabad"
+  to = "https://codeservecommunity.in/mobile-app-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/whatsapp-automation-hyderabad.html"
+  to = "https://codeservecommunity.in/whatsapp-automation.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/whatsapp-automation-hyderabad"
+  to = "https://codeservecommunity.in/whatsapp-automation.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/digital-marketing-hyderabad.html"
+  to = "https://codeservecommunity.in/digital-marketing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/digital-marketing-hyderabad"
+  to = "https://codeservecommunity.in/digital-marketing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/hire-freelance-developers-hyderabad.html"
+  to = "https://codeservecommunity.in/hire-developers.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/hire-freelance-developers-hyderabad"
+  to = "https://codeservecommunity.in/hire-developers.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/custom-software-development-hyderabad.html"
+  to = "https://codeservecommunity.in/custom-software-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/custom-software-development-hyderabad"
+  to = "https://codeservecommunity.in/custom-software-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/ai-chatbot-development-company-india.html"
+  to = "https://codeservecommunity.in/ai-chatbot-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/ai-chatbot-development-company-india"
+  to = "https://codeservecommunity.in/ai-chatbot-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/offshore-web-development-company-india.html"
+  to = "https://codeservecommunity.in/offshore-web-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://codeservecommunity.netlify.app/offshore-web-development-company-india"
+  to = "https://codeservecommunity.in/offshore-web-development.html"
+  status = 301
+  force = true
+
 # Move old Netlify address to the custom domain (keeps SEO rankings)
 [[redirects]]
   from = "https://codeservecommunity.netlify.app/*"
@@ -63,6 +196,139 @@
   from = "/content/*"
   to = "/404.html"
   status = 404
+  force = true
+
+# Renamed service pages (place names removed from URLs): keep old links and Google results working
+[[redirects]]
+  from = "/website-development-hyderabad.html"
+  to = "/website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/website-development-hyderabad"
+  to = "/website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-design-company-kukatpally.html"
+  to = "/web-design.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/web-design-company-kukatpally"
+  to = "/web-design.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/seo-services-hyderabad.html"
+  to = "/seo-services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/seo-services-hyderabad"
+  to = "/seo-services.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ecommerce-website-development-hyderabad.html"
+  to = "/ecommerce-website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ecommerce-website-development-hyderabad"
+  to = "/ecommerce-website-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mobile-app-development-hyderabad.html"
+  to = "/mobile-app-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/mobile-app-development-hyderabad"
+  to = "/mobile-app-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/whatsapp-automation-hyderabad.html"
+  to = "/whatsapp-automation.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/whatsapp-automation-hyderabad"
+  to = "/whatsapp-automation.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digital-marketing-hyderabad.html"
+  to = "/digital-marketing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/digital-marketing-hyderabad"
+  to = "/digital-marketing.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hire-freelance-developers-hyderabad.html"
+  to = "/hire-developers.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hire-freelance-developers-hyderabad"
+  to = "/hire-developers.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/custom-software-development-hyderabad.html"
+  to = "/custom-software-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/custom-software-development-hyderabad"
+  to = "/custom-software-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ai-chatbot-development-company-india.html"
+  to = "/ai-chatbot-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ai-chatbot-development-company-india"
+  to = "/ai-chatbot-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/offshore-web-development-company-india.html"
+  to = "/offshore-web-development.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/offshore-web-development-company-india"
+  to = "/offshore-web-development.html"
+  status = 301
   force = true
 
 # Custom 404 page
