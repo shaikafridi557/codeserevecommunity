@@ -15,7 +15,7 @@ Key facts:
 - Languages: English, Hindi, Telugu
 - Starting prices (INR): websites from ₹9,999; e-commerce stores from ₹34,999; WhatsApp automation from ₹7,999 one-time setup; AI website chatbot ₹15,000; web apps from ₹49,999; mobile apps from ₹74,999; monthly care plans from ₹1,999/month
 - International clients receive fixed quotes in USD, GBP, EUR, AED or AUD
-- Payment terms: 50% advance, 50% before go-live
+- Payment terms: launch offer until 31 March 2027, websites up to ₹34,999 need no advance (built on a private preview link, paid after the client approves it, before go-live); other projects 50% advance, 50% before go-live
 
 ## Services
 
