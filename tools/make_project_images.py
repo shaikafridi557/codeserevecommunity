@@ -53,7 +53,11 @@ def panel(img, box, r=22, fill=(255, 255, 255, 16), line=(255, 255, 255, 40), sh
     img.paste(lay, (0, 0), lay)
 
 def text(d, xy, s, size, col="#ffffff", bold=False, a=255):
-    d.text(p(*xy), s, font=font(size, bold), fill=hexrgb(col, a))
+    if any(c in s for c in "✓⚠★"):   # symbols Segoe UI lacks
+        f = ImageFont.truetype(F + "seguisym.ttf", size * S)
+    else:
+        f = font(size, bold)
+    d.text(p(*xy), s, font=f, fill=hexrgb(col, a))
 
 def title_block(d, tag, name, accent):
     tw = d.textlength(tag, font=font(13, True)) / S

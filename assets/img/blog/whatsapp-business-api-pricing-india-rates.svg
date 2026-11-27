@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 328" width="800" height="328">
+  <rect width="800" height="328" rx="12" fill="#191919"/>
+  <text x="30" y="50" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">WhatsApp API rate per message in India (before GST)</text>
+  <text x="30" y="108" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Marketing</text>
+  <rect x="250" y="90" width="400.0" height="26" rx="6" fill="#f59e0b"/>
+  <text x="660.0" y="109" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">about ₹0.86</text>
+  <text x="30" y="160" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Utility</text>
+  <rect x="250" y="142" width="53.3" height="26" rx="6" fill="#25d366"/>
+  <text x="313.3" y="161" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">about ₹0.115</text>
+  <text x="30" y="212" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Authentication (OTP)</text>
+  <rect x="250" y="194" width="53.3" height="26" rx="6" fill="#25d366"/>
+  <text x="313.3" y="213" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">about ₹0.115</text>
+  <text x="30" y="264" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Service (after 1,000 free)</text>
+  <rect x="250" y="246" width="53.3" height="26" rx="6" fill="#387cf9"/>
+  <text x="313.3" y="265" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">about ₹0.115</text>
+  <text x="30" y="306" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Indicative Meta rates for India in 2026. Always check Meta&#x27;s current rate card.</text>
+</svg>

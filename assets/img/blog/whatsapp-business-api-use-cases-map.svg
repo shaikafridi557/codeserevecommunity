@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 292" width="800" height="292">
+  <rect width="800" height="292" rx="12" fill="#191919"/>
+  <text x="30" y="50" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">WhatsApp API use cases by type</text>
+  <rect x="30.0" y="76" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <rect x="30.0" y="76" width="6" height="80" rx="3" fill="#25d366"/>
+  <text x="50.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Notifications</text>
+  <text x="50.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">orders, delivery, reminders</text>
+  <rect x="282.0" y="76" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+  <rect x="282.0" y="76" width="6" height="80" rx="3" fill="#387cf9"/>
+  <text x="302.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Support</text>
+  <text x="302.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">FAQs, AI replies, hand-over</text>
+  <rect x="534.0" y="76" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="534.0" y="76" width="6" height="80" rx="3" fill="#f59e0b"/>
+  <text x="554.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Sales</text>
+  <text x="554.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">catalogue, quotes, offers</text>
+  <rect x="30.0" y="172" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#a78bfa" stroke-width="2"/>
+  <rect x="30.0" y="172" width="6" height="80" rx="3" fill="#a78bfa"/>
+  <text x="50.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Payments</text>
+  <text x="50.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">UPI links, dues, receipts</text>
+  <rect x="282.0" y="172" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#38bdf8" stroke-width="2"/>
+  <rect x="282.0" y="172" width="6" height="80" rx="3" fill="#38bdf8"/>
+  <text x="302.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Bookings</text>
+  <text x="302.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">slots, reschedule, check-in</text>
+  <rect x="534.0" y="172" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#f472b6" stroke-width="2"/>
+  <rect x="534.0" y="172" width="6" height="80" rx="3" fill="#f472b6"/>
+  <text x="554.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Internal</text>
+  <text x="554.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">staff alerts, approvals</text>
+</svg>

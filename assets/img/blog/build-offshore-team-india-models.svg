@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 292" width="800" height="292">
+  <rect width="800" height="292" rx="12" fill="#191919"/>
+  <text x="30" y="50" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Four ways to build a team in India</text>
+  <rect x="30.0" y="76" width="362.0" height="80" rx="10" fill="#1f2937" stroke="#9ca3af" stroke-width="2"/>
+  <rect x="30.0" y="76" width="6" height="80" rx="3" fill="#9ca3af"/>
+  <text x="50.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Project outsourcing</text>
+  <text x="50.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">fixed scope, fixed price</text>
+  <rect x="408.0" y="76" width="362.0" height="80" rx="10" fill="#1f2937" stroke="#387cf9" stroke-width="2"/>
+  <rect x="408.0" y="76" width="6" height="80" rx="3" fill="#387cf9"/>
+  <text x="428.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Dedicated team</text>
+  <text x="428.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">partner employs, you direct</text>
+  <rect x="30.0" y="172" width="362.0" height="80" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="30.0" y="172" width="6" height="80" rx="3" fill="#f59e0b"/>
+  <text x="50.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">EOR hiring</text>
+  <text x="50.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">your hires, EOR payroll</text>
+  <rect x="408.0" y="172" width="362.0" height="80" rx="10" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <rect x="408.0" y="172" width="6" height="80" rx="3" fill="#25d366"/>
+  <text x="428.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Own ODC / entity</text>
+  <text x="428.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">full control, most setup</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 292" width="800" height="292">
+  <rect width="800" height="292" rx="12" fill="#191919"/>
+  <text x="30" y="50" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Fixed price works best when…</text>
+  <rect x="30.0" y="76" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <rect x="30.0" y="76" width="6" height="80" rx="3" fill="#25d366"/>
+  <text x="50.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Clear goal</text>
+  <text x="50.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">one job the AI must do</text>
+  <rect x="282.0" y="76" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <rect x="282.0" y="76" width="6" height="80" rx="3" fill="#25d366"/>
+  <text x="302.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Known data</text>
+  <text x="302.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">docs, FAQs, product list</text>
+  <rect x="534.0" y="76" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <rect x="534.0" y="76" width="6" height="80" rx="3" fill="#25d366"/>
+  <text x="554.0" y="110" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Defined systems</text>
+  <text x="554.0" y="136" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">which tools to connect</text>
+  <rect x="30.0" y="172" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#25d366" stroke-width="2"/>
+  <rect x="30.0" y="172" width="6" height="80" rx="3" fill="#25d366"/>
+  <text x="50.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Accuracy target</text>
+  <text x="50.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">agreed test questions</text>
+  <rect x="282.0" y="172" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="282.0" y="172" width="6" height="80" rx="3" fill="#f59e0b"/>
+  <text x="302.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Research needed</text>
+  <text x="302.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">→ use a paid discovery</text>
+  <rect x="534.0" y="172" width="236.0" height="80" rx="10" fill="#1f2937" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="534.0" y="172" width="6" height="80" rx="3" fill="#f59e0b"/>
+  <text x="554.0" y="206" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="17" font-weight="700" fill="#ffffff">Custom model training</text>
+  <text x="554.0" y="232" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">→ time &amp; materials</text>
+</svg>

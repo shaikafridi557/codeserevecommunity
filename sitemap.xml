@@ -454,6 +454,62 @@
         <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/website-security-checklist-small-business-recovery.svg</image:loc></image:image>
     </url>
     <url>
+        <loc>https://codeservecommunity.in/blog/whatsapp-business-app-vs-api.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/whatsapp-business-app-vs-api.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/whatsapp-business-api-use-cases.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/whatsapp-business-api-use-cases.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/whatsapp-business-api-pricing-india.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/whatsapp-business-api-pricing-india.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/whatsapp-api-for-restaurants.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/whatsapp-api-for-restaurants.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/fixed-price-ai-development.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/fixed-price-ai-development.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/custom-software-development-startups-hyderabad.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/custom-software-development-startups-hyderabad.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/build-offshore-team-india.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/build-offshore-team-india.svg</image:loc></image:image>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/ai-seo-tools-chatgpt-ai-overviews.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+        <image:image><image:loc>https://codeservecommunity.in/assets/img/blog/ai-seo-tools-chatgpt-ai-overviews.svg</image:loc></image:image>
+    </url>
+    <url>
         <loc>https://codeservecommunity.in/blog/category-website-development.html</loc>
         <lastmod>2026-11-24</lastmod>
         <changefreq>weekly</changefreq>
@@ -466,6 +522,12 @@
         <priority>0.5</priority>
     </url>
     <url>
+        <loc>https://codeservecommunity.in/blog/category-ai-agents.html</loc>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
         <loc>https://codeservecommunity.in/blog/category-business-automation.html</loc>
         <lastmod>2026-11-19</lastmod>
         <changefreq>weekly</changefreq>
@@ -473,19 +535,25 @@
     </url>
     <url>
         <loc>https://codeservecommunity.in/blog/category-whatsapp-automation.html</loc>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://codeservecommunity.in/blog/category-seo-digital-marketing.html</loc>
-        <lastmod>2026-11-19</lastmod>
+        <lastmod>2026-11-28</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://codeservecommunity.in/blog/category-custom-software.html</loc>
+        <lastmod>2026-11-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://codeservecommunity.in/blog/category-business-technology.html</loc>
-        <lastmod>2026-11-02</lastmod>
+        <lastmod>2026-11-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.5</priority>
     </url>

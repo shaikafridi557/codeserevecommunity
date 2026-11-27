@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCZM6MC8ZL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TCZM6MC8ZL');
+    </script>
+    <script src="../assets/js/ga-events.js?v=3" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Business API for Restaurants: Orders, Bookings and Offers</title>
+    <meta name="description" content="How restaurants and cloud kitchens use the WhatsApp Business API for direct orders, table bookings, order updates and offers — with costs, setup steps and commission savings.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="CodeServe Community">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:url" content="https://codeservecommunity.in/blog/whatsapp-api-for-restaurants.html">
+    <meta property="og:title" content="WhatsApp Business API for Restaurants: Orders, Bookings and Offers">
+    <meta property="og:description" content="How restaurants and cloud kitchens use the WhatsApp Business API for direct orders, table bookings, order updates and offers — with costs, setup steps and commission savings.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://codeservecommunity.in/assets/img/blog/whatsapp-api-for-restaurants-og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:image" content="https://codeservecommunity.in/assets/img/blog/whatsapp-api-for-restaurants-og.png">
+    <link rel="canonical" href="https://codeservecommunity.in/blog/whatsapp-api-for-restaurants.html">
+    <link rel="icon" href="../favicon.ico">
+    <script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "WhatsApp Business API for Restaurants: Direct Orders, Bookings and Repeat Customers",
+    "description": "How restaurants and cloud kitchens use the WhatsApp Business API for direct orders, table bookings, order updates and offers — with costs, setup steps and commission savings.",
+    "datePublished": "2026-11-28",
+    "dateModified": "2026-11-28",
+    "author": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.in/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CodeServe Community",
+      "url": "https://codeservecommunity.in/",
+      "@id": "https://codeservecommunity.in/#business"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://codeservecommunity.in/blog/whatsapp-api-for-restaurants.html"
+    },
+    "inLanguage": "en-IN",
+    "image": "https://codeservecommunity.in/assets/img/blog/whatsapp-api-for-restaurants-og.png",
+    "keywords": "WhatsApp API for restaurants, WhatsApp Business API for restaurants, WhatsApp ordering for restaurants, restaurant WhatsApp automation",
+    "articleSection": "WhatsApp Automation"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://codeservecommunity.in/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://codeservecommunity.in/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "WhatsApp Automation",
+        "item": "https://codeservecommunity.in/blog/category-whatsapp-automation.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "WhatsApp Business API for Restaurants: Direct Orders, Bookings and Repeat Customers",
+        "item": "https://codeservecommunity.in/blog/whatsapp-api-for-restaurants.html"
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can restaurants take orders on WhatsApp automatically?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. With the WhatsApp Business API a bot can show the menu, take the order and address, collect a UPI payment and send the ticket to the kitchen, with automatic status updates to the customer."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does WhatsApp ordering cost a restaurant?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Meta charges per message: about ₹0.115 for order-status updates and about ₹0.86 for offers in India, plus GST, with 1,000 free chat replies a month per number. Setup is usually a one-time cost."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should restaurants stop using Swiggy and Zomato?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not usually. Aggregators are good for reaching new customers. WhatsApp works best for repeat customers who already know you, so you avoid commission on those orders."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can customers book a table on WhatsApp?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The bot collects the date, time and number of guests, confirms the booking and sends a reminder before the visit."
+        }
+      }
+    ]
+  }
+]
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="../assets/css/plugins.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/services-style.css">
+    <link rel="stylesheet" href="../assets/css/theme-content.css?v=3">
+
+    <style>
+        .main-logo .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+        }
+    </style>
+<!--cs:blogcss--><style>
+        .cs-blog-tools{margin-bottom:34px}
+        .cs-blog-search{width:100%;max-width:520px;padding:12px 16px;border-radius:8px;border:1px solid var(--border-color);background:var(--assistant-color);color:var(--heading-color,#fff);font-size:15px;margin-bottom:18px}
+        .cs-cat-nav{display:flex;flex-wrap:wrap;gap:10px}
+        .cs-cat-chip{display:inline-block;padding:7px 14px;border:1px solid var(--border-color);border-radius:999px;font-size:13px;color:var(--font-color);text-decoration:none}
+        .cs-cat-chip span{opacity:1}
+        .cs-cat-chip:hover,.cs-cat-chip.is-active{border-color:var(--cs-accent);color:var(--cs-accent)}
+        .cs-blog-empty{display:none;margin-top:20px}
+        .cs-share{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:34px 0 10px}
+        .cs-share a{padding:6px 14px;border:1px solid var(--border-color);border-radius:999px;font-size:13px;text-decoration:none}
+        .cs-share a:hover{border-color:var(--cs-accent);color:var(--cs-accent)}
+        a.cs-tag{text-decoration:none}
+    </style><!--/cs:blogcss--></head>
+
+<body class="v-dark dsn-ajax">
+
+<div id="dsn_preloader" class="preloader">
+    <div class="preloader-scramble-container">
+        <div class="preloader-scramble">
+            <div class="scramble-text" data-preloader-heading></div>
+        </div>
+        <div class="preloader-logo-final">
+            <div data-preloader-heading><span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span></div>
+        </div>
+    </div>
+    <div class="bg-load background-section d-flex align-items-end">
+        <svg class="dsn-separator-bottom dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+        </svg>
+    </div>
+</div>
+
+<main id="main_root" class="main-root">
+
+    <!-- ========== Menu ========== -->
+    <header id="site_menu_header" class="site-header dsn-container d-none dsn-hamburger">
+        <div class="main-logo">
+            <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand effect-ajax" rel="home" aria-current="page">
+                <span class="logo-text">
+                    <span class="logo-text-code" style="color: white;">Code</span><span class="logo-text-serve" style="color: #387cf9;">Serve</span>
+                </span>
+            </a>
+        </div>
+        <nav class="main-navigation ">
+            <div class="menu-cover-title header-container dsn-container">MENU</div>
+            <ul id="dsn-primary-list" class="primary-nav h2">
+                <li class="nav-item"><a title="Home" href="../index.html"><span class="overflow">Home</span></a></li>
+                <li class="nav-item"><a title="Services" href="../services.html"><span class="overflow">Services</span></a></li>
+                <li class="nav-item"><a title="Our Work" href="../portfolio.html"><span class="overflow">Our Work</span></a></li>
+                <li class="nav-item"><a title="About Us" href="../about.html"><span class="overflow">About Us</span></a></li>
+                <li class="nav-item"><a title="Pricing" href="../pricing.html"><span class="overflow">Pricing</span></a></li>
+                <li class="nav-item"><a title="Blog" href="../blog/index.html"><span class="overflow">Blog</span></a></li>
+                <li class="nav-item"><a title="Contact" href="../contact.html"><span class="overflow">Contact</span></a></li>
+            </ul>
+             <div class="container-content d-flex flex-column justify-content-center section-margin">
+                <div class="nav__info">
+                    <div class="nav-content">
+                        <h5 class="sm-title-block mb-10">Studio</h5>
+                        KPHB Phase 9, Kukatpally, Hyderabad 500085
+                    </div>
+                    <div class="nav-content mt-30">
+                        <h5 class="sm-title-block mb-10">Contact</h5>
+                        <p class="links over-hidden mb-1"><a class="link-hover d-block" href="tel:+918186841086" data-hover-text="+91 81868 41086">+91 81868 41086</a></p>
+                        <p class="links over-hidden"><a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="nav-social nav-content mt-30">
+                    <div class="nav-social-inner p-relative">
+                        <h5 class="sm-title-block mb-10">Follow us</h5>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/code-serve-83224b407/" target="_blank" rel="nofollow noopener noreferrer">LinkedIn.</a></li>
+                            <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow noopener noreferrer">Instagram.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="navbar_toggle" class="navbar-toggle">
+            <div class="toggle-icon">
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+                <div class="toggle-line"></div>
+            </div>
+            <div class="toggle-text">
+                <div class="text-menu">Menu</div>
+                <div class="text-open">Open</div>
+                <div class="text-close">Close</div>
+            </div>
+        </div>
+        <div class="bg-load background-main"></div>
+        <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none" class="bg-load dsn-svg-transition">
+            <path vector-effect="non-scaling-stroke" d="M 0 100 V 100 Q 50 100 100 100 V 100 z"/>
+        </svg>
+    </header>
+    <!-- ========== End Menu ========== -->
+
+    <!-- ========== Page Hero ========== -->
+    <header id="dsn_header" class="dsn-header-animation header-normal services-hero page-hero">
+        <div class="animated-grid"></div>
+        <div class="background-overlay bg-pattern p-absolute left-0 top-0 w-100 h-100"></div>
+        <div class="entry-header p-relative over-hidden">
+            <div id="hero_content" class="d-flex p-relative h-100 dsn-hero-parallax-title container align-items-center pb-section">
+                <div class="content p-relative text-center">
+                    <div class="intro-project w-100">
+                        <div class="intro-title">
+                            <p class="hero-tagline cs-breadcrumb" data-dsn-animate="up"><a href="../index.html">Home</a> / <a href="index.html">Blog</a> / <a href="category-whatsapp-automation.html">WhatsApp Automation</a> / WhatsApp API for Restaurants</p>
+                            <!--cs:badge--><p class="mt-20" data-dsn-animate="up"><a class="cs-tag" href="category-whatsapp-automation.html">WhatsApp Automation</a></p>
+                            <!--/cs:badge--><div id="hero_title" class="mt-20" data-dsn-animate="up">
+                                <h1 class="title-h2 text-upper">WhatsApp Business API for Restaurants: Direct Orders, Bookings and Repeat Customers</h1>
+                            </div>
+                            <p class="mt-20 max-w750 m-auto hero-subtitle" data-dsn-animate="up">Aggregator apps bring new customers, but they also take a big cut of every order. The WhatsApp Business API helps restaurants take repeat orders and table bookings directly — automatically, even at peak hours.</p>
+                            <p class="cs-hero-meta" data-dsn-animate="up">By CodeServe Team · <time datetime="2026-11-28">28 November 2026</time> · 5 min read · <a href="category-whatsapp-automation.html">WhatsApp Automation</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ========== End Page Hero ========== -->
+
+    <div id="page_wrapper" class="wrapper">
+
+        
+
+        <article class="cs-article">
+            <div class="cs-container cs-article-layout">
+                <aside class="cs-article-aside">
+    <nav class="cs-toc" aria-label="Table of contents">
+                    <strong>In this guide</strong>
+                    <ol>
+                        <li><a href="#why">Why restaurants use WhatsApp for orders</a></li>
+                        <li><a href="#what-to-automate">What a restaurant can automate on WhatsApp</a></li>
+                        <li><a href="#vs-aggregators">WhatsApp ordering vs food delivery apps</a></li>
+                        <li><a href="#features">Checklist: what a good restaurant WhatsApp setup includes</a></li>
+                        <li><a href="#example">How it looks in practice: a cloud kitchen</a></li>
+                        <li><a href="#cost">What it costs a restaurant</a></li>
+                        <li><a href="#setup">How to set it up</a></li>
+                        <li><a href="#promote">How to get customers ordering on WhatsApp</a></li>
+                        <li><a href="#measure">What to measure</a></li>
+                        <li><a href="#mistakes">Mistakes restaurants make</a></li>
+                        <li><a href="#faq">Frequently asked questions</a></li>
+                    </ol>
+                </nav>
+                </aside>
+                <div class="cs-article-body">
+                    <figure class="cs-figure cs-featured"><img src="../assets/img/blog/whatsapp-api-for-restaurants.svg" alt="Restaurant menu and order button inside a WhatsApp chat" width="1200" height="630"></figure>
+                <p>Most restaurants already get orders and reservation requests on WhatsApp — typed by hand, at the busiest time of the day. The <a href="whatsapp-business-api-guide.html">WhatsApp Business API</a> turns that chat into an ordering and booking system that runs itself, and helps you keep regular customers ordering directly instead of through aggregators.</p>
+
+                <h2 id="why">Why restaurants use WhatsApp for orders</h2>
+                <ul>
+                    <li><strong>Lower commission.</strong> Food delivery apps commonly charge restaurants a commission of roughly 15–30% per order. A repeat customer who orders on WhatsApp costs you a few paise in message charges.</li>
+                    <li><strong>You own the customer.</strong> You get the customer's number and order history, so you can bring them back.</li>
+                    <li><strong>No app to download.</strong> Every customer already has WhatsApp.</li>
+                    <li><strong>Fewer calls at peak hours.</strong> The bot takes the order while staff cook and serve.</li>
+                </ul>
+                <div class="cs-callout"><strong>Best of both:</strong> keep aggregators for discovery and new customers, and use WhatsApp for the regulars who already know you. Put a "Order direct on WhatsApp" card in every delivery bag.</div>
+
+                <h2 id="what-to-automate">What a restaurant can automate on WhatsApp</h2>
+                <table>
+                    <thead><tr><th>Automation</th><th>How it works</th></tr></thead>
+                    <tbody>
+                        <tr><td><strong>Menu and ordering</strong></td><td>Customer sends "Hi", gets the menu with categories and buttons (or a WhatsApp catalogue), picks items and the address</td></tr>
+                        <tr><td><strong>Payment</strong></td><td>UPI or payment-gateway link in the chat, or cash on delivery confirmation</td></tr>
+                        <tr><td><strong>Kitchen ticket</strong></td><td>The order appears on a kitchen screen, printer or staff group automatically</td></tr>
+                        <tr><td><strong>Order status</strong></td><td>"Accepted", "being prepared", "out for delivery" messages sent from your system</td></tr>
+                        <tr><td><strong>Table reservations</strong></td><td>Date, time and number of guests collected in the chat, with a reminder two hours before</td></tr>
+                        <tr><td><strong>Feedback</strong></td><td>A rating request after the meal, with your Google review link for happy guests</td></tr>
+                        <tr><td><strong>Offers and loyalty</strong></td><td>Weekend specials, birthday offers and "your 5th order is free" — only to customers who opted in</td></tr>
+                    </tbody>
+                </table>
+                <figure class="cs-figure"><img src="../assets/img/blog/whatsapp-api-for-restaurants-order-flow.svg" alt="Five steps of a WhatsApp restaurant order: hi, menu, order and UPI payment, kitchen ticket, status updates" width="800" height="300" loading="lazy"><figcaption>The whole order runs inside WhatsApp — the customer never leaves the chat.</figcaption></figure>
+
+                <h2 id="vs-aggregators">WhatsApp ordering vs food delivery apps</h2>
+                <table>
+                    <thead><tr><th></th><th>Food delivery apps</th><th>Direct WhatsApp ordering</th></tr></thead>
+                    <tbody>
+                        <tr><td>Finding new customers</td><td>Excellent</td><td>Limited — works best for people who already know you</td></tr>
+                        <tr><td>Cost per order</td><td>Commission, often around 15–30% of the order</td><td>A few paise to about ₹1 in WhatsApp message charges</td></tr>
+                        <tr><td>Customer data</td><td>Mostly stays with the app</td><td>Yours — number, order history, preferences</td></tr>
+                        <tr><td>Delivery</td><td>Handled by the app's riders</td><td>Your own staff or a delivery partner you choose</td></tr>
+                        <tr><td>Offers and loyalty</td><td>Run inside the app's rules</td><td>Your own offers to customers who opted in</td></tr>
+                    </tbody>
+                </table>
+
+                <h2 id="features">Checklist: what a good restaurant WhatsApp setup includes</h2>
+                <ul class="cs-checklist">
+                    <li>Menu with categories, photos, prices and "sold out" marking</li>
+                    <li>Delivery area and minimum order checks</li>
+                    <li>UPI or payment-gateway link, plus COD confirmation</li>
+                    <li>Kitchen screen, printer or staff group alert for every order</li>
+                    <li>Automatic order status messages</li>
+                    <li>Table booking with reminders</li>
+                    <li>Feedback request and Google review link</li>
+                    <li>Simple daily report: orders, revenue, repeat customers</li>
+                </ul>
+
+                <h2 id="example">How it looks in practice: a cloud kitchen</h2>
+                <p>A customer who ordered last week through an aggregator finds a card in the bag: <em>"Order direct on WhatsApp and get 10% off."</em> They message "Hi". The bot greets them by name next time, shows the menu, takes the order and a UPI payment, and sends the ticket to the kitchen. Ten minutes later: <em>"Your order is out for delivery 🛵."</em> On Sunday the customer gets one weekend-special message — and orders again.</p>
+
+                <h2 id="cost">What it costs a restaurant</h2>
+                <p>Meta charges per message. In India, order-status updates are <strong>utility</strong> messages (about ₹0.115 each) and offers are <strong>marketing</strong> messages (about ₹0.86 each), plus GST. Chat replies are free for the first 1,000 a month per number. A restaurant handling 1,000 WhatsApp orders a month typically spends <strong>a few hundred to a few thousand rupees</strong> on Meta charges — mostly on offers. Details: <a href="whatsapp-business-api-pricing-india.html">WhatsApp API pricing in India</a>.</p>
+                <p>Compare that with commission: on 1,000 orders averaging ₹400, a 20% commission is ₹80,000 a month.</p>
+
+                <h2 id="setup">How to set it up</h2>
+                <ol>
+                    <li><strong>Verify your business</strong> on Meta Business (GST or FSSAI/trade licence and a website that shows the same name and address help).</li>
+                    <li><strong>Connect a number</strong> — ideally the one printed on your menu and Google Business Profile.</li>
+                    <li><strong>Set up your menu</strong> as a catalogue or menu flow with categories, prices and photos.</li>
+                    <li><strong>Connect payments and the kitchen</strong> — UPI/payment gateway, kitchen screen or printer, delivery staff group.</li>
+                    <li><strong>Create templates</strong> for order status, reservation reminders and offers, and get them approved.</li>
+                    <li><strong>Promote it</strong>: QR code on tables and bags, WhatsApp button on your website and Google profile, Instagram bio link.</li>
+                </ol>
+
+                <h2 id="promote">How to get customers ordering on WhatsApp</h2>
+                <ul>
+                    <li><strong>Table QR codes</strong> that open your WhatsApp chat with the message "Menu" pre-filled.</li>
+                    <li><strong>Bag inserts and stickers</strong> on every aggregator order: "Order direct on WhatsApp — 10% off your next order."</li>
+                    <li><strong>Google Business Profile</strong>: add the WhatsApp link and post your weekly specials.</li>
+                    <li><strong>Instagram bio and stories</strong> with a direct WhatsApp link.</li>
+                    <li><strong>Click-to-WhatsApp ads</strong> on Instagram and Facebook — conversations started from these ads open a free messaging window.</li>
+                    <li><strong>Staff script:</strong> "Next time, just message us on WhatsApp — it's faster."</li>
+                </ul>
+
+                <h2 id="measure">What to measure</h2>
+                <ul>
+                    <li>Direct WhatsApp orders per week and their share of total orders</li>
+                    <li>Repeat-order rate of WhatsApp customers</li>
+                    <li>Average order value on WhatsApp vs aggregators</li>
+                    <li>Commission saved each month</li>
+                    <li>Offer opt-outs and blocks — if these rise, send fewer offers</li>
+                </ul>
+
+                <h2 id="mistakes">Mistakes restaurants make</h2>
+                <ul>
+                    <li>Sending daily offers — customers block you and your quality rating drops. One or two a week is plenty.</li>
+                    <li>No human fallback for complaints or special requests.</li>
+                    <li>Menu prices in the bot not updated when the real menu changes.</li>
+                    <li>Using unofficial bulk-messaging tools that get the number banned.</li>
+                </ul>
+                <p>Want ordering at the table too? See our <a href="../portfolio.html#ordering-app">QR table-ordering app</a>.</p>
+                <h2 id="faq">Frequently asked questions</h2>
+                <div class="cs-faq">
+                    <details>
+                        <summary>Can restaurants take orders on WhatsApp automatically?</summary>
+                        <p>Yes. With the WhatsApp Business API a bot can show the menu, take the order and address, collect a UPI payment and send the ticket to the kitchen, with automatic status updates to the customer.</p>
+                    </details>
+                    <details>
+                        <summary>How much does WhatsApp ordering cost a restaurant?</summary>
+                        <p>Meta charges per message: about ₹0.115 for order-status updates and about ₹0.86 for offers in India, plus GST, with 1,000 free chat replies a month per number. Setup is usually a one-time cost.</p>
+                    </details>
+                    <details>
+                        <summary>Should restaurants stop using Swiggy and Zomato?</summary>
+                        <p>Not usually. Aggregators are good for reaching new customers. WhatsApp works best for repeat customers who already know you, so you avoid commission on those orders.</p>
+                    </details>
+                    <details>
+                        <summary>Can customers book a table on WhatsApp?</summary>
+                        <p>Yes. The bot collects the date, time and number of guests, confirms the booking and sends a reminder before the visit.</p>
+                    </details>
+                </div>
+
+<!--cs:share-author-->
+                <div class="cs-share" aria-label="Share this article"><strong>Share:</strong>
+                    <a data-share="whatsapp" href="https://api.whatsapp.com/send?text=WhatsApp%20Business%20API%20for%20Restaurants%3A%20Direct%20Orders%2C%20Bookings%20and%20Repeat%20Customers%20https%3A%2F%2Fcodeservecommunity.in%2Fblog%2Fwhatsapp-api-for-restaurants.html" target="_blank" rel="noopener">WhatsApp</a>
+                    <a data-share="linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcodeservecommunity.in%2Fblog%2Fwhatsapp-api-for-restaurants.html" target="_blank" rel="noopener">LinkedIn</a>
+                    <a data-share="x" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fcodeservecommunity.in%2Fblog%2Fwhatsapp-api-for-restaurants.html&amp;text=WhatsApp%20Business%20API%20for%20Restaurants%3A%20Direct%20Orders%2C%20Bookings%20and%20Repeat%20Customers" target="_blank" rel="noopener">X</a>
+                    <a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcodeservecommunity.in%2Fblog%2Fwhatsapp-api-for-restaurants.html" target="_blank" rel="noopener">Facebook</a>
+                </div>
+                <div class="cs-callout">
+                    <h3 style="margin-top:0;">About the author</h3>
+                    <p><strong>CodeServe Team</strong> — the web development and automation team at CodeServe Community in KPHB, Kukatpally, Hyderabad. We build websites, AI chatbots, automation and business software, and write these guides from the questions clients ask us. Related service: <a href="../whatsapp-automation.html">learn how we can help</a>.</p>
+                </div>
+<!--/cs:share-author-->
+                <div class="cs-callout">
+                    Want WhatsApp to take orders and bookings for your restaurant? See our <a href="../whatsapp-automation.html">WhatsApp automation services</a> or message us for a demo.
+                </div>
+
+                </div>
+            </div>
+        </article>
+
+        <section data-dsn-animate="section" class="cs-section cs-section-soft">
+            <div class="cs-container">
+                <h2>Related reading</h2>
+                <div class="cs-related">
+                    <a href="whatsapp-business-api-use-cases.html">WhatsApp Business API Use Cases: 20 Real Examples by Industry →</a>
+                    <a href="whatsapp-business-api-pricing-india.html">WhatsApp Business API Pricing in India (2026): Rates, Changes and Real Costs →</a>
+                    <a href="whatsapp-business-api-guide.html">WhatsApp Business API: A Simple Guide for Indian Businesses (2026) →</a>
+                    <a href="../whatsapp-automation.html">WhatsApp Automation Services →</a>
+                    <a href="../portfolio.html#ordering-app">Our QR Ordering App →</a>
+                </div>
+            </div>
+        </section>
+
+        <section data-dsn-animate="section" class="cs-cta">
+            <div class="cs-container">
+                <h2>Take direct orders on WhatsApp</h2>
+                <p>We&#x27;ll set up menu ordering, payments, kitchen tickets and order updates for your restaurant — free demo.</p>
+                <div class="cs-btns">
+                    <a class="cs-btn cs-btn-whatsapp" href="https://wa.me/918186841086?text=Hi%20CodeServe%2C%20I%20run%20a%20restaurant%20and%20want%20WhatsApp%20ordering." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+                    <a class="cs-btn cs-btn-ghost" href="../whatsapp-automation.html">WhatsApp Automation</a>
+                </div>
+            </div>
+        </section>
+    
+
+        <!-- ========== Footer ========== -->
+        <footer id="dsn_footer" class="dsn-footer p-relative footer-animate svg-animate background-main">
+            <svg class="dsn-separator dsn-separator-up dsn-icon-assistant-color" width="100%" height="100%" viewBox="0 0 100 10" preserveAspectRatio="none">
+                <path class="path-anim separator__path" data-dsn-to="M 0 0 C 40 0 55 0 100 0 L 0 0 Z" vector-effect="non-scaling-stroke" d="M 0 0 C 40 16 75 10 100 0 L 0 0 Z"></path>
+            </svg>
+            <div class="footer-content p-relative mt-section">
+                <div class="dsn-container pt-60">
+                     <div class="d-grid grid-lg-4 grid-md-2 ">
+                            <div class="grid-col-1">
+                                <div class="dsn-logo main-logo">
+                                    <div class="main-logo">
+                                        <a href="../index.html" data-dsn-text="CodeServe" class="custom-logo-link main-brand" rel="home">
+                                            <span class="logo-text">
+                                                <span style="color: white;">Code</span><span style="color: #387cf9;">Serve</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="mt-20">Websites, apps, AI chatbots and business automation from Kukatpally (KPHB), Hyderabad, India — for clients worldwide.</p>
+                                <ul class="dsn-socials box-social mt-20 dsn-icon-heading-color">
+                                    <li><a href="https://www.linkedin.com/in/code-serve-83224b407/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-linkedin-in"></i></span><span>LN</span></a></li>
+                                    <li><a href="https://www.instagram.com/codeserve_connect/" target="_blank" rel="nofollow" class="init-color move-circle border-color-default" data-dsn="parallax"><span class="dsn-icon"><i class="fab fa-instagram"></i></span><span>IN</span></a></li>
+                                </ul>
+                            </div>
+                            <div class="grid-col-2">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">NAVIGATION</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul id="menu-footer-menu" class="menu">
+                                        <li class="menu-item"><a href="../index.html">Home</a></li>
+                                        <li class="menu-item"><a href="../services.html">Services</a></li>
+                                        <li class="menu-item"><a href="../pricing.html">Pricing</a></li>
+                                        <li class="menu-item"><a href="../portfolio.html">Our Work</a></li>
+                                        <li class="menu-item"><a href="../blog/index.html">Blog</a></li>
+                                        <li class="menu-item"><a href="../about.html">About Us</a></li>
+                                        <li class="menu-item"><a href="../contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-3">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">SERVICES</span></h4>
+                                <div class="menu-footer-menu-container">
+                                    <ul class="menu">
+                                        <li class="menu-item"><a href="../website-development.html">Website Development</a></li>
+                                        <li class="menu-item"><a href="../web-design.html">Web Design in Kukatpally</a></li>
+                                        <li class="menu-item"><a href="../ecommerce-website-development.html">E-commerce Websites</a></li>
+                                        <li class="menu-item"><a href="../seo-services.html">SEO Services</a></li>
+                                        <li class="menu-item"><a href="../custom-software-development.html">Custom Software</a></li>
+                                        <li class="menu-item"><a href="../ai-chatbot-development.html">AI Chatbots</a></li>
+                                        <li class="menu-item"><a href="../mobile-app-development.html">Mobile Apps</a></li>
+                                        <li class="menu-item"><a href="../whatsapp-automation.html">WhatsApp Automation</a></li>
+                                        <li class="menu-item"><a href="../ai-automation-services.html">AI &amp; Automation</a></li>
+                                        <li class="menu-item"><a href="../digital-marketing.html">Digital Marketing</a></li>
+                                        <li class="menu-item"><a href="../billing-software-development.html">Billing Software</a></li>
+                                        <li class="menu-item"><a href="../white-label-web-development.html">White Label</a></li>
+                                        <li class="menu-item"><a href="../hire-developers.html">Hire Freelancers</a></li>
+                                        <li class="menu-item"><a href="../offshore-web-development.html">Offshore Development</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="grid-col-4">
+                                <h4 class="subtitle p-relative line-shape line-shape-after"><span class="background-revere">CONTACT</span></h4>
+                                <div class="col-contact">
+                                    <p><strong>T</strong> : <a href="tel:+918186841086">+91 81868 41086</a></p>
+                                    <p class="over-hidden mt-10"><strong>E</strong> : <a class="link-hover" href="mailto:codeserve.contact@gmail.com" data-hover-text="codeserve.contact@gmail.com">codeserve.contact@gmail.com</a></p>
+                                    <p class="mt-10"><a class="link-hover" href="https://www.google.com/maps/search/?api=1&amp;query=CodeServe+Community+KPHB+Phase+9+Kukatpally+Hyderabad" target="_blank" rel="noopener">KPHB Phase 9, Kukatpally, Hyderabad, Telangana 500085</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="footer-bottom mt-60 pt-30 border-top pb-30 text-center">
+                        <p class="mb-10">Serving clients in <a class="link-hover" href="../website-development.html">India</a> · <a class="link-hover" href="../web-development-services-usa.html">USA</a> · <a class="link-hover" href="../web-development-services-uk.html">UK</a> · <a class="link-hover" href="../web-development-services-uae.html">UAE</a> · <a class="link-hover" href="../web-development-services-australia.html">Australia</a></p>
+                        <p class="over-hidden">© 2026 CodeServe - Forging the Future. · <a class="link-hover" href="../privacy.html">Privacy Policy</a> · <a class="link-hover" href="../terms.html">Terms</a> · <a class="link-hover" href="../faq.html">FAQ</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== End Footer ========== -->
+    </div>
+</main>
+
+<!-- ========== Cursor ========== -->
+<div id="dsn_cursor" class="ball"></div>
+<div id="dsn_cursor_inner" class="ball"></div>
+<!-- ========== End Cursor ========== -->
+
+<!-- ========== Line BG ========== -->
+<div id="line_head"><span class="container"></span></div>
+<!-- ========== End Line BG ========== -->
+
+<script src="../assets/js/jquery-3.1.1.min.js"></script>
+<script src="../assets/js/plugins.min.js"></script>
+<script src="../assets/js/plugins/dsn-grid.min.js"></script>
+<script src="../assets/js/custom.js?v=3"></script>
+<!-- New script for the preloader -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const scrambleText = document.querySelector('.scramble-text');
+    if (scrambleText) {
+        class TextScramble {
+            constructor(el) {
+                this.el = el;
+                this.chars = '!<>-_\\/[]{}—=+*^?#________';
+                this.update = this.update.bind(this);
+            }
+            setText(newText) {
+                const oldText = this.el.innerText;
+                const length = Math.max(oldText.length, newText.length);
+                const promise = new Promise((resolve) => this.resolve = resolve);
+                this.queue = [];
+                for (let i = 0; i < length; i++) {
+                    const from = oldText[i] || '';
+                    const to = newText[i] || '';
+                    const start = Math.floor(Math.random() * 40);
+                    const end = start + Math.floor(Math.random() * 40);
+                    this.queue.push({ from, to, start, end });
+                }
+                cancelAnimationFrame(this.frameRequest);
+                this.frame = 0;
+                this.update();
+                return promise;
+            }
+            update() {
+                let output = '';
+                let complete = 0;
+                for (let i = 0, n = this.queue.length; i < n; i++) {
+                    let { from, to, start, end, char } = this.queue[i];
+                    if (this.frame >= end) {
+                        complete++;
+                        output += to;
+                    } else if (this.frame >= start) {
+                        if (!char || Math.random() < 0.28) {
+                            char = this.randomChar();
+                            this.queue[i].char = char;
+                        }
+                        output += `<span class="dud">${char}</span>`;
+                    } else {
+                        output += from;
+                    }
+                }
+                this.el.innerHTML = output;
+                if (complete === this.queue.length) {
+                    this.resolve();
+                } else {
+                    this.frameRequest = requestAnimationFrame(this.update);
+                    this.frame++;
+                }
+            }
+            randomChar() {
+                return this.chars[Math.floor(Math.random() * this.chars.length)];
+            }
+        }
+
+        const phrases = [
+            'Executing Scripts...',
+            'Compiling Modules...',
+            'Building DOM...',
+            'Finalizing...'
+        ];
+        
+        const fx = new TextScramble(scrambleText);
+        let counter = 0;
+
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800);
+            });
+            counter = (counter + 1) % phrases.length;
+        };
+
+        setTimeout(() => {
+             next();
+        }, 500);
+       
+    }
+});
+</script>
+
+<!-- WhatsApp Chat Widget -->
+<div id="whatsapp-chat" class="whatsapp-chat-widget">
+    <div class="whatsapp-chat-button" onclick="toggleWhatsAppChat()">
+        <i class="fab fa-whatsapp"></i>
+        <span class="chat-tooltip">Chat with us!</span>
+    </div>
+    
+    <div class="whatsapp-chat-box" id="whatsapp-chat-box">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <img src="../assets/img/logo2.jpg" alt="CodeServe" class="chat-avatar" width="40" height="40" loading="lazy" decoding="async">
+                <div class="chat-info">
+                    <h4>CodeServe Community</h4>
+                    <p class="online-status">
+                        <span class="status-dot"></span>
+                        Typically replies instantly
+                    </p>
+                </div>
+            </div>
+            <button class="close-chat" onclick="toggleWhatsAppChat()">×</button>
+        </div>
+        
+        <div class="chat-body">
+            <div class="chat-message">
+                <p>💼 Interested in our services?</p>
+                <p>Let's discuss your project requirements!</p>
+                <div class="quick-replies">
+                    <button onclick="sendWhatsAppMessage('I need web development services')">🌐 Web Development</button>
+                    <button onclick="sendWhatsAppMessage('Mobile app development quote')">📱 Mobile App</button>
+                    <button onclick="sendWhatsAppMessage('SEO services pricing')">🔍 SEO Services</button>
+                    <button onclick="sendWhatsAppMessage('Custom project quote')">💼 Custom Project</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-footer">
+            <button class="start-chat-btn" onclick="sendWhatsAppMessage('Hello! I am interested in your services')">
+                <i class="fab fa-whatsapp"></i>
+                Start Conversation
+            </button>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="../assets/css/whatsapp-widget.css">
+<script src="../assets/js/whatsapp-widget.js?v=2"></script>
+<script src="../assets/js/blog-toc.js"></script>
+
+</body>
+</html>

@@ -450,12 +450,15 @@ function loadCSS(pageName) {
   function dsnAjax() {
     return dsnGrid.dsnAjax({
       className: 'dsn-ajax-effect',
+      // The portfolio page has its own CSS/JS (work.css, work.js), so it always loads as a full page.
+      prevent: 'a.effect-ajax:not([href^="portfolio.html"]) , #dsn-primary-list a:not([href*="#"]):not([href^="portfolio.html"])',
       beforeSend: () => $body.css('overflow', 'hidden'),
 
       async success(data) {
       // Extract page title from the loaded HTML data
       const parser = new DOMParser();
       const doc = parser.parseFromString(data, 'text/html'); // data is the full HTML string
+      if (doc.querySelector('.wk')) { window.location.reload(); return; } // e.g. browser Back into the portfolio
       const pageTitle = doc.querySelector('title')?.textContent || '';
       console.log('Raw HTML Data:', data);
       console.log('Page Title:', pageTitle);
@@ -648,7 +651,8 @@ function loadCSS(pageName) {
   function dropHash() {
     const linked = {
       hash: $("a[href=\"#\"]"),
-      scroll: $("[href*=\"#\"]:not([href=\"#\"]):not(.comment-reply-link):not(#cancel-comment-reply-link):not(.wc-tabs .wc-effect-tab)")
+      // only same-page anchors; links like "pricing.html#monthly" must navigate normally
+      scroll: $("[href^=\"#\"]:not([href=\"#\"]):not(.comment-reply-link):not(#cancel-comment-reply-link):not(.wc-tabs .wc-effect-tab)")
     };
     linked.hash.on("click", function (e) {
       e.preventDefault();
@@ -667,7 +671,7 @@ function loadCSS(pageName) {
       href = null;
     });
 
-    if (window.location.hash.length) {
+    if (window.location.hash.length > 1 && document.getElementById(decodeURIComponent(window.location.hash.slice(1)))) {
       $wind.scrollTop(0);
       dsnGrid.scrollTop(window.location.hash);
     }

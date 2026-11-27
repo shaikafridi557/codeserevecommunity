@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380">
+  <rect width="800" height="380" rx="12" fill="#191919"/>
+  <text x="30" y="50" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">Typical custom software budgets in India</text>
+  <text x="30" y="108" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Clickable prototype</text>
+  <rect x="250" y="90" width="17.8" height="26" rx="6" fill="#387cf9"/>
+  <text x="277.8" y="109" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">₹30k–₹60k</text>
+  <text x="30" y="160" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Simple web app MVP</text>
+  <rect x="250" y="142" width="53.3" height="26" rx="6" fill="#25d366"/>
+  <text x="313.3" y="161" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">₹50k–₹2L</text>
+  <text x="30" y="212" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Mobile app MVP</text>
+  <rect x="250" y="194" width="88.9" height="26" rx="6" fill="#25d366"/>
+  <text x="348.9" y="213" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">₹75k–₹3L</text>
+  <text x="30" y="264" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Marketplace / SaaS MVP</text>
+  <rect x="250" y="246" width="177.8" height="26" rx="6" fill="#f59e0b"/>
+  <text x="437.8" y="265" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">₹2L–₹6L</text>
+  <text x="30" y="316" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" fill="#e5e7eb">Scale-up product</text>
+  <rect x="250" y="298" width="400.0" height="26" rx="6" fill="#f59e0b"/>
+  <text x="660.0" y="317" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">₹6L+</text>
+  <text x="30" y="358" font-family="Poppins, 'Segoe UI', Arial, sans-serif" font-size="14" fill="#9ca3af">Rough ranges for fixed-scope builds by a small Indian team; complexity drives cost.</text>
+</svg>
