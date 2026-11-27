@@ -715,6 +715,8 @@
   ]
 }
     </script>
+    <link rel="stylesheet" href="assets/css/story.css?v=1">
+    <link rel="stylesheet" href="assets/css/chapters.css?v=1">
 </head>
 
 <body class="v-dark dsn-ajax">
@@ -848,1151 +850,208 @@
         </header>
         <!-- ========== End Menu ========== -->
         <div id="dsn-scrollbar">
-            <!-- ========== Slider Parallax ========== -->
-            <header class="v-dark-head dsn-section-padding dsn-header-animation">
-                <div class="main-slider v-dark-head-mobile has-horizontal  active-nav-slider has-paginate"
-                    data-dsn-option='{"direction":"horizontal","allowTouchMove":true,"watchSlidesProgress":true,"grabCursor":true,"mousewheel":false,"autoplay":{"delay":5000,"disableOnInteraction":false},"speed":1000}'>
+                        <script>if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){document.documentElement.classList.add('st-js');setTimeout(function(){if(!window.stReady)document.documentElement.classList.remove('st-js')},6000)}</script>
+<!-- ========== Story Hero (scroll-driven "film": Chaos → Code → Calm) — assets/css/story.css + assets/js/story.js ========== -->
+            <section class="st" id="story" aria-label="The CodeServe story">
+                <div class="st-pin">
+                    <div class="st-stage">
+                        <div class="st-grain" aria-hidden="true"></div>
+                        <div class="st-glow" aria-hidden="true"></div>
 
+                        <div class="st-shade" aria-hidden="true"></div>
+                        <!-- scene captions -->
+                        <p class="st-cap st-cap-1" aria-hidden="true"><span class="st-line"><span>Every business</span></span><span class="st-line"><span>has a <em>story.</em></span></span></p>
+                        <p class="st-cap st-cap-2" aria-hidden="true"><span class="st-line"><span>Missed calls. Lost orders.</span></span><span class="st-line"><span><em>Endless spreadsheets.</em></span></span></p>
+                        <p class="st-cap st-cap-3" aria-hidden="true"><span class="st-line"><span>Then we write</span></span><span class="st-line"><span>the <em>next chapter.</em></span></span></p>
+                        <p class="st-cap st-cap-4" aria-hidden="true"><span class="st-line"><span>Websites. Apps. AI agents.</span></span><span class="st-line"><span><em>One calm system.</em></span></span></p>
 
-                    <div class="content-slider slide-inner h-100 over-hidden">
-                        <div
-                            class="bg-container p-absolute  dsn-hero-parallax-img  w-100 h-100 z-index-1 dsn-hero-parallax-img">
-                            <div class="swiper-container h-100">
-                                <div class="swiper-wrapper">
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="4">
-                                            <img class="cover-bg-img dsn-swiper-parallax-transform"
-                                                src="assets/img/codeserve1.jpg" fetchpriority="high" alt="Building a brand's future"
-                                                data-dsn-position="50% 50%" srcset="assets/img/codeserve1-640.webp 640w, assets/img/codeserve1-1280.webp 1280w, assets/img/codeserve1.webp 1920w" sizes="100vw" width="1920" height="1280" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <div
-                                                class="p-relative head-meta swiper-animate-head  d-flex justify-content-between mb-20">
-                                                <div class="circle-before metas mb-10">
-                                                    <h1 class="hero-seo-label">Website Development &amp; AI Automation Company in Hyderabad</h1>
-                                                </div>
-                                            </div>
-                                            <h2 class="title has-box-mod p-relative">
-                                                <a href="about.html" data-dsn-split="chars" class="effect-ajax"
-                                                    data-dsn-ajax="slider">
-                                                    WE BUILD FUTURES
-                                                </a>
-                                            </h2>
-                                            <p class="description swiper-animate-head max-w570 mt-20">
-                                                For your business, and for the next generation of creators. We bridge
-                                                the gap between vision and execution, potential and opportunity.
-                                            </p>
-                                            <div class="d-flex mt-20 dsn-def-btn dsn-border-style">
-                                                <a class="mr-15 dsn-btn dsn-border border-color-default background-main has-icon-left"
-                                                    href="contact.html" data-dsn="parallax">
-                                                    <span
-                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                        <i class="fas fa-angle-right"></i>
-                                                    </span>
-                                                    <span class="title-btn p-relative  z-index-1 heading-color">
-                                                        START A PROJECT
-                                                    </span>
-                                                </a>
-                                                <a class="mr-15 dsn-btn dsn-border border-color-default background-main has-icon-left"
-                                                    href="portfolio.html" data-dsn="parallax">
-                                                    <span
-                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                        <i class="fas fa-angle-right"></i>
-                                                    </span>
-                                                    <span class="title-btn p-relative  z-index-1 heading-color">
-                                                        EXPLORE OUR WORK
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="3">
-                                            <img class="cover-bg-img dsn-swiper-parallax-transform"
-                                                src="assets/img/codeserve2.jpg" alt="CodeServe team building digital solutions"
-                                                data-dsn-position="50% 50%" srcset="assets/img/codeserve2-640.webp 640w, assets/img/codeserve2-1280.webp 1280w, assets/img/codeserve2.webp 1920w" sizes="100vw" width="1920" height="1281" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <div
-                                                class="p-relative head-meta swiper-animate-head  d-flex justify-content-between mb-20">
-                                                <div class="circle-before metas mb-10">
-                                                    <span>A Community of Experts</span>
-                                                </div>
-                                            </div>
-                                            <h2 class="title has-box-mod p-relative">
-                                                <a href="services.html" data-dsn-split="chars" class="effect-ajax"
-                                                    data-dsn-ajax="slider">
-                                                    BEYOND THE CODE
-                                                </a>
-                                            </h2>
-                                            <p class="description swiper-animate-head max-w570 mt-20">
-                                                With a dedicated team for SEO, logo design, and even ATS-optimized
-                                                resumes, we provide a complete digital solution for your brand.
-                                            </p>
-                                            <div class="d-flex mt-20 dsn-def-btn dsn-border-style">
-                                                <a class="mr-15 dsn-btn dsn-border border-color-default background-main has-icon-left"
-                                                    href="services.html" data-dsn-ajax="slider" data-dsn="parallax">
-                                                    <span
-                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                        <i class="fas fa-angle-right"></i>
-                                                    </span>
-                                                    <span class="title-btn p-relative  z-index-1 heading-color">
-                                                        OUR SERVICES
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="slide-item swiper-slide over-hidden">
-                                        <div class="image-bg cover-bg w-100 h-100 before-z-index" data-overlay="2">
-                                            <img class="cover-bg-img dsn-swiper-parallax-transform"
-                                                src="assets/img/codserve3.jpg" alt="Empowering young talent"
-                                                data-dsn-position="50% 50%" srcset="assets/img/codserve3.webp 640w" sizes="100vw" width="640" height="427" />
-                                        </div>
-                                        <div class="slide-content p-absolute">
-                                            <div
-                                                class="p-relative head-meta swiper-animate-head  d-flex justify-content-between mb-20">
-                                                <div class="circle-before metas mb-10">
-                                                    <span>Proven Experience</span>
-                                                </div>
-                                            </div>
-                                            <h2 class="title has-box-mod p-relative">
-                                                <a href="portfolio.html" data-dsn-split="chars" class="effect-ajax"
-                                                    data-dsn-ajax="slider">
-                                                    OUR WORK
-                                                </a>
-                                            </h2>
-                                            <p class="description swiper-animate-head max-w570 mt-20">
-                                                From academic projects and capstone challenges for major companies to
-                                                professional client work, our portfolio demonstrates our commitment to
-                                                excellence.
-                                            </p>
-                                            <div class="d-flex mt-20 dsn-def-btn dsn-border-style">
-                                                <a class="mr-15 dsn-btn dsn-border border-color-default background-main has-icon-left"
-                                                    href="portfolio.html" data-dsn-ajax="slider" data-dsn="parallax">
-                                                    <span
-                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                        <i class="fas fa-angle-right"></i>
-                                                    </span>
-                                                    <span class="title-btn p-relative  z-index-1 heading-color">
-                                                        VIEW PROJECTS
-                                                    </span>
-                                                </a>
-                                            </div>
+                        <!-- scene 2: chaos -->
+                        <div class="st-chaos" aria-hidden="true">
+                            <div class="st-note st-n-wa" data-t="0"><b>WhatsApp</b><span>"Is this still available??"</span><i>12 unread</i></div>
+                            <div class="st-note st-n-call" data-t="1"><b>Missed call (3)</b><span>Unknown number · 10:42 PM</span></div>
+                            <div class="st-note st-n-order" data-t="2"><b>Order #212</b><span>"Where is my order?"</span></div>
+                            <div class="st-note st-n-xls" data-t="3"><b>sales_FINAL_v7.xlsx</b><span>Last edited 3 weeks ago</span></div>
+                            <div class="st-note st-n-sticky" data-t="4"><b>call back Ravi!!</b><span>re: quotation</span></div>
+                            <div class="st-note st-n-mail" data-t="5"><b>Inbox (48)</b><span>Invoice overdue · Re: Re: Re:</span></div>
+                            <div class="st-note st-n-wa2" data-t="0"><b>WhatsApp</b><span>"Hello? Anyone there?"</span></div>
+                            <div class="st-note st-n-cal" data-t="4"><b>Double booked</b><span>Tue 11:00 · 2 customers</span></div>
+                        </div>
+
+                        <!-- scene 3: code -->
+                        <div class="st-code" aria-hidden="true">
+                            <pre><span class="st-l"><i>01</i><b class="k">const</b> business = <b class="f">listen</b>(customers);</span>
+<span class="st-l"><i>02</i><b class="k">on</b>(<b class="s">'whatsapp'</b>, msg =&gt; ai.<b class="f">reply</b>(msg));</span>
+<span class="st-l"><i>03</i><b class="k">on</b>(<b class="s">'order'</b>, o =&gt; kitchen.<b class="f">notify</b>(o));</span>
+<span class="st-l"><i>04</i>bookings.<b class="f">remind</b>({ before: <b class="n">'2h'</b> });</span>
+<span class="st-l"><i>05</i>sheets.<b class="f">replaceWith</b>(dashboard);</span>
+<span class="st-l"><i>06</i>leads.<b class="f">follow</b>(<b class="k">until</b>: <b class="s">'closed'</b>);</span>
+<span class="st-l"><i>07</i>website.<b class="f">rank</b>(<b class="s">'Hyderabad'</b>);</span>
+<span class="st-l"><i>08</i><b class="k">return</b> <b class="f">calm</b>();</span></pre>
+                        </div>
+
+                        <!-- scenes 4–5: device whose screen is the calm dashboard -->
+                        <div class="st-device" aria-hidden="true">
+                            <div class="st-laptop">
+                                <div class="st-bezel">
+                                    <div class="st-screen">
+                                        <div class="st-dash">
+                                            <div class="st-tile st-t0"><small>Chats answered</small><strong>318</strong><em>replies in 3 sec</em></div>
+                                            <div class="st-tile st-t1"><small>Calls missed</small><strong>0</strong><em>AI took them</em></div>
+                                            <div class="st-tile st-t2"><small>Orders today</small><strong>128</strong><em>all on track</em></div>
+                                            <div class="st-tile st-t3 st-chart"><small>Revenue · this month</small><span class="st-bars"><i style="--h:38%"></i><i style="--h:52%"></i><i style="--h:46%"></i><i style="--h:64%"></i><i style="--h:58%"></i><i style="--h:76%"></i><i style="--h:70%"></i><i style="--h:92%"></i></span></div>
+                                            <div class="st-tile st-t4"><small>Follow-ups</small><strong>42</strong><em>sent automatically</em></div>
+                                            <div class="st-tile st-t5"><small>Bookings</small><strong>36</strong><em>reminders on</em></div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="st-base"></div>
+                            </div>
+                            <div class="st-phone">
+                                <div class="st-phone-in">
+                                    <span class="st-bubble st-b-in">Is the table for 4 free tonight?</span>
+                                    <span class="st-bubble st-b-out">Yes! 8:30 PM is free. Shall I book it? ✓</span>
+                                    <span class="st-bubble st-b-in">Yes please</span>
+                                    <span class="st-bubble st-b-out st-b-ok">Booked ✓ See you at 8:30</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="dsn-container d-flex align-items-end dsn-slider-content dsn-hero-parallax-title">
-                        </div>
-                    </div>
 
-
-                    <div class="dsn-swiper-paginate">
-                        <div class="swiper-pagination dsn-swiper-circle mr-30 ml-30 heading-color"></div>
-                    </div>
-
-                    <div class="control-nav w-100  d-flex dsn-container  align-items-center justify-content-between">
-                        <div class="prev-paginate         dsn-paginate-arrow box-shadow"></div>
-
-
-                        <div class="dsn-pagination p-relative d-flex align-items-end">
-                            <span class="slider-current-index h2">01</span>
-                            <span class="sm-title-block">/ </span><span class="total sm-title-block"> 3</span>
+                        <!-- scene 5: our work flying in -->
+                        <div class="st-cards" aria-hidden="true">
+                            <img class="st-card st-c1" src="assets/img/portfolio/ai-lead-agent-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+                            <img class="st-card st-c2" src="assets/img/portfolio/ordering-app-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
+                            <img class="st-card st-c3" src="assets/img/portfolio/garishta-infra-640.webp" alt="" width="640" height="400" loading="lazy" decoding="async">
                         </div>
 
-                        <div class="next-paginate dsn-paginate-arrow box-shadow"></div>
+                        <!-- final frame (real content, readable without JS) -->
+                        <div class="st-final">
+                            <h1 class="st-h1">Website Development &amp; AI Automation Company in Hyderabad</h1>
+                            <p class="st-title"><span class="st-line"><span>Built</span></span><span class="st-line"><span><em>different.</em></span></span></p>
+                            <p class="st-sub">Websites that bring enquiries, software that saves hours and AI agents that work while you sleep — designed and built in KPHB, Hyderabad.</p>
+                            <div class="st-ctas">
+                                <a class="st-btn st-btn-main" href="contact.html">Start a project <span aria-hidden="true">↗</span></a>
+                                <a class="st-btn" href="portfolio.html">See our work</a>
+                            </div>
+                        </div>
 
-
+                        <!-- film UI -->
+                        <div class="st-ui" aria-hidden="true">
+                            <span class="st-scene">SCENE <b>01</b> / 05</span>
+                            <span class="st-rec"><i></i>CODESERVE · HYDERABAD</span>
+                        </div>
+                        <div class="st-bar" aria-hidden="true"><i class="st-fill"></i><span></span><span></span><span></span><span></span><span></span></div>
+                        <div class="st-hint" aria-hidden="true">Scroll to play <span>▶</span></div>
+                        <button type="button" class="st-skip">Skip intro ↓</button>
+                        <div class="st-letterbox st-lb-top" aria-hidden="true"></div>
+                        <div class="st-letterbox st-lb-bot" aria-hidden="true"></div>
                     </div>
-
-
                 </div>
-            </header>
-            <!-- ========== End Slider Parallax ========== -->
+            </section>
+            <!-- ========== End Story Hero ========== -->
 
 
             <div id="page_wrapper" class="wrapper">
-                <!-- ========== About Section One ========== -->
-                <section class="about-section about-one p-relative section-padding background-section">
-                    <div class="p-relative container">
-                        <div class="bg-mask background-main w-70 h-55 v-middle"></div>
-                        <div class="d-grid grid-md-2">
-                            <div class="box-info">
-                                <h2 class="title">
-                                    <span class="letter-stroke d-block"
-                                        data-dsn-animation='{"from":{"paddingLeft":"10%"},"to":{"paddingLeft":"20%"},"responsive":["tablet","desktop"]}'>
-                                        WE ARE
-                                    </span>
-                                    <span>CODESERVE</span>
-                                    <span class="text-right w-100"></span>
-                                </h2>
-                                <div class="d-grid grid-half-1 align-items-center mt-10">
-                                    <div class="dsn-def-btn dsn-hover-icon ">
-                                        <a class="dsn-btn background-main effect-ajax has-icon-left" href="about.html"
-                                            data-dsn-text="About Us" data-dsn="parallax">
-                                            <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                <i class="fas fa-angle-right"></i>
-                                            </span>
-                                            <span class="title-btn p-relative  z-index-1 heading-color">ABOUT US</span>
-                                        </a>
-                                    </div>
-                                    <div class="p-large text-right">
-                                        <p class="max-w350">
-                                            We are a community of developers and designers, building robust digital
-                                            solutions and providing opportunities for new talent to shine.
-                                        </p>
-                                    </div>
-                                </div>
+                <!-- ========== Chapters (3D scroll scenes) — assets/css/chapters.css + assets/js/chapters.js ========== -->
 
-
-                            </div>
-                            <div class="box-img">
-                                <img loading="lazy" decoding="async" decoding="async" class="cover-bg-img" src="assets/img/codeserve.jpg" title=""
-                                    alt="A team collaborating on a digital project" srcset="assets/img/codeserve.webp 612w" sizes="100vw" width="612" height="408">
-                            </div>
+                <!-- CH.01 — Who we are: the brand film grows from a small window to full screen while the headline splits apart -->
+                <section class="ch ch-video" id="ch-who" aria-labelledby="ch-who-t">
+                    <div class="ch-pin">
+                        <p class="ch-tag"><b>CH.01</b> Who we are</p>
+                        <p class="ch-split" aria-hidden="true"><span class="ch-sl">We are</span><span class="ch-sr">CodeServe</span></p>
+                        <div class="ch-film">
+                            <video class="ch-video-el" muted loop playsinline preload="none" poster="assets/video/codeserve-brand-film-poster.jpg" data-src="assets/video/codeserve-brand-film-720.mp4" aria-label="CodeServe brand film: code, project screens, a WhatsApp booking and live dashboards"></video>
+                            <div class="ch-film-shade"></div>
                         </div>
-                        <div class="p-relative box-img-bottom hv-50">
-                            <img loading="lazy" decoding="async" class="cover-bg-img" decoding="async" src="assets/img/codeserve5.jpg" title=""
-                                alt="CodeServe creative development process and innovation" srcset="assets/img/codeserve5-640.webp 640w, assets/img/codeserve5-1280.webp 1280w, assets/img/codeserve5.webp 1920w" sizes="100vw" width="1920" height="1280">
+                        <p class="ch-scroll-note" aria-hidden="true">Keep scrolling ↓</p>
+                        <div class="ch-who-copy">
+                            <h2 id="ch-who-t" class="ch-who-h">We are CodeServe.</h2>
+                            <ol class="ch-manifesto">
+                                <li><b>01</b><span>A community of developers and designers.</span></li>
+                                <li><b>02</b><span>Based in KPHB, Hyderabad — working with businesses across India and abroad.</span></li>
+                                <li><b>03</b><span>Building websites, apps, AI agents and automation that bring real customers.</span></li>
+                                <li><b>04</b><span>And giving new talent a stage to shine.</span></li>
+                            </ol>
+                            <a class="ch-link" href="about.html">Our story <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
-
-
                 </section>
-                <!-- ========== End About Section One ========== -->
 
-                <!-- ========== Service ========== -->
-                <div class="container section-margin">
-                    <div class="section-title mb-70 d-grid grid-md-2 ">
-                        <div class=" d-flex">
-                            <div class="sub-section-title ">
-                                <p class="description d-inline-block p-relative circle-before mb-10">
-                                    <span>SOLUTIONS</span>
-                                </p>
-                                <span class="title-h2 title-block-lg d-block heading-color">
-                                    <span>Your Complete <b>Growth Engine</b></span>
-                                </span>
+                <!-- CH.02 — What we build: services on a rotating 3D ring -->
+                <section class="ch ch-ring" id="ch-build" aria-labelledby="ch-build-t">
+                    <div class="ch-pin">
+                        <p class="ch-tag"><b>CH.02</b> What we build</p>
+                        <h2 id="ch-build-t" class="ch-ring-title">Your complete <em>growth engine</em></h2>
+                        <div class="ch-ring-num" aria-hidden="true"><b>01</b>/06</div>
+                        <div class="ch-ring-stage">
+                            <div class="ch-ring-world">
+                                <article class="ch-card">
+                                    <img src="assets/img/scenes/codeserve3-640.webp" alt="Websites shown on several screens" width="640" height="360" loading="lazy" decoding="async">
+                                    <div class="ch-card-body"><h3>Websites &amp; Mobile Apps</h3><p>Fast, responsive and secure websites, e-commerce stores and mobile apps. Websites from ₹9,999.</p><a href="website-development.html">Learn more ↗</a></div>
+                                </article>
+                                <article class="ch-card">
+                                    <img src="assets/img/portfolio/seo-analytics-app-640.webp" alt="SEO analytics dashboard" width="640" height="400" loading="lazy" decoding="async">
+                                    <div class="ch-card-body"><h3>SEO &amp; Branding</h3><p>On-page SEO and Google Business Profile optimisation so local customers find you, plus memorable logo design.</p><a href="digital-marketing.html">Learn more ↗</a></div>
+                                </article>
+                                <article class="ch-card">
+                                    <img src="assets/img/portfolio/ai-chat-assistant-640.webp" alt="WhatsApp AI assistant booking an appointment" width="640" height="400" loading="lazy" decoding="async">
+                                    <div class="ch-card-body"><h3>WhatsApp Automation</h3><p>Official WhatsApp Business API with auto-replies, order and booking notifications and an AI assistant. From ₹7,999.</p><a href="whatsapp-automation.html">Learn more ↗</a></div>
+                                </article>
+                                <article class="ch-card">
+                                    <img src="assets/img/scenes/codeserve-640.webp" alt="Person exploring technology with a VR headset" width="640" height="427" loading="lazy" decoding="async">
+                                    <div class="ch-card-body"><h3>AI Chatbots &amp; Agents</h3><p>AI chatbots and agents for your website and WhatsApp, trained on your business, answering and capturing leads 24/7.</p><a href="ai-automation-services.html">Learn more ↗</a></div>
+                                </article>
+                                <article class="ch-card">
+                                    <img src="assets/img/scenes/architecture-640.webp" alt="Dark geometric architecture" width="640" height="400" loading="lazy" decoding="async">
+                                    <div class="ch-card-body"><h3>Cloud &amp; Maintenance</h3><p>Secure hosting, backups, updates and monitoring so your website and apps stay fast and online. Care plans from ₹1,999/month.</p><a href="pricing.html#monthly">View plans ↗</a></div>
+                                </article>
+                                <article class="ch-card">
+                                    <img src="assets/img/scenes/personal-640.webp" alt="Professional working on a laptop" width="640" height="427" loading="lazy" decoding="async">
+                                    <div class="ch-card-body"><h3>ATS Resumes</h3><p>Professional, ATS-friendly resumes that get noticed by recruiters and help you land your dream job.</p><a href="services.html">All services ↗</a></div>
+                                </article>
                             </div>
                         </div>
-                        <div class="dsn-def-btn dsn-icon-heading-color align-self-end justify-self-end">
-                            <a class="dsn-btn dsn-border border-color-default  background-section effect-ajax effect-ajax  move-circle has-icon-left"
-                                href="services.html" data-dsn-text="Services" data-dsn="parallax"> <span
-                                    class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1"><i
-                                        class="fas fa-angle-right"></i></span> <span
-                                    class="title-btn p-relative  z-index-1 heading-color">VIEW ALL SERVICES</span> </a>
+                        <a class="ch-link ch-ring-all" href="services.html">View all services <span aria-hidden="true">↗</span></a>
+                    </div>
+                </section>
+
+                <!-- CH.03 — Proof: fly through a 3D tunnel of projects -->
+                <section class="ch ch-tunnel" id="ch-proof" aria-labelledby="ch-proof-t">
+                    <div class="ch-pin">
+                        <p class="ch-tag"><b>CH.03</b> Proof</p>
+                        <h2 id="ch-proof-t" class="ch-tunnel-title"><span class="ch-line"><span>Proof of our</span></span><span class="ch-line"><span><em>promise.</em></span></span></h2>
+                        <div class="ch-tunnel-stage">
+                            <div class="ch-tunnel-world">
+                                <a class="ch-frame" href="portfolio.html#ai-lead-agent"><img src="assets/img/portfolio/ai-lead-agent-640.webp" alt="Lead Research Agent" width="640" height="400" loading="lazy" decoding="async"><span>AI Agent · Lead Research Agent</span></a>
+                                <a class="ch-frame" href="portfolio.html#garishtha-infra"><img src="assets/img/portfolio/garishta-infra-640.webp" alt="Garishtha Infra Developers website" width="640" height="400" loading="lazy" decoding="async"><span>Client · Garishtha Infra</span></a>
+                                <a class="ch-frame" href="portfolio.html#ordering-app"><img src="assets/img/portfolio/ordering-app-640.webp" alt="Order and table QR app" width="640" height="400" loading="lazy" decoding="async"><span>App · Order &amp; Table QR</span></a>
+                                <a class="ch-frame" href="portfolio.html#sabari-studios"><img src="assets/img/portfolio/sabari-studios-640.webp" alt="Sabari Studios website" width="640" height="400" loading="lazy" decoding="async"><span>Client · Sabari Studios</span></a>
+                                <a class="ch-frame" href="portfolio.html#insight-dashboard"><img src="assets/img/portfolio/data-visualization-app-640.webp" alt="Insight dashboard" width="640" height="400" loading="lazy" decoding="async"><span>App · Insight Dashboard</span></a>
+                                <a class="ch-frame" href="portfolio.html#sireeshna-solutions"><img src="assets/img/portfolio/sireeshna-solutions-640.webp" alt="Sireeshna Solutions website" width="640" height="400" loading="lazy" decoding="async"><span>Client · Sireeshna Solutions</span></a>
+                                <a class="ch-frame" href="portfolio.html#ai-chat-assistant"><img src="assets/img/portfolio/ai-chat-assistant-640.webp" alt="WhatsApp AI Assistant" width="640" height="400" loading="lazy" decoding="async"><span>AI Agent · WhatsApp Assistant</span></a>
+                                <a class="ch-frame" href="portfolio.html#kammela-medical"><img src="assets/img/portfolio/kammela-medical-640.webp" alt="Dr. Kammela Medical Center" width="640" height="400" loading="lazy" decoding="async"><span>Client · Dr. Kammela</span></a>
+                            </div>
+                        </div>
+                        <a class="ch-link ch-tunnel-all" href="portfolio.html">View all 17 projects <span aria-hidden="true">↗</span></a>
+                    </div>
+                </section>
+
+                <!-- CH.04 — Your turn: circle mask reveal -->
+                <section class="ch ch-mask" id="ch-you" aria-labelledby="ch-you-t">
+                    <div class="ch-pin">
+                        <p class="ch-tag"><b>CH.04</b> Your turn</p>
+                        <div class="ch-mask-img">
+                            <img src="assets/img/codeserve5-1280.webp" srcset="assets/img/codeserve5-640.webp 640w, assets/img/codeserve5-1280.webp 1280w, assets/img/codeserve5.webp 1920w" sizes="100vw" alt="CodeServe team planning a project together" width="1920" height="1280" loading="lazy" decoding="async">
+                        </div>
+                        <div class="ch-you-copy">
+                            <p class="ch-you-k">Have a vision for your business?</p>
+                            <h2 id="ch-you-t" class="ch-big"><span class="ch-line"><span>Let's build it</span></span><span class="ch-line"><span><em>together.</em></span></span></h2>
+                            <p class="ch-you-p">You need more than a pretty brochure — you need a growth engine. We architect solutions with one objective: to make you the strongest name in your industry.</p>
+                            <a class="ch-cta" href="contact.html">Start your project <span aria-hidden="true">↗</span></a>
                         </div>
                     </div>
-                    <div class="list-with-number icon-top dsn-icon-theme-color">
-                        <div class="dsn-service d-grid grid-lg-3 grid-sm-2 dsn-masonry-grid dsn-masonry-grid-2 dsn-isotope "
-                            data-dsn-iconsize="80px">
+                </section>
+                <!-- ========== End Chapters ========== -->
 
-                            <div class="dsn-up service-item p-relative grid-item style-box">
-                                <div class="service-item-inner border-style number-item h-100">
-                                    <div class="dsn-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 20 20">
-                                            <path
-                                                d="M5.5 15h-4c-0.827 0-1.5-0.673-1.5-1.5v-12c0-0.827 0.673-1.5 1.5-1.5h14c0.827 0 1.5 0.673 1.5 1.5v7c0 0.276-0.224 0.5-0.5 0.5s-0.5-0.224-0.5-0.5v-7c0-0.276-0.224-0.5-0.5-0.5h-14c-0.276 0-0.5 0.224-0.5 0.5v12c0 0.276 0.224 0.5 0.5 0.5h4c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z">
-                                            </path>
-                                            <path
-                                                d="M13 20c-0.198 0-0.386-0.119-0.464-0.314l-1.697-4.242-2.963 3.386c-0.137 0.157-0.357 0.212-0.552 0.139s-0.324-0.26-0.324-0.468v-15c0-0.198 0.117-0.377 0.298-0.457s0.392-0.046 0.539 0.087l11 10c0.153 0.139 0.205 0.358 0.13 0.55s-0.26 0.32-0.466 0.32h-4.261l1.726 4.314c0.103 0.256-0.022 0.547-0.279 0.65l-2.5 1c-0.061 0.024-0.124 0.036-0.186 0.036zM11 14c0.028 0 0.056 0.002 0.084 0.007 0.172 0.029 0.315 0.146 0.38 0.307l1.814 4.536 1.572-0.629-1.814-4.536c-0.062-0.154-0.043-0.329 0.050-0.466s0.248-0.22 0.414-0.22h3.707l-9.207-8.37v12.539l2.624-2.999c0.096-0.109 0.233-0.171 0.376-0.171z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                    <div class="service-content p-relative">
-                                        <h4 class="service_title  title-block border-bottom pb-20 mb-20">WEBSITES &
-                                            MOBILE APPS</h4>
-                                        <div class="service_description mt-20 max-w570 dsn-auto">
-                                            <p>
-                                                We build fast, responsive and secure websites, e-commerce stores and mobile
-                                                apps. Websites from ₹9,999. <a href="website-development.html">Learn more</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dsn-up service-item p-relative grid-item style-box">
-                                <div class="service-item-inner border-style number-item h-100">
-                                    <div class="dsn-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px"
-                                            width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve">
-                                            <g>
-                                                <path
-                                                    d="M49.5,42.2l-11-17c-0.6-1-1.8-1.4-2.8-0.8c-1,0.6-1.4,1.8-0.8,2.8l8.8,13.6H6.2l12-19.8c0.6-1,0.3-2.2-0.7-2.8c-1-0.6-2.2-0.3-2.8,0.7L1.5,42.2C0.6,43.6,1.5,45.4,3,46h44C48.5,46,49.4,43.6,49.5,42.2z">
-                                                </path>
-                                                <path
-                                                    d="M36,25c-6.1,0-11,4.9-11,11s4.9,11,11,11s11-4.9,11-11S42.1,25,36,25z M36,45c-5,0-9-4-9-9s4-9,9-9s9,4,9-9S41,45,36,45z">
-                                                </path>
-                                                <path
-                                                    d="M20,18c-7.2,0-13,5.8-13,13s5.8,13,13,13s13-5.8,13-13S27.2,18,20,18z M20,42c-6.1,0-11-4.9-11-11s4.9-11,11-11s11,4.9,11,11S26.1,42,20,42z">
-                                                </path>
-                                                <path
-                                                    d="M15,9c-4.4,0-8,3.6-8,8s3.6,8,8,8s8-3.6,8-8S19.4,9,15,9z M15,23c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S18.3,23,15,23z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="service-content p-relative">
-                                        <h4 class="service_title  title-block border-bottom pb-20 mb-20">SEO & BRANDING
-                                        </h4>
-                                        <div class="service_description mt-20 max-w570 dsn-auto">
-                                            <p>
-                                                On-page SEO and Google Business Profile optimisation to help local customers
-                                                find you, alongside memorable logo design for your brand. <a href="digital-marketing.html">Learn more</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dsn-up service-item p-relative grid-item style-box">
-                                <div class="service-item-inner border-style number-item h-100">
-                                    <div class="dsn-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px"
-                                            width="50px" height="50px" viewBox="0 0 50 50" xml:space="preserve">
-                                            <g>
-                                                <path
-                                                    d="M35.9,0H14.1C6.3,0,0,6.3,0,14.1v21.8C0,43.7,6.3,50,14.1,50h21.8c7.8,0,14.1-6.3,14.1-14.1V14.1C50,6.3,43.7,0,35.9,0z M48,35.9c0,6.7-5.4,12.1-12.1,12.1H14.1C7.4,48,2,42.6,2,35.9V14.1C2,7.4,7.4,2,14.1,2h21.8C42.6,2,48,7.4,48,14.1V35.9z">
-                                                </path>
-                                                <path
-                                                    d="M25,32.2c-4,0-7.2-3.2-7.2-7.2s3.2-7.2,7.2-7.2s7.2,3.2,7.2,7.2S29,32.2,25,32.2z M25,19.8c-2.9,0-5.2,2.3-5.2,5.2s2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2S27.9,19.8,25,19.8z">
-                                                </path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="service-content p-relative">
-                                        <h4 class="service_title  title-block border-bottom pb-20 mb-20">ATS RESUMES
-                                        </h4>
-                                        <div class="service_description mt-20 max-w570 dsn-auto">
-                                            <p>
-                                                We design and create professional, ATS-friendly resumes that get noticed
-                                                by recruiters and help you land your dream job.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dsn-up service-item p-relative grid-item style-box">
-                                <div class="service-item-inner border-style number-item h-100">
-                                    <div class="dsn-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"></path></svg>
-                                    </div>
-                                    <div class="service-content p-relative">
-                                        <h4 class="service_title  title-block border-bottom pb-20 mb-20">WHATSAPP AUTOMATION</h4>
-                                        <div class="service_description mt-20 max-w570 dsn-auto">
-                                            <p>
-                                                Official WhatsApp Business API with auto-replies, order and booking notifications and an AI WhatsApp assistant. From ₹7,999. <a href="whatsapp-automation.html">Learn more</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dsn-up service-item p-relative grid-item style-box">
-                                <div class="service-item-inner border-style number-item h-100">
-                                    <div class="dsn-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="fill: none !important; stroke: rgb(247, 224, 199);"><rect style="fill: none" x="4" y="7" width="16" height="12" rx="3"></rect><path style="fill: none" d="M12 3v4M9 12h.01M15 12h.01M9 16h6M2 12v3M22 12v3"></path></svg>
-                                    </div>
-                                    <div class="service-content p-relative">
-                                        <h4 class="service_title  title-block border-bottom pb-20 mb-20">AI CHATBOTS</h4>
-                                        <div class="service_description mt-20 max-w570 dsn-auto">
-                                            <p>
-                                                AI chatbots for your website and WhatsApp, trained on your business, that answer questions and capture leads 24/7. <a href="ai-automation-services.html">Learn more</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="dsn-up service-item p-relative grid-item style-box">
-                                <div class="service-item-inner border-style number-item h-100">
-                                    <div class="dsn-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="fill: none !important; stroke: rgb(247, 224, 199);"><path style="fill: none" d="M7 18a5 5 0 1 1 .9-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18z"></path><path style="fill: none" d="M12 12v4M10 14l2-2 2 2"></path></svg>
-                                    </div>
-                                    <div class="service-content p-relative">
-                                        <h4 class="service_title  title-block border-bottom pb-20 mb-20">CLOUD &amp; MAINTENANCE</h4>
-                                        <div class="service_description mt-20 max-w570 dsn-auto">
-                                            <p>
-                                                Secure hosting, backups, updates and monitoring so your website and apps stay fast and online. Care plans from ₹1,999/month. <a href="pricing.html#monthly">View plans</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                </div>
-                <!-- ========== End Service ========== -->
-
-
-
-                <!-- ========== Portfolio ========== -->
-                <div class="p-relative mt-section background-section section-padding">
-                    <div class="background-overlay bg-1"></div>
-                    <div class="container section-title mb-70 d-grid grid-md-2 ">
-                        <div class=" d-flex">
-                            <div class="sub-section-title ">
-                                <p class="description d-inline-block p-relative circle-before mb-10">
-                                    <span>OUR WORK</span>
-                                </p>
-                                <span class="title-h2 title-block-lg d-block heading-color">
-                                    <span>Proof of our <br><b>PROMISE</b></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="dsn-def-btn dsn-icon-heading-color align-self-end justify-self-end">
-                            <a class="dsn-btn dsn-border border-color-default  background-main effect-ajax effect-ajax  move-circle has-icon-left"
-                                href="portfolio.html" data-dsn-text="Our Work" data-dsn="parallax"> <span
-                                    class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1"><i
-                                        class="fas fa-angle-right"></i></span> <span
-                                    class="title-btn p-relative  z-index-1 heading-color">VIEW ALL WORK</span> </a>
-                        </div>
-                    </div>
-                    <div class="p-relative dsn-style-classic dsn-container dsn-right-container">
-                        <div class="root-posts">
-                            <div class="dsn-posts dsn-post-type-classic h-350">
-                                <div class="has-parallax-image dsn-swiper p-relative"
-                                    data-dsn-option='{"slidesPerView":2.5,"spaceBetween":30,"centeredSlides":false}'>
-                                    <div class="swiper-container ">
-                                        <div class="swiper-wrapper">
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#ai-lead-agent"
-                                                        data-dsn-ajax="work" title="Lead Research Agent">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/ai-lead-agent.jpg"
-                                                                alt="AI lead research agent that audits businesses and drafts PDF reports" srcset="assets/img/portfolio/ai-lead-agent-640.webp 640w, assets/img/portfolio/ai-lead-agent.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">AI Agent</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#ai-lead-agent"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Lead Research Agent
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#ai-lead-agent"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#ai-chat-assistant"
-                                                        data-dsn-ajax="work" title="WhatsApp AI Assistant">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/ai-chat-assistant.jpg"
-                                                                alt="WhatsApp AI assistant answering customers and booking appointments" srcset="assets/img/portfolio/ai-chat-assistant-640.webp 640w, assets/img/portfolio/ai-chat-assistant.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">AI Agent</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#ai-chat-assistant"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    WhatsApp AI Assistant
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#ai-chat-assistant"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#insight-dashboard"
-                                                        data-dsn-ajax="work" title="Insight Dashboard">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/data-visualization-app.jpg"
-                                                                alt="Data visualization dashboard application with live revenue charts and KPIs" srcset="assets/img/portfolio/data-visualization-app-640.webp 640w, assets/img/portfolio/data-visualization-app.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Data Visualization Application</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#insight-dashboard"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Insight Dashboard
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#insight-dashboard"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#seo-analytics"
-                                                        data-dsn-ajax="work" title="Search Insight Web App">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/seo-analytics-app.jpg"
-                                                                alt="SEO analytics web application showing keyword rankings, clicks and SEO score" srcset="assets/img/portfolio/seo-analytics-app-640.webp 640w, assets/img/portfolio/seo-analytics-app.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">SEO Analytics Web Application</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#seo-analytics"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Search Insight Web App
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#seo-analytics"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#operations-app"
-                                                        data-dsn-ajax="work" title="Streamlined Operations">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/management-app.jpg"
-                                                                alt="Streamlined management application with task board, staff roles and approvals" srcset="assets/img/portfolio/management-app-640.webp 640w, assets/img/portfolio/management-app.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Management Application</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#operations-app"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Streamlined Operations
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#operations-app"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#ordering-app"
-                                                        data-dsn-ajax="work" title="Order &amp; Table QR App">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/ordering-app.jpg"
-                                                                alt="Restaurant ordering application with QR table ordering, menu and live order tracking" srcset="assets/img/portfolio/ordering-app-640.webp 640w, assets/img/portfolio/ordering-app.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Ordering Application</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#ordering-app"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Order &amp; Table QR App
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#ordering-app"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#project-pusher"
-                                                        data-dsn-ajax="work" title="Project Pusher">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="4">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/project-pusher.jpg"
-                                                                alt="Project Pusher - A project management platform" srcset="assets/img/portfolio/project-pusher-640.webp 640w, assets/img/portfolio/project-pusher.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator="&">Web Application</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#project-pusher" class="effect-ajax"
-                                                                    data-dsn-ajax="work">
-                                                                    Project Pusher
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#project-pusher"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#project-generator" data-dsn-ajax="work" title="Project Generator">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="3">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/project-generator.jpg"
-                                                                alt="Project Generator - A development automation tool" srcset="assets/img/portfolio/project-generator-640.webp 640w, assets/img/portfolio/project-generator.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Development Tool</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#project-generator" class="effect-ajax"
-                                                                    data-dsn-ajax="work">
-                                                                    Project Generator
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#project-generator"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#garishtha-infra"
-                                                        data-dsn-ajax="work" title="Garishta Infra Developers">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/garishta-infra.jpg"
-                                                                alt="Garishta Infra Developers website" srcset="assets/img/portfolio/garishta-infra-640.webp 640w, assets/img/portfolio/garishta-infra.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Corporate Website</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#garishtha-infra"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Garishta Infra Developers
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#garishtha-infra"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#yoda-ratna-awards"
-                                                        data-dsn-ajax="work" title="Yoda Ratna Awards Event">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="2">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/yoda-ratna-awards.jpg"
-                                                                alt="Yoda Ratna Awards event website" srcset="assets/img/portfolio/yoda-ratna-awards-640.webp 640w, assets/img/portfolio/yoda-ratna-awards.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Event Website</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#yoda-ratna-awards"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Yoda Ratna Awards Event
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#yoda-ratna-awards"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#sabari-studios"
-                                                        data-dsn-ajax="work" title="Sabari Studios">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="4">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/sabari-studios.jpg"
-                                                                alt="Sabari Studios website" srcset="assets/img/portfolio/sabari-studios-640.webp 640w, assets/img/portfolio/sabari-studios.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Creative Studio</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#sabari-studios"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Sabari Studios
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#sabari-studios"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Sireeshna Solutions Project -->
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#sireeshna-solutions"
-                                                        data-dsn-ajax="work" title="Sireeshna Solutions">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="4">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/sireeshna-solutions.jpg"
-                                                                alt="Sireeshna Solutions IT Services Platform" srcset="assets/img/portfolio/sireeshna-solutions-640.webp 640w, assets/img/portfolio/sireeshna-solutions.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">IT Services Platform</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#sireeshna-solutions"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Sireeshna Solutions
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#sireeshna-solutions"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-
-                                            <!-- Dr. Kammela Medical Center Project -->
-                                            <article
-                                                class="dsn-item-post grid-item over-hidden p-relative box-hover-image swiper-slide">
-                                                <div class="box-content d-flex ">
-                                                    <a class="effect-ajax box-image-link bg-shadow"
-                                                        href="portfolio.html#kammela-medical"
-                                                        data-dsn-ajax="work" title="Dr. Kammela Medical Center">
-                                                        <div class="box-image-bg before-z-index dsn-swiper-parallax-transform"
-                                                            data-overlay="4">
-                                                            <img loading="lazy" decoding="async" class="cover-bg-img"
-                                                                src="assets/img/portfolio/kammela-medical.jpg"
-                                                                alt="Dr. Kammela Medical Center Website" srcset="assets/img/portfolio/kammela-medical-640.webp 640w, assets/img/portfolio/kammela-medical.webp 1260w" sizes="(max-width: 768px) 100vw, 50vw" width="1260" height="788" />
-                                                        </div>
-                                                    </a>
-                                                    <div
-                                                        class="post-content dsn-bg p-relative z-index-1 d-flex flex-column">
-                                                        <div class="post-title-info">
-                                                            <div class="post-meta max-w750">
-                                                                <div
-                                                                    class="p-relative d-inline-block dsn-category dsn-bg metas mb-10 entry-meta">
-                                                                    <span data-separator=" & ">Healthcare Website</span>
-                                                                </div>
-                                                            </div>
-                                                            <h2 class="post-title title-block">
-                                                                <a href="portfolio.html#kammela-medical"
-                                                                    class="effect-ajax" data-dsn-ajax="work">
-                                                                    Dr. Kammela Medical Center
-                                                                </a>
-                                                            </h2>
-                                                        </div>
-
-                                                        <div class="post-description-info ">
-                                                            <div class="d-flex mt-20 dsn-def-btn dsn-hover-icon">
-                                                                <a href="portfolio.html#kammela-medical"
-                                                                    class="effect-ajax dsn-btn dsn-border border-color-default background-section has-icon-left"
-                                                                    data-dsn-ajax="work">
-                                                                    <span
-                                                                        class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                                                        <i class="fas fa-angle-right"></i>
-                                                                    </span>
-                                                                    <span
-                                                                        class="title-btn p-relative  z-index-1 heading-color">
-                                                                        See project details
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
-                                        <div
-                                            class="dsn-swiper-paginate  d-flex p-relative w-100 h-100 mt-50 align-items-center dsn-container justify-content-between">
-                                            <div class="swiper-prev">
-                                                <div class="prev-container">
-                                                    <div class="container-inner">
-                                                        <div class="triangle"></div>
-                                                        <svg class="circle" xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 24 24">
-                                                            <g class="circle-wrap" fill="none" stroke-width="1"
-                                                                stroke-linejoin="round" stroke-miterlimit="10">
-                                                                <circle cx="12" cy="12" r="10.5"></circle>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="swiper-pagination  mr-30 ml-30 heading-color"
-                                                data-dsn-type="progressbar"></div>
-                                            <div class="swiper-next">
-                                                <div class="next-container">
-                                                    <div class="container-inner">
-                                                        <div class="triangle"></div>
-                                                        <svg class="circle" xmlns="http://www.w3.org/2000/svg"
-                                                            width="24" height="24" viewBox="0 0 24 24">
-                                                            <g class="circle-wrap" fill="none" stroke-width="1"
-                                                                stroke-linejoin="round" stroke-miterlimit="10">
-                                                                <circle cx="12" cy="12" r="10.5"></circle>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ========== End Portfolio ========== -->
-
-
-                <!-- ========== background Box Image ========== -->
-                <div class="p-relative section-padding v-dark-head">
-
-                    <div class="container">
-                        <h3 class="title-h2">
-                            Have a vision for your business? <br> <b>Let's build it together!</b>
-                        </h3>
-                        <p class="mt-30 max-w570">
-                            Stop gambling on your digital presence. You need more than a pretty brochure; you need a
-                            growth engine. We don't just build code, we architect solutions with a clear objective: to
-                            make you the dominant force in your industry.
-                            <span class="mb-10 d-block"></span>
-                            Let's connect and bring your vision to life.
-                        </p>
-                        <div class="dsn-def-btn d-flex dsn-border-style dsn-icon-heading-color mt-30">
-                            <a class="dsn-btn dsn-border border-color-default background-section  move-circle has-icon-left"
-                                href="contact.html" data-dsn-text="Contact Us" data-dsn="parallax">
-                                <span class="dsn-icon dsn-bg-before btn-icon-left heading-color z-index-1">
-                                    <i class="far fa-envelope-open"></i>
-                                </span>
-                                <span class="title-btn p-relative  z-index-1 ">CONTACT US</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="dsn-bg-section p-absolute w-100 h-100 over-hidden top-0 left-0" style="z-index: -1;">
-                        <div class="h-100 img-box-parallax before-z-index " data-dsn-grid="move-up" data-overlay="4">
-                            <img loading="lazy" decoding="async" src="assets/img/about-4.jpg" class="cover-bg-img has-direction"
-                                alt="CodeServe team working on innovative digital solutions" srcset="assets/img/about-4-640.webp 640w, assets/img/about-4-1280.webp 1280w, assets/img/about-4.webp 1800w" sizes="100vw" width="1800" height="1200">
-                        </div>
-
-                    </div>
-                </div>
-                <!-- ========== End background Box Image ========== -->
 
 
                 <!-- ========== testimonials ========== -->
@@ -2615,7 +1674,9 @@
     <script src="assets/js/jquery-3.1.1.min.js"></script>
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/plugins/dsn-grid.min.js"></script>
-    <script src="assets/js/custom.js?v=3"></script>
+    <script src="assets/js/custom.js?v=4"></script>
+    <script src="assets/js/story.js?v=1"></script>
+    <script src="assets/js/chapters.js?v=1"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {

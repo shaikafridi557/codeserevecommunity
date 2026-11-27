@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Home chapters — 3D scroll scenes (CH.01–CH.04)
+   Static, readable layout by default; .st-js (set before paint) turns on the pinned 3D versions.
+   ========================================================================== */
+.ch {
+  --ch-bg: #07080c; --ch-ink: #f5f6fa; --ch-dim: #a3a9bd; --ch-accent: #387cf9; --ch-pop: #c8ff3e; --ch-pink: #ff6bd6;
+  --ch-font: var(--heading-font, "Poppins", sans-serif);
+  position: relative; background: var(--ch-bg); color: var(--ch-ink);
+}
+.ch-pin { position: relative; padding: 110px 6vw; }
+.st-js .ch-pin { position: sticky; top: 0; height: 100vh; height: 100svh; padding: 0; overflow: hidden; }
+.ch-tag { position: relative; z-index: 20; margin: 0 0 24px; font: 600 12px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: .2em; text-transform: uppercase; color: var(--ch-dim); }
+.ch-tag b { color: var(--ch-pop); margin-right: 10px; }
+.st-js .ch-tag { position: absolute; left: 6vw; top: calc(14px + 5vh); margin: 0; }
+.ch-big { margin: 0; font: 700 clamp(48px, 8vw, 136px)/.9 var(--ch-font); letter-spacing: -.04em; text-transform: uppercase; color: var(--ch-ink); }
+.ch-big em, .ch-ring-title em, .ch-tunnel-title em { font-style: italic; color: transparent; -webkit-text-stroke: 2px var(--ch-ink); }
+.ch-line { display: block; overflow: hidden; padding-bottom: .06em; }
+.ch-line > span { display: inline-block; }
+.ch-link { display: inline-flex; gap: 8px; margin-top: 24px; padding: 13px 22px; border: 1px solid rgba(255, 255, 255, .25); border-radius: 999px; color: var(--ch-ink); font-weight: 600; transition: border-color .25s, color .25s, transform .25s; }
+.ch-link:hover { color: var(--ch-pop); border-color: var(--ch-pop); transform: translateY(-2px); }
+
+/* ---------- CH.01 expanding film ---------- */
+.ch-split { display: none; }
+.ch-film { position: relative; overflow: hidden; border-radius: 22px; aspect-ratio: 16 / 9; background: #000 url("../video/codeserve-brand-film-poster.jpg") center / cover; box-shadow: 0 40px 120px rgba(0, 0, 0, .6), 0 0 0 1px rgba(255, 255, 255, .1); }
+.ch-video-el { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ch-film-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7, 8, 12, .95) 0%, rgba(7, 8, 12, .82) 42%, rgba(7, 8, 12, .25) 100%); opacity: 0; }
+.ch-scroll-note { display: none; }
+.ch-who-copy { margin-top: 36px; max-width: 760px; }
+.ch-who-h { margin: 0 0 22px; font: 700 clamp(40px, 6vw, 96px)/.95 var(--ch-font); letter-spacing: -.035em; text-transform: uppercase; }
+.ch-manifesto { margin: 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+.ch-manifesto li { display: grid; grid-template-columns: 52px 1fr; gap: 12px; align-items: baseline; font: 600 clamp(19px, 2vw, 30px)/1.25 var(--ch-font); color: var(--ch-ink); letter-spacing: -.01em; }
+.ch-manifesto b { font: 600 13px/1 ui-monospace, Menlo, monospace; color: var(--ch-pop); letter-spacing: .1em; }
+.st-js .ch-video { height: 380vh; }
+.st-js .ch-split {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; gap: calc(30vw * 9 / 16 + 2.6vw);
+  position: absolute; z-index: 4; left: 0; right: 0; top: 0; bottom: 0; margin: 0; pointer-events: none;
+  font: 800 clamp(48px, 8.2vw, 170px)/1 var(--ch-font); letter-spacing: -.045em; text-transform: uppercase; color: var(--ch-ink);
+}
+.st-js .ch-sr { color: transparent; -webkit-text-stroke: 2px var(--ch-ink); font-style: italic; }
+.st-js .ch-film { position: absolute; z-index: 3; left: 50%; top: 50%; width: 30vw; margin: 0; transform: translate(-50%, -50%); border-radius: 18px; }
+.st-js .ch-scroll-note { display: block; position: absolute; z-index: 5; left: 50%; bottom: 7vh; transform: translateX(-50%); margin: 0; font: 600 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .24em; text-transform: uppercase; color: var(--ch-dim); }
+.st-js .ch-who-copy { position: absolute; z-index: 6; left: 6vw; top: 50%; transform: translateY(-50%); margin: 0; max-width: min(720px, 88vw); }
+.st-js .ch-who-h { font-size: clamp(36px, 4.6vw, 76px); }
+@media (max-width: 767px) {
+  .st-js .ch-video { height: 320vh; }
+  .st-js .ch-split { gap: calc(72vw * 9 / 16 + 6vw); font-size: 15vw; }
+  .st-js .ch-film { width: 72vw; }
+  .ch-manifesto li { grid-template-columns: 38px 1fr; font-size: 18px; }
+}
+
+/* ---------- CH.02 ring ---------- */
+.ch-ring-title { margin: 0 0 30px; font: 700 clamp(34px, 5vw, 80px)/1 var(--ch-font); letter-spacing: -.03em; text-transform: uppercase; }
+.ch-ring-num { display: none; }
+.ch-ring-world { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; }
+.ch-card { overflow: hidden; border-radius: 20px; background: #12141b; border: 1px solid rgba(255, 255, 255, .12); }
+.ch-card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.ch-card-body { padding: 18px 20px 22px; }
+.ch-card h3 { margin: 0 0 8px; font: 700 21px/1.2 var(--ch-font); color: var(--ch-ink); }
+.ch-card p { margin: 0 0 12px; font-size: 14.5px; line-height: 1.55; color: var(--ch-dim); }
+.ch-card a { font-weight: 600; color: var(--ch-pop); }
+.st-js .ch-ring { height: 440vh; }
+.st-js .ch-ring-title { position: absolute; z-index: 5; left: 6vw; top: calc(44px + 8vh); margin: 0; max-width: 40vw; }
+.st-js .ch-ring-num { display: block; position: absolute; z-index: 1; right: 5vw; top: 50%; transform: translateY(-50%); font: 700 clamp(120px, 22vw, 360px)/1 var(--ch-font); letter-spacing: -.06em; color: transparent; -webkit-text-stroke: 1px rgba(255, 255, 255, .12); }
+.st-js .ch-ring-num b { color: rgba(56, 124, 249, .18); -webkit-text-stroke: 1px rgba(56, 124, 249, .5); font-weight: 700; }
+.st-js .ch-ring-stage { position: absolute; inset: 0; perspective: 1800px; perspective-origin: 50% 40%; }
+.st-js .ch-ring-world { display: block; position: absolute; left: 50%; top: 56%; width: 0; height: 0; transform-style: preserve-3d; }
+.st-js .ch-card { position: absolute; width: min(380px, 72vw); left: calc(min(380px, 72vw) / -2); top: -240px; transition: filter .3s, box-shadow .3s; }
+.st-js .ch-card.is-front { box-shadow: 0 0 0 1px var(--ch-pop), 0 40px 100px rgba(200, 255, 62, .15); }
+.st-js .ch-ring-all { position: absolute; z-index: 5; left: 6vw; bottom: 9vh; margin: 0; }
+
+/* ---------- CH.03 tunnel ---------- */
+.ch-tunnel-title { margin: 0 0 30px; font: 700 clamp(48px, 9vw, 150px)/.9 var(--ch-font); letter-spacing: -.04em; text-transform: uppercase; }
+.ch-tunnel-world { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 22px; }
+.ch-frame { position: relative; display: block; overflow: hidden; border-radius: 18px; border: 1px solid rgba(255, 255, 255, .14); background: #111; }
+.ch-frame img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.ch-frame span { position: absolute; left: 12px; bottom: 12px; padding: 7px 12px; border-radius: 999px; background: rgba(0, 0, 0, .7); color: #fff; font: 600 12px/1 ui-monospace, Menlo, monospace; letter-spacing: .06em; }
+.st-js .ch-tunnel { height: 480vh; }
+.st-js .ch-tunnel-title { position: absolute; z-index: 4; pointer-events: none; left: 0; right: 0; top: 50%; transform: translateY(-50%); margin: 0; text-align: center; }
+.st-js .ch-tunnel-stage { position: absolute; inset: 0; perspective: 900px; z-index: 3; }
+.st-js .ch-tunnel-world { display: block; position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
+.st-js .ch-frame { position: absolute; width: min(38vw, 580px); box-shadow: 0 40px 100px rgba(0, 0, 0, .6); }
+.st-js .ch-tunnel-all { position: absolute; z-index: 6; left: 50%; bottom: 10vh; margin: 0; transform: translateX(-50%); background: var(--ch-pop); color: #0b0b0b; border-color: var(--ch-pop); }
+.st-js .ch-tunnel-all:hover { color: #0b0b0b; background: #fff; }
+
+/* ---------- CH.04 mask ---------- */
+.ch-mask-img { overflow: hidden; border-radius: 24px; }
+.ch-mask-img img { display: block; width: 100%; height: auto; }
+.ch-you-copy { margin-top: 36px; max-width: 640px; }
+.ch-you-k { margin: 0 0 16px; font-size: 14px; letter-spacing: .24em; text-transform: uppercase; color: var(--ch-pop); }
+.ch-you-p { margin: 22px 0 0; font-size: 18px; line-height: 1.6; color: #d4d8e5; }
+.ch-cta { display: inline-flex; gap: 10px; margin-top: 30px; padding: 16px 28px; border-radius: 999px; background: var(--ch-pop); color: #0b0b0b; font-weight: 700; transition: transform .25s, background .25s; }
+.ch-cta:hover { background: #fff; color: #0b0b0b; transform: translateY(-2px); }
+.st-js .ch-mask { height: 280vh; }
+.st-js .ch-mask-img { position: absolute; inset: 0; border-radius: 0; clip-path: circle(7% at 50% 50%); }
+.st-js .ch-mask-img::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(7, 8, 12, .88), rgba(7, 8, 12, .35) 60%, rgba(7, 8, 12, .1)); }
+.st-js .ch-mask-img img { width: 100%; height: 100%; object-fit: cover; }
+.st-js .ch-you-copy { position: absolute; z-index: 5; left: 6vw; top: 50%; transform: translateY(-50%); margin: 0; }
+
+@media (max-width: 767px) {
+  .ch-pin { padding: 80px 5vw; }
+  .st-js .ch-video { height: 280vh; }
+  .st-js .ch-screen { width: 88vw; }
+  .ch-who-p { font-size: 16px; }
+  .st-js .ch-ring { height: 380vh; }
+  .st-js .ch-ring-title { max-width: 88vw; top: calc(40px + 6vh); }
+  .st-js .ch-ring-world { top: 60%; }
+  .st-js .ch-card { top: -200px; }
+  .ch-card p { font-size: 13px; }
+  .st-js .ch-frame { width: 64vw; }
+  .st-js .ch-you-copy { left: 5vw; right: 5vw; }
+}
+@media (max-width: 767px) { .st-js .ch-ring-num { display: none; } }

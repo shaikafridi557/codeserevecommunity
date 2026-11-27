@@ -255,7 +255,7 @@ def main():
     if "assets/css/work.css" not in s:
         s = s.replace('<link rel="stylesheet" id="page-specific-css"', '<link rel="stylesheet" href="assets/css/work.css?v=1">\n    <link rel="stylesheet" id="page-specific-css"', 1)
     if "assets/js/work.js" not in s:
-        s = s.replace('<script src="assets/js/custom.js?v=3"></script>', '<script src="assets/js/custom.js?v=3"></script>\n<script src="assets/js/work.js?v=1" defer></script>', 1)
+        s = s.replace('<script src="assets/js/custom.js?v=4"></script>', '<script src="assets/js/custom.js?v=4"></script>\n<script src="assets/js/work.js?v=1" defer></script>', 1)
     f.write_text(s, encoding="utf-8")
     print("portfolio.html: built", len(PROJECTS), "projects")
 

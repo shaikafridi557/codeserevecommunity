@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CodeServe brand film (render source)</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #000; }
+  #v { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #05060a; font-family: Poppins, "Segoe UI", sans-serif; color: #fff; }
+  .bg { position: absolute; inset: -10%; }
+  .floor { position: absolute; left: -50%; right: -50%; bottom: -30%; height: 90%; transform-origin: 50% 0; transform: perspective(900px) rotateX(78deg);
+    background-image: linear-gradient(rgba(56,124,249,.28) 2px, transparent 2px), linear-gradient(90deg, rgba(56,124,249,.28) 2px, transparent 2px);
+    background-size: 120px 120px; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 35%, #000 70%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 35%, #000 70%, transparent); }
+  #p { position: absolute; inset: 0; }
+  .cam { position: absolute; inset: 0; perspective: 1600px; perspective-origin: 50% 46%; }
+  .world { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform-style: preserve-3d; }
+  .obj { position: absolute; transform-style: preserve-3d; backface-visibility: hidden; }
+  .scr { width: 560px; height: 350px; margin: -175px 0 0 -280px; border-radius: 18px; overflow: hidden; background: #0b0d14;
+    box-shadow: 0 0 0 1.5px rgba(255,255,255,.14), 0 40px 120px rgba(0,0,0,.7), 0 0 80px rgba(56,124,249,.18); }
+  .scr img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .scr::after { content: ""; position: absolute; inset: 0; background: linear-gradient(120deg, rgba(255,255,255,.14), transparent 35%); }
+  .editor { width: 860px; height: 500px; margin: -250px 0 0 -430px; border-radius: 22px; background: rgba(10,12,20,.94);
+    box-shadow: 0 0 0 1.5px rgba(200,255,62,.35), 0 50px 140px rgba(0,0,0,.75), 0 0 120px rgba(200,255,62,.16); overflow: hidden; }
+  .bar { height: 54px; display: flex; align-items: center; gap: 10px; padding: 0 22px; background: rgba(255,255,255,.04); border-bottom: 1px solid rgba(255,255,255,.08); }
+  .bar i { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
+  .bar span { margin-left: 18px; font: 500 15px "JetBrains Mono", monospace; color: #8b93a8; }
+  .code { padding: 26px 34px; font: 500 22px/1.95 "JetBrains Mono", Consolas, monospace; color: #d7dbe8; white-space: pre; }
+  .ln { position: relative; display: block; height: 43px; }
+  .ln .n { display: inline-block; width: 46px; color: #444c60; }
+  .ln .t { display: inline-block; }
+  .k { color: #ff6bd6; } .f { color: #7aa7ff; } .s { color: #c8ff3e; } .c { color: #5b647c; }
+  .cursor { position: absolute; width: 12px; height: 28px; background: #c8ff3e; top: 8px; }
+  .phone { width: 300px; height: 620px; margin: -310px 0 0 -150px; border-radius: 46px; background: #0d0f14; padding: 14px;
+    box-shadow: 0 0 0 2px rgba(255,255,255,.2), 0 60px 140px rgba(0,0,0,.8), 0 0 90px rgba(37,211,102,.2); }
+  .pin { width: 100%; height: 100%; border-radius: 34px; background: #0b141a; overflow: hidden; display: flex; flex-direction: column; }
+  .phead { height: 78px; background: #1f2c34; display: flex; align-items: center; gap: 12px; padding: 18px 18px 0; }
+  .phead b { width: 40px; height: 40px; border-radius: 50%; background: #25d366; display: grid; place-items: center; color: #04140f; font-size: 14px; }
+  .phead div { font-size: 15px; font-weight: 600; } .phead small { display: block; font-size: 11px; color: #8fd1ae; font-weight: 500; }
+  .msgs { flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 12px; padding: 18px 14px; }
+  .m { max-width: 82%; padding: 11px 14px; border-radius: 14px; font-size: 14px; line-height: 1.35; }
+  .m.in { background: #1f2c34; align-self: flex-start; } .m.out { background: #005c4b; align-self: flex-end; } .m.ok { border: 1.5px solid #25d366; }
+  .chip { padding: 16px 22px; border-radius: 16px; background: rgba(14,17,26,.92); white-space: nowrap; font-size: 19px; font-weight: 600;
+    box-shadow: 0 0 0 1.5px rgba(255,255,255,.14), 0 24px 60px rgba(0,0,0,.6); margin: -30px 0 0 -10px; }
+  .chip small { display: block; font-size: 13px; color: #9aa3ba; font-weight: 500; margin-bottom: 2px; }
+  .chip.g { box-shadow: 0 0 0 1.5px #25d366, 0 24px 60px rgba(0,0,0,.6); } .chip.b { box-shadow: 0 0 0 1.5px #387cf9, 0 24px 60px rgba(0,0,0,.6); }
+  .chip.y { box-shadow: 0 0 0 1.5px #c8ff3e, 0 24px 60px rgba(0,0,0,.6); } .chip.p { box-shadow: 0 0 0 1.5px #ff6bd6, 0 24px 60px rgba(0,0,0,.6); }
+  .logo { position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); text-align: center; }
+  .logo h1 { margin: 0; font: 800 190px/1 Poppins, sans-serif; letter-spacing: -.04em; }
+  .logo h1 .a { color: #fff; } .logo h1 .b { color: #387cf9; }
+  .logo p { margin: 26px 0 0; font: 600 30px/1 "JetBrains Mono", monospace; letter-spacing: .32em; color: #c8ff3e; text-transform: uppercase; }
+  .sweep { position: absolute; top: -20%; bottom: -20%; width: 380px; background: linear-gradient(90deg, transparent, rgba(255,255,255,.16), transparent); transform: skewX(-18deg); mix-blend-mode: screen; }
+  .vig { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse at 50% 50%, transparent 52%, rgba(0,0,0,.78) 100%); }
+  .flash { position: absolute; inset: 0; background: #fff; opacity: 0; mix-blend-mode: overlay; }
+</style>
+</head>
+<body>
+<div id="v">
+  <div class="bg" id="bg"></div>
+  <div class="floor" id="floor"></div>
+  <canvas id="p" width="1920" height="1080"></canvas>
+  <div class="cam"><div class="world" id="world">
+    <div class="obj scr" data-i="0"><img src="../../assets/img/portfolio/ai-lead-agent.jpg" alt=""></div>
+    <div class="obj scr" data-i="1"><img src="../../assets/img/portfolio/data-visualization-app.jpg" alt=""></div>
+    <div class="obj scr" data-i="2"><img src="../../assets/img/portfolio/ordering-app.jpg" alt=""></div>
+    <div class="obj scr" data-i="3"><img src="../../assets/img/portfolio/garishta-infra.jpg" alt=""></div>
+    <div class="obj scr" data-i="4"><img src="../../assets/img/portfolio/seo-analytics-app.jpg" alt=""></div>
+    <div class="obj scr" data-i="5"><img src="../../assets/img/portfolio/clinic-booking-app.jpg" alt=""></div>
+    <div class="obj scr" data-i="6"><img src="../../assets/img/portfolio/management-app.jpg" alt=""></div>
+    <div class="obj scr" data-i="7"><img src="../../assets/img/portfolio/billing-pos.jpg" alt=""></div>
+    <div class="obj editor" id="editor">
+      <div class="bar"><i style="background:#ff5f57"></i><i style="background:#febc2e"></i><i style="background:#28c840"></i><span>codeserve / your-business.js</span></div>
+      <div class="code" id="code"></div>
+    </div>
+    <div class="obj phone" id="phone"><div class="pin">
+      <div class="phead"><b>AI</b><div>Your Business<small>online · replies instantly</small></div></div>
+      <div class="msgs">
+        <div class="m in" data-m="0">Hi! Is a table for 4 free tonight?</div>
+        <div class="m out" data-m="1">Yes — 8:30 PM is free. Shall I book it?</div>
+        <div class="m in" data-m="2">Yes please 🙌</div>
+        <div class="m out ok" data-m="3">✓ Booked for 8:30 PM. See you!</div>
+      </div>
+    </div></div>
+    <div class="obj chip g" data-c="0"><small>New order</small>₹1,249 · paid by UPI</div>
+    <div class="obj chip b" data-c="1"><small>Google Search</small>Organic clicks +184%</div>
+    <div class="obj chip y" data-c="2"><small>AI agent</small>26 businesses analysed</div>
+    <div class="obj chip p" data-c="3"><small>Clinic</small>Booking confirmed ✓</div>
+  </div></div>
+  <div class="logo" id="logo"><h1 id="lt"><span class="a">Code</span><span class="b">Serve</span></h1><p id="tag">Websites · Apps · AI Agents</p></div>
+  <div class="sweep" id="sweep"></div>
+  <div class="flash" id="flash"></div>
+  <div class="vig"></div>
+</div>
+<script>
+(function () {
+  var clamp = function (v, a, b) { return Math.max(a, Math.min(b, v)); };
+  var seg = function (t, a, b) { return clamp((t - a) / (b - a), 0, 1); };
+  var lerp = function (a, b, p) { return a + (b - a) * p; };
+  var oC = function (p) { return 1 - Math.pow(1 - p, 3); };
+  var ioC = function (p) { return p < .5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2; };
+  var oB = function (p) { var c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(p - 1, 3) + c1 * Math.pow(p - 1, 2); };
+
+  // code lines: [html, plain-length]
+  var LINES = [
+    ['<span class="c">// a calmer way to run your business</span>', 36],
+    ['<span class="k">const</span> customers = <span class="f">listen</span>(<span class="s">\'everywhere\'</span>);', 37],
+    ['whatsapp.<span class="f">on</span>(<span class="s">\'message\'</span>, ai.<span class="f">reply</span>);', 33],
+    ['orders.<span class="f">on</span>(<span class="s">\'new\'</span>, kitchen.<span class="f">notify</span>);', 32],
+    ['dashboard.<span class="f">render</span>(sales, bookings, leads);', 40],
+    ['website.<span class="f">launch</span>({ city: <span class="s">\'Hyderabad\'</span> });', 39],
+    ['<span class="k">return</span> <span class="f">growth</span>();', 15]
+  ];
+  var code = document.getElementById('code');
+  code.innerHTML = LINES.map(function (l, i) { return '<span class="ln"><span class="n">0' + (i + 1) + '</span><span class="t">' + l[0] + '</span></span>'; }).join('') + '<span class="cursor" id="cur"></span>';
+  var lnEls = [].slice.call(code.querySelectorAll('.ln .t')), cur = document.getElementById('cur');
+  var TOTAL = LINES.reduce(function (s, l) { return s + l[1]; }, 0);
+
+  // screens: final x, y, z, rotY
+  var POS = [[-640, -250, -220, 24], [640, -260, -180, -24], [-720, 215, -90, 28], [720, 225, -130, -28],
+             [0, -440, -560, 0], [-270, 440, -420, 10], [280, 450, -460, -10], [0, 20, -980, 0]];
+  var scr = [].slice.call(document.querySelectorAll('.scr'));
+  var CHIP = [[-470, 300, 180], [180, -330, 120], [-420, -360, 140], [-90, 520, 60]];
+  var chips = [].slice.call(document.querySelectorAll('.chip'));
+  var msgs = [].slice.call(document.querySelectorAll('.m'));
+  var camEl = document.querySelector('.cam'), world = document.getElementById('world'), editor = document.getElementById('editor'), phone = document.getElementById('phone');
+  var bg = document.getElementById('bg'), floor = document.getElementById('floor'), logo = document.getElementById('logo'),
+      lt = document.getElementById('lt'), tag = document.getElementById('tag'), sweep = document.getElementById('sweep'), flash = document.getElementById('flash');
+
+  // seeded particles
+  var rnd = (function (s) { return function () { s = (s * 16807) % 2147483647; return (s - 1) / 2147483646; }; })(42);
+  var P = []; for (var i = 0; i < 260; i++) P.push({ x: rnd() * 2 - 1, y: rnd() * 2 - 1, z: rnd(), s: .6 + rnd() * 1.8, c: rnd() < .7 ? '120,160,255' : (rnd() < .5 ? '200,255,62' : '255,107,214') });
+  var ctx = document.getElementById('p').getContext('2d');
+
+  function tf(x, y, z, ry, rx, s) { return 'translate3d(' + x + 'px,' + y + 'px,' + z + 'px) rotateY(' + (ry || 0) + 'deg) rotateX(' + (rx || 0) + 'deg) scale(' + (s == null ? 1 : s) + ')'; }
+
+  window.render = function (t) {
+    // background glow drift
+    var h = t * 14;
+    bg.style.background = 'radial-gradient(42% 46% at ' + (62 + Math.sin(t * .6) * 8) + '% 38%, hsla(' + (222 + h * .3) + ',90%,58%,.30), transparent 70%),' +
+      'radial-gradient(34% 40% at ' + (24 + Math.cos(t * .5) * 6) + '% 78%, hsla(' + (310 + h * .2) + ',90%,64%,.16), transparent 70%)';
+    floor.style.backgroundPosition = '0 ' + (t * 140) + 'px';
+    floor.style.opacity = (seg(t, 0, 1.2) * (1 - seg(t, 6.4, 7.4) * .6)).toFixed(3);
+
+    // particles flying toward camera
+    ctx.clearRect(0, 0, 1920, 1080);
+    var speed = .09 + seg(t, 5.4, 6.2) * .25 - seg(t, 6.6, 7.6) * .25;
+    P.forEach(function (p) {
+      var z = (p.z + t * speed) % 1, k = 1 / (1.15 - z), x = 960 + p.x * 900 * k * .5, y = 520 + p.y * 600 * k * .5;
+      var a = Math.min(1, z * 1.6) * (1 - seg(z, .85, 1)) * seg(t, 0, .8);
+      ctx.fillStyle = 'rgba(' + p.c + ',' + (a * .85).toFixed(3) + ')';
+      ctx.beginPath(); ctx.arc(x, y, p.s * k * .7, 0, 6.283); ctx.fill();
+    });
+
+    // camera
+    var push = ioC(seg(t, 0, 5.6)), pull = ioC(seg(t, 5.6, 7.4));
+    var camZ = lerp(-40, 160, push) - 1100 * pull, ry = Math.sin(t * .55) * 9 * (1 - pull) + 4 * pull, rx = 4 * pull + Math.sin(t * .4) * 2;
+    world.style.transform = 'translateZ(' + camZ + 'px) rotateX(' + rx + 'deg) rotateY(' + ry + 'deg)';
+    var endDim = oC(seg(t, 5.9, 6.9));
+    camEl.style.filter = 'blur(' + (endDim * 5).toFixed(2) + 'px) brightness(' + (1 - endDim * .55).toFixed(3) + ')';
+
+    // editor: types, then steps back
+    var ty = seg(t, .35, 2.4) * TOTAL, used = 0, curX = 0, curLine = 0;
+    lnEls.forEach(function (el, i) {
+      var len = LINES[i][1], shown = clamp(ty - used, 0, len);
+      el.style.clipPath = 'inset(0 ' + (100 - shown / len * 100) + '% 0 0)';
+      if (shown > 0) { curLine = i; curX = shown; }
+      used += len;
+    });
+    cur.style.left = (34 + 46 + curX * 13.2) + 'px'; cur.style.top = (26 + curLine * 43 + 8) + 'px';
+    cur.style.opacity = (Math.floor(t * 3) % 2 || ty < TOTAL) ? 1 : 0;
+    var ein = oC(seg(t, 0, .9)), eback = ioC(seg(t, 2.3, 3.4)), eout = seg(t, 5.2, 6.0);
+    editor.style.transform = tf(lerp(0, -40, eback), lerp(40, 10, ein) + lerp(0, 60, eback), lerp(-300, 0, ein) + lerp(0, -380, eback), lerp(-10, 0, ein) + lerp(0, 14, eback), 0, lerp(.9, 1, ein) * lerp(1, .78, eback));
+    editor.style.opacity = (ein * (1 - eout)).toFixed(3);
+
+    // screens fly in from deep space
+    scr.forEach(function (el, i) {
+      var p = oC(seg(t, 2.0 + i * .2, 3.2 + i * .2)), q = POS[i], fl = Math.sin(t * 1.3 + i) * 8;
+      var out = seg(t, 6.6, 7.6);
+      el.style.transform = tf(q[0] * lerp(.25, 1, p), q[1] * lerp(.25, 1, p) + fl, lerp(-3200, q[2], p), q[3] * p, 0, 1);
+      el.style.opacity = (p * (1 - out * .55)).toFixed(3);
+    });
+
+    // phone slides in front, chat plays
+    var ph = oC(seg(t, 3.1, 4.0)), phout = seg(t, 5.3, 6.0);
+    phone.style.transform = tf(lerp(1100, 470, ph), 40 + Math.sin(t * 1.1) * 6, lerp(400, 240, ph), lerp(-35, -12, ph), 0, 1);
+    phone.style.opacity = (ph * (1 - phout)).toFixed(3);
+    msgs.forEach(function (m, i) { var p = oB(seg(t, 3.7 + i * .42, 4.05 + i * .42)); m.style.opacity = clamp(p, 0, 1); m.style.transform = 'translateY(' + lerp(18, 0, clamp(p, 0, 1)) + 'px) scale(' + lerp(.9, 1, clamp(p, 0, 1)) + ')'; });
+
+    // notification chips pop
+    chips.forEach(function (c, i) {
+      var p = seg(t, 3.9 + i * .3, 4.4 + i * .3), b = oB(p), out = seg(t, 5.4, 6.0), q = CHIP[i];
+      c.style.transform = tf(q[0], q[1] - (1 - p) * 30, q[2], 0, 0, lerp(.6, 1, b));
+      c.style.opacity = (Math.min(1, p * 2) * (1 - out)).toFixed(3);
+    });
+
+    // logo
+    var lg = oC(seg(t, 6.0, 6.9)), tg = seg(t, 6.6, 7.2);
+    logo.style.opacity = lg.toFixed(3);
+    lt.style.letterSpacing = lerp(.12, -.04, lg) + 'em';
+    lt.style.textShadow = '0 0 ' + (40 + 40 * Math.sin(t * 3)) + 'px rgba(56,124,249,' + (.55 * lg) + ')';
+    logo.style.transform = 'translateY(-50%) scale(' + lerp(1.12, 1, lg) + ')';
+    tag.style.opacity = tg; tag.style.letterSpacing = lerp(.6, .32, tg) + 'em';
+    sweep.style.left = lerp(-500, 2300, seg(t, 6.8, 7.7)) + 'px';
+    flash.style.opacity = (Math.max(0, 1 - Math.abs(t - 6.0) / .18) * .5).toFixed(3);
+  };
+  window.render(0);
+})();
+</script>
+</body>
+</html>

@@ -451,14 +451,14 @@ function loadCSS(pageName) {
     return dsnGrid.dsnAjax({
       className: 'dsn-ajax-effect',
       // The portfolio page has its own CSS/JS (work.css, work.js), so it always loads as a full page.
-      prevent: 'a.effect-ajax:not([href^="portfolio.html"]) , #dsn-primary-list a:not([href*="#"]):not([href^="portfolio.html"])',
+      prevent: 'a.effect-ajax:not([href^="portfolio.html"]):not([href$="index.html"]):not([href="./"]):not([href="/"]) , #dsn-primary-list a:not([href*="#"]):not([href^="portfolio.html"]):not([href$="index.html"])',
       beforeSend: () => $body.css('overflow', 'hidden'),
 
       async success(data) {
       // Extract page title from the loaded HTML data
       const parser = new DOMParser();
       const doc = parser.parseFromString(data, 'text/html'); // data is the full HTML string
-      if (doc.querySelector('.wk')) { window.location.reload(); return; } // e.g. browser Back into the portfolio
+      if (doc.querySelector('.wk, #story')) { window.location.reload(); return; } // e.g. browser Back into the portfolio
       const pageTitle = doc.querySelector('title')?.textContent || '';
       console.log('Raw HTML Data:', data);
       console.log('Page Title:', pageTitle);
